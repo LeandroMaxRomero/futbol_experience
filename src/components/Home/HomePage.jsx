@@ -11,7 +11,7 @@ export const HomePage = () => {
 
   const { welcome, about, contact } = traduccion[lengua];
 
-  const prueba = "es una prueba nueva";
+  const prueba = "es una prueba nueva nueva";
 
   return (
     <div>
