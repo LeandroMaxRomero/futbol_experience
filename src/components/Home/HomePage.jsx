@@ -1,3 +1,4 @@
+
 import { useContext } from 'react';
 import { LenguaContext } from '../../context/LenguaProvider';
 
@@ -22,7 +23,6 @@ export const HomePage = () => {
             <h3>It hadnt been an error; I remembered perfectly the position of the pieces; he also remembered that his movement on the ground freed the jack king, a bell that put black women on the offensive; he remembered, of course, that the move was absolutely valid and that, at the moment of thinking about it, it had seemed obvious, even fatal. The problem was that, the next day, when wanting to reproduce the game, he didnt just discover that he had forgotten it, but that was completely impossible: the black king wasnt just in jack, bell in jack mate</h3>
           </section>
         }
-        
-      </div>
-    );
+        </div>
+    )
 }
