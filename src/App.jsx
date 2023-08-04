@@ -8,11 +8,25 @@ import { AboutUs } from "./components/AboutUs/AboutUs";
 import { Contact } from "./components/Contact/Contact";
 
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+        <ToastContainer />
         <LenguaProvider>
           <NavBar />
           <Routes>
@@ -21,19 +35,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<h1>404 NOT FOUND</h1>} />
           </Routes>
-          <ToastContainer
-            position="top-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-          />
-          <ToastContainer />
         </LenguaProvider>
       </BrowserRouter>
     </React.Fragment>
