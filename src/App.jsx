@@ -27,7 +27,7 @@ function App() {
           theme="light"
           style={{ fontSize: "1.5rem" }}
         />
-        <ToastContainer />
+
         <LenguaProvider>
           <NavBar />
           <Routes>
