@@ -28,7 +28,7 @@ export const HomePage = () => {
       .then((data) => {
         if (countryCode !== "") {
           console.log(data[countryCode]);
-          toast(`Gracias por visitarnos desde ${data[countryCode]}`);
+          toast(`Gracias por visitarnos desde ${data[countryCode]} ✌`);
         }
       });
   }

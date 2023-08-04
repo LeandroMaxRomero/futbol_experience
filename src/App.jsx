@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <ToastContainer
           position="top-right"
-          autoClose={5000}
+          autoClose={3000}
           hideProgressBar={false}
           newestOnTop={false}
           closeOnClick
@@ -25,6 +25,7 @@ function App() {
           draggable
           pauseOnHover
           theme="light"
+          style={{ fontSize: "1.5rem" }}
         />
         <ToastContainer />
         <LenguaProvider>
