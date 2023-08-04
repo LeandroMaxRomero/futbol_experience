@@ -2,11 +2,11 @@ import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 export const HomePage = () => {
-  const { english } = useContext(LenguaContext);
+  const { lang } = useContext(LenguaContext);
 
   return (
     <div>
-      {!english ? (
+      {lang === "castellano" ? (
         <section>
           <h1>Bienvenidos</h1>
           <h3>

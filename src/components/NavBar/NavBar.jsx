@@ -5,14 +5,14 @@ import "../../scss/layout/_header.scss";
 
 export const NavBar = () => {
   const useLengua = () => useContext(LenguaContext);
-  const { changeLang, english } = useLengua();
+  const { changeLang, lang } = useLengua();
   return (
     <div className="header">
       <div className="header-logo">
         <img src="./src/img/cancha.png" />
       </div>
       {/* No sé si poner esta parte de JavaScript en un nuevo componente */}
-      {!english ? (
+      {lang === "castellano" ? (
         <div className="header-navbar">
           <Link className="navbar-link" to="/">
             <h3>Inicio</h3>
@@ -39,12 +39,15 @@ export const NavBar = () => {
       )}
 
       <div className="header-banderas">
-        {!english ? (
-          <button className="btn-bandera" onClick={() => changeLang(true)}>
+        {lang === "castellano" ? (
+          <button className="btn-bandera" onClick={() => changeLang("ingles")}>
             <img src="./src/img/united-kingdom.png" />
           </button>
         ) : (
-          <button className="btn-bandera" onClick={() => changeLang(false)}>
+          <button
+            className="btn-bandera"
+            onClick={() => changeLang("castellano")}
+          >
             <img src="./src/img/spain.png" />
           </button>
         )}

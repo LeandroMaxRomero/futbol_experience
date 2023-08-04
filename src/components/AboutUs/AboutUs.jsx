@@ -4,11 +4,11 @@ useContext;
 
 export const AboutUs = () => {
   const useLengua = () => useContext(LenguaContext);
-  const { english } = useLengua();
+  const { lang } = useLengua();
 
   return (
     <div>
-      {!english ? (
+      {lang === "castellano" ? (
         <section>
           <h1>Sobre nosotros</h1>
           <h3>

@@ -6,25 +6,25 @@ export const LenguaContext = createContext();
 // export default LenguaContext;
 
 const LenguaProvider = ({ children }) => {
-  const [english, setEnglish] = useState(() => {
+  const [lang, setLang] = useState(() => {
     const language = localStorage.getItem("lang");
     if (language) return language;
-    else return false;
+    else return "castellano";
   });
 
   /* echale un ojo pq no se que pueda estar pasando que aun teniendo el estado en false pone el idioma ingles */
-  console.log(english);
+
   useEffect(() => {
-    localStorage.setItem("lang", english);
-  }, [english]);
+    localStorage.setItem("lang", lang);
+  }, [lang]);
 
   /* funcion que cambia de lengua */
   const changeLang = (lang) => {
-    setEnglish(lang);
+    setLang(lang);
   };
 
   return (
-    <LenguaContext.Provider value={{ english, changeLang }}>
+    <LenguaContext.Provider value={{ lang, changeLang }}>
       {children}
     </LenguaContext.Provider>
   );

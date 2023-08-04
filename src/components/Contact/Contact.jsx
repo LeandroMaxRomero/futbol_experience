@@ -3,11 +3,11 @@ import { LenguaContext } from "../../context/LenguaProvider";
 
 export const Contact = () => {
   const useLengua = () => useContext(LenguaContext);
-  const { english } = useLengua();
+  const { lang } = useLengua();
 
   return (
     <div>
-      {!english ? (
+      {lang === "castellano" ? (
         <section>
           <h1>Contacto</h1>
           <h3>
