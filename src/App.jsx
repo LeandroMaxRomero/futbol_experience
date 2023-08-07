@@ -30,13 +30,20 @@ function App() {
         /> */}
 
         <LenguaProvider>
-          <Header />
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/aboutus" element={<AboutUs />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<h1>404 NOT FOUND</h1>} />
-            </Routes>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Header />
+                  <HomePage />
+                </>
+              }
+            />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+          </Routes>
           <Footer />
         </LenguaProvider>
       </BrowserRouter>

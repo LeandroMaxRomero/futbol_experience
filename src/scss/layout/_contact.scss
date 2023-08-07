@@ -1,0 +1,36 @@
+@use "../base/variables" as v;
+
+.contact-container {
+  height: 1553px;
+  width: 100%;
+  background-color: v.$blanco;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-info {
+  width: 50%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 5rem;
+
+  h2 {
+    color: v.$azul;
+    font-feature-settings: "clig" off, "liga" off;
+    width: 100%;
+    font-family: v.$fuentePrincipal;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px; /* 127.778% */
+    padding-bottom: 2rem;
+    border-bottom: 2px solid v.$amarillo;
+  }
+}
+
+.contact-form {
+  width: 50%;
+}

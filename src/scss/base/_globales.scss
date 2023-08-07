@@ -1,37 +1,40 @@
-@use '../base/variables' as v;
+@use "../base/variables" as v;
 
 html {
-    font-size: 62.5%; //? 1rem = 10px
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  font-size: 62.5%; //? 1rem = 10px
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-body{
-    background-color: v.$celeste;
+body {
+  background-color: v.$blanco;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-h1, h2, h3, p{
-    font-family: v.$fuentePrincipal;
+h1,
+h2,
+h3,
+p {
+  font-family: v.$fuentePrincipal;
 }
-h1{
-    font-size: 4rem !important;
+h1 {
+  font-size: 4rem !important;
 }
-h2{
-    font-size: 3.6rem;
+h2 {
+  font-size: 3.6rem;
 }
-h3{
-    font-size: 3rem;
+h3 {
+  font-size: 3rem;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }

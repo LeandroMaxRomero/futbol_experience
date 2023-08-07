@@ -1,15 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
 
 //* Tipografía
 
-$fuentePrincipal: Barlow;
+$fuentePrincipal: "Barlow", sans-serif;
 
 //* Colores
 
 $blanco: #ffffff;
 $negro: #000;
-$azul: #0B2933;
-$azulClaro:  #447980;
-$celeste: #A9DCEE;
-$amarillo: #FDB908;
-
-
+$azul: #0b2933;
+$azulClaro: #447980;
+$celeste: #a9dcee;
+$amarillo: #fdb908;
+$azulClaroSec: #abbec3;
+$azulForm: #d2e0e3;
