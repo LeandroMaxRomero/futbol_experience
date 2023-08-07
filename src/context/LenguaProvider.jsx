@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 
 export const LenguaContext = createContext();
 
-// export default LenguaContext;
-
 const LenguaProvider = ({ children }) => {
   const [lang, setLang] = useState(() => {
     const language = localStorage.getItem("lang");

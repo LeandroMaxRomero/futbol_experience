@@ -1,0 +1,21 @@
+@use '../base/variables' as v;
+
+.btn-contacto{
+    display: flex;
+    // padding: 18px 24px;
+    align-items: center;
+    border-radius: 1rem;
+    font-family: v.$fuentePrincipal;
+    p{
+        width: 16.4rem;
+        height: 1.8rem;
+        color: v.$azul;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Barlow;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8rem; /* 112.5% */
+    }
+}

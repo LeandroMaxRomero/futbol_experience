@@ -1,0 +1,6 @@
+@use '../base/variables' as v;
+
+.container-home{
+    background-color: v.$negro;
+    color: v.$blanco;
+}

@@ -1,20 +1,21 @@
 import React from "react";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import { LenguaProvider } from "./context/LenguaProvider";
 import { HomePage } from "./components/Home/HomePage";
-import { NavBar } from "./components/NavBar/NavBar";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { Contact } from "./components/Contact/Contact";
+import { Header } from "./components/Header/Header";
+import { Footer } from "./components/Footer/Footer";
 
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
-        <ToastContainer
+        {/* <ToastContainer
           position="top-right"
           autoClose={3000}
           hideProgressBar={false}
@@ -26,16 +27,17 @@ function App() {
           pauseOnHover
           theme="light"
           style={{ fontSize: "1.5rem" }}
-        />
+        /> */}
 
         <LenguaProvider>
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<h1>404 NOT FOUND</h1>} />
-          </Routes>
+          <Header />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/aboutus" element={<AboutUs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+            </Routes>
+          <Footer />
         </LenguaProvider>
       </BrowserRouter>
     </React.Fragment>
