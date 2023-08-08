@@ -3,9 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { LenguaProvider } from "./context/LenguaProvider";
 import { HomePage } from "./components/Home/HomePage";
-import { AboutUs } from "./components/AboutUs/AboutUs";
+import { ExperienciaMaradona } from "./components/ExperienciaMaradona/ExperienciaMaradona";
 import { Contact } from "./components/Contact/Contact";
-import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 
 // import { ToastContainer } from "react-toastify";
@@ -31,16 +30,8 @@ function App() {
 
         <LenguaProvider>
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Header />
-                  <HomePage />
-                </>
-              }
-            />
-            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/" element={<HomePage />}/>
+            <Route path="/experiencia-maradona" element={<ExperienciaMaradona />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<h1>404 NOT FOUND</h1>} />
           </Routes>
