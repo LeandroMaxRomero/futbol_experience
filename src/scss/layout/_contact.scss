@@ -2,7 +2,8 @@
 
 .contact-container {
   height: 1553px;
-  width: 100%;
+}
+.contact-content {
   background-color: v.$blanco;
   display: flex;
   justify-content: space-around;
@@ -10,7 +11,7 @@
 }
 .contact-info {
   width: 50%;
-  height: 50rem;
+  margin-top: -10rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,7 +25,7 @@
     font-family: v.$fuentePrincipal;
     font-size: 36px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 46px;
     padding-bottom: 2rem;
     border-bottom: 2px solid v.$amarillo;
@@ -33,4 +34,34 @@
 
 .contact-form {
   width: 50%;
+}
+
+.contact-info__email {
+  color: v.$azul;
+  font-feature-settings: "clig" off, "liga" off;
+
+  font-family: v.$fuentePrincipal;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.contact-info__svg {
+  margin-top: 5.2rem;
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: 0.5rem;
+  .logo-container {
+    background: v.$celeste;
+    width: 73px;
+    height: 73px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
