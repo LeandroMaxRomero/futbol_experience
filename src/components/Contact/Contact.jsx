@@ -2,11 +2,16 @@
 import { LenguaContext } from "../../context/LenguaProvider"; */
 
 import Form from "../Form/Form";
+import { HeaderContact } from "./HeaderContact";
 
 export const Contact = () => {
   /*   const useLengua = () => useContext(LenguaContext); */
 
   return (
+    <>
+
+    <HeaderContact />
+
     <div className="contact-container">
       <div className="contact-info">
         <h2>Información de Contacto</h2>
@@ -111,5 +116,8 @@ export const Contact = () => {
         <Form />
       </div>
     </div>
+
+    </>
   );
+    
 };

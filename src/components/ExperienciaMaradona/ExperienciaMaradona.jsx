@@ -1,14 +1,22 @@
 import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
+import { HeaderMaradona } from "./HeaderMaradona";
 useContext;
 
-export const AboutUs = () => {
+export const ExperienciaMaradona = () => {
   const useLengua = () => useContext(LenguaContext);
   const { lang } = useLengua();
 
   return (
-    <div>
-      {lang === "castellano" ? (
+    <>
+    
+      <HeaderMaradona />
+
+      {
+      lang === "castellano"
+       ? 
+      (
+      
         <section>
           <h1>Sobre nosotros</h1>
           <h3>
@@ -20,7 +28,9 @@ export const AboutUs = () => {
             los instrumentos para la ejecución de un ritual secreto y sagrado
           </h3>
         </section>
+      
       ) : (
+
         <section>
           <h1>About us</h1>
           <h3>
@@ -34,6 +44,6 @@ export const AboutUs = () => {
           </h3>
         </section>
       )}
-    </div>
-  );
+    </>
+    );
 };

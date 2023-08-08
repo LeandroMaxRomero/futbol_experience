@@ -9,8 +9,50 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: center;
   padding: 0.5rem;
+}
+
+.header-maradona{
+  height: 66.7rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: linear-gradient(180deg, #002A34 0%, rgba(0, 42, 52, 0.70) 11.69%, rgba(0, 42, 52, 0.00) 100%), url('src/img/banner-maradona-header.png');
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  h2{
+    font-family: 'Barlow SemiBold';
+    color: v.$blanco;
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    margin: 0 auto;
+    padding-top: 230px;
+    padding-bottom: 230px;
+  }
+}
+.header-contact{
+  height: 38.8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: linear-gradient(180deg, #002A34 0%, rgba(0, 42, 52, 0.70) 11.69%, rgba(0, 42, 52, 0.00) 100%), url('src/img/header-contacto.png');
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  h2{
+    font-family: 'Barlow SemiBold';
+    color: v.$blanco;
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 125px;
+  }
 }
 
 .header-logo {
@@ -26,10 +68,10 @@
 }
 .header-navbar {
   display: inline-flex;
-padding-left: 0px;
-justify-content: flex-end;
-align-items: center;
-gap: 80px;
+  padding-left: 0px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
   // display: flex;
   // justify-content: space-between;
   // width: 70rem;
@@ -114,12 +156,13 @@ gap: 80px;
   align-items: center;
   margin-bottom: 29.7rem;
   h2{
+    font-family: 'Barlow SemiBold';
     color: v.$blanco;
-  font-size: 9rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 90px;
-  margin: 0 auto;
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    margin: 0 auto;
   }
   h3{
     color: v.$amarillo;
@@ -130,7 +173,17 @@ gap: 80px;
     margin: 0 auto;
   }
   button{
+    width: 194px;
+    height: 60px;
     margin-top: 5.4rem;
     background-color: v.$celeste;
+    padding: 20px 35px;
+    gap: 10px;
+    flex-shrink: 0;
+    color: v.$azul;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
 }

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LenguaContext } from "../../context/LenguaProvider";
+import { LenguaContext } from "../../../context/LenguaProvider";
 
 export const SocialBox = () => {
 

@@ -20,7 +20,7 @@ export const NavList = () => {
         <Link className="navbar-link" to="/">
           <h3>Home</h3>
         </Link>
-        <Link className="navbar-link" to="/aboutus">
+        <Link className="navbar-link" to="/experiencia-maradona">
           <h3>Experiencias</h3>
         </Link>
         <Link className="navbar-link" to="/contact">
@@ -38,7 +38,7 @@ export const NavList = () => {
           <h3>Home</h3>
         </Link>
         <Link className="navbar-link" to="/aboutus">
-          <h3>About us</h3>
+          <h3>Experiencies</h3>
         </Link>
         <Link className="navbar-link" to="/contact">
           <h3>Contact</h3>

@@ -1,7 +1,7 @@
 // import { useContext } from "react";
 // import { LenguaContext } from "../../context/LenguaProvider";
-import "../../scss/layout/_header.scss";
-import { NavBar } from "../NavBar/NavBar";
+import "../../../scss/layout/_header.scss";
+import { NavBar } from "../../NavBar/NavBar";
 import { Legend } from "./Legend";
 import { SocialBox } from "./SocialBox";
 
