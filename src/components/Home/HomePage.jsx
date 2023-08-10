@@ -1,14 +1,16 @@
-import React, { useContext } from "react";
-import { LenguaContext } from "../../context/LenguaProvider";
+
 import '../../scss/layout/_home.scss';
 import { Header } from "./Header/Header";
+import { Prestaciones } from "./Prestaciones";
+import { Experiencias } from "./Experiencias";
+import { Reviews } from './Reviews';
+import { Atributos } from './Atributos';
 
 // import { useEffect } from "react";
 // import { useGeolocated } from "react-geolocated";
 // import { toast } from "react-toastify";
 
 export const HomePage = () => {
-  const { lang } = useContext(LenguaContext);
 
   /* Agregando funcion para mostrar pais desde donde se hace la consulta 
   a la pagina.
@@ -55,44 +57,19 @@ export const HomePage = () => {
   // }, [coords]);
 
   return (
-    <React.Fragment>
+    <div className='container-home'>
 
-    <Header />
+      <Header />
 
-    <div className="container container-home">
-      {lang === "castellano" ? (
-      <section>
-        <h1>Bienvenidos</h1>
-        <h3>
-        No había sido un error; recordaba perfectamente la posición de las
-        piezas; recordaba también que su movimiento no sólo liberaba al rey
-        del jaque, sino que ponía a las negras a la ofensiva; recordaba, por
-        supuesto, que el movimiento era absolutamente válido y que, al
-        momento de pensarlo, le había parecido obvio, casi fatal. El
-        problema era que, al día siguiente, al querer reproducir la jugada,
-        no sólo descubrió que la había olvidado, sino que era por completo
-        imposible: el rey negro no sólo estaba en jaque, sino en jaque mate
-        </h3>
-      </section>
-      ) : (
-      <section>
-        <h1>Welcome</h1>
-        <h3>
-        It hadnt been an error; I remembered perfectly the position of the
-        pieces; he also remembered that his movement on the ground freed the
-        jack king, a bell that put black women on the offensive; he
-        remembered, of course, that the move was absolutely valid and that,
-        at the moment of thinking about it, it had seemed obvious, even
-        fatal. The problem was that, the next day, when wanting to reproduce
-        the game, he didnt just discover that he had forgotten it, but that
-        was completely impossible: the black king wasnt just in jack, bell
-        in jack mate
-        </h3>
-      </section>
-      )}
+      <Prestaciones />
+
+      <Experiencias />
+
+      <Reviews />
+
+      <Atributos />
+
     </div>
-    
-    </React.Fragment>
   );
     
   
