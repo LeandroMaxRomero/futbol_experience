@@ -3,7 +3,7 @@
 .text-container {
   width: 80%;
   margin: 0 auto;
-  height: 269px;
+  min-height: 269px;
   flex-shrink: 0;
   color: v.$azul;
   font-feature-settings: "clig" off, "liga" off;
@@ -30,31 +30,26 @@
   align-items: center;
   column-gap: 1rem;
   width: 80%;
-  max-height: 580px;
+
   margin: 5rem auto;
-  /*  height: 735px; */
+  /*   height: 985px; */
   flex-shrink: 0;
   .block-description__routes {
-    width: 50%;
-    height: 580px;
+    width: 40%;
 
-    background-image: url("src/img/Group 39814.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    img {
+      width: 100%;
+    }
   }
 
   .block-description__imgs {
-    width: 50%;
-    height: 580px;
+    width: 40%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    row-gap: 3.5rem;
-  }
-
-  :first-child {
+    row-gap: 1.8rem;
   }
 }
 
