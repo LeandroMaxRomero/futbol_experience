@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useModal } from "../hook/useModal";
 import Modal from "../Modal/Modal";
+import PropTypes from "prop-types";
 
 const ImagesExperience = ({ imgs }) => {
   const [isOpenModal, openModal, closeModal] = useModal(false);
@@ -31,6 +32,9 @@ const ImagesExperience = ({ imgs }) => {
       </div>
     </>
   );
+};
+ImagesExperience.propTypes = {
+  imgs: PropTypes.node.isRequired,
 };
 
 export default ImagesExperience;

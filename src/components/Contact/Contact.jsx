@@ -9,7 +9,7 @@ export const Contact = () => {
 
   return (
     <>
-      <HeaderContact />
+      <HeaderContact tittleES="Contacto" tittleEN="Contact"/>
 
       <div className="contact-content">
         <div className="contact-info">

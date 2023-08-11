@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 import { NavBar } from "../NavBar/NavBar";
+import PropTypes from "prop-types";
 
-export const HeaderContact = () => {
+export const HeaderContact = ({ tittleES, tittleEN }) => {
 const useLengua = () => useContext(LenguaContext);
   const { lang } = useLengua();
   return (
@@ -11,10 +12,14 @@ const useLengua = () => useContext(LenguaContext);
         {
             lang==='castellano'
             ?
-            <h2>Contacto</h2>
+            <h2>{tittleES}</h2>
             :
-            <h2>Contact</h2>
+            <h2>{tittleEN}</h2>
         }
     </div>
   )
-}
+};
+HeaderContact.propTypes = {
+  tittleES: PropTypes.node.isRequired,
+  tittleEN: PropTypes.node.isRequired,
+};

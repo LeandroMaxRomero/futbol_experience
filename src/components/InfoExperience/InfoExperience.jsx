@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const InfoExperience = ({ content }) => {
   return (
     <div className="experience-container">
@@ -147,6 +149,9 @@ const InfoExperience = ({ content }) => {
       </section>
     </div>
   );
+};
+InfoExperience.propTypes = {
+  content: PropTypes.node.isRequired,
 };
 
 export default InfoExperience;

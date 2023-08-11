@@ -1,4 +1,6 @@
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import PropTypes from "prop-types";
+
 
 const Modal = ({ children, isOpen, closeModal }) => {
   const handleModalContainerClick = (e) => e.stopPropagation();
@@ -13,6 +15,11 @@ const Modal = ({ children, isOpen, closeModal }) => {
       </div>
     </article>
   );
+};
+Modal.propTypes = {
+  children: PropTypes.node.isRequired,
+  isOpen: PropTypes.node.isRequired,
+  closeModal: PropTypes.node.isRequired,
 };
 
 export default Modal;

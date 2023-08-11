@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ActivitiesExperience = ({ content }) => {
   return (
     <div className="block-activities">
@@ -212,6 +214,9 @@ const ActivitiesExperience = ({ content }) => {
       </div>
     </div>
   );
+};
+ActivitiesExperience.propTypes = {
+  content: PropTypes.node.isRequired,
 };
 
 export default ActivitiesExperience;

@@ -1,4 +1,5 @@
 import { Button } from "../Button/Button";
+import PropTypes from "prop-types";
 
 const ReserveExperience = ({ content }) => {
   return (
@@ -7,6 +8,9 @@ const ReserveExperience = ({ content }) => {
       <Button className="btn-amarillo">{content[1]}</Button>
     </div>
   );
+};
+ReserveExperience.propTypes = {
+  content: PropTypes.node.isRequired,
 };
 
 export default ReserveExperience;

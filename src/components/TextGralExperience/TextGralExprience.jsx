@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const TextGralExprience = ({ content }) => {
   return (
     <div className="text-container">
@@ -6,5 +8,7 @@ const TextGralExprience = ({ content }) => {
     </div>
   );
 };
-
+TextGralExprience.propTypes = {
+  content: PropTypes.node.isRequired,
+};
 export default TextGralExprience;

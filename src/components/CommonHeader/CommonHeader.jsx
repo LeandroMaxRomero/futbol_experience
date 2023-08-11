@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 import { NavBar } from "../NavBar/NavBar";
+import PropTypes from "prop-types";
 
 export const CommonHeader = ({ ownStyle }) => {
   const useLengua = () => useContext(LenguaContext);
@@ -15,4 +16,7 @@ export const CommonHeader = ({ ownStyle }) => {
       )}
     </div>
   );
+};
+CommonHeader.propTypes = {
+  ownStyle: PropTypes.node.isRequired,
 };

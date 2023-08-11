@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const DescriptionExperience = ({ content }) => {
   return (
     <div className="block-description">
@@ -12,6 +14,9 @@ const DescriptionExperience = ({ content }) => {
       </section>
     </div>
   );
+};
+DescriptionExperience.propTypes = {
+  content: PropTypes.node.isRequired,
 };
 
 export default DescriptionExperience;
