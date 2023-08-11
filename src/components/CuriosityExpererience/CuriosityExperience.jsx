@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const CuriosityExperience = ({ content }) => {
   return (
     <div className="curiosity-container">
@@ -22,6 +24,10 @@ const CuriosityExperience = ({ content }) => {
       </div>
     </div>
   );
+};
+
+CuriosityExperience.propTypes = {
+  content: PropTypes.node.isRequired,
 };
 
 export default CuriosityExperience;
