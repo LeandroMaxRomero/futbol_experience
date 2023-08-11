@@ -6,8 +6,6 @@ const ImagesExperience = ({ imgs }) => {
   const [isOpenModal, openModal, closeModal] = useModal(false);
   const [modalContent, setModalContent] = useState({});
 
-  console.log(imgs);
-
   const showModal = (img) => {
     setModalContent(img);
     openModal();

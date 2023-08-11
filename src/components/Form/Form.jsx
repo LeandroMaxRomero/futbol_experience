@@ -72,44 +72,44 @@ const Form = () => {
       } catch (error) {
         console.log(error);
       }
-
-      /*    navigate(
-        ` https://api.whatsapp.com/send?phone=+524613904575&text=Holllllaaaaaa`
-      ); */
     },
   });
 
   return (
     <form ref={form} onSubmit={formik.handleSubmit}>
       <div className="form-group">
-        <div className="form-group__error">
-          <input
-            className="form-name"
-            type="text"
-            name="name"
-            placeholder={lang === "castellano" ? "Nombre" : "Name"}
-            value={formik.values.name}
-            onChange={formik.handleChange}
-          />
-          <span className="error">
-            {formik.errors.name && formik.touched.name && formik.errors.name}
-          </span>
-        </div>
-        <div className="form-group__error">
-          <input
-            className="form-lastName"
-            type="text"
-            name="lastName"
-            placeholder={lang === "castellano" ? "Apellido" : "Last Name"}
-            value={formik.values.lastName}
-            onChange={formik.handleChange}
-          />
-          <span className="error">
-            {formik.errors.lastName &&
-              formik.touched.lastName &&
-              formik.errors.lastName}
-          </span>
-        </div>
+        {/* <div className="form-group__error"> */}
+        <input
+          className="form-name"
+          type="text"
+          name="name"
+          placeholder={lang === "castellano" ? "Nombre" : "Name"}
+          value={formik.values.name}
+          onChange={formik.handleChange}
+        />
+
+        {/* </div> */}
+        {/*  <div className="form-group__error"> */}
+        <input
+          className="form-lastName"
+          type="text"
+          name="lastName"
+          placeholder={lang === "castellano" ? "Apellido" : "Last Name"}
+          value={formik.values.lastName}
+          onChange={formik.handleChange}
+        />
+
+        {/*    </div> */}
+      </div>
+      <div className="top-error">
+        <span className="error">
+          {formik.errors.name && formik.touched.name && formik.errors.name}
+        </span>
+        <span className="error">
+          {formik.errors.lastName &&
+            formik.touched.lastName &&
+            formik.errors.lastName}
+        </span>
       </div>
 
       <input
