@@ -1,10 +1,10 @@
 import { Button } from "../Button/Button";
 
-const ReserveExperience = () => {
+const ReserveExperience = ({ content }) => {
   return (
     <div className="reserve-experience">
-      <h1>¡Quiero vivir la Experiencia Maradona!</h1>
-      <Button className="btn-amarillo">Reservá tu Experiencia</Button>
+      <h1>{content[0]}</h1>
+      <Button className="btn-amarillo">{content[1]}</Button>
     </div>
   );
 };

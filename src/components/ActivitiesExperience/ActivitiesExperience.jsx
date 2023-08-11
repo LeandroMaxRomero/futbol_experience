@@ -1,7 +1,7 @@
-const ActivitiesExperience = () => {
+const ActivitiesExperience = ({ content }) => {
   return (
     <div className="block-activities">
-      <h3>Qué incluye la experiencia</h3>
+      <h3>{content[0]}</h3>
       <div className="block-activities__blocks">
         <section className="block-up">
           <section className="block-left">
@@ -28,7 +28,7 @@ const ActivitiesExperience = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p>Traslados</p>
+              <p>{content[1]}</p>
             </article>
             <article>
               <svg
@@ -43,7 +43,7 @@ const ActivitiesExperience = () => {
                   fill="#0B2933"
                 />
               </svg>
-              <p>Comidas</p>
+              <p>{content[2]}</p>
             </article>
           </section>
           <section className="block-right">
@@ -83,7 +83,7 @@ const ActivitiesExperience = () => {
                   </clipPath>
                 </defs>
               </svg>
-              <p>Guía Profesional Fan del Fútbol Argentino</p>
+              <p>{content[3]}</p>
             </article>
             <article>
               <svg
@@ -122,7 +122,7 @@ const ActivitiesExperience = () => {
                   strokeWidth="4"
                 />
               </svg>
-              <p>Camiseta de la Selección Argentina</p>
+              <p>{content[4]}</p>
             </article>
           </section>
         </section>
@@ -156,7 +156,7 @@ const ActivitiesExperience = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p>Cancionero de la Hinchada</p>
+              <p>{content[5]}</p>
             </article>
             <article>
               <svg
@@ -171,7 +171,7 @@ const ActivitiesExperience = () => {
                   fill="#0B2933"
                 />
               </svg>
-              <p>Videos del Fútbol Argentino</p>
+              <p>{content[6]}</p>
             </article>
           </section>
           <section className="block-right">
@@ -188,7 +188,7 @@ const ActivitiesExperience = () => {
                   fill="#0B2933"
                 />
               </svg>
-              <p>Actividades Recreativas Interactivas</p>
+              <p>{content[7]}</p>
             </article>
             <article>
               <svg
@@ -205,7 +205,7 @@ const ActivitiesExperience = () => {
                   fill="#0B2933"
                 />
               </svg>
-              <p>Souvenirs Package</p>
+              <p>{content[8]}</p>
             </article>
           </section>
         </section>

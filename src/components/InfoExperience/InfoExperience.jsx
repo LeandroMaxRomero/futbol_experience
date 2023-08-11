@@ -1,4 +1,4 @@
-const InfoExperience = () => {
+const InfoExperience = ({ content }) => {
   return (
     <div className="experience-container">
       <section className="info-group">
@@ -32,8 +32,8 @@ const InfoExperience = () => {
           />
         </svg>
         <div className="info-group__text">
-          <p>Ubicación</p>
-          <strong>Buenos Aires</strong>
+          <p>{content[0]}</p>
+          <strong>{content[1]}</strong>
         </div>
       </section>
       <section className="info-group">
@@ -57,8 +57,8 @@ const InfoExperience = () => {
           </defs>
         </svg>
         <div className="info-group__text">
-          <p>Duración</p>
-          <strong>4 horas</strong>
+          <p>{content[2]}</p>
+          <strong>{content[3]}</strong>
         </div>
       </section>
       <section className="info-group">
@@ -92,8 +92,8 @@ const InfoExperience = () => {
           />
         </svg>
         <div className="info-group__text">
-          <p>Idiomas</p>
-          <strong>Español e Inglés</strong>
+          <p>{content[4]}</p>
+          <strong>{content[5]}</strong>
         </div>
       </section>
       <section className="info-group">
@@ -141,8 +141,8 @@ const InfoExperience = () => {
           />
         </svg>
         <div className="info-group__text">
-          <p>Días disponibles</p>
-          <strong>Martes y Jueves</strong>
+          <p>{content[6]}</p>
+          <strong>{content[7]}</strong>
         </div>
       </section>
     </div>
