@@ -5,6 +5,7 @@ import { LenguaProvider } from "./context/LenguaProvider";
 import { HomePage } from "./components/Home/HomePage";
 import { ExperienciaMaradona } from "./components/ExperienciaMaradona/ExperienciaMaradona";
 import { Contact } from "./components/Contact/Contact";
+import { Nosotros } from "./components/Nosotros/Nosotros";
 import { Footer } from "./components/Footer/Footer";
 
 // import { ToastContainer } from "react-toastify";
@@ -33,6 +34,7 @@ function App() {
             <Route path="/" element={<HomePage />}/>
             <Route path="/experiencia-maradona" element={<ExperienciaMaradona />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/nosotros" element={<Nosotros />} />
             <Route path="*" element={<h1>404 NOT FOUND</h1>} />
           </Routes>
           <Footer />

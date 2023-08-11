@@ -5,12 +5,16 @@ import { Prestaciones } from "./Prestaciones";
 import { Experiencias } from "./Experiencias";
 import { Reviews } from './Reviews';
 import { Atributos } from './Atributos';
+import { Entradas } from './Entradas';
+import { FAQs } from './FAQs';
+import { Reserva } from './Reserva';
 
 // import { useEffect } from "react";
 // import { useGeolocated } from "react-geolocated";
 // import { toast } from "react-toastify";
 
 export const HomePage = () => {
+  
 
   /* Agregando funcion para mostrar pais desde donde se hace la consulta 
   a la pagina.
@@ -60,15 +64,13 @@ export const HomePage = () => {
     <div className='container-home'>
 
       <Header />
-
       <Prestaciones />
-
       <Experiencias />
-
       <Reviews />
-
       <Atributos />
-
+      <Entradas />
+      <FAQs />
+      <Reserva/>
     </div>
   );
     

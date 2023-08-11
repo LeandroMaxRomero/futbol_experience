@@ -29,7 +29,7 @@ const CuriosityExperience = () => {
           <h3>Diego Armando Maradona</h3>
           <p>
             Nacido en 1960, es una leyenda del fútbol. Destacó en el Mundial de
-            1986 con la "Mano de Dios" y el "Gol del Siglo". Jugó en Boca
+            1986 con la `Mano de Dios` y el `Gol del Siglo`. Jugó en Boca
             Juniors, FC Barcelona, entre otros, dejando una marca duradera. Su
             apogeo en el Napoli, donde logró títulos y se convirtió en ícono,
             resalta su genialidad. Maradona trasciende el fútbol, siendo

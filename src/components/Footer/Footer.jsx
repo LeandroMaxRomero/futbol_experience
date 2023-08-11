@@ -35,6 +35,9 @@ export const Footer = () => {
               <li>
                 <Link to={"/contact"}>Contacto</Link>
               </li>
+              <li>
+                <Link to={"/nosotros"}>Nosotros</Link>
+              </li>
             </div>
 
             <div className="footer-rigth">
@@ -178,6 +181,9 @@ export const Footer = () => {
               </li>
               <li>
                 <Link to={"/contact"}>Contact</Link>
+              </li>
+              <li>
+                <Link to={"/nosotros"}>About Us</Link>
               </li>
             </div>
 

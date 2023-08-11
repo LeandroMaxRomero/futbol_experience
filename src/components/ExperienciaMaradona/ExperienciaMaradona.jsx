@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LenguaContext } from "../../context/LenguaProvider";
+// import { LenguaContext } from "../../context/LenguaProvider";
 import { HeaderMaradona } from "./HeaderMaradona";
 import InfoExperience from "../InfoExperience/InfoExperience";
 import TextGralExprience from "../TextGralExperience/TextGralExprience";
@@ -11,9 +11,6 @@ import CuriosityExperience from "../CuriosityExpererience/CuriosityExperience";
 useContext;
 
 export const ExperienciaMaradona = () => {
-  const useLengua = () => useContext(LenguaContext);
-  const { lang } = useLengua();
-
   return (
     <>
       <HeaderMaradona />

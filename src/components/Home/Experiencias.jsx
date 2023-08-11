@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
-
+import { Link } from "react-router-dom";
 
 export const Experiencias = () => {
     const useLengua = () => useContext(LenguaContext);
@@ -17,12 +17,12 @@ export const Experiencias = () => {
             <div className="experiencia boca-river">
                 <h3>Experiencia Boca - River</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
-            <button>Ver Más</button>
+                <Link to="experiencia-boca-river"><button>Ver Más</button></Link>
             </div>
             <div className="experiencia maradona">
-            <h3>Experiencia Maradona</h3>
+                <h3>Experiencia Maradona</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
-            <button>Ver Más</button>
+                <Link to="experiencia-maradona"><button>Ver Más</button></Link>
             </div>
         </div>
 
@@ -35,12 +35,12 @@ export const Experiencias = () => {
             <div className="experiencia boca-river">
                 <h3>Boca - River Experience</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
-            <button>More...</button>
+                <Link to="experiencia-boca-river"><button>More...</button></Link>
             </div>
             <div className="experiencia maradona">
-            <h3>Maradona Experience</h3>
+                <h3>Maradona Experience</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
-            <button>More...</button>
+                <Link to="experiencia-maradona"><button>Ver Más</button></Link>
             </div>
         </div>
     </section>
