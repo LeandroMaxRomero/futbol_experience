@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
-import { HeaderMaradona } from "./HeaderMaradona";
+
 import InfoExperience from "../InfoExperience/InfoExperience";
 import TextGralExprience from "../TextGralExperience/TextGralExprience";
 import DescriptionExperience from "../DescriptionExperience/DescriptionExperience";
@@ -8,6 +8,7 @@ import ActivitiesExperience from "../ActivitiesExperience/ActivitiesExperience";
 import ImagesExperience from "../ImagesExperience/ImagesExperience";
 import ReserveExperience from "../ReserveExperience/ReserveExperience";
 import CuriosityExperience from "../CuriosityExpererience/CuriosityExperience";
+import { CommonHeader } from "../CommonHeader/CommonHeader";
 
 export const ExperienciaMaradona = () => {
   const useLengua = () => useContext(LenguaContext);
@@ -192,7 +193,7 @@ export const ExperienciaMaradona = () => {
 
   return (
     <>
-      <HeaderMaradona />
+      <CommonHeader ownStyle={"header-maradona"} />
       <div className="maradona-container">
         <InfoExperience
           content={

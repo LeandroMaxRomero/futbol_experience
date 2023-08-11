@@ -8,6 +8,7 @@ import ActivitiesExperience from "../ActivitiesExperience/ActivitiesExperience";
 import ImagesExperience from "../ImagesExperience/ImagesExperience";
 import ReserveExperience from "../ReserveExperience/ReserveExperience";
 import CuriosityExperience from "../CuriosityExpererience/CuriosityExperience";
+import { CommonHeader } from "../CommonHeader/CommonHeader";
 
 export const RiverExperience = () => {
   const useLengua = () => useContext(LenguaContext);
@@ -187,6 +188,7 @@ export const RiverExperience = () => {
 
   return (
     <>
+      <CommonHeader ownStyle={"header-boca-river"} />
       <div className="maradona-container">
         <InfoExperience
           content={
