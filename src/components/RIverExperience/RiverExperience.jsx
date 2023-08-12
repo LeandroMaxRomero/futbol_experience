@@ -33,11 +33,11 @@ export const RiverExperience = () => {
       iaculis arcu eros, eget tempus orci facilisis id.`,
       ],
       descriptionExperience: [
-        "./src/img/Group 39814.png",
-        "./src/img/IMG_4594 1.png",
-        "./src/img/ggg.png",
-        "./src/img/IMG_4859 1.png",
-        "./src/img/IMG_4983 1.png",
+        "img/Group 39814.png",
+        "img/IMG_4594 1.png",
+        "img/ggg.png",
+        "img/IMG_4859 1.png",
+        "img/IMG_4983 1.png",
       ],
       activitiesExperience: [
         "¿Qué incluye la experiencia?",
@@ -56,14 +56,14 @@ export const RiverExperience = () => {
       ],
       curiosityExperience: [
         "Sabías que ...",
-        "./src/img/boca-juniors-1712628_1920 1.png",
+        "img/boca-juniors-1712628_1920 1.png",
         "Boca Juniors",
         `Fundado en 1905 en Buenos Aires, el tres veces campeón del mundo, Boca Juniors, 
         es un icónico club de fútbol. Con una historia rica, ha sido cuna de talento y pasión. La Bombonera, 
         resuena con la devoción de los fanáticos. Figuras legendarias como Maradona dejaron una huella , simbolizando 
         su grandeza. Además, la presencia de Riquelme, con su magia en la cancha, agrega a la mística del club. Boca Juniors 
         es un emblema de triunfo y rivalidad. Su legado inspira a fans de todo el mundo.`,
-        "./src/img/IMG_4789 1.png",
+        "img/IMG_4789 1.png",
         "River Plate",
         `Fundado en 1901 en Buenos Aires, cuatro veces campeon de América, “El millonario”, 
         destaca como otro de los grandes clubes. Gallardo, con su influencia como entrenador, ha dejado
@@ -74,54 +74,54 @@ export const RiverExperience = () => {
       imgs: [
         {
           id: 1,
-          url: "./src/img/river-boca/IMG_4669 2.png",
+          url: "img/river-boca/IMG_4669 2.png",
           name: "maradona con playera azul",
         },
         {
           id: 2,
-          url: "./src/img/river-boca/IMG_4606 2.png",
+          url: "img/river-boca/IMG_4606 2.png",
           name: "maradona abrazo seleccion argentina",
         },
         {
           id: 3,
-          url: "./src/img/river-boca/IMG_4672 2.png",
+          url: "img/river-boca/IMG_4672 2.png",
           name: "maradona con gorra roja",
         },
         {
           id: 4,
-          url: "./src/img/river-boca/IMG_4944 1.png",
+          url: "img/river-boca/IMG_4944 1.png",
           name: "maradona con playera roja",
         },
         {
           id: 5,
-          url: "./src/img/river-boca/IMG_4794 1.png",
+          url: "img/river-boca/IMG_4794 1.png",
           name: "maradona con cabello largo",
         },
         {
           id: 6,
-          url: "./src/img/river-boca/IMG_4656 2.png",
+          url: "img/river-boca/IMG_4656 2.png",
           name: "casa de maradona interior",
         },
 
         {
           id: 7,
-          url: "./src/img//river-boca/IMG_4678 2.png",
+          url: "img//river-boca/IMG_4678 2.png",
           name: "casa de maradona fachada",
         },
         {
           id: 8,
-          url: "./src/img/river-boca/IMG_4939 1.png",
+          url: "img/river-boca/IMG_4939 1.png",
           name: "playeras de maradona en pared colgadas",
         },
 
         {
           id: 9,
-          url: "./src/img/river-boca/IMG_4899 1.png",
+          url: "img/river-boca/IMG_4899 1.png",
           name: "interior de casa de maradona",
         },
         {
           id: 10,
-          url: "./src/img/river-boca/IMG_4965 1.png",
+          url: "img/river-boca/IMG_4965 1.png",
           name: "la casa de dios",
         },
       ],
@@ -145,11 +145,11 @@ export const RiverExperience = () => {
       ],
 
       descriptionExperience: [
-        "./src/img/Group 39814.png",
-        "./src/img/IMG_4594 1.png",
-        "./src/img/ggg.png",
-        "./src/img/IMG_4859 1.png",
-        "./src/img/IMG_4983 1.png",
+        "img/Group 39814.png",
+        "img/IMG_4594 1.png",
+        "img/ggg.png",
+        "img/IMG_4859 1.png",
+        "img/IMG_4983 1.png",
       ],
       activitiesExperience: [
         "What does the experience include?",
@@ -168,14 +168,14 @@ export const RiverExperience = () => {
       ],
       curiosityExperience: [
         "Did you know ...",
-        "./src/img/boca-juniors-1712628_1920 1.png",
+        "img/boca-juniors-1712628_1920 1.png",
         "Boca Juniors",
         `Founded in 1905 in Buenos Aires, the three-time world champion, Boca Juniors,
         is an iconic football club. With a rich history, it has been the cradle of talent and passion. The Bombonera,
         resonates with the devotion of the fans. Legendary figures like Maradona left their mark, symbolizing
         his greatness. In addition, the presence of Riquelme, with his magic on the field, adds to the mystique of the club. Boca Juniors
         it is an emblem of triumph and rivalry. His legacy inspires fans around the world.`,
-        "./src/img/IMG_4789 1.png",
+        "img/IMG_4789 1.png",
         "River Plate",
         `Founded in 1901 in Buenos Aires, four times champion of America, "El millonario",
         It stands out as another of the great clubs. Gallardo, with his influence as a coach, has left

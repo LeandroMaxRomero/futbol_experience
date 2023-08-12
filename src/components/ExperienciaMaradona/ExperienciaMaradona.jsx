@@ -34,11 +34,11 @@ export const ExperienciaMaradona = () => {
       ],
 
       descriptionExperience: [
-        "./src/img/Group 39849.png",
-        "./src/img/IMG_4716.png",
-        "./src/img/IMG_4727.png",
-        "./src/img/IMG_4731.png",
-        "./src/img/IMG_4724.png",
+        "img/IMG_4727.png",
+        "img/IMG_4716.png",
+        "img/IMG_4731.png",
+        "img/IMG_4724.png",
+        "img/Group 39849.png",
       ],
       activitiesExperience: [
         "¿Qué incluye la experiencia?",
@@ -57,7 +57,7 @@ export const ExperienciaMaradona = () => {
       ],
       curiosityExperience: [
         "Sabías que ...",
-        "./src/img/image 13.png",
+        "img/image 13.png",
         "Argentinos Juniors",
         `Fundado en 1904 en Buenos Aires, ha sido un semillero de talento.
       Diego Maradona comenzó su carrera profesional acá, dejando una
@@ -65,7 +65,7 @@ export const ExperienciaMaradona = () => {
       fútbol argentino y ha formado jugadores destacados. El estadio Diego
       Armando Maradona, con su nombre, refleja la pasión de los
       aficionados. Argentinos Juniors es un símbolo del fútbol argentino.`,
-        "jack-hunter-Ph0Aa13k5-c-unsplash 1.png",
+        "img/diego_armando_maradona.png",
         "Diego Armando Maradona",
         `Nacido en 1960, es una leyenda del fútbol. Destacó en el Mundial de
       1986 con la "Mano de Dios" y el "Gol del Siglo". Jugó en Boca
@@ -77,54 +77,54 @@ export const ExperienciaMaradona = () => {
       imgs: [
         {
           id: 1,
-          url: "./src/img/maradona_img/IMG_4743 2.png",
+          url: "img/maradona_img/IMG_4743 2.png",
           name: "maradona con playera azul",
         },
         {
           id: 2,
-          url: "./src/img/maradona_img/IMG_4742 2.png",
+          url: "img/maradona_img/IMG_4742 2.png",
           name: "maradona abrazo seleccion argentina",
         },
         {
           id: 3,
-          url: "./src/img/maradona_img/IMG_4740 2.png",
+          url: "img/maradona_img/IMG_4740 2.png",
           name: "maradona con gorra roja",
         },
         {
           id: 4,
-          url: "./src/img/maradona_img/IMG_4738.png",
+          url: "img/maradona_img/IMG_4738.png",
           name: "maradona con playera roja",
         },
         {
           id: 5,
-          url: "./src/img/maradona_img/IMG_4739.png",
+          url: "img/maradona_img/IMG_4739.png",
           name: "maradona con cabello largo",
         },
         {
           id: 6,
-          url: "./src/img/maradona_img/IMG_4719.png",
+          url: "img/maradona_img/IMG_4719.png",
           name: "casa de maradona interior",
         },
 
         {
           id: 7,
-          url: "./src/img//maradona_img/IMG_4716.png",
+          url: "img//maradona_img/IMG_4716.png",
           name: "casa de maradona fachada",
         },
         {
           id: 8,
-          url: "./src/img/maradona_img/IMG_4731.png",
+          url: "img/maradona_img/IMG_4731.png",
           name: "playeras de maradona en pared colgadas",
         },
 
         {
           id: 9,
-          url: "./src/img/maradona_img/IMG_4730.png",
+          url: "img/maradona_img/IMG_4730.png",
           name: "interior de casa de maradona",
         },
         {
           id: 10,
-          url: "./src/img/maradona_img/IMG_4727.png",
+          url: "img/maradona_img/IMG_4727.png",
           name: "la casa de dios",
         },
       ],
@@ -147,11 +147,11 @@ export const ExperienciaMaradona = () => {
       iaculis arcu eros, eget tempus orci facilisis id.`,
       ],
       descriptionExperience: [
-        "./src/img/Group 39849.png",
-        "./src/img/IMG_4716.png",
-        "./src/img/IMG_4727.png",
-        "./src/img/IMG_4731.png",
-        "./src/img/IMG_4724.png",
+        "img/Group 39849.png",
+        "img/IMG_4716.png",
+        "img/IMG_4727.png",
+        "img/IMG_4731.png",
+        "img/IMG_4724.png",
       ],
 
       activitiesExperience: [
@@ -171,15 +171,15 @@ export const ExperienciaMaradona = () => {
       ],
       curiosityExperience: [
         "Did you know ...",
-        "./src/img/image 13.png",
-        "Argentine Juniors",
+        "img/image 13.png",
+        "Argentino Juniors",
         `Founded in 1904 in Buenos Aires, it has been a hotbed of talent.
        Diego Maradona began his professional career here, leaving a
        lasting imprint Over the years, the club has contributed to the
        Argentine soccer and has trained outstanding players. diego stadium
        Armando Maradona, with his name, reflects the passion of the
        fans. Argentinos Juniors is a symbol of Argentine soccer.`,
-        "./src/img/jack-hunter-Ph0Aa13k5-c-unsplash 1.png",
+        "img/diego_armando_maradona.png",
         "Diego Armando Maradona",
         `Born in 1960, he is a football legend. He excelled at the World Cup
        1986 with the "Hand of God" and the "Goal of the Century". He played in Boca

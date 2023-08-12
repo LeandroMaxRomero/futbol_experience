@@ -13,7 +13,7 @@
       rgba(0, 42, 52, 0.7) 11.69%,
       rgba(0, 42, 52, 0) 100%
     ),
-    url("src/img/boca-juniors-hero.png");
+    url("img/boca-juniors-hero.png");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,8 +32,8 @@
   background: rgba(255, 255, 255, 0.2);
 }
 .logo-ig {
-  width: 35px;
-  height: 35.024px;
+  width: 3.5rem;
+  height: 3.5024rem;
   flex-shrink: 0;
 }
 .logo-texto {
@@ -53,7 +53,7 @@
     font-size: 9rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 90px;
+    line-height: 9rem;
     margin: 0 auto;
   }
   h3 {
@@ -64,21 +64,21 @@
     line-height: 2.2rem;
     margin: 0 auto;
     font-feature-settings: "clig" off, "liga" off;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 22px; /* 62.857% */
+    line-height: 2.2rem; /* 62.857% */
   }
   button {
-    width: 194px;
-    height: 60px;
+    width: 19.4rem;
+    height: 6rem;
     margin-top: 5.4rem;
     background-color: v.$celeste;
-    padding: 20px 35px;
-    gap: 10px;
+    padding: 2rem 3.5rem;
+    gap: 1rem;
     flex-shrink: 0;
     color: v.$azul;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -98,7 +98,7 @@
       rgba(0, 42, 52, 0.7) 11.69%,
       rgba(0, 42, 52, 0) 100%
     ),
-    url("src/img/banner-maradona-header.png");
+    url("img/banner-maradona-header.png");
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
@@ -108,10 +108,10 @@
     font-size: 9rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 90px;
+    line-height: 9rem;
     margin: 0 auto;
-    padding-top: 230px;
-    padding-bottom: 230px;
+    padding-top: 23rem;
+    padding-bottom: 23rem;
   }
 }
 .header-maradona {
@@ -121,7 +121,7 @@
       rgba(0, 42, 52, 0.7) 11.69%,
       rgba(0, 42, 52, 0) 100%
     ),
-    url("src/img/banner-maradona-header.png");
+    url("img/banner-maradona-header.png");
 }
 .header-boca-river {
   background-image: linear-gradient(
@@ -130,7 +130,7 @@
       rgba(0, 42, 52, 0.7) 11.69%,
       rgba(0, 42, 52, 0) 100%
     ),
-    url("src/img/Home-Exp-RivBoc.png");
+    url("img/Home-Exp-RivBoc.png");
 }
 
 //* Header Contact
@@ -145,7 +145,7 @@
       rgba(0, 42, 52, 0.7) 11.69%,
       rgba(0, 42, 52, 0) 100%
     ),
-    url("src/img/header-contacto.png");
+    url("img/header-contacto.png");
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
@@ -155,10 +155,10 @@
     font-size: 9rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 90px;
+    line-height: 9rem;
     margin: 0 auto;
-    padding-top: 64px;
-    padding-bottom: 125px;
+    padding-top: 6.4rem;
+    padding-bottom: 12.5rem;
   }
 }
 
@@ -178,10 +178,10 @@
 }
 .header-navbar {
   display: inline-flex;
-  padding-left: 0px;
+  padding-left: 0rem;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 8rem;
 }
 .navbar-link {
   text-decoration: none;
@@ -252,7 +252,7 @@
 .container-navbar {
   padding: 3.8rem 5rem 3.8rem 10rem;
   width: 100%;
-  height: 118px;
+  height: 11.8rem;
   display: flex;
   justify-content: space-between;
 }

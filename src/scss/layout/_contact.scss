@@ -1,7 +1,7 @@
 @use "../base/variables" as v;
 
 .contact-container {
-  height: 1553px;
+  height: 155.3rem;
 }
 .contact-content {
   margin: 0 auto;
@@ -21,15 +21,14 @@
 
   h2 {
     color: v.$azul;
-    font-feature-settings: "clig" off, "liga" off;
     width: 100%;
     font-family: v.$fuentePrincipal;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 900;
-    line-height: 46px;
+    line-height: 4.6rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid v.$amarillo;
+    border-bottom: 0.2rem solid v.$amarillo;
   }
 }
 
@@ -42,10 +41,10 @@
   font-feature-settings: "clig" off, "liga" off;
 
   font-family: v.$fuentePrincipal;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 3.5rem;
 }
 
 .contact-info__svg {
@@ -57,9 +56,9 @@
   gap: 0.5rem;
   .logo-container {
     background: v.$celeste;
-    width: 73px;
-    height: 73px;
-    border-radius: 15px;
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 1.5rem;
     flex-shrink: 0;
     display: flex;
     align-items: center;

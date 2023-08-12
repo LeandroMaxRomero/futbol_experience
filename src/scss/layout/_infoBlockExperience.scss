@@ -4,9 +4,9 @@
   width: 90%;
   margin: 7.5rem auto;
 
-  height: 180px;
+  height: 18rem;
   flex-shrink: 0;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background: v.$azul;
   display: flex;
   justify-content: space-around;
@@ -27,15 +27,14 @@
   font-family: v.$fuentePrincipal;
 
   p {
-    font-size: 22px;
-    /*  line-height: 35px; */
+    font-size: 2.2rem;
     font-weight: 400;
     margin-bottom: 0;
     margin-top: 0;
   }
 
   strong {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     line-height: normal;
   }

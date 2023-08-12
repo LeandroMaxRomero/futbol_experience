@@ -1,14 +1,14 @@
 @use "../base/variables" as v;
 
 footer {
-  height: 343px;
+  height: 34.3rem;
   background-image: 
   linear-gradient(
       180deg,
       #0b2933 0%,
       rgba(11, 41, 51, 0.9) 100%
     ),
-    url("src/img/banner-footer.png");
+    url("img/banner-footer.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -25,7 +25,7 @@ footer {
 
 .footer-container {
   width: 100%;
-  height: 262.5px;
+  height: 26.25rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -36,18 +36,18 @@ footer {
   strong {
     color: v.$amarillo;
     font-weight: 550;
-    line-height: 22px;
-    font-size: 22px;
+    line-height: 2.2rem;
+    font-size: 2.2rem;
   }
 
   li a,
   li {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: v.$blanco;
     font-weight: 400;
-    line-height: 18px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+    line-height: 1.8rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
   }
 }
 
@@ -57,7 +57,7 @@ footer {
   align-items: flex-start;
   justify-content: center;
   strong {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -69,31 +69,31 @@ footer {
 }
 
 .footer-terms {
-  width: 335px;
-  height: 54px;
+  width: 33.5rem;
+  height: 5.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 19px;
-  margin-bottom: 6px;
+  margin-top: 1.9rem;
+  margin-bottom: 0.6rem;
   p {
     color: v.$azulClaroSec;
     text-align: center;
 
     align-self: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     margin:0;
-    line-height: 18px;
+    line-height: 1.8rem;
   }
 }
 .divisor-footer{
-  width: 1230px;
-  height: 1.5px;;
+  width: 123rem;
+  height: 0.15rem;
   background-color: v.$azulClaro;
 }
 .footer-columns{
-  width: 700px;
+  width: 70rem;
   display: flex;
   justify-content: space-evenly;
 }

@@ -6,7 +6,7 @@ export const Atributos = () => {
     const { lang } = useLengua();
   return (
     <section className="container-atributos">
-        <img src="src/img/img-atributos.png" alt="Hincha de argentina festejando" />
+        <img src="img/img-atributos.png" alt="Hincha de argentina festejando" />
         <>
             {
                 lang==='castellano'

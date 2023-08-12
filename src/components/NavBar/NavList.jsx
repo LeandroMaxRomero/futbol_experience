@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
-// import { Dropdown } from "./Dropdown";
 import { Dropdown } from 'bootstrap-4-react';
 
 export const NavList = () => {
@@ -21,7 +20,7 @@ export const NavList = () => {
             <Dropdown.Button secondary id="dropdownMenuButton">Experiencias</Dropdown.Button>
               <Dropdown.Menu aria-labelledby="dropdownMenuButton">
                 <Link to="/experiencia-maradona">
-                  <Dropdown.Item>Experiencia Maradoniana</Dropdown.Item>
+                  <Dropdown.Item>Experiencia Maradona</Dropdown.Item>
                 </Link>
                 <Link to="/experiencia-boca-river">
                   <Dropdown.Item>Experiencia Boca - River</Dropdown.Item>
@@ -47,7 +46,7 @@ export const NavList = () => {
             <Dropdown.Button secondary id="dropdownMenuButton">Experiences</Dropdown.Button>
               <Dropdown.Menu aria-labelledby="dropdownMenuButton">
                 <Link to="/experiencia-maradona">
-                  <Dropdown.Item>Maradonian Experience</Dropdown.Item>
+                  <Dropdown.Item>Maradona Experience</Dropdown.Item>
                 </Link>
                 <Link to="/experiencia-boca-river">
                   <Dropdown.Item>Boca - River Experience</Dropdown.Item>
@@ -77,14 +76,14 @@ export const NavList = () => {
 
       {/* {lang === "castellano" ? (
           <button className="btn-bandera" onClick={() => changeLang("ingles")}>
-            <img src="./src/img/united-kingdom.png" />
+            <img src="img/united-kingdom.png" />
           </button>
         ) : (
           <button
             className="btn-bandera"
             onClick={() => changeLang("castellano")}
           >
-            <img src="./src/img/spain.png" />
+            <img src="img/spain.png" />
           </button>
         )} */}
     </div>
