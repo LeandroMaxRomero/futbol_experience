@@ -249,6 +249,13 @@
         line-height: 6.6rem;
         margin-bottom: 5rem;
     }
+        .divisor{
+            width: fit-content;
+            min-width: 111.6rem;
+            margin:0 auto;
+            height: 0.2rem;
+            background-color: v.$amarillo;
+    }
 }
 
 .containerTitle{

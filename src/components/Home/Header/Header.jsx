@@ -8,13 +8,18 @@ import { SocialBox } from "./SocialBox";
 export const Header = () => {
   
   return (
-    <div className="header">
-      
-      <NavBar />
+    <div className="container-header">
 
-      <SocialBox />
+      <img src="img/boca-juniors-hero.png" alt="Hinchada Boca Juniors" className="imagen-fondo-header"/>
 
-      <Legend />
+      <div className="header">
+        <NavBar />
+
+        <SocialBox />
+
+        <Legend />
+
+      </div>
       
     </div>
   );
