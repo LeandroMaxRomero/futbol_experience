@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import InfoExperience from "../InfoExperience/InfoExperience";
@@ -9,6 +9,7 @@ import ImagesExperience from "../ImagesExperience/ImagesExperience";
 import ReserveExperience from "../ReserveExperience/ReserveExperience";
 import CuriosityExperience from "../CuriosityExpererience/CuriosityExperience";
 import { CommonHeader } from "../CommonHeader/CommonHeader";
+import { Slider } from "../Slider/Slider";
 
 export const RiverExperience = () => {
   const useLengua = () => useContext(LenguaContext);
@@ -28,16 +29,17 @@ export const RiverExperience = () => {
       ],
       textExperience: [
         "Sobre la experiencia",
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi    Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, nonsuscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus   ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
-      Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In
-      iaculis arcu eros, eget tempus orci facilisis id.`,
+        `En esta experiencia, podrás adentrarte en la historia de los dos clubes más grandes de Argentina: Boca y River, rivales de toda una vida. Si querés conocer más acerca de quienes conforman el clásico más pasional del mundo, esta experiencia es para vos.`,
+        `La primera parada es el Museo de la pasión Boquense, donde tendrás acceso a ver cortometrajes acerca de la historia del club, conocerás a las principales figuras y verás las camisetas que tuvo con el paso del tiempo, trofeos y objetos invaluables que cuentan historias. Sumado a ello, te brindaremos un tiempo para que puedas ver la tienda oficial del club.`,
+        `Posterior a ello, continuaremos en el pintoresco barrio de La Boca para almorzar en “Lo de Diego”, un bar temático que habla por sí solo. Ambientado de fútbol con piso de césped sintético, asientos con butacas de la cancha y un sinfín de imágenes y réplicas, este lugar representa a uno de los ídolos máximos de nuestro fútbol argentino como lo es Diego Armando Maradona. Una vez terminado el almuerzo, nos tomaremos un rato para visitar “Caminito”, una calle museo y un pasaje tradicional de gran valor cultural y turístico de nuestro país, lugar donde se mezcla el fútbol, el arte y el tango.`,
+        ` Después de allí, nos dirigiremos a la zona de Nuñez para ingresar al Museo de River. A través de un túnel del tiempo, conoceremos los más de 100 años de historia del club, los principales jugadores y leyendas que representaron la institución, su vitrina de trofeos y camisetas a lo largo del tiempo. Además, veremos dos cortos que reflejan la grandeza de River. Y una de las perlitas para culminar, el “Estadio Más Monumental”. Vas a tener la oportunidad de conocer las tribunas, el vestuario y el campo de juego del estadio más grande del país, aquel que recibe a más de 80.000 hinchas todos los domingos. Para finalizar, te brindaremos un tiempo para que puedas ver la tienda oficial del club. `,
       ],
       descriptionExperience: [
         "img/Group 39814.png",
-        "img/IMG_4594 1.png",
         "img/ggg.png",
-        "img/IMG_4859 1.png",
+        "img/IMG_4594 1.png",
         "img/IMG_4983 1.png",
+        "img/IMG_4859 1.png",
       ],
       activitiesExperience: [
         "¿Qué incluye la experiencia?",
@@ -186,9 +188,31 @@ export const RiverExperience = () => {
     },
   };
 
+  /* para cambiar de slider a imageExperience */
+
+  const [mobile, setMobile] = useState(false);
+
+  let breakPoint = window.matchMedia("(min-width:920px)");
+
+  const responsive = (e) => {
+    if (e.matches) {
+      setMobile(false);
+      return false;
+    }
+    setMobile(true);
+  };
+
+  breakPoint.addEventListener("change", responsive);
+  ///////////////////////////////////////////////////
+
   return (
     <>
-      <CommonHeader ownStyle={"header-boca-river"} experienceTittleES={"Experiencia Boca - River"} experienceTittleEN={"Boca - River Experience"} image={"img/Home-Exp-RivBoc.png"}/>
+      <CommonHeader
+        ownStyle={"header-boca-river"}
+        experienceTittleES={"Experiencia Boca - River"}
+        experienceTittleEN={"Boca - River Experience"}
+        image={"img/Home-Exp-RivBoc.png"}
+      />
       <div className="maradona-container">
         <InfoExperience
           content={
@@ -218,7 +242,11 @@ export const RiverExperience = () => {
               : content.english.activitiesExperience
           }
         />
-        <ImagesExperience imgs={content.spanish.imgs} />
+        {!mobile ? (
+          <ImagesExperience imgs={content.spanish.imgs} />
+        ) : (
+          <Slider data={content.spanish.imgs} />
+        )}
         <ReserveExperience
           content={
             lang === "castellano"

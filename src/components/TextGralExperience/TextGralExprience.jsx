@@ -9,7 +9,9 @@ const TextGralExprience = ({ content }) => {
       <h2>{content[0]}</h2>
       <p>{content[1]}</p>
       {!showContent && (
-        <button onClick={() => setShowContent(true)}>Ver más</button>
+        <button onClick={() => setShowContent(true)}>
+          Ver más <i className="material-icons">arrow_drop_down</i>
+        </button>
       )}
       {showContent && (
         <>
@@ -19,7 +21,9 @@ const TextGralExprience = ({ content }) => {
         </>
       )}
       {showContent && (
-        <button onClick={() => setShowContent(false)}>Ver menos</button>
+        <button onClick={() => setShowContent(false)}>
+          Ver menos <i className="material-icons">arrow_drop_up</i>
+        </button>
       )}
     </div>
   );

@@ -204,10 +204,12 @@ export const ExperienciaMaradona = () => {
     },
   };
 
+  /* para cambiar de slider a imageExperience */
+
   const [mobile, setMobile] = useState(false);
 
   let breakPoint = window.matchMedia("(min-width:920px)");
-  console.log(breakPoint, onchange);
+
   const responsive = (e) => {
     if (e.matches) {
       setMobile(false);
@@ -216,10 +218,8 @@ export const ExperienciaMaradona = () => {
     setMobile(true);
   };
 
-  console.log(mobile);
-
   breakPoint.addEventListener("change", responsive);
-
+  ///////////////////////////////////////////////////
   return (
     <>
       <CommonHeader

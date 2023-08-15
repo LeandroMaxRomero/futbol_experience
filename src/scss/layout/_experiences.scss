@@ -22,6 +22,15 @@
     font-weight: 400;
     line-height: 3.5rem;
   }
+  button {
+    border: 0;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .block-description {
