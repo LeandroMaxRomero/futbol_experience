@@ -7,7 +7,7 @@ const ActivitiesExperience = ({ content }) => {
       <div className="block-activities__blocks">
         <section className="block-up">
           <section className="block-left">
-            <article className="color-blue">
+            <article>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -49,7 +49,7 @@ const ActivitiesExperience = ({ content }) => {
             </article>
           </section>
           <section className="block-right">
-            <article className="color-blue">
+            <article>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -130,7 +130,7 @@ const ActivitiesExperience = ({ content }) => {
         </section>
         <section className="block-down">
           <section className="block-left">
-            <article className="color-blue">
+            <article>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -177,7 +177,7 @@ const ActivitiesExperience = ({ content }) => {
             </article>
           </section>
           <section className="block-right">
-            <article className="color-blue">
+            <article>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"

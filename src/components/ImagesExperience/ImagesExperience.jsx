@@ -17,7 +17,7 @@ const ImagesExperience = ({ imgs }) => {
       <Modal isOpen={isOpenModal} closeModal={closeModal}>
         <img src={`${modalContent.url}`} alt={`${modalContent.name}`} />
       </Modal>
-      <div className="image-container show">
+      <div className="image-container">
         {imgs?.map((img) => {
           return (
             <img

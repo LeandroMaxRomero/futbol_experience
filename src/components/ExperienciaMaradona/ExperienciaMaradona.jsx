@@ -29,9 +29,15 @@ export const ExperienciaMaradona = () => {
       ],
       textExperience: [
         "Sobre la experiencia",
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi    Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, nonsuscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus   ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
-      Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In
-      iaculis arcu eros, eget tempus orci facilisis id.`,
+        `En esta experiencia, podrás conocer la intimidad de D10S o como le decían sus amigos, “Pelusa”.
+         Muchos lo consideran como el número uno del fútbol mundial y el mayor ídolo entre los argentinos.
+          “El Diego vivió diez vidas en una”. Si querés conocer más acerca de la vida de película de Diego Armando Maradona, 
+          esta experiencia es para vos.`,
+        `La primera parada es la Casa de D10S, la primera casa propia de Diego y su familia en el barrio porteño de La Paternal. Convertida hoy en museo, Diego vivió allí entre 1978 y 1980, ubicada a pocos metros de donde inició su carrera, el club Argentinos Juniors. En ella se conservan los muebles, la decoración y electrodomésticos que te transportarán a aquella época. Además, exhibe todos los regalos que le hicieron en homenaje al Diego (camisetas, fotos, estatuas, entre otros)
+           y cuenta con un museo que contiene todas sus reliquias.`,
+        `Posterior a ello, haremos una parada a pocas cuadras para almorzar en “La Cafetería de D10S”, lugar emblemático del barrio de “La Paternal” que reúne objetos, cuadros, fotos y recuerdos de Diego Armando Maradona. Una vez terminado el almuerzo, caminaremos otras dos cuadras hacia las inmediaciones del Estadio de Argentinos Juniors, lugar de murales de su época como jugador y entrenador en Argentinos Juniors, Napoli, Barcelona, la selección Argentina, entre otros. En el camino, ingresaremos al Santuario de Diego, donde entre cuatro paredes conviven camisetas de todos los colores, pelotas, botines, trofeos, estatuas y banderas que exhiben al Diego como una religión en sí misma. Tiene todo para convertirse en parada obligada de cualquier tour futbolero y no hace falta más que un ratito para disfrutarlo. 
+           Para cualquier maradoniano vale cada segundo.`,
+        `Por último, haremos el recorrido en el Museo de Argentinos Juniors “El Templo del Fútbol", lugar donde Diego hizo su debut futbolístico a los 15 años de edad. El destino quiso que muchos años después, jugará por primera vez con la camiseta de la selección Argentina y convierta su primer gol, otro de nuestros ídolos máximos como lo es Lionel Messi. Este museo fue realizado por hinchas y socios de la institución en su totalidad. Allí encontrarás fotos, trofeos, camisetas y objetos de valor para la historia del club. Se visitará las tribunas, los vestuarios, la sala de prensa y el campo de juego del estadio de Argentinos Juniors que lleva el nombre “Diego Armando Maradona”. `,
       ],
 
       descriptionExperience: [
@@ -143,9 +149,15 @@ export const ExperienciaMaradona = () => {
       ],
       textExperience: [
         "About Experience",
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi    Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, nonsuscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus   ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
-      Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In
-      iaculis arcu eros, eget tempus orci facilisis id.`,
+        `En esta experiencia, podrás conocer la intimidad de D10S o como le decían sus amigos, “Pelusa”.
+         Muchos lo consideran como el número uno del fútbol mundial y el mayor ídolo entre los argentinos.
+          “El Diego vivió diez vidas en una”. Si querés conocer más acerca de la vida de película de Diego Armando Maradona, 
+          esta experiencia es para vos.`,
+        `La primera parada es la Casa de D10S, la primera casa propia de Diego y su familia en el barrio porteño de La Paternal. Convertida hoy en museo, Diego vivió allí entre 1978 y 1980, ubicada a pocos metros de donde inició su carrera, el club Argentinos Juniors. En ella se conservan los muebles, la decoración y electrodomésticos que te transportarán a aquella época. Además, exhibe todos los regalos que le hicieron en homenaje al Diego (camisetas, fotos, estatuas, entre otros)
+           y cuenta con un museo que contiene todas sus reliquias.`,
+        `Posterior a ello, haremos una parada a pocas cuadras para almorzar en “La Cafetería de D10S”, lugar emblemático del barrio de “La Paternal” que reúne objetos, cuadros, fotos y recuerdos de Diego Armando Maradona. Una vez terminado el almuerzo, caminaremos otras dos cuadras hacia las inmediaciones del Estadio de Argentinos Juniors, lugar de murales de su época como jugador y entrenador en Argentinos Juniors, Napoli, Barcelona, la selección Argentina, entre otros. En el camino, ingresaremos al Santuario de Diego, donde entre cuatro paredes conviven camisetas de todos los colores, pelotas, botines, trofeos, estatuas y banderas que exhiben al Diego como una religión en sí misma. Tiene todo para convertirse en parada obligada de cualquier tour futbolero y no hace falta más que un ratito para disfrutarlo. 
+           Para cualquier maradoniano vale cada segundo.`,
+        `Por último, haremos el recorrido en el Museo de Argentinos Juniors “El Templo del Fútbol", lugar donde Diego hizo su debut futbolístico a los 15 años de edad. El destino quiso que muchos años después, jugará por primera vez con la camiseta de la selección Argentina y convierta su primer gol, otro de nuestros ídolos máximos como lo es Lionel Messi. Este museo fue realizado por hinchas y socios de la institución en su totalidad. Allí encontrarás fotos, trofeos, camisetas y objetos de valor para la historia del club. Se visitará las tribunas, los vestuarios, la sala de prensa y el campo de juego del estadio de Argentinos Juniors que lleva el nombre “Diego Armando Maradona”. `,
       ],
       descriptionExperience: [
         "img/Group 39849.png",
@@ -210,7 +222,12 @@ export const ExperienciaMaradona = () => {
 
   return (
     <>
-      <CommonHeader ownStyle={"header-maradona"} />
+      <CommonHeader
+        ownStyle={"header-maradona"}
+        experienceTittleES={"Experiencia Maradona"}
+        experienceTittleEN={"Maradona Experience"}
+        image={"img/banner-maradona-header.png"}
+      />
       <div className="maradona-container">
         <InfoExperience
           content={
