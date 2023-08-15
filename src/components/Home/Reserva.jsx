@@ -14,12 +14,12 @@ export const Reserva = () => {
         ?
         <div className="container-reserva">
             <h3>Reserva ahora para conocer el futbol argentino de local</h3>
-              <Button>Contacto</Button>
+              <Button buttonStyle={"btn-contacto"}>Contacto</Button>
         </div>
         :
         <div className="container-reserva">
             <h3>Book now to get to know Argentine soccer at home</h3>
-          <Button>Contact</Button>
+          <Button buttonStyle={"btn-contacto"}>Contact</Button>
         </div>
     }
     </>

@@ -4,6 +4,7 @@ import { LenguaContext } from "../../context/LenguaProvider";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
+import { Button } from "../Button/Button";
 
 const Form = () => {
   const form = useRef();
@@ -142,11 +143,20 @@ const Form = () => {
           formik.touched.comments &&
           formik.errors.comments}
       </span>
-
-      <input
+          {lang==='castellano'
+          ?
+          <Button type="submit" buttonStyle="btn-contacto">
+        Enviar Formulario</Button>
+        :
+        <Button type="submit" buttonStyle="btn-contacto">
+        Send Form</Button>
+        }
+      
+      
+      {/* <input className="btn-contact"
         type="submit"
         value={lang === "castellano" ? "Enviar Formulario" : "Send Form"}
-      />
+      /> */}
     </form>
   );
 };

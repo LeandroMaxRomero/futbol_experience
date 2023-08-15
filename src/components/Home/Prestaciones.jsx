@@ -27,33 +27,51 @@ export const Prestaciones = () => {
         lang==='castellano'
         ?
         <section className="container-prestaciones">
+          
           <div className="prestaciones-box prestacionesUno">
-            Experiencia<br></br>inolvidable
+          <img src="img/experiencia1.png" alt="Experiencia inolvidable" className="imagen-fondo-prestaciones"/>
+            <p>Experiencia<br></br>inolvidable</p>
           </div>
+
           <div className="prestaciones-box prestacionesDos">
-              Camiseta<br></br>de regalo
+            <img src="img/experiencia2.png" alt="Camiseta de la selección argentina de regalo" className="imagen-fondo-prestaciones"/>
+              <p>Camiseta<br></br>de regalo</p>
           </div>
+
           <div className="prestaciones-box prestacionesTres">
-            Comida<br></br>local
+            <img src="img/experiencia3.png" alt="Comida local" className="imagen-fondo-prestaciones"/>
+            <p>Comida<br></br>local</p>
           </div>
+
           <div className="prestaciones-box prestacionesCuatro">
-            Transporte<br></br>incluido
+          <img src="img/experiencia4.png" alt="Transporte incluido" className="imagen-fondo-prestaciones"/>
+            <p>Transporte<br></br>incluido</p>
           </div>
+
         </section>
         :
         <section className="container-prestaciones">
+
           <div className="prestaciones-box prestacionesUno">
-            Unforgetable<br></br>experience
+          <img src="img/experiencia1.png" alt="Experiencia inolvidable" className="imagen-fondo-prestaciones"/>
+            <p>Unforgetable<br></br>experience</p>
           </div>
+
           <div className="prestaciones-box prestacionesDos">
-              Gift<br></br>t-shirt
+            <img src="img/experiencia2.png" alt="Camiseta de la selección argentina de regalo" className="imagen-fondo-prestaciones"/>
+              <p>Gift<br></br>t-shirt</p>
           </div>
+
           <div className="prestaciones-box prestacionesTres">
-            Local<br></br>foods
+            <img src="img/experiencia3.png" alt="Comida local" className="imagen-fondo-prestaciones"/>
+            <p>Local<br></br>foods</p>
           </div>
+
           <div className="prestaciones-box prestacionesCuatro">
-            Transportation<br></br>included
+          <img src="img/experiencia4.png" alt="Transporte incluido" className="imagen-fondo-prestaciones"/>
+            <p>Transportation<br></br>included</p>
           </div>
+
         </section>
     }
 

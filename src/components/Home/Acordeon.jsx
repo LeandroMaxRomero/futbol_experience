@@ -25,7 +25,7 @@ export const Acordeon = ({tittle, contenido, active, setActive}) => {
             
         <div className={(active === tittle ? "show" : "") + " accordionContent"}>
             <div className="containerTitle">
-                <p>{contenido}</p>
+                <p className="cont-despl">{contenido}</p>
             </div>
         </div>
 

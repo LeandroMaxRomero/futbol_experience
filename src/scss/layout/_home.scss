@@ -23,26 +23,38 @@
     text-align: center;
     font-family: v.$fuentePrincipal;
     display: flex;
+    
     align-items: end;
     justify-content: center;
-    padding-bottom: 2.4rem;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 
-    &.prestacionesUno{
-        background-image: linear-gradient(180deg, rgba(0, 42, 52, 0) 0%, rgba(0, 42, 52, 0.85) 100%), url("img/experiencia1.png");
+    
+
+    &.prestacionesUno, &.prestacionesDos, &.prestacionesTres, &.prestacionesCuatro{
+        position: relative;
+        &:after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(0, 42, 52, 0) 0%, rgba(0, 42, 52, 0.85) 100%);
+        }
     }
-    &.prestacionesDos{
-        background-image: linear-gradient(180deg, rgba(0, 42, 52, 0.00) 0%, rgba(0, 42, 52, 0.85) 100%), url("img/experiencia2.png");
+    p{
+        z-index: 1;
+        padding-bottom: 2.4rem;
     }
-    &.prestacionesTres{
-        background-image: linear-gradient(180deg, rgba(0, 42, 52, 0.00) 0%, rgba(0, 42, 52, 0.85) 100%), url("img/experiencia3.png");
-    }
-    &.prestacionesCuatro{
-        background-image: linear-gradient(180deg, rgba(0, 42, 52, 0.00) 0%, rgba(0, 42, 52, 0.85) 100%), url("img/experiencia4.png");
-    }
+}
+.imagen-fondo-prestaciones{
+    display: block;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
 }
 .container-experiencias{
     margin: 7.5rem auto;
@@ -66,25 +78,33 @@
         gap: 4rem;
     }
     .experiencia{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: end;
         text-align: left;
-        padding: 0 4rem;
         width: 60rem;
         height: 55rem;
-        border-radius: 1rem;        
-        &.boca-river{
-            background-image: linear-gradient(180deg, rgba(0, 42, 52, 0.10) 0%, rgba(0, 42, 52, 0.40) 41.67%, rgba(0, 42, 52, 0.85) 100%),url("img/Home-Exp-RivBoc.png");
-            background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+        border-radius: 1rem;
+        &:after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(0, 42, 52, 0.10) 0%, rgba(0, 42, 52, 0.40) 41.67%, rgba(0, 42, 52, 0.85) 100%);
+
+        }        
+        .exp-boca-river{
+            position: absolute;
+            z-index: 1;
+            margin: 0 4rem 0 4rem;
         }
-        &.maradona{
-            background-image: linear-gradient(180deg, rgba(0, 42, 52, 0.10) 0%, rgba(0, 42, 52, 0.40) 41.67%, rgba(0, 42, 52, 0.85) 100%),url("img/Home-Exp-Marado.png");
-            background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+        .exp-maradona{
+            position: absolute;
+            z-index: 1;
+            margin: 0 4rem 0 4rem;
 
         }
         h3{
@@ -124,6 +144,12 @@
             line-height: normal;
         }
     }
+}
+.imagen-fondo-experienciaHome{
+    display: block;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
 }
 .container-reviews{
     width: 100%;
@@ -222,18 +248,14 @@
         line-height: 6.6rem;
         margin: 0 auto 3rem auto;
     }
-    p{
+    h3{
         color: v.$blanco;
         text-align: center;
         font-size: 2.4rem;
         font-style: normal;
         font-weight: 500;
         line-height: 3.8rem;
-        margin: 0 auto 3rem auto;
-    }
-    .btn-contacto{
-        border-radius: 1.5rem;
-        background-color: v.$amarillo;
+        margin: 0 auto 3rem;
     }
 }
 .container-faqs{
@@ -249,6 +271,13 @@
         line-height: 6.6rem;
         margin-bottom: 5rem;
     }
+        .divisor{
+            width: fit-content;
+            min-width: 111.6rem;
+            margin:0 auto;
+            height: 0.2rem;
+            background-color: v.$amarillo;
+    }
 }
 
 .containerTitle{
@@ -262,6 +291,9 @@
      gap: 3.5rem;
      p{
         width: 115.7rem;
+     }
+     .cont-despl{
+        padding-left: 8rem;
      }
 }
 

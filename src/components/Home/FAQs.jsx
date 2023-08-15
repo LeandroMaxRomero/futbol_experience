@@ -33,6 +33,7 @@ export const FAQs = () => {
         lang==='castellano'
         ?
         <>
+          <div className="divisor"></div>
           <Acordeon tittle={texto[0].titulo1} contenido={texto[1].conte1} active={active} setActive={setActive} />
           <Acordeon tittle={texto[0].titulo2} contenido={texto[1].conte2} active={active} setActive={setActive} />
           <Acordeon tittle={texto[0].titulo3} contenido={texto[1].conte3} active={active} setActive={setActive} />

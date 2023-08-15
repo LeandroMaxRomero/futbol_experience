@@ -5,7 +5,7 @@ const ReserveExperience = ({ content }) => {
   return (
     <div className="reserve-experience">
       <h1>{content[0]}</h1>
-      <Button className="btn-amarillo">{content[1]}</Button>
+      <Button buttonStyle={"btn-contacto"}>{content[1]}</Button>
     </div>
   );
 };

@@ -210,7 +210,7 @@ export const ExperienciaMaradona = () => {
 
   return (
     <>
-      <CommonHeader ownStyle={"header-maradona"} />
+      <CommonHeader ownStyle={"header-maradona"} experienceTittleES={"Experiencia Maradona"} experienceTittleEN={"Maradona Experience"} image={"img/banner-maradona-header.png"}/>
       <div className="maradona-container">
         <InfoExperience
           content={
