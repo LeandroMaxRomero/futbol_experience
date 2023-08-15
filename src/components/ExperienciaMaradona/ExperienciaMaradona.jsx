@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import InfoExperience from "../InfoExperience/InfoExperience";
@@ -9,6 +9,7 @@ import ImagesExperience from "../ImagesExperience/ImagesExperience";
 import ReserveExperience from "../ReserveExperience/ReserveExperience";
 import CuriosityExperience from "../CuriosityExpererience/CuriosityExperience";
 import { CommonHeader } from "../CommonHeader/CommonHeader";
+import { Slider } from "../Slider/Slider";
 
 export const ExperienciaMaradona = () => {
   const useLengua = () => useContext(LenguaContext);
@@ -34,11 +35,11 @@ export const ExperienciaMaradona = () => {
       ],
 
       descriptionExperience: [
-        "img/IMG_4727.png",
+        "img/Group 39849.png",
         "img/IMG_4716.png",
+        "img/IMG_4727.png",
         "img/IMG_4731.png",
         "img/IMG_4724.png",
-        "img/Group 39849.png",
       ],
       activitiesExperience: [
         "¿Qué incluye la experiencia?",
@@ -191,6 +192,22 @@ export const ExperienciaMaradona = () => {
     },
   };
 
+  const [mobile, setMobile] = useState(false);
+
+  let breakPoint = window.matchMedia("(min-width:920px)");
+  console.log(breakPoint, onchange);
+  const responsive = (e) => {
+    if (e.matches) {
+      setMobile(false);
+      return false;
+    }
+    setMobile(true);
+  };
+
+  console.log(mobile);
+
+  breakPoint.addEventListener("change", responsive);
+
   return (
     <>
       <CommonHeader ownStyle={"header-maradona"} />
@@ -223,7 +240,12 @@ export const ExperienciaMaradona = () => {
               : content.english.activitiesExperience
           }
         />
-        <ImagesExperience imgs={content.spanish.imgs} />
+        {!mobile ? (
+          <ImagesExperience imgs={content.spanish.imgs} />
+        ) : (
+          <Slider data={content.spanish.imgs} />
+        )}
+
         <ReserveExperience
           content={
             lang === "castellano"

@@ -89,7 +89,7 @@
   article {
     width: 50%;
     height: 11.8rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     border: 0.2rem solid v.$azulClaro;
     display: flex;
     justify-content: center;
@@ -217,4 +217,14 @@
 }
 .text2 {
   grid-row: 2;
+}
+
+/* .show {
+  display: block;
+} */
+
+@media screen and (max-width: 920px) {
+  .show {
+    display: none;
+  }
 }
