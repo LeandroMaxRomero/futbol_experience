@@ -43,20 +43,18 @@
   justify-content: space-evenly;
   align-self: flex-end;
   align-items: center;
-  margin-bottom: 11rem;
   width: 17.7rem;
   height: 5.4rem;
   border-radius: 0.4rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.6);
 }
 .logo-ig {
   width: 3.5rem;
   height: 3.5024rem;
-  flex-shrink: 0;
   margin: 0;
 }
 .logo-texto {
-  color: v.$blanco;
+  color: v.$azul;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: normal;
@@ -66,7 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 29.7rem;
+  margin: 17.6rem auto 18.2rem;
   h2 {
     font-family: v.$fuentePrincipal;
     color: v.$blanco;
@@ -87,7 +85,7 @@
     font-size: 3.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 2.2rem; /* 62.857% */
+    line-height: 2.2rem;
   }
   button {
     width: 19.4rem;

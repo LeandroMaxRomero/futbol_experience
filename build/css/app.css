@@ -371,6 +371,7 @@ li {
   padding: 1.5rem 4rem;
   border: 0rem;
   text-align: center;
+  align-self: center;
   width: fit-content;
 }
 .btn-contacto p {
@@ -446,22 +447,20 @@ li {
   justify-content: space-evenly;
   align-self: flex-end;
   align-items: center;
-  margin-bottom: 11rem;
   width: 17.7rem;
   height: 5.4rem;
   border-radius: 0.4rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .logo-ig {
   width: 3.5rem;
   height: 3.5024rem;
-  flex-shrink: 0;
   margin: 0;
 }
 
 .logo-texto {
-  color: #ffffff;
+  color: #0b2933;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: normal;
@@ -472,7 +471,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 29.7rem;
+  margin: 17.6rem auto 18.2rem;
 }
 .container-legend h2 {
   font-family: "Barlow", sans-serif;
@@ -494,7 +493,7 @@ li {
   font-size: 3.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.2rem; /* 62.857% */
+  line-height: 2.2rem;
 }
 .container-legend button {
   width: 19.4rem;
@@ -1075,6 +1074,9 @@ li {
 .containerTitle p {
   width: 115.7rem;
 }
+.containerTitle .cont-despl {
+  padding-left: 8rem;
+}
 
 .accordion {
   width: 100%;
@@ -1163,7 +1165,7 @@ li {
 
 .contact-content {
   width: 100%;
-  margin: 0 auto;
+  padding: 7.5rem 10rem 9.5rem 10rem;
   background-color: #ffffff;
   display: flex;
   justify-content: space-around;
@@ -1172,12 +1174,10 @@ li {
 
 .contact-info {
   width: 50%;
-  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 5rem;
 }
 .contact-info h2 {
   color: #0b2933;
@@ -1197,20 +1197,20 @@ li {
 
 .contact-info__email {
   color: #0b2933;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: "Barlow", sans-serif;
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 3.5rem;
+  padding-top: 3.5rem;
 }
 
 .contact-info__svg {
-  margin-top: 5.2rem;
+  margin-top: 4rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-  gap: 0.5rem;
+  gap: 3.8rem;
 }
 .contact-info__svg .logo-container {
   background: #a9dcee;
@@ -1260,8 +1260,7 @@ li {
 }
 form {
   width: 100%;
-  padding: 5rem;
-  padding-top: 15rem;
+  padding: 10rem 5rem 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1284,6 +1283,7 @@ input {
   align-self: stretch;
   color: #0b2933;
   font-family: "Barlow", sans-serif;
+  height: 5.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 3rem;
@@ -1304,26 +1304,6 @@ textarea {
   font-weight: 400;
   line-height: 2.4rem;
   letter-spacing: 0.05rem;
-}
-
-input[type=submit] {
-  border-radius: 1.5rem;
-  width: 100%;
-  max-width: 23rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -1rem;
-  background-color: #fdb908;
-  color: #0b2933;
-  font-feature-settings: "clig" off, "liga" off;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.7rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.2rem;
-  cursor: pointer;
 }
 
 .form-group {
@@ -1349,6 +1329,7 @@ input[type=submit] {
 .form-group__error .form-name,
 .form-group__error .form-lastName {
   width: 100%;
+  height: 5.6rem;
 }
 .form-group__error .error {
   margin-top: 3rem;
