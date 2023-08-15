@@ -14,7 +14,7 @@ export const Legend = () => {
         <div className="container-legend">
           <h2>Viví el futbol</h2>
           <h3>Conocé la historia del fútbol argentino</h3>
-          <Button >Reserva</Button>
+          <Button buttonStyle={"btn-contacto"}>Reserva</Button>
         </div>
       )
       :
@@ -22,7 +22,7 @@ export const Legend = () => {
         <div className="container-legend">
           <h2>Feel the football</h2>
           <h3>Be part of the history of Argentine soccer</h3>
-          <Button >Reserve</Button>
+          <Button buttonStyle={"btn-contacto"}>Reserve</Button>
         </div>
       )
       }

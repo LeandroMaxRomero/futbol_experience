@@ -1,13 +1,14 @@
 import PropTypes from "prop-types";
 import '../../scss/layout/_button.scss';
 
-export const Button = ({children}) => {
+export const Button = ({children, buttonStyle}) => {
   return (
-    <button className="btn-contacto">
-          {children}
+    <button className={buttonStyle}>
+      <p>{children}</p>
     </button>
   )
 };
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  buttonStyle: PropTypes.node.isRequired,
 };

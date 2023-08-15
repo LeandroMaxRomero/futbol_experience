@@ -14,11 +14,8 @@ export const Header = () => {
 
       <div className="header">
         <NavBar />
-
         <SocialBox />
-
         <Legend />
-
       </div>
       
     </div>

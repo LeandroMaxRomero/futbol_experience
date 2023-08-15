@@ -34,7 +34,7 @@ export const NavList = () => {
           <Link className="navbar-link" to="/nosotros">
             <h3>Nosotros</h3>
           </Link>
-          <Button className="btn-amarillo">Reservá</Button>
+          <Button buttonStyle={"btn-navbar"}>Reservá</Button>
         </div>
       ) : (
         <div className="header-navbar">
@@ -60,7 +60,7 @@ export const NavList = () => {
           <Link className="navbar-link" to="/nosotros">
             <h3>About Us</h3>
           </Link>
-          <Button>Reserve</Button>
+          <Button buttonStyle={"btn-navbar"}>Reserve</Button>
         </div>
       )}
 

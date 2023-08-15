@@ -191,9 +191,9 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
+  /* font-family: ; */ /* 1 */
+  /*  font-size: 100%; */ /* 1 */
+  /*  line-height: 1.15; */ /* 1 */
   margin: 0; /* 2 */
 }
 
@@ -366,30 +366,75 @@ li {
 }
 
 .btn-contacto {
-  width: 21.2rem;
-  height: 4.4rem;
+  border-radius: 1rem;
+  background-color: #fdb908;
+  padding: 1.5rem 4rem;
+  border: 0rem;
+  text-align: center;
+  width: fit-content;
+}
+.btn-contacto p {
+  font-family: "Barlow", sans-serif;
+  color: #0b2933;
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+  margin: 0;
+}
+
+.btn-navbar {
+  display: flex;
+  border: 0rem;
+  align-items: center;
+  gap: 8px;
+  background-color: #fdb908;
   border-radius: 1rem;
   padding: 1.8rem 2.4rem;
-  border: 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Barlow", sans-serif;
+  width: 10.6rem;
+  height: 5.4rem;
+}
+.btn-navbar p {
   color: #0b2933;
   text-align: center;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 1.8rem;
+  margin: 0 auto;
+}
+
+.container-header {
+  position: relative;
+  height: 82.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-header:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(180deg, #002a34 0%, rgba(0, 42, 52, 0.7) 11.69%, rgba(0, 42, 52, 0) 100%);
+}
+
+.imagen-fondo-header {
+  display: block;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
 }
 
 .header {
-  height: 82.5rem;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: linear-gradient(180deg, #002a34 0%, rgba(0, 42, 52, 0.7) 11.69%, rgba(0, 42, 52, 0) 100%), url("img/boca-juniors-hero.png");
+  position: absolute;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -399,8 +444,8 @@ li {
 .container-social {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   align-self: flex-end;
+  align-items: center;
   margin-bottom: 11rem;
   width: 17.7rem;
   height: 5.4rem;
@@ -412,6 +457,7 @@ li {
   width: 3.5rem;
   height: 3.5024rem;
   flex-shrink: 0;
+  margin: 0;
 }
 
 .logo-texto {
@@ -419,6 +465,7 @@ li {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: normal;
+  margin: 0;
 }
 
 .container-legend {
@@ -453,8 +500,6 @@ li {
   width: 19.4rem;
   height: 6rem;
   margin-top: 5.4rem;
-  background-color: #a9dcee;
-  padding: 2rem 3.5rem;
   gap: 1rem;
   flex-shrink: 0;
   color: #0b2933;
@@ -466,14 +511,8 @@ li {
 
 .header-maradona,
 .header-boca-river {
+  position: relative;
   height: 66.7rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: linear-gradient(180deg, #002a34 0%, rgba(0, 42, 52, 0.7) 11.69%, rgba(0, 42, 52, 0) 100%), url("img/banner-maradona-header.png");
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
 }
 .header-maradona h2,
 .header-boca-river h2 {
@@ -488,23 +527,40 @@ li {
   padding-bottom: 23rem;
 }
 
-.header-maradona {
-  background-image: linear-gradient(180deg, #002a34 0%, rgba(0, 42, 52, 0.7) 11.69%, rgba(0, 42, 52, 0) 100%), url("img/banner-maradona-header.png");
+.header-maradona:after, .header-boca-river:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(180deg, #002a34 0%, rgba(0, 42, 52, 0.7) 11.69%, rgba(0, 42, 52, 0) 100%);
 }
 
-.header-boca-river {
-  background-image: linear-gradient(180deg, #002a34 0%, rgba(0, 42, 52, 0.7) 11.69%, rgba(0, 42, 52, 0) 100%), url("img/Home-Exp-RivBoc.png");
+.text-header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
 }
 
 .header-contact {
   height: 38.8rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: linear-gradient(180deg, #002a34 0%, rgba(0, 42, 52, 0.7) 11.69%, rgba(0, 42, 52, 0) 100%), url("img/header-contacto.png");
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
+}
+.header-contact:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(180deg, #002a34 0%, rgba(0, 42, 52, 0.7) 11.69%, rgba(0, 42, 52, 0) 100%);
 }
 .header-contact h2 {
   font-family: "Barlow SemiBold";
@@ -516,6 +572,14 @@ li {
   margin: 0 auto;
   padding-top: 6.4rem;
   padding-bottom: 12.5rem;
+}
+
+.container-navbar {
+  padding: 3.8rem 4.4rem 3.8rem 10rem;
+  width: 100%;
+  height: 11.8rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo img {
@@ -606,25 +670,17 @@ li {
 .idiomas {
   display: flex;
   align-items: center;
-  padding-left: 1.6rem;
+  padding-left: 5.2rem;
 }
 
-.container-navbar {
-  padding: 3.8rem 5rem 3.8rem 10rem;
-  width: 100%;
-  height: 11.8rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer {
+.container-footer {
   display: flex;
   justify-content: center;
   position: relative;
   height: 34.3rem;
 }
 
-footer:after {
+.container-footer:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -634,11 +690,11 @@ footer:after {
   background: linear-gradient(180deg, #0b2933 0%, rgba(11, 41, 51, 0.9) 100%);
 }
 
-.imagen-fondo {
+.imagen-fondo-footer {
   display: block;
   position: absolute;
-  height: 343px;
-  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer-textos {
@@ -752,23 +808,33 @@ footer:after {
   display: flex;
   align-items: end;
   justify-content: center;
-  padding-bottom: 2.4rem;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-.prestaciones-box.prestacionesUno {
-  background-image: linear-gradient(180deg, rgba(0, 42, 52, 0) 0%, rgba(0, 42, 52, 0.85) 100%), url("img/experiencia1.png");
+.prestaciones-box.prestacionesUno, .prestaciones-box.prestacionesDos, .prestaciones-box.prestacionesTres, .prestaciones-box.prestacionesCuatro {
+  position: relative;
 }
-.prestaciones-box.prestacionesDos {
-  background-image: linear-gradient(180deg, rgba(0, 42, 52, 0) 0%, rgba(0, 42, 52, 0.85) 100%), url("img/experiencia2.png");
+.prestaciones-box.prestacionesUno:after, .prestaciones-box.prestacionesDos:after, .prestaciones-box.prestacionesTres:after, .prestaciones-box.prestacionesCuatro:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 42, 52, 0) 0%, rgba(0, 42, 52, 0.85) 100%);
 }
-.prestaciones-box.prestacionesTres {
-  background-image: linear-gradient(180deg, rgba(0, 42, 52, 0) 0%, rgba(0, 42, 52, 0.85) 100%), url("img/experiencia3.png");
+.prestaciones-box p {
+  z-index: 1;
+  padding-bottom: 2.4rem;
 }
-.prestaciones-box.prestacionesCuatro {
-  background-image: linear-gradient(180deg, rgba(0, 42, 52, 0) 0%, rgba(0, 42, 52, 0.85) 100%), url("img/experiencia4.png");
+
+.imagen-fondo-prestaciones {
+  display: block;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-experiencias {
@@ -794,26 +860,33 @@ footer:after {
   gap: 4rem;
 }
 .container-experiencias .experiencia {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: end;
   text-align: left;
-  padding: 0 4rem;
   width: 60rem;
   height: 55rem;
   border-radius: 1rem;
 }
-.container-experiencias .experiencia.boca-river {
-  background-image: linear-gradient(180deg, rgba(0, 42, 52, 0.1) 0%, rgba(0, 42, 52, 0.4) 41.67%, rgba(0, 42, 52, 0.85) 100%), url("img/Home-Exp-RivBoc.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.container-experiencias .experiencia:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 42, 52, 0.1) 0%, rgba(0, 42, 52, 0.4) 41.67%, rgba(0, 42, 52, 0.85) 100%);
 }
-.container-experiencias .experiencia.maradona {
-  background-image: linear-gradient(180deg, rgba(0, 42, 52, 0.1) 0%, rgba(0, 42, 52, 0.4) 41.67%, rgba(0, 42, 52, 0.85) 100%), url("img/Home-Exp-Marado.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.container-experiencias .experiencia .exp-boca-river {
+  position: absolute;
+  z-index: 1;
+  margin: 0 4rem 0 4rem;
+}
+.container-experiencias .experiencia .exp-maradona {
+  position: absolute;
+  z-index: 1;
+  margin: 0 4rem 0 4rem;
 }
 .container-experiencias .experiencia h3 {
   color: #ffffff;
@@ -849,6 +922,13 @@ footer:after {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: normal;
+}
+
+.imagen-fondo-experienciaHome {
+  display: block;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-reviews {
@@ -950,18 +1030,14 @@ footer:after {
   line-height: 6.6rem;
   margin: 0 auto 3rem auto;
 }
-.container-entradas p {
+.container-entradas h3 {
   color: #ffffff;
   text-align: center;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 500;
   line-height: 3.8rem;
-  margin: 0 auto 3rem auto;
-}
-.container-entradas .btn-contacto {
-  border-radius: 1.5rem;
-  background-color: #fdb908;
+  margin: 0 auto 3rem;
 }
 
 .container-faqs {
@@ -977,6 +1053,13 @@ footer:after {
   font-weight: 700;
   line-height: 6.6rem;
   margin-bottom: 5rem;
+}
+.container-faqs .divisor {
+  width: fit-content;
+  min-width: 111.6rem;
+  margin: 0 auto;
+  height: 0.2rem;
+  background-color: #fdb908;
 }
 
 .containerTitle {
@@ -1079,6 +1162,7 @@ footer:after {
 }
 
 .contact-content {
+  width: 100%;
   margin: 0 auto;
   background-color: #ffffff;
   display: flex;
@@ -1101,7 +1185,7 @@ footer:after {
   font-family: "Barlow", sans-serif;
   font-size: 3.6rem;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 4.6rem;
   padding-bottom: 2rem;
   border-bottom: 0.2rem solid #fdb908;
@@ -1139,6 +1223,41 @@ footer:after {
   justify-content: center;
 }
 
+@media screen and (max-width: 920px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-info {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: -3rem;
+    margin-right: 0;
+  }
+  .contact-info h2 {
+    text-align: start;
+    width: 90%;
+    max-width: 30rem;
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 1rem;
+  }
+  .contact-info__email {
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .contact-info__email li {
+    margin-bottom: 1rem;
+  }
+  .contact-info__svg {
+    margin-top: 2rem;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
 form {
   width: 100%;
   padding: 5rem;
@@ -1148,6 +1267,7 @@ form {
   text-align: center;
   justify-content: center;
   row-gap: 2rem;
+  font-size: 1.6rem;
 }
 
 input,
@@ -1164,7 +1284,6 @@ input {
   align-self: stretch;
   color: #0b2933;
   font-family: "Barlow", sans-serif;
-  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 3rem;
@@ -1181,7 +1300,6 @@ textarea {
   gap: 1rem;
   flex-shrink: 0;
   font-family: "Barlow", sans-serif;
-  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
@@ -1194,13 +1312,14 @@ input[type=submit] {
   max-width: 23rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  margin-top: -1rem;
   background-color: #fdb908;
   color: #0b2933;
   font-feature-settings: "clig" off, "liga" off;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.2rem;
@@ -1224,19 +1343,20 @@ input[type=submit] {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  /*  .error {
-    margin-top: 2rem;
-  } */
 }
 .form-group__error .form-name,
 .form-group__error .form-lastName {
   width: 100%;
 }
+.form-group__error .error {
+  margin-top: 3rem;
+  margin-bottom: -1rem;
+}
 
 .error {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: red;
 }
 
@@ -1256,6 +1376,26 @@ input[type=submit] {
   text-align: center;
 }
 
+@media screen and (max-width: 920px) {
+  form {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+  form input,
+  form textarea {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  form input[type=submit] {
+    margin-bottom: 2rem;
+  }
+  .form-group {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+}
 .text-container {
   width: 80%;
   margin: 0 auto;
@@ -1589,6 +1729,25 @@ input[type=submit] {
 .detrasDe img {
   width: 28rem;
   height: 36.7rem;
+}
+
+.container-reservaNosotros {
+  background-color: #F1F8FA;
+  width: 100%;
+  height: 24.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+.container-reservaNosotros h2 {
+  color: #0b2933;
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  margin: 5rem auto 2.4rem;
 }
 
 /*# sourceMappingURL=app.css.map */
