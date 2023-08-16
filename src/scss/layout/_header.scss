@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .container-header:after{
   content: "";
@@ -27,6 +28,40 @@
   position: absolute;
   height: 100%;
   object-fit: cover;
+}
+.arrow{
+  position: absolute;
+  top: 30rem;
+  font-size: 8rem;
+  width: 5rem;
+  height: 10rem;
+  z-index: 2;
+  color: v.$blanco;
+  &:hover{
+    cursor: pointer;
+  }
+
+  &.left{
+    left: 5%;
+  }
+  &.right{
+    left: 95%;
+  }
+}
+.contenedor-puntos{
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 70rem;
+  width: 25rem;
+}
+.punto-carrusel{
+  font-size: 8rem;
+  color: v.$blanco;
+  &:hover{
+    cursor: pointer;
+  }
 }
 .header{
   width: 100%;
