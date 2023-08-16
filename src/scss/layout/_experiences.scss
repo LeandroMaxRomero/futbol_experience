@@ -3,7 +3,7 @@
 .text-container {
   width: 80%;
   margin: 0 auto;
-  min-height: 26.9rem;
+  /* min-height: 26.9rem; */
   flex-shrink: 0;
   color: v.$azul;
   font-feature-settings: "clig" off, "liga" off;
@@ -14,7 +14,7 @@
     font-weight: 700;
     line-height: 4.6rem;
     max-width: 60rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
     border-bottom: 0.2rem solid v.$amarillo;
   }
   p {
@@ -228,6 +228,66 @@
   grid-row: 2;
 }
 
-/* .show {
-  display: block;
-} */
+@media screen and (max-width: 920px) {
+  .text-container {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    button {
+      font-size: 1.2rem;
+    }
+  }
+  .block-description {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    .block-description__routes {
+      width: 100%;
+      max-width: 40rem;
+    }
+
+    .block-description__imgs {
+      display: none;
+    }
+  }
+
+  .block-activities__blocks {
+    article {
+      max-width: 23rem;
+    }
+    p {
+      font-size: 1.3rem;
+
+      line-height: 1.6rem;
+    }
+  }
+
+  .block-activities {
+    width: 90%;
+    h3 {
+      margin: 0 auto;
+      width: 48rem;
+      font-size: 1.8rem;
+
+      line-height: 2.4rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .block-up,
+  .block-down {
+    flex-direction: column;
+  }
+}
