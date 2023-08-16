@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import InfoExperience from "../InfoExperience/InfoExperience";
@@ -203,6 +203,16 @@ export const RiverExperience = () => {
   };
 
   breakPoint.addEventListener("change", responsive);
+
+  console.log(window.innerWidth);
+  useEffect(() => {
+    if (window.innerWidth >= 920) {
+      setMobile(true);
+    }
+    if (window.innerWidth < 920) {
+      setMobile(false);
+    }
+  }, []);
   ///////////////////////////////////////////////////
 
   return (
