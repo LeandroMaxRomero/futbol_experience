@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import InfoExperience from "../InfoExperience/InfoExperience";
@@ -219,7 +219,16 @@ export const ExperienciaMaradona = () => {
   };
 
   breakPoint.addEventListener("change", responsive);
-  ///////////////////////////////////////////////////
+  ////////////////// */ /////////////////////////////////
+  console.log(window.innerWidth);
+  useEffect(() => {
+    if (window.innerWidth >= 920) {
+      setMobile(true);
+    }
+    if (window.innerWidth < 920) {
+      setMobile(false);
+    }
+  }, []);
   return (
     <>
       <CommonHeader
@@ -257,7 +266,7 @@ export const ExperienciaMaradona = () => {
               : content.english.activitiesExperience
           }
         />
-        {!mobile ? (
+        {mobile ? (
           <ImagesExperience imgs={content.spanish.imgs} />
         ) : (
           <Slider data={content.spanish.imgs} />
