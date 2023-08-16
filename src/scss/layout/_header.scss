@@ -28,7 +28,11 @@
   position: absolute;
   height: 100%;
   object-fit: cover;
+  animation: fadeIn;
+  animation-duration: 3s;
 }
+
+//*Señaladores de Slides
 .arrow{
   position: absolute;
   top: 30rem;
@@ -63,6 +67,7 @@
     cursor: pointer;
   }
 }
+
 .header{
   width: 100%;
   position: absolute;
