@@ -252,8 +252,10 @@
     margin-top: 1.5rem;
     width: 100%;
     padding: 1rem;
+    margin-bottom: 3rem;
     .block-description__routes {
       width: 100%;
+      max-width: 40rem;
     }
 
     .block-description__imgs {
@@ -261,13 +263,31 @@
     }
   }
 
+  .block-activities__blocks {
+    article {
+      max-width: 23rem;
+    }
+    p {
+      font-size: 1.3rem;
+
+      line-height: 1.6rem;
+    }
+  }
+
   .block-activities {
+    width: 90%;
     h3 {
-      width: 100%;
+      margin: 0 auto;
+      width: 48rem;
       font-size: 1.8rem;
 
       line-height: 2.4rem;
       margin-bottom: 1rem;
     }
+  }
+
+  .block-up,
+  .block-down {
+    flex-direction: column;
   }
 }

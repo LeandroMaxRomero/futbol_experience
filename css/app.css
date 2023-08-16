@@ -122,7 +122,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -224,7 +225,8 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  appearance: button;
+  -moz-appearance: button;
+       appearance: button;
   -webkit-appearance: button;
 }
 
@@ -308,7 +310,8 @@ textarea {
    * 2. Correct the outline style in Safari.
    */
 [type=search] {
-  appearance: textfield; /* 1 */
+  -moz-appearance: textfield;
+       appearance: textfield; /* 1 */
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -372,6 +375,7 @@ li {
   border: 0rem;
   text-align: center;
   align-self: center;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .btn-contacto p {
@@ -430,7 +434,8 @@ li {
   display: block;
   position: absolute;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .arrow {
@@ -731,7 +736,8 @@ li {
   display: block;
   position: absolute;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer-textos {
@@ -903,7 +909,8 @@ li {
   display: block;
   position: absolute;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container-experiencias {
@@ -997,7 +1004,8 @@ li {
   display: block;
   position: absolute;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container-reviews {
@@ -1124,6 +1132,7 @@ li {
   margin-bottom: 5rem;
 }
 .container-faqs .divisor {
+  width: -moz-fit-content;
   width: fit-content;
   min-width: 111.6rem;
   margin: 0 auto;
@@ -1204,6 +1213,7 @@ li {
 }
 
 .show {
+  height: -moz-fit-content;
   height: fit-content;
   opacity: 1;
 }
@@ -1382,7 +1392,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 .form-group .form-name,
 .form-group .form-lastName {
@@ -1421,7 +1432,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 .top-error span {
   width: 100%;
@@ -1484,7 +1496,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   width: 80%;
   margin: 5rem auto;
   flex-shrink: 0;
@@ -1565,7 +1578,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 
 /* .color-blue {
@@ -1959,6 +1973,4 @@ textarea {
 
 .indicator-inactive {
   background-color: grey;
-}
-
-/*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */
