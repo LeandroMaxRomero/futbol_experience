@@ -32,10 +32,7 @@ export const Slider = ({ data }) => {
         <img src={`${modalContent.url}`} alt={`${modalContent.name}`} />
       </Modal>
       <div className="carousel">
-        <div className="leftArrow" onClick={prevSlide}>
-          &#10092;
-        </div>
-        <>
+        
           <div className="myslide">
             <Carousel
               images={images}
