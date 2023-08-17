@@ -1,41 +1,53 @@
-@use '../base/variables' as v;
+@use "../base/variables" as v;
 
-.btn-contacto{
-    border-radius: 1rem;
-    background-color: v.$amarillo;
-    padding: 1.5rem 4rem;
-    border: 0rem;
+.btn-contacto {
+  border-radius: 1rem;
+  background-color: v.$amarillo;
+  padding: 1.5rem 4rem;
+  border: 0rem;
+  text-align: center;
+  align-self: center;
+  width: fit-content;
+  p {
+    font-family: v.$fuentePrincipal;
+    color: v.$azul;
     text-align: center;
-    align-self: center;
-    width: fit-content;
-    p{
-        font-family: v.$fuentePrincipal;
-        color: v.$azul;
-        text-align: center;
-        font-size: 2.2rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.8rem;
-        margin: 0;
-    }
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem;
+    margin: 0;
+  }
 }
-.btn-navbar{
-    display: flex;
-    border: 0rem;
-    align-items: center;
-    gap: 8px; 
-    background-color: v.$amarillo;
-    border-radius: 1rem;
-    padding: 1.8rem 2.4rem;
-    width: 10.6rem;
-    height: 5.4rem;
-    p{
-        color: v.$azul;
-        text-align: center;
-        font-size: 1.6rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.8rem;
-        margin: 0 auto;
+.btn-navbar {
+  display: flex;
+  border: 0rem;
+  align-items: center;
+  gap: 8px;
+  background-color: v.$amarillo;
+  border-radius: 1rem;
+  padding: 1.8rem 2.4rem;
+  width: 10.6rem;
+  height: 5.4rem;
+  p {
+    color: v.$azul;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.8rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .btn-contacto {
+    padding: 8px 10px;
+    width: 90%;
+    p {
+      font-size: 12px;
+
+      line-height: 18px;
     }
+  }
 }

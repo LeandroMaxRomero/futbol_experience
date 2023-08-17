@@ -18,12 +18,21 @@ export const Slider = ({ data }) => {
       </div>
       {data.map((item, idx) => {
         return (
-          <img
-            src={item.url}
-            alt={item.name}
-            key={idx}
-            className={slide === idx ? "myslide" : "myslide myslide-hidden"}
-          />
+          <>
+            <img
+              src={item.url}
+              alt={item.name}
+              key={idx}
+              className={slide === idx ? "myslide" : "myslide myslide-hidden"}
+            />
+
+            <img
+              src={item.url}
+              alt={item.name}
+              key={idx}
+              className="img-mobile"
+            />
+          </>
         );
       })}
 

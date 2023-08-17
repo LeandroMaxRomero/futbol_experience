@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import InfoExperience from "../InfoExperience/InfoExperience";
 import TextGralExprience from "../TextGralExperience/TextGralExprience";
 import DescriptionExperience from "../DescriptionExperience/DescriptionExperience";
 import ActivitiesExperience from "../ActivitiesExperience/ActivitiesExperience";
-import ImagesExperience from "../ImagesExperience/ImagesExperience";
+/* import ImagesExperience from "../ImagesExperience/ImagesExperience"; */
 import ReserveExperience from "../ReserveExperience/ReserveExperience";
 import CuriosityExperience from "../CuriosityExpererience/CuriosityExperience";
 import { CommonHeader } from "../CommonHeader/CommonHeader";
@@ -206,7 +206,7 @@ export const ExperienciaMaradona = () => {
 
   /* para cambiar de slider a imageExperience */
 
-  const [mobile, setMobile] = useState(false);
+  /*  const [mobile, setMobile] = useState(false);
 
   let breakPoint = window.matchMedia("(min-width:920px)");
 
@@ -218,9 +218,9 @@ export const ExperienciaMaradona = () => {
     setMobile(true);
   };
 
-  breakPoint.addEventListener("change", responsive);
+  breakPoint.addEventListener("change", responsive); */
   ////////////////// */ /////////////////////////////////
-  console.log(window.innerWidth);
+  /*  console.log(window.innerWidth);
   useEffect(() => {
     if (window.innerWidth >= 920) {
       setMobile(true);
@@ -228,7 +228,7 @@ export const ExperienciaMaradona = () => {
     if (window.innerWidth < 920) {
       setMobile(false);
     }
-  }, []);
+  }, []); */
   return (
     <>
       <CommonHeader
@@ -266,12 +266,13 @@ export const ExperienciaMaradona = () => {
               : content.english.activitiesExperience
           }
         />
-        {mobile ? (
+        {/*  {mobile ? (
           <ImagesExperience imgs={content.spanish.imgs} />
         ) : (
           <Slider data={content.spanish.imgs} />
-        )}
+        )} */}
 
+        <Slider data={content.spanish.imgs} />
         <ReserveExperience
           content={
             lang === "castellano"
