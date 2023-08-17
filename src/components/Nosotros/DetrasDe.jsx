@@ -24,7 +24,9 @@ export const DetrasDe = () => {
                 <div className="divisor"></div>
                 <p>I`m Dan Soccer marks the thermometer of my life. I`ve been on the court for as long as I can remember. With my dad we shared many motorcycle trips going to see different fields. And there was something that always caught my attention: how 11 people who kick a ball mobilize so many people, to travel thousands of kilometers for their team, to gather an entire family on the sofa to watch a game, to deify figures like Messi or Maradona, being the happiest human being for a victory and the most anguished for a defeat. I still haven`t been able to answer that question. What is it that generates so much madness, so much emotion and so much fanaticism? In this soccer experience, I invite you to find the answer together.</p>
             </div>
-            <img src="img/nosotros-dan.png" alt="Dan en la tribuna" />
+            <div className="detrasDeNosotros-img">
+                <img src="img/nosotros-dan.png" alt="Dan en la tribuna" />
+            </div>
         </div>
 
     }

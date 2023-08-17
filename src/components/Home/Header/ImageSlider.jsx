@@ -4,6 +4,7 @@ import "animate.css";
 
 export const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurretIndex] = useState(0);
+ 
 
   // const goToPrevious = () => {
   //     const isFirstSlide = currentIndex === 0;
@@ -43,9 +44,6 @@ export const ImageSlider = ({ slides }) => {
     </>
   );
 };
-// ImageSlider.propTypes = {
-//     slides: PropTypes.node.isRequired,
-// };
 ImageSlider.propTypes = {
   slides: PropTypes.arrayOf(
       PropTypes.shape({

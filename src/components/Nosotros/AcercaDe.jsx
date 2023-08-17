@@ -11,7 +11,9 @@ export const AcercaDe = () => {
         lang==='castellano'
         ?
         <div className="container-nosotros acercaDe">
-            <img src="img/nosotros-marado.png" alt="Mural de Maradona" />
+            <div className="img_acercaDeNosotros">
+                <img src="img/nosotros-marado.png" alt="Mural de Maradona"/>
+            </div>
             <div className="seccion-acerca">
                 <h2>Acerca de Fútbol Experience</h2>
                 <div className="divisor"></div>
