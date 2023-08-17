@@ -30,26 +30,30 @@ export const Slider = ({ data }) => {
         <div className="leftArrow" onClick={prevSlide}>
           &#10092;
         </div>
-        {data.map((item, idx) => {
-          return (
-            <>
+        <>
+          {data.map((item, idx) => {
+            return (
               <img
                 src={item.url}
                 alt={item.name}
                 key={idx}
                 className={slide === idx ? "myslide" : "myslide myslide-hidden"}
               />
+            );
+          })}
 
+          {data.map((item) => {
+            return (
               <img
                 src={item.url}
                 alt={item.name}
-                key={idx}
+                key={item.id}
                 className="img-mobile"
                 onClick={() => showModal(item)}
               />
-            </>
-          );
-        })}
+            );
+          })}
+        </>
 
         <div className="rightArrow" onClick={nextSlide}>
           &#10093;

@@ -6,10 +6,15 @@ import { HeaderContact } from "./HeaderContact";
 
 export const Contact = () => {
   const { lang } = useContext(LenguaContext);
-
+  const number = "+524613904575",
+    message = "hola, necesito información sobre las experiencias...";
   return (
     <>
-      <HeaderContact imagen={"img/header-contacto.png"} tittleES="Contacto" tittleEN="Contact"/>
+      <HeaderContact
+        imagen={"img/header-contacto.png"}
+        tittleES="Contacto"
+        tittleEN="Contact"
+      />
 
       <div className="contact-content">
         <div className="contact-info">
@@ -20,9 +25,9 @@ export const Contact = () => {
             <li>
               {lang === "castellano" ? "Correo: " : "Email: "}
               <a
-                href="mailto:dariel.cano1992@gmail.com?subject=Necesito%20ayuda"
-                /*    target="_blank"
-                rel="noreferrer" */
+                href="mailto:contact@futbolexperience.com.ar?subject=Hola,%20necesito%20información%20sobre%20las%20experiencias"
+                target="_blank"
+                rel="noreferrer"
               >
                 contact@futbolexperience.com.ar
               </a>
@@ -31,7 +36,11 @@ export const Contact = () => {
           </div>
           <div className="contact-info__svg">
             <div className="logo-container">
-              <a href="http://">
+              <a
+                href={`https://web.whatsapp.com/send?phone=${number}&text=${message}&app_absent=0`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"

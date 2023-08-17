@@ -7,7 +7,7 @@ export const Footer = () => {
   const { lang } = useLengua();
 
   const number = "+524613904575",
-    message = "hola";
+    message = "hola, necesito información sobre las experiencias...";
   return (
     <>
       {lang === "castellano" ? (
@@ -52,7 +52,11 @@ export const Footer = () => {
                   <div className="footer-contact">
                     <strong>Contacto</strong>
                     <li>
-                      <a href="mailto:contact@futbolexperience.com.ar?subject=Necesito%20ayuda">
+                      <a
+                        href="mailto:contact@futbolexperience.com.ar?subject=Hola,%20necesito%20información%20sobre%20las%20experiencias"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         contact@futbolexperience.com.ar
                       </a>
                     </li>
@@ -64,8 +68,8 @@ export const Footer = () => {
                     <div className="footer-network__svg">
                       <a
                         href={`https://web.whatsapp.com/send?phone=${number}&text=${message}&app_absent=0`}
-                        /*   target="_blank"
-                          rel="noreferrer" */
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +94,11 @@ export const Footer = () => {
                           />
                         </svg>
                       </a>
-                      <a href="http://">
+                      <a
+                        href="http://https://www.instagram.com/futbolexperienceba"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="25"
@@ -128,7 +136,10 @@ export const Footer = () => {
                           />
                         </svg>
                       </a>
-                      <a href="http://">
+                      <a /* href="http://https://www.tiktok.com/"
+                       target="_blank"
+                       rel="noreferrer" */
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="25"
@@ -208,7 +219,11 @@ export const Footer = () => {
                   <div className="footer-contact">
                     <strong>Contact</strong>
                     <li>
-                      <a href="mailto:contact@futbolexperience.com.ar?subject=Necesito%20ayuda">
+                      <a
+                        href="mailto:contact@futbolexperience.com.ar?subject=Hi,%20I%20need%20information%20about%20experiences"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         contact@futbolexperience.com.ar
                       </a>
                     </li>
@@ -220,8 +235,8 @@ export const Footer = () => {
                     <div className="footer-network__svg">
                       <a
                         href={`https://web.whatsapp.com/send?phone=${number}&text=${message}&app_absent=0`}
-                        /*   target="_blank"
-                          rel="noreferrer" */
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +261,11 @@ export const Footer = () => {
                           />
                         </svg>
                       </a>
-                      <a href="http://">
+                      <a
+                        href="http://https://www.instagram.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="25"
@@ -284,7 +303,10 @@ export const Footer = () => {
                           />
                         </svg>
                       </a>
-                      <a href="http://">
+                      <a /* href="http://https://www.tiktok.com/"
+                       target="_blank"
+                       rel="noreferrer" */
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="25"
