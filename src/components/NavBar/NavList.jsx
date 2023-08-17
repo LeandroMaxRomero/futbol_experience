@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
-import { Dropdown } from 'bootstrap-4-react';
+import { Dropdown } from "react-bootstrap";
+
 
 export const NavList = () => {
   const useLengua = () => useContext(LenguaContext);
@@ -10,22 +11,29 @@ export const NavList = () => {
 
   return (
     <div className="navlist">
-      {lang === "castellano" ? (
+      {lang === "castellano" ? 
+      (
         <div className="header-navbar">
+
           <Link className="navbar-link" to="/">
             <h3>Home</h3>
           </Link>
 
           <Dropdown>
-            <Dropdown.Button secondary id="dropdownMenuButton">Experiencias</Dropdown.Button>
-              <Dropdown.Menu aria-labelledby="dropdownMenuButton">
-                <Link to="/experiencia-maradona">
-                  <Dropdown.Item>Experiencia Maradona</Dropdown.Item>
-                </Link>
-                <Link to="/experiencia-boca-river">
-                  <Dropdown.Item>Experiencia Boca - River</Dropdown.Item>
-                </Link>
-              </Dropdown.Menu>
+            <Dropdown.Toggle variant="success" id="dropdown-basic" className="dropdown">
+              Experiencias
+              <svg className="flechitapabajo" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.08337L6.83333 6.91671L12.6667 1.08337" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="dropdown-menu">
+
+                <Dropdown.Item href="/experiencia-maradona" className="dropdown-item">Experiencia Maradona</Dropdown.Item>
+      
+                <Dropdown.Item href="/experiencia-boca-river" className="dropdown-item">Experiencia Boca - River</Dropdown.Item>
+
+            </Dropdown.Menu>
           </Dropdown>
 
           <Link className="navbar-link" to="/contact">
@@ -38,20 +46,26 @@ export const NavList = () => {
         </div>
       ) : (
         <div className="header-navbar">
+
           <Link className="navbar-link" to="/">
             <h3>Home</h3>
           </Link>
 
           <Dropdown>
-            <Dropdown.Button secondary id="dropdownMenuButton">Experiences</Dropdown.Button>
-              <Dropdown.Menu aria-labelledby="dropdownMenuButton">
-                <Link to="/experiencia-maradona">
-                  <Dropdown.Item>Maradona Experience</Dropdown.Item>
-                </Link>
-                <Link to="/experiencia-boca-river">
-                  <Dropdown.Item>Boca - River Experience</Dropdown.Item>
-                </Link>
-              </Dropdown.Menu>
+            <Dropdown.Toggle variant="success" id="dropdown-basic" className="dropdown">
+              Experiences
+              <svg className="flechitapabajo" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.08337L6.83333 6.91671L12.6667 1.08337" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="dropdown-menu">
+
+                <Dropdown.Item href="/experiencia-maradona" className="dropdown-item">Maradona Experience</Dropdown.Item>
+              
+                <Dropdown.Item href="/experiencia-boca-river" className="dropdown-item">Boca - River Experience</Dropdown.Item>
+
+            </Dropdown.Menu>
           </Dropdown>
 
           <Link className="navbar-link" to="/contact">
@@ -86,6 +100,7 @@ export const NavList = () => {
             <img src="img/spain.png" />
           </button>
         )} */}
+
     </div>
   );
 };

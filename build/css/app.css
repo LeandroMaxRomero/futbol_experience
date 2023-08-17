@@ -431,6 +431,8 @@ li {
   position: absolute;
   height: 100%;
   object-fit: cover;
+  animation: fadeIn;
+  animation-duration: 4s;
 }
 
 .arrow {
@@ -652,7 +654,7 @@ li {
   line-height: 1.8rem;
 }
 
-.dropdown .btn-secondary {
+.dropdown {
   background-color: transparent !important;
   font-size: 1.8rem !important;
   font-family: "Barlow", sans-serif !important;
@@ -661,14 +663,25 @@ li {
   margin: 0 !important;
   line-height: 1.8rem !important;
   border: none;
+  color: #ffffff;
 }
-.dropdown .btn-secondary:focus {
+.dropdown .flechitapabajo {
+  margin-left: 0.6rem;
+}
+.dropdown:focus {
   border: none;
 }
 
+.dropdown-menu {
+  display: none;
+}
 .dropdown-menu.show {
   background-color: transparent !important;
   border: none;
+  position: absolute;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown-item {
@@ -683,6 +696,7 @@ li {
 .dropdown-item:hover, .dropdown-item:active {
   background-color: transparent !important;
   text-decoration: none !important;
+  font-weight: 600 !important;
 }
 
 .btn-idioma {

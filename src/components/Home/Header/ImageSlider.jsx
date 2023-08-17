@@ -24,7 +24,7 @@ export const ImageSlider = ({slides}) => {
     useEffect(() => {
         setInterval(() => {
             goToNext();
-          },3000);
+          },4000);
     },);
 
   return (
@@ -41,6 +41,13 @@ export const ImageSlider = ({slides}) => {
     </>
   )
 };
+// ImageSlider.propTypes = {
+//     slides: PropTypes.node.isRequired,
+// };
 ImageSlider.propTypes = {
-    slides: PropTypes.node.isRequired,
-}
+    slides: PropTypes.arrayOf(
+      PropTypes.shape({
+        url: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  };

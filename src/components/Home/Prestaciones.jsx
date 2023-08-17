@@ -22,7 +22,7 @@ export const Prestaciones = () => {
   // }
 
   return (
-    <>
+    <div>
     {
         lang==='castellano'
         ?
@@ -75,6 +75,6 @@ export const Prestaciones = () => {
         </section>
     }
 
-    </>
+    </div>
   )
 }

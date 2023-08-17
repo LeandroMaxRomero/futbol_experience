@@ -33,9 +33,10 @@ export const Acordeon = ({tittle, contenido, active, setActive}) => {
     </div>
   )
 }
+
 Acordeon.propTypes = {
-    tittle: PropTypes.node.isRequired,
-    contenido: PropTypes.node.isRequired,
-    active: PropTypes.node.isRequired,
-    setActive: PropTypes.node.isRequired,
-}
+  tittle: PropTypes.string.isRequired,
+  contenido: PropTypes.string.isRequired,
+  active: PropTypes.string.isRequired,
+  setActive: PropTypes.func.isRequired,
+};
