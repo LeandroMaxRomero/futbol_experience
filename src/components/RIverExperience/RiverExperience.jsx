@@ -1,11 +1,11 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import InfoExperience from "../InfoExperience/InfoExperience";
 import TextGralExprience from "../TextGralExperience/TextGralExprience";
 import DescriptionExperience from "../DescriptionExperience/DescriptionExperience";
 import ActivitiesExperience from "../ActivitiesExperience/ActivitiesExperience";
-import ImagesExperience from "../ImagesExperience/ImagesExperience";
+/* import ImagesExperience from "../ImagesExperience/ImagesExperience"; */
 import ReserveExperience from "../ReserveExperience/ReserveExperience";
 import CuriosityExperience from "../CuriosityExpererience/CuriosityExperience";
 import { CommonHeader } from "../CommonHeader/CommonHeader";
@@ -190,7 +190,7 @@ export const RiverExperience = () => {
 
   /* para cambiar de slider a imageExperience */
 
-  const [mobile, setMobile] = useState(false);
+  /* const [mobile, setMobile] = useState(false);
 
   let breakPoint = window.matchMedia("(min-width:920px)");
 
@@ -212,7 +212,7 @@ export const RiverExperience = () => {
     if (window.innerWidth < 920) {
       setMobile(false);
     }
-  }, []);
+  }, []); */
   ///////////////////////////////////////////////////
 
   return (
@@ -252,11 +252,13 @@ export const RiverExperience = () => {
               : content.english.activitiesExperience
           }
         />
-        {!mobile ? (
+        {/*  {!mobile ? (
           <ImagesExperience imgs={content.spanish.imgs} />
         ) : (
           <Slider data={content.spanish.imgs} />
-        )}
+        )} */}
+
+        <Slider data={content.spanish.imgs} />
         <ReserveExperience
           content={
             lang === "castellano"

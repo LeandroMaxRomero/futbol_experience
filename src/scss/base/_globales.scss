@@ -24,7 +24,7 @@ p {
   font-family: v.$fuentePrincipal;
 }
 h1 {
-  font-size: 4rem !important;
+  /* font-size: 4rem !important; */
 }
 h2 {
   font-size: 3.6rem;
@@ -38,6 +38,6 @@ img {
   height: auto;
   display: block;
 }
-button:hover{
+button:hover {
   cursor: pointer;
 }
