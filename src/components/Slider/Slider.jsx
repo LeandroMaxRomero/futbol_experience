@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useModal } from "../hook/useModal";
 import Modal from "../Modal/Modal";
+import Carousel from "react-gallery-carousel";
+import "react-gallery-carousel/dist/index.css";
 
 export const Slider = ({ data }) => {
   const [slide, setSlide] = useState(0);
@@ -20,7 +22,10 @@ export const Slider = ({ data }) => {
     setModalContent(img);
     openModal();
   };
-
+  const images = data.map((img) => ({
+    src: img.url,
+    id: img.id,
+  }));
   return (
     <>
       <Modal isOpen={isOpenModal} closeModal={closeModal}>
@@ -31,17 +36,13 @@ export const Slider = ({ data }) => {
           &#10092;
         </div>
         <>
-          {data.map((item, idx) => {
-            return (
-              <img
-                src={item.url}
-                alt={item.name}
-                key={idx}
-                className={slide === idx ? "myslide" : "myslide myslide-hidden"}
-              />
-            );
-          })}
-
+          <div className="myslide">
+            <Carousel
+              images={images}
+              hasMediaButton={false}
+              hasIndexBoard={false}
+            />
+          </div>
           {data.map((item) => {
             return (
               <img
@@ -54,23 +55,6 @@ export const Slider = ({ data }) => {
             );
           })}
         </>
-
-        <div className="rightArrow" onClick={nextSlide}>
-          &#10093;
-        </div>
-        <span className="indicators">
-          {data.map((_, idx) => {
-            return (
-              <button
-                key={idx}
-                className={
-                  slide === idx ? "indicator" : "indicator indicator-inactive"
-                }
-                onClick={() => setSlide(idx)}
-              ></button>
-            );
-          })}
-        </span>
       </div>
     </>
   );
