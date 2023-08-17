@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useModal } from "../hook/useModal";
+import Modal from "../Modal/Modal";
 
 export const Slider = ({ data }) => {
   const [slide, setSlide] = useState(0);
@@ -11,47 +13,61 @@ export const Slider = ({ data }) => {
     setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
 
+  const [isOpenModal, openModal, closeModal] = useModal(false);
+  const [modalContent, setModalContent] = useState({});
+
+  const showModal = (img) => {
+    setModalContent(img);
+    openModal();
+  };
+
   return (
-    <div className="carousel">
-      <div className="leftArrow" onClick={prevSlide}>
-        &#10092;
-      </div>
-      {data.map((item, idx) => {
-        return (
-          <>
-            <img
-              src={item.url}
-              alt={item.name}
-              key={idx}
-              className={slide === idx ? "myslide" : "myslide myslide-hidden"}
-            />
-
-            <img
-              src={item.url}
-              alt={item.name}
-              key={idx}
-              className="img-mobile"
-            />
-          </>
-        );
-      })}
-
-      <div className="rightArrow" onClick={nextSlide}>
-        &#10093;
-      </div>
-      <span className="indicators">
-        {data.map((_, idx) => {
+    <>
+      <Modal isOpen={isOpenModal} closeModal={closeModal}>
+        <img src={`${modalContent.url}`} alt={`${modalContent.name}`} />
+      </Modal>
+      <div className="carousel">
+        <div className="leftArrow" onClick={prevSlide}>
+          &#10092;
+        </div>
+        {data.map((item, idx) => {
           return (
-            <button
-              key={idx}
-              className={
-                slide === idx ? "indicator" : "indicator indicator-inactive"
-              }
-              onClick={() => setSlide(idx)}
-            ></button>
+            <>
+              <img
+                src={item.url}
+                alt={item.name}
+                key={idx}
+                className={slide === idx ? "myslide" : "myslide myslide-hidden"}
+              />
+
+              <img
+                src={item.url}
+                alt={item.name}
+                key={idx}
+                className="img-mobile"
+                onClick={() => showModal(item)}
+              />
+            </>
           );
         })}
-      </span>
-    </div>
+
+        <div className="rightArrow" onClick={nextSlide}>
+          &#10093;
+        </div>
+        <span className="indicators">
+          {data.map((_, idx) => {
+            return (
+              <button
+                key={idx}
+                className={
+                  slide === idx ? "indicator" : "indicator indicator-inactive"
+                }
+                onClick={() => setSlide(idx)}
+              ></button>
+            );
+          })}
+        </span>
+      </div>
+    </>
   );
 };
