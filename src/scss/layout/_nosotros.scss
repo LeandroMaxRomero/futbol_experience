@@ -1,72 +1,80 @@
-  @use '../base/variables' as v;
-.nosotros{
-    display: flex;
-    flex-direction: column;
+@use "../base/variables" as v;
+.nosotros {
+  display: flex;
+  flex-direction: column;
 }
-.container-nosotros{
-    display: flex;
-    h2{
-        color: v.$azul;
-        font-size: 3.6rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 4.6rem;
-    }
-    p{
-        color: v.$azul;
-    font-size: 2.2rem;
+.container-nosotros {
+  display: flex;
+  padding: 3rem 5rem;
+  gap: 3rem;
+
+  h2 {
+    color: v.$azul;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.6rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid v.$amarillo;
+  }
+  p {
+    color: v.$azul;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 4rem;
+    line-height: 35px;
+    margin-top: 0;
+  }
+
+  .seccion-detras {
+    width: 70%;
+  }
+
+  .img-detrasDeNosotros {
+    width: 15rem;
+    max-width: 10%;
+    height: 28rem;
+    img {
+      height: 100%;
     }
-    .divisor{
-        width: 60rem;
-        height: 0.15rem;
-        margin: 2rem 2.5rem auto;
-        background-color: v.$amarillo;
-    }
+  }
 }
-.acercaDe{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 124rem;
-    width: 90%;
-    margin: 5rem 7.5rem 10rem;
-    gap: 4rem;
-}
-.detrasDe{
-    display: flex;
-    margin: 0 7.5rem 10rem;
-    gap: 4rem;
-}
-.img-acercaDeNosotros{
-    width: 60.1rem;
-    height: 98.2rem;
-}
-.img-detrasDeNosotros{
-    width: 28rem;
-    height: 36.7rem;
-}
-.container-reservaNosotros{
-    background-color: v.$grisSuave;
+
+/* .detrasDe {
+  display: flex;
+  margin: 0 7.5rem 10rem;
+  gap: 4rem;
+} */
+.img-acercaDeNosotros {
+  width: 50%;
+  img {
     width: 100%;
-    height: 24.9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    h2{
-        color: v.$azul;
-        text-align: center;
-        font-size: 4.4rem;
-        font-weight: 700;
-        line-height: 5rem;
-        margin: 5rem auto 2.4rem;
-    }
+    height: 100%;
+    object-fit: cover;
+  }
 }
-.seccion-acerca{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+
+.container-reservaNosotros {
+  background-color: v.$grisSuave;
+  width: 100%;
+  height: 24.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  h2 {
+    color: v.$azul;
+    text-align: center;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 5rem;
+    margin: 5rem auto 2.4rem;
+  }
+}
+.seccion-acerca {
+  width: 50%;
 }
