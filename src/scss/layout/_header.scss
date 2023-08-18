@@ -10,6 +10,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  .imagen-fondo-header{
+    @include m.tablet{
+      display: none;
+    }
+  }
 }
 .container-header:after{
   content: "";
@@ -28,11 +33,11 @@
   display: none;
   @include m.tablet{
     display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
   }
 }
 .imagen-fondo-header{
@@ -44,11 +49,8 @@
   object-fit: cover;
   animation: fadeIn;
   animation-duration: 4s;
-  @include m.tablet{
-    display: none;
-  }
-  
 }
+
 
 //*Señaladores de Slides
 // .arrow{
@@ -336,6 +338,7 @@
   }
 }
 .dropdown-header{
+  z-index: 1;
   display: flex;
   width: 322px;
   padding: 24px 24px 28px 24px;
@@ -344,6 +347,7 @@
   gap: 10px;
 }
 .contenedor-item-burguer{
+  z-index: 1;
   display: flex;
   width: 322px;
   padding: 12px 20px 12px 24px;
@@ -359,6 +363,9 @@
     font-weight: 500;
     line-height: 100%;
     margin: 0 !important;
+    :hover{
+      cursor: pointer;
+  }
     &.redes{
       display: flex;
       align-items: center;
