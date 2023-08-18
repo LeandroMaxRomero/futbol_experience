@@ -1,5 +1,5 @@
 @use "../base/variables" as v;
-
+@use '../base/mixins' as m;
 .container-footer {
   width: 100%;
   display: flex;
@@ -16,12 +16,18 @@
   top: 0;
   right: 0;
   background: linear-gradient(180deg, #0b2933 0%, rgba(11, 41, 51, 0.9) 100%);
+  @include m.tablet {
+    z-index: -2;
+}
 }
 .imagen-fondo-footer {
   display: block;
   position: absolute;
   height: 100%;
   object-fit: cover;
+  @include m.tablet {
+    z-index: -3;
+}
 }
 .footer-textos {
   position: absolute;
@@ -30,6 +36,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include m.tablet {
+    position: absolute;
+    z-index: -1;
+}
 }
 .footer-container {
   width: 100%;

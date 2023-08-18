@@ -127,7 +127,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 29.6rem auto 15.2rem;
+  margin: 29.6rem auto 18.2rem;
+  @include m.desktop {
+    margin-top: 25.6rem;
+    @include m.tablet {
+      margin-top: 35.5rem;
+    }
+  }
   h2 {
     font-family: v.$fuentePrincipal;
     color: v.$blanco;
@@ -136,27 +142,46 @@
     font-weight: 700;
     line-height: 9rem;
     margin: 0 auto 2.5rem;
+    text-align: center;
+    @include m.desktop {
+      font-size: 7.3rem;
+      line-height: 7.8rem;
+    }
     @include m.tablet {
       font-size: 5.6rem;
       line-height: 6.6rem;
+      margin-bottom: 1.5rem;
+    }
+    @include m.mobile {
+      font-size: 4rem;
+      line-height: 5.2rem;
     }
   }
   h3 {
     color: v.$amarilloSec;
     font-size: 3.6rem;
     font-style: normal;
+    text-align: center;
     font-weight: 700;
     line-height: 4.6rem;
     margin: 0 auto;
+    @include m.desktop {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
     @include m.tablet {
       font-size: 2.4rem;
       line-height: 3.4rem;
+    }
+    @include m.mobile {  
+    font-size: 2rem;
+    line-height: 2.8rem;
     }
   }
   button {
     width: 19.4rem;
     height: 6rem;
-    margin-top: 5.4rem;
+    margin-top: 2.5rem;
     gap: 1rem;
     color: v.$azul;
     font-size: 2.2rem;
@@ -169,9 +194,12 @@
       height: 41px;
       padding: 20px 40px 20px 35px;
       justify-content: center;
+      margin-top: 13rem;
       align-items: center;
       gap: 10px;
-      flex-shrink: 0;
+    }
+    @include m.mobile {
+      margin-top: 6.7rem;
     }
   }
 }
@@ -261,9 +289,11 @@
   top: 0;
   right: 0;
   background: linear-gradient(180deg, #0B2933 0%, rgba(11, 41, 51, 0.25) 80.32%, rgba(11, 41, 51, 0.00) 100%);
-  // backdrop-filter: blur(2px);
   @include m.desktop {
     padding: 3.8rem 4rem 3.8rem 4.8vw;
+  }
+  @include m.tablet {
+    backdrop-filter: blur(2px);
   }
 }
 .logo_marca{
@@ -285,6 +315,15 @@
     width: 24.1rem;
     height: 4.15rem;
     }
+  @include m.mobile {
+    display: none;
+  }
+}
+.logo_marcaMobile{
+  display: none;
+  @include m.mobile {
+    display: block;
+  }
 }
 .navlist {
   display: flex;
@@ -298,56 +337,61 @@
   }
 }
 .container-navDesplegable{
-  #dropdown-basic{
+  &#dropdown-baasic{
     display: none;
-    width: 4.381rem;
-    height: 4.381rem;
-    flex-shrink: 0;
-    border-radius: 7.352px;
-    background-color: v.$amarillo !important;
     @include m.tablet {
       display: block;
       width: 4.381rem;
-    height: 4.381rem;
-    flex-shrink: 0;
-    border-radius: 7.352px;
-    background-color: v.$amarillo !important;
+      height: 4.381rem;
+      border-radius: 7.352px;
+      background-color: v.$amarillo !important;
+      text-align: center;
     }
   }
+}
+.container-navDesplegable, #dropdown-basic{
+  @include m.mobile {
+    width: 32px;
+    height: 32px;
+    border-radius: 5.37px;
+  }
+}
+.dropdown-toggle{
+  border-style: none !important;
 }
 .menu-desplegable{
   &.dropdown-menu.show{
-    background-color: v.$blanco !important;
-    backdrop-filter: blur(3.5px);
-    display: flex;
-    width: 322px;
-    height: 800px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    flex: 1 0 0;
-    &:after{
-      content: "";
+      background-color: v.$blanco !important;
+      backdrop-filter: blur(3.5px);
       width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: rgba(52, 52, 52, 0.30);
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: flex-start;
+      z-index: 0;
+      gap: 8px;
+      &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        background-color: rgba(52, 52, 52, 0.30);
+      }
     }
   }
-}
 .dropdown-header{
-  z-index: 1;
   display: flex;
-  width: 322px;
+  width: 100%;
   padding: 24px 24px 28px 24px;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 .contenedor-item-burguer{
-  z-index: 1;
   display: flex;
   width: 322px;
   padding: 12px 20px 12px 24px;
@@ -357,9 +401,7 @@
 .dropdown-item-burguer{
     color: v.$azul !important;
     text-shadow: none;
-    font-family: Barlow;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 100%;
     margin: 0 !important;
@@ -372,8 +414,6 @@
       gap: 1.2rem;
     } 
 }
-
-
 
 
 .header-navbar {
@@ -443,7 +483,7 @@
   font-family: v.$fuentePrincipal !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  margin: 1rem 0 !important;
+  margin: 1rem 0;
   line-height: 1.8rem !important;
   &:hover,
   &:active {

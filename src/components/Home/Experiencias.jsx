@@ -31,7 +31,7 @@ export const Experiencias = () => {
            
             
             <div className="experiencia">
-                <img src="img/Home-Exp-Marado.png" alt="Experiencia Maradona" />
+                <img src="img/Home-Exp-Marado.png" alt="Experiencia Maradona" className="imagen-fondo-experienciaHome"/>
                 <div className="exp-maradona">
                     <h3>Experiencia Maradona</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
@@ -64,7 +64,7 @@ export const Experiencias = () => {
            
             
             <div className="experiencia">
-                <img src="img/Home-Exp-Marado.png" alt="Experiencia Maradona" />
+                <img src="img/Home-Exp-Marado.png" alt="Experiencia Maradona" className="imagen-fondo-experienciaHome"/>
                 <div className="exp-maradona">
                     <h3>Maradona Experience</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>

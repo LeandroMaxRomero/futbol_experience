@@ -530,7 +530,17 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 29.6rem auto 15.2rem;
+  margin: 29.6rem auto 18.2rem;
+}
+@media (max-width: 1300px) {
+  .container-legend {
+    margin-top: 25.6rem;
+  }
+}
+@media (max-width: 1300px) and (max-width: 920px) {
+  .container-legend {
+    margin-top: 35.5rem;
+  }
 }
 .container-legend h2 {
   font-family: "Barlow", sans-serif;
@@ -540,20 +550,41 @@ button:hover {
   font-weight: 700;
   line-height: 9rem;
   margin: 0 auto 2.5rem;
+  text-align: center;
+}
+@media (max-width: 1300px) {
+  .container-legend h2 {
+    font-size: 7.3rem;
+    line-height: 7.8rem;
+  }
 }
 @media (max-width: 920px) {
   .container-legend h2 {
     font-size: 5.6rem;
     line-height: 6.6rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-legend h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
   }
 }
 .container-legend h3 {
   color: #FECE52;
   font-size: 3.6rem;
   font-style: normal;
+  text-align: center;
   font-weight: 700;
   line-height: 4.6rem;
   margin: 0 auto;
+}
+@media (max-width: 1300px) {
+  .container-legend h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 }
 @media (max-width: 920px) {
   .container-legend h3 {
@@ -561,10 +592,16 @@ button:hover {
     line-height: 3.4rem;
   }
 }
+@media (max-width: 650px) {
+  .container-legend h3 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
 .container-legend button {
   width: 19.4rem;
   height: 6rem;
-  margin-top: 5.4rem;
+  margin-top: 2.5rem;
   gap: 1rem;
   color: #0b2933;
   font-size: 2.2rem;
@@ -579,9 +616,14 @@ button:hover {
     height: 41px;
     padding: 20px 40px 20px 35px;
     justify-content: center;
+    margin-top: 13rem;
     align-items: center;
     gap: 10px;
-    flex-shrink: 0;
+  }
+}
+@media (max-width: 650px) {
+  .container-legend button {
+    margin-top: 6.7rem;
   }
 }
 
@@ -666,6 +708,11 @@ button:hover {
     padding: 3.8rem 4rem 3.8rem 4.8vw;
   }
 }
+@media (max-width: 920px) {
+  .container-navbar {
+    backdrop-filter: blur(2px);
+  }
+}
 
 .logo_marca {
   display: none;
@@ -696,6 +743,20 @@ button:hover {
     height: 4.15rem;
   }
 }
+@media (max-width: 650px) {
+  .logo_marcaCompleto {
+    display: none;
+  }
+}
+
+.logo_marcaMobile {
+  display: none;
+}
+@media (max-width: 650px) {
+  .logo_marcaMobile {
+    display: block;
+  }
+}
 
 .navlist {
   display: flex;
@@ -711,50 +772,58 @@ button:hover {
   }
 }
 
-.container-navDesplegable #dropdown-basic {
+.container-navDesplegable#dropdown-baasic {
   display: none;
-  width: 4.381rem;
-  height: 4.381rem;
-  flex-shrink: 0;
-  border-radius: 7.352px;
-  background-color: #fdb908 !important;
 }
 @media (max-width: 920px) {
-  .container-navDesplegable #dropdown-basic {
+  .container-navDesplegable#dropdown-baasic {
     display: block;
     width: 4.381rem;
     height: 4.381rem;
-    flex-shrink: 0;
     border-radius: 7.352px;
     background-color: #fdb908 !important;
+    text-align: center;
   }
+}
+
+@media (max-width: 650px) {
+  .container-navDesplegable, #dropdown-basic {
+    width: 32px;
+    height: 32px;
+    border-radius: 5.37px;
+  }
+}
+
+.dropdown-toggle {
+  border-style: none !important;
 }
 
 .menu-desplegable.dropdown-menu.show {
   background-color: #ffffff !important;
   backdrop-filter: blur(3.5px);
-  display: flex;
-  width: 322px;
+  width: 100%;
   height: 800px;
+  display: flex;
   flex-direction: column;
+  position: relative;
   align-items: flex-start;
+  z-index: 0;
   gap: 8px;
-  flex: 1 0 0;
 }
 .menu-desplegable.dropdown-menu.show:after {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: 0;
   top: 0;
   right: 0;
   background-color: rgba(52, 52, 52, 0.3);
 }
 
 .dropdown-header {
-  z-index: 1;
   display: flex;
-  width: 322px;
+  width: 100%;
   padding: 24px 24px 28px 24px;
   flex-direction: column;
   align-items: center;
@@ -762,7 +831,6 @@ button:hover {
 }
 
 .contenedor-item-burguer {
-  z-index: 1;
   display: flex;
   width: 322px;
   padding: 12px 20px 12px 24px;
@@ -773,9 +841,7 @@ button:hover {
 .dropdown-item-burguer {
   color: #0b2933 !important;
   text-shadow: none;
-  font-family: Barlow;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 100%;
   margin: 0 !important;
@@ -854,7 +920,7 @@ button:hover {
   font-family: "Barlow", sans-serif !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  margin: 1rem 0 !important;
+  margin: 1rem 0;
   line-height: 1.8rem !important;
 }
 .dropdown-item:hover, .dropdown-item:active {
@@ -911,12 +977,22 @@ button:hover {
   right: 0;
   background: linear-gradient(180deg, #0b2933 0%, rgba(11, 41, 51, 0.9) 100%);
 }
+@media (max-width: 920px) {
+  .container-footer:after {
+    z-index: -2;
+  }
+}
 
 .imagen-fondo-footer {
   display: block;
   position: absolute;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 920px) {
+  .imagen-fondo-footer {
+    z-index: -3;
+  }
 }
 
 .footer-textos {
@@ -926,6 +1002,12 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 920px) {
+  .footer-textos {
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .footer-container {
@@ -1112,6 +1194,7 @@ button:hover {
 .container-experiencias .experiencias {
   display: flex;
   gap: 4rem;
+  position: relative;
 }
 .container-experiencias .experiencia {
   position: relative;
@@ -1122,6 +1205,7 @@ button:hover {
   width: 60rem;
   height: 55rem;
   border-radius: 1rem;
+  z-index: 0;
 }
 .container-experiencias .experiencia:after {
   content: "";
@@ -1130,17 +1214,35 @@ button:hover {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 0;
   background: linear-gradient(180deg, rgba(0, 42, 52, 0.1) 0%, rgba(0, 42, 52, 0.4) 41.67%, rgba(0, 42, 52, 0.85) 100%);
+}
+@media (max-width: 920px) {
+  .container-experiencias .experiencia:after {
+    z-index: -2;
+  }
 }
 .container-experiencias .experiencia .exp-boca-river {
   position: absolute;
   z-index: 1;
   margin: 0 4rem 0 4rem;
 }
+@media (max-width: 920px) {
+  .container-experiencias .experiencia .exp-boca-river {
+    position: absolute;
+    z-index: -1;
+  }
+}
 .container-experiencias .experiencia .exp-maradona {
   position: absolute;
   z-index: 1;
   margin: 0 4rem 0 4rem;
+}
+@media (max-width: 920px) {
+  .container-experiencias .experiencia .exp-maradona {
+    position: absolute;
+    z-index: -1;
+  }
 }
 .container-experiencias .experiencia h3 {
   color: #ffffff;
@@ -1183,6 +1285,11 @@ button:hover {
   position: absolute;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 920px) {
+  .imagen-fondo-experienciaHome {
+    z-index: -3;
+  }
 }
 
 .container-reviews {
