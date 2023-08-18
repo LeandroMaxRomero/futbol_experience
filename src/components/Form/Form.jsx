@@ -143,16 +143,16 @@ const Form = () => {
           formik.touched.comments &&
           formik.errors.comments}
       </span>
-          {lang==='castellano'
-          ?
-          <Button type="submit" buttonStyle="btn-contacto">
-        Enviar Formulario</Button>
-        :
+      {lang === "castellano" ? (
         <Button type="submit" buttonStyle="btn-contacto">
-        Send Form</Button>
-        }
-      
-      
+          Enviar Formulario
+        </Button>
+      ) : (
+        <Button type="submit" buttonStyle="btn-contacto">
+          Send Form
+        </Button>
+      )}
+
       {/* <input className="btn-contact"
         type="submit"
         value={lang === "castellano" ? "Enviar Formulario" : "Send Form"}
