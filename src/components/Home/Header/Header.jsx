@@ -17,17 +17,17 @@ export const Header = () => {
   return (
     <div className="container-header">
 
-      <ImageSlider slides={slides} />
-
-      {/* <img src="img/hero1.png" alt="Hinchada Boca Juniors" /> */}
-      
-      {/* <Carrusel/> */}
-
-      <div className="header">
-        <NavBar />
-        <Legend />
-        <SocialBox />
-      </div>
+        <ImageSlider slides={slides} />
+    
+        <img src="img/hero1.png" alt="Hinchada Boca Juniors" className="imagen-header-estatica"/>
+        
+        {/* <Carrusel/> */}
+    
+        <div className="header">
+          <NavBar />
+          <Legend />
+          <SocialBox />
+        </div>
       
     </div>
   );

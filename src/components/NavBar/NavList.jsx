@@ -29,9 +29,17 @@ export const NavList = () => {
 
             <Dropdown.Menu className="dropdown-menu">
 
-                <Dropdown.Item href="/experiencia-maradona" className="dropdown-item">Experiencia Maradona</Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/experiencia-maradona" className="dropdown-item">
+                    Experiencia Maradona
+                  </Link>
+                </Dropdown.Item>
       
-                <Dropdown.Item href="/experiencia-boca-river" className="dropdown-item">Experiencia Boca - River</Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/experiencia-boca-river" className="dropdown-item">
+                    Experiencia Boca - River
+                  </Link>
+                </Dropdown.Item>
 
             </Dropdown.Menu>
           </Dropdown>
@@ -61,9 +69,17 @@ export const NavList = () => {
 
             <Dropdown.Menu className="dropdown-menu">
 
-                <Dropdown.Item href="/experiencia-maradona" className="dropdown-item">Maradona Experience</Dropdown.Item>
+              <Dropdown.Item>
+                  <Link to="/experiencia-maradona" className="dropdown-item">
+                    Maradona Experience
+                  </Link>
+                </Dropdown.Item>
               
-                <Dropdown.Item href="/experiencia-boca-river" className="dropdown-item">Boca - River Experience</Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/experiencia-boca-river" className="dropdown-item"> 
+                    Boca - River Experience
+                  </Link>
+                </Dropdown.Item>
 
             </Dropdown.Menu>
           </Dropdown>

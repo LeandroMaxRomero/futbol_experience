@@ -1,5 +1,8 @@
   @use '../base/variables' as v;
-
+.nosotros{
+    display: flex;
+    flex-direction: column;
+}
 .container-nosotros{
     display: flex;
     h2{
@@ -24,21 +27,25 @@
     }
 }
 .acercaDe{
+    display: flex;
+    flex-wrap: nowrap;
     width: 124rem;
+    width: 90%;
     margin: 5rem 7.5rem 10rem;
     gap: 4rem;
-    img{
-        width: 60.1rem;
-        height: 98.2rem;
-    }
 }
 .detrasDe{
+    display: flex;
     margin: 0 7.5rem 10rem;
     gap: 4rem;
-    img{
-        width: 28rem;
-        height: 36.7rem;
-    }
+}
+.img-acercaDeNosotros{
+    width: 60.1rem;
+    height: 98.2rem;
+}
+.img-detrasDeNosotros{
+    width: 28rem;
+    height: 36.7rem;
 }
 .container-reservaNosotros{
     background-color: v.$grisSuave;
@@ -57,4 +64,9 @@
         line-height: 5rem;
         margin: 5rem auto 2.4rem;
     }
+}
+.seccion-acerca{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
