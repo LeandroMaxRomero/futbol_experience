@@ -450,6 +450,11 @@ button:hover {
     display: none;
   }
 }
+@media (max-width: 650px) {
+  .container-header {
+    height: 53.8rem;
+  }
+}
 
 .container-header:after {
   content: "";
@@ -537,9 +542,14 @@ button:hover {
     margin-top: 25.6rem;
   }
 }
-@media (max-width: 1300px) and (max-width: 920px) {
+@media (max-width: 920px) {
   .container-legend {
     margin-top: 35.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-legend {
+    margin-top: 16.5rem;
   }
 }
 .container-legend h2 {
@@ -695,7 +705,6 @@ button:hover {
 .container-navbar {
   padding: 3.8rem 4.4rem 3.8rem 8vw;
   width: 100%;
-  height: 11.8rem;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -711,6 +720,11 @@ button:hover {
 @media (max-width: 920px) {
   .container-navbar {
     backdrop-filter: blur(2px);
+  }
+}
+@media (max-width: 650px) {
+  .container-navbar {
+    padding: 1.8rem 1.7rem 1.8rem 1.2rem;
   }
 }
 
@@ -755,6 +769,7 @@ button:hover {
 @media (max-width: 650px) {
   .logo_marcaMobile {
     display: block;
+    padding: 0;
   }
 }
 
@@ -772,30 +787,43 @@ button:hover {
   }
 }
 
-.container-navDesplegable#dropdown-baasic {
+.container-navDesplegable {
   display: none;
 }
 @media (max-width: 920px) {
-  .container-navDesplegable#dropdown-baasic {
+  .container-navDesplegable {
     display: block;
-    width: 4.381rem;
-    height: 4.381rem;
-    border-radius: 7.352px;
-    background-color: #fdb908 !important;
-    text-align: center;
-  }
-}
-
-@media (max-width: 650px) {
-  .container-navDesplegable, #dropdown-basic {
-    width: 32px;
-    height: 32px;
-    border-radius: 5.37px;
+    height: 118px;
   }
 }
 
 .dropdown-toggle {
+  background-color: #fdb908 !important;
   border-style: none !important;
+  border-radius: 7.352px;
+}
+.dropdown-toggle.navDesplegable-tablet {
+  width: 4.381rem;
+  height: 4.381rem;
+  text-align: center;
+}
+@media (max-width: 920px) {
+  .dropdown-toggle.navDesplegable-tablet {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .dropdown-toggle.navDesplegable-tablet {
+    display: none;
+  }
+}
+.dropdown-toggle.navDesplegable-mobile {
+  display: none;
+}
+@media (max-width: 650px) {
+  .dropdown-toggle.navDesplegable-mobile {
+    display: block;
+  }
 }
 
 .menu-desplegable.dropdown-menu.show {
@@ -806,9 +834,15 @@ button:hover {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: 10rem;
   align-items: flex-start;
   z-index: 0;
   gap: 8px;
+}
+@media (max-width: 650px) {
+  .menu-desplegable.dropdown-menu.show {
+    margin-top: 3rem;
+  }
 }
 .menu-desplegable.dropdown-menu.show:after {
   content: "";

@@ -9,10 +9,17 @@ function NavDesplegable() {
   const {  changeLang } = useLengua();
   return (
     <Dropdown className='container-navDesplegable'>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+      
+      <Dropdown.Toggle variant="success" id="dropdown-basic" className='navDesplegable-tablet'>
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4.58398 5.95239H29.2269V8.69049H4.58398V5.95239ZM4.58398 15.5357H29.2269V18.2738H4.58398V15.5357ZM4.58398 25.1191H29.2269V27.8572H4.58398V25.1191Z" fill="#0B2933"/>
         </svg>
+      </Dropdown.Toggle>
+
+      <Dropdown.Toggle variant="success" id="dropdown-basic" className='navDesplegable-mobile'>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#0B2933"/>
+      </svg>
       </Dropdown.Toggle>
 
       <Dropdown.Menu className='menu-desplegable'>
