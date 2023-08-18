@@ -2388,6 +2388,8 @@ textarea {
 
 .container-nosotros {
   display: flex;
+  padding: 3rem 5rem;
+  gap: 3rem;
 }
 .container-nosotros h2 {
   color: #0b2933;
@@ -2395,44 +2397,44 @@ textarea {
   font-style: normal;
   font-weight: 700;
   line-height: 4.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fdb908;
 }
 .container-nosotros p {
   color: #0b2933;
-  font-size: 2.2rem;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 4rem;
+  line-height: 35px;
+  margin-top: 0;
 }
-.container-nosotros .divisor {
-  width: 60rem;
-  height: 0.15rem;
-  margin: 2rem 2.5rem auto;
-  background-color: #fdb908;
+.container-nosotros .seccion-detras {
+  width: 70%;
 }
-
-.acercaDe {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 124rem;
-  width: 90%;
-  margin: 5rem 7.5rem 10rem;
-  gap: 4rem;
+.container-nosotros .img-detrasDeNosotros {
+  width: 15rem;
+  max-width: 10%;
+  height: 28rem;
+}
+.container-nosotros .img-detrasDeNosotros img {
+  height: 100%;
 }
 
-.detrasDe {
+/* .detrasDe {
   display: flex;
   margin: 0 7.5rem 10rem;
   gap: 4rem;
-}
-
+} */
 .img-acercaDeNosotros {
-  width: 60.1rem;
-  height: 98.2rem;
+  width: 50%;
 }
-
-.img-detrasDeNosotros {
-  width: 28rem;
-  height: 36.7rem;
+.img-acercaDeNosotros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-reservaNosotros {
@@ -2455,9 +2457,7 @@ textarea {
 }
 
 .seccion-acerca {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  width: 50%;
 }
 
 .img-mobile {
