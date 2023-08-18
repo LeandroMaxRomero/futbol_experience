@@ -435,6 +435,11 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 920px) {
+  .container-header .imagen-fondo-header {
+    display: none;
+  }
+}
 
 .container-header:after {
   content: "";
@@ -469,11 +474,6 @@ button:hover {
   object-fit: cover;
   animation: fadeIn;
   animation-duration: 4s;
-}
-@media (max-width: 920px) {
-  .imagen-fondo-header {
-    display: none;
-  }
 }
 
 .header {
@@ -742,6 +742,7 @@ button:hover {
 }
 
 .dropdown-header {
+  z-index: 1;
   display: flex;
   width: 322px;
   padding: 24px 24px 28px 24px;
@@ -751,6 +752,7 @@ button:hover {
 }
 
 .contenedor-item-burguer {
+  z-index: 1;
   display: flex;
   width: 322px;
   padding: 12px 20px 12px 24px;
@@ -767,6 +769,9 @@ button:hover {
   font-weight: 500;
   line-height: 100%;
   margin: 0 !important;
+}
+.dropdown-item-burguer :hover {
+  cursor: pointer;
 }
 .dropdown-item-burguer.redes {
   display: flex;

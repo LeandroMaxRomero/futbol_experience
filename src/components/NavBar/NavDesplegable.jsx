@@ -57,7 +57,7 @@ function NavDesplegable() {
         </svg>
       </Dropdown.Header>
 
-        <Dropdown.Item className='contenedor-item-burguer'>
+        <Dropdown.Item href="#/" className='contenedor-item-burguer'>
                   <Link to="/" className="dropdown-item-burguer">
                     Home
                   </Link>
