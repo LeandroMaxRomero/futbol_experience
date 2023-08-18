@@ -51,40 +51,40 @@
 }
 
 //*Señaladores de Slides
-.arrow{
-  position: absolute;
-  top: 30rem;
-  font-size: 8rem;
-  width: 5rem;
-  height: 10rem;
-  z-index: 2;
-  color: v.$blanco;
-  &:hover{
-    cursor: pointer;
-  }
+// .arrow{
+//   position: absolute;
+//   top: 30rem;
+//   font-size: 8rem;
+//   width: 5rem;
+//   height: 10rem;
+//   z-index: 2;
+//   color: v.$blanco;
+//   &:hover{
+//     cursor: pointer;
+//   }
 
-  &.left{
-    left: 5%;
-  }
-  &.right{
-    left: 95%;
-  }
-}
-.contenedor-puntos{
-  z-index: 2;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  top: 70rem;
-  width: 25rem;
-}
-.punto-carrusel{
-  font-size: 8rem;
-  color: v.$blanco;
-  &:hover{
-    cursor: pointer;
-  }
-}
+//   &.left{
+//     left: 5%;
+//   }
+//   &.right{
+//     left: 95%;
+//   }
+// }
+// .contenedor-puntos{
+//   z-index: 2;
+//   position: absolute;
+//   display: flex;
+//   justify-content: space-between;
+//   top: 70rem;
+//   width: 25rem;
+// }
+// .punto-carrusel{
+//   font-size: 8rem;
+//   color: v.$blanco;
+//   &:hover{
+//     cursor: pointer;
+//   }
+// }
 
 .header{
   width: 100%;
@@ -93,7 +93,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0;
 
 }
 .container-social {
@@ -105,6 +105,9 @@
   height: 5.4rem;
   border-radius: 0.4rem;
   background: rgba(255, 255, 255, 0.6);
+  @include m.tablet {
+    display: none;
+  }
 }
 .logo-ig {
   width: 3.5rem;
@@ -122,7 +125,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 17.6rem auto 18.2rem;
+  margin: 29.6rem auto 15.2rem;
   h2 {
     font-family: v.$fuentePrincipal;
     color: v.$blanco;
@@ -130,32 +133,44 @@
     font-style: normal;
     font-weight: 700;
     line-height: 9rem;
-    margin: 0 auto;
+    margin: 0 auto 2.5rem;
+    @include m.tablet {
+      font-size: 5.6rem;
+      line-height: 6.6rem;
+    }
   }
   h3 {
     color: v.$amarilloSec;
-    font-size: 3.5rem;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 2.2rem;
+    line-height: 4.6rem;
     margin: 0 auto;
-    font-feature-settings: "clig" off, "liga" off;
-    font-size: 3.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.2rem;
+    @include m.tablet {
+      font-size: 2.4rem;
+      line-height: 3.4rem;
+    }
   }
   button {
     width: 19.4rem;
     height: 6rem;
     margin-top: 5.4rem;
     gap: 1rem;
-    flex-shrink: 0;
     color: v.$azul;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 3.5rem;
+    @include m.tablet {
+      display: flex;
+      width: 179px;
+      height: 41px;
+      padding: 20px 40px 20px 35px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
   }
 }
 
@@ -245,18 +260,29 @@
   right: 0;
   background: linear-gradient(180deg, #0B2933 0%, rgba(11, 41, 51, 0.25) 80.32%, rgba(11, 41, 51, 0.00) 100%);
   // backdrop-filter: blur(2px);
+  @include m.desktop {
+    padding: 3.8rem 4rem 3.8rem 4.8vw;
+  }
 }
 .logo_marca{
   display: none;
   @include m.desktop{
     display: block;
   }
+  @include m.tablet {
+    display: none;
+  }
 }
 .logo_marcaCompleto{
   display: block;
   @include m.desktop{
     display: none;
-}
+  }
+  @include m.tablet {
+    display: block;
+    width: 24.1rem;
+    height: 4.15rem;
+    }
 }
 .navlist {
   display: flex;
@@ -265,7 +291,84 @@
     width: 10.6rem;
     height: 2.4rem;
   }
+  @include m.tablet {
+    display: none;
+  }
 }
+.container-navDesplegable{
+  #dropdown-basic{
+    display: none;
+    width: 4.381rem;
+    height: 4.381rem;
+    flex-shrink: 0;
+    border-radius: 7.352px;
+    background-color: v.$amarillo !important;
+    @include m.tablet {
+      display: block;
+      width: 4.381rem;
+    height: 4.381rem;
+    flex-shrink: 0;
+    border-radius: 7.352px;
+    background-color: v.$amarillo !important;
+    }
+  }
+}
+.menu-desplegable{
+  &.dropdown-menu.show{
+    background-color: v.$blanco !important;
+    backdrop-filter: blur(3.5px);
+    display: flex;
+    width: 322px;
+    height: 800px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+    &:after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(52, 52, 52, 0.30);
+    }
+  }
+}
+.dropdown-header{
+  display: flex;
+  width: 322px;
+  padding: 24px 24px 28px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.contenedor-item-burguer{
+  display: flex;
+  width: 322px;
+  padding: 12px 20px 12px 24px;
+  align-items: center;
+  gap: 12px;
+}
+.dropdown-item-burguer{
+    color: v.$azul !important;
+    text-shadow: none;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0 !important;
+    &.redes{
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    } 
+}
+
+
+
+
 .header-navbar {
   display: inline-flex;
   padding-left: 0rem;
@@ -284,7 +387,7 @@
   h3 {
     font-size: 1.8rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
     line-height: 1.8rem;
     // @include m.desktop {
@@ -298,7 +401,7 @@
     font-size: 1.8rem !important;
     font-family: v.$fuentePrincipal !important;
     font-style: normal !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     margin: 0 !important;
     line-height: 1.8rem !important;
     border: none;
@@ -354,6 +457,13 @@
   font-weight: 700;
   line-height: 1.8rem;
   border-color: transparent;
+  &.burguer{
+    color: v.$headingBlack;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
 }
 .divisor {
   width: 0.2rem;

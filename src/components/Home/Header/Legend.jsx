@@ -12,16 +12,16 @@ export const Legend = () => {
       ?
       (
         <div className="container-legend">
-          <h2>Viví el futbol</h2>
-          <h3>Conocé la historia del fútbol argentino</h3>
+          <h2>Viví el fútbol como un argentino</h2>
+          <h3>Conocé las experiencias que tenemos para vos</h3>
           <Button buttonStyle={"btn-contacto"}>Reserva</Button>
         </div>
       )
       :
       (
         <div className="container-legend">
-          <h2>Feel the football</h2>
-          <h3>Be part of the history of Argentine soccer</h3>
+          <h2>Live football like an Argentine</h2>
+          <h3>Know the experiences we have for you</h3>
           <Button buttonStyle={"btn-contacto"}>Reserve</Button>
         </div>
       )
