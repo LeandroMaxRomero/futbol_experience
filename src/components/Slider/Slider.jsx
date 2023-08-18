@@ -36,31 +36,29 @@ export const Slider = ({ data }) => {
         <img src={`${modalContent.url}`} alt={`${modalContent.name}`} />
       </Modal>
       <div className="carousel">
-        
-          <div className="myslide">
-            <Carousel
-              images={images}
-              hasMediaButton={false}
-              hasIndexBoard={false}
+        <div className="myslide">
+          <Carousel
+            images={images}
+            hasMediaButton={false}
+            hasIndexBoard={false}
+          />
+        </div>
+        {data.map((item) => {
+          return (
+            <img
+              src={item.url}
+              alt={item.name}
+              key={item.id}
+              className="img-mobile"
+              onClick={() => showModal(item)}
             />
-          </div>
-          {data.map((item) => {
-            return (
-              <img
-                src={item.url}
-                alt={item.name}
-                key={item.id}
-                className="img-mobile"
-                onClick={() => showModal(item)}
-              />
-            );
-          })}
-        </>
+          );
+        })}
       </div>
     </>
   );
 };
-Slider.propTypes = {
+/* Slider.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
@@ -68,4 +66,4 @@ Slider.propTypes = {
       name: PropTypes.string.isRequired,
     })
   )
-}
+} */
