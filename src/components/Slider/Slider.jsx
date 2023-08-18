@@ -3,6 +3,7 @@ import { useModal } from "../hook/useModal";
 import Modal from "../Modal/Modal";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
+import "animate.css";
 
 export const Slider = ({ data }) => {
   const [slide, setSlide] = useState(0);
@@ -28,30 +29,32 @@ export const Slider = ({ data }) => {
   }));
   return (
     <>
-      <Modal isOpen={isOpenModal} closeModal={closeModal}>
+      <Modal
+        className=" animate__animated animate__fadeIn"
+        isOpen={isOpenModal}
+        closeModal={closeModal}
+      >
         <img src={`${modalContent.url}`} alt={`${modalContent.name}`} />
       </Modal>
       <div className="carousel">
-        
-          <div className="myslide">
-            <Carousel
-              images={images}
-              hasMediaButton={false}
-              hasIndexBoard={false}
+        <div className="myslide">
+          <Carousel
+            images={images}
+            hasMediaButton={false}
+            hasIndexBoard={false}
+          />
+        </div>
+        {data.map((item) => {
+          return (
+            <img
+              src={item.url}
+              alt={item.name}
+              key={item.id}
+              className="img-mobile"
+              onClick={() => showModal(item)}
             />
-          </div>
-          {data.map((item) => {
-            return (
-              <img
-                src={item.url}
-                alt={item.name}
-                key={item.id}
-                className="img-mobile"
-                onClick={() => showModal(item)}
-              />
-            );
-          })}
-        </>
+          );
+        })}
       </div>
     </>
   );

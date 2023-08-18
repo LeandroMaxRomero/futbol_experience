@@ -3,6 +3,7 @@
 .text-container {
   width: 80%;
   margin: 0 auto;
+
   /* min-height: 26.9rem; */
   flex-shrink: 0;
   color: v.$azul;
@@ -10,14 +11,16 @@
   font-family: v.$fuentePrincipal;
   font-style: normal;
   h2 {
+    width: 100%;
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 4.6rem;
-    max-width: 60rem;
+
     padding-bottom: 1.2rem;
     border-bottom: 0.2rem solid v.$amarillo;
   }
   p {
+    width: 100%;
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 3.5rem;
@@ -40,7 +43,7 @@
   column-gap: 1rem;
   width: 80%;
 
-  margin: 5rem auto;
+  margin: 4rem auto;
   flex-shrink: 0;
   .block-description__routes {
     width: 40%;
@@ -234,20 +237,145 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     h2 {
+      width: 100%;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 3rem;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      font-size: 14px;
+      line-height: 23px;
+    }
+
+    button {
+      font-size: 1.4rem;
+    }
+  }
+  .block-description {
+    width: 100%;
+    column-gap: 2rem;
+    margin-top: 1.5rem;
+
+    .block-description__routes {
+      width: 50%;
+    }
+  }
+
+  .block-description__imgs {
+    width: 50%;
+    align-self: flex-start;
+  }
+
+  .block-activities__blocks {
+    article {
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+
+      line-height: 1.4rem;
+    }
+  }
+
+  .block-activities {
+    width: 90%;
+    h3 {
+      width: 48rem;
+      font-size: 1.8rem;
+      text-align: start;
+
+      line-height: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .reserve-experience {
+    height: 19rem;
+    h1 {
+      font-size: 35.778px;
+
+      line-height: 42.167px;
+
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    Button {
+      display: flex;
+      width: 194.222px;
+      height: 41.528px;
+      padding: 9.583px 25.556px;
+      justify-content: center;
+      align-items: center;
+      gap: 6.389px;
+      font-size: 14.056px;
+      line-height: 22.361px;
+    }
+  }
+
+  .curiosity-container {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    h2 {
+      font-size: 24px;
+
+      font-weight: 700;
+      line-height: 34px;
+      padding-bottom: 2rem;
+    }
+  }
+  .curiosity-container__info {
+    width: 100%;
+  }
+  .curiosity-container-text {
+    width: 100%;
+    align-items: center;
+    h3 {
+      align-self: flex-start;
+      width: 100%;
+      text-align: left;
+      font-size: 18.765px;
+      line-height: 25.466px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 14.744px;
+
+      line-height: 23.456px;
+    }
+  }
+
+  .curiosity-container__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .text-container {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    h2 {
       font-size: 1.8rem;
       font-weight: 700;
       line-height: 2.4rem;
       padding-bottom: 0.5rem;
     }
     p {
-      font-size: 12px;
-      line-height: 20px;
+      font-size: 14px;
+      line-height: 24px;
     }
 
     button {
       font-size: 1.2rem;
     }
   }
+
   .block-description {
     margin-top: 1.5rem;
     width: 100%;
@@ -326,6 +454,7 @@
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: 1fr;
+    row-gap: 1rem;
   }
   .curiosity-container-text {
     width: 100%;
