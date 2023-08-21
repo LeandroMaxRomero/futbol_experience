@@ -48,9 +48,9 @@ export const DetrasDe = () => {
               together.
             </p>
           </div>
-          {/*  <div className="detrasDeNosotros-img">
+          <div className="detrasDeNosotros-img">
             <img src="img/nosotros-dan.png" alt="Dan en la tribuna" />
-          </div> */}
+          </div>
         </div>
       )}
     </>
