@@ -26,7 +26,6 @@ export const AcercaDe = () => {
               a hablar. Es cultura, es pasión, son historias.
             </p>
             <p>
-              {" "}
               A través de Fútbol Experience, tendrás la posibilidad de conocer
               puntos emblemáticos de nuestro país que todo fanático del fútbol
               debería conocer. Desde la vida de figuras como Diego Armando
@@ -49,7 +48,13 @@ export const AcercaDe = () => {
         </div>
       ) : (
         <div className="container-nosotros">
-          <img src="img/nosotros-marado.png" alt="Mural de Maradona" />
+          <div className="img_acercaDeNosotros">
+            <img
+              src="img/fermin-rodriguez-penelas-8cByMvS025k-unsplash 1.png"
+              alt="Niño en hombros con playera de Messi"
+            />
+          </div>
+
           <div className="seccion-acerca">
             <h2>About Fútbol Experience</h2>
 
