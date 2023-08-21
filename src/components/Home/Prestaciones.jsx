@@ -6,23 +6,8 @@ export const Prestaciones = () => {
   const useLengua = () => useContext(LenguaContext);
   const { lang } = useLengua();
 
-  // const textoImagenes = {
-  //   Esp:{
-  //     img1: "Experiencia inolvidable",
-  //     img2: "Camiseta de regalo",
-  //     img3: "Comida local",
-  //     img4: "Transporte incluido"
-  //   },
-  //   Ingl:{
-  //     img1: "Unforgetable experience",
-  //     img2: "Gift t-shirt",
-  //     img3: "Local foods",
-  //     img4: "Transportation included"
-  //   }
-  // }
-
   return (
-    <div>
+    <div className="contenedor-prestaciones-noMobile">
     {
         lang==='castellano'
         ?

@@ -3,6 +3,7 @@ import { useModal } from "../hook/useModal";
 import Modal from "../Modal/Modal";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
+import PropTypes  from "prop-types";
 
 export const Slider = ({ data }) => {
   // const [slide, setSlide] = useState(0);
@@ -58,7 +59,7 @@ export const Slider = ({ data }) => {
     </>
   );
 };
-/* Slider.propTypes = {
+Slider.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
@@ -66,4 +67,5 @@ export const Slider = ({ data }) => {
       name: PropTypes.string.isRequired,
     })
   )
-} */
+}
+

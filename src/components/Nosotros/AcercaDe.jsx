@@ -42,7 +42,10 @@ export const AcercaDe = () => {
               material exclusivo, actividades interactivas y regalos al
               finalizar tu recorrida. Todo esto acompañado de un guía bilingüe
               fanático del fútbol, donde el traslado y la comida también están
-              incluidos. Elegí tu experiencia y nosotros nos ocupamos de que sea
+              incluidos.
+            </p>
+            <p>
+              Elegí tu experiencia y nosotros nos ocupamos de que sea
               inolvidable.
             </p>
           </div>

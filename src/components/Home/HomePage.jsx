@@ -8,7 +8,7 @@ import { Atributos } from './Atributos';
 import { Entradas } from './Entradas';
 import { FAQs } from './FAQs';
 import { Reserva } from './Reserva';
-// import SliderMobile from './SliderMobile';
+import PrestacionesSlides from './PrestacionesSlides';
 
 // import { useEffect } from "react";
 // import { useGeolocated } from "react-geolocated";
@@ -65,10 +65,10 @@ export const HomePage = () => {
     <div className='container-home'>
 
       <Header />
-
-      {/* <SliderMobile/> */}
-
+      
       <Prestaciones />
+      <PrestacionesSlides />
+
       <Experiencias />
       <Reviews />
       <Atributos />

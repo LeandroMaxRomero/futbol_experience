@@ -8,10 +8,23 @@
     background-color: v.$blanco;
     color: v.$negro;
 }
+.contenedor-prestaciones-noMobile{
+    @include m.mobile {
+        display: none;
+    }
+}
+.contenedor-prestaciones-Mobile{
+    position: relative;
+    height: 172px;
+    display: none;
+    @include m.mobile {
+        display: block;
+    }
+}
 .container-prestaciones{
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 3%;
     margin: 7.5rem auto 0 auto;
 }
 .prestaciones-box{
@@ -24,13 +37,28 @@
     text-align: center;
     font-family: v.$fuentePrincipal;
     display: flex;
-    
     align-items: end;
     justify-content: center;
+
     font-size: 2.4rem;
     font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    font-weight: 700;
+    line-height: 3.4rem;
+    @include m.tablet {
+        width: 18.78rem;
+        height: 17.18rem;
+
+        font-size: 1.61rem;
+        line-height: 2.28rem;
+    }
+    @include m.mobile {
+        width: 18.5rem;
+        height: 17rem;
+
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+    }
 
     
 
@@ -48,25 +76,60 @@
     }
     p{
         z-index: 1;
-        padding-bottom: 2.4rem;
+        padding-bottom: 1.4rem;
+        margin: 0;
+        @include m.tablet {
+            padding-bottom: 0.9rem;
+        }
+        @include m.mobile {
+            padding-bottom: 0.8rem;
+        }
     }
 }
+.mySwiper{
+    position: absolute;
+    z-index: 0;
+    width: 90%;
+    margin-top: 25px
+}
+
 .imagen-fondo-prestaciones{
     display: block;
     position: absolute;
     height: 100%;
     object-fit: cover;
+    @include m.tablet {
+        z-index: -2;
+    }
+    @include m.mobile {
+        width: 185px;
+    height: 170px; 
+    }
 }
 .container-experiencias{
     margin: 7.5rem auto;
+    @include m.tablet {
+        margin: 5rem auto;
+    }
+    @include m.mobile {
+        margin: 2.4rem auto;
+    }
     h2{
         color: v.$azul;
         font-family: v.$fuentePrincipal;
-        font-size: 3.6rem;
+        font-size: 5.6rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 4.6rem;
+        line-height: 6.6rem;
         margin: 0 auto;
+        @include m.tablet {
+            font-size: 3.75rem;
+            line-height: 4.41rem;
+        }
+        @include m.mobile {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
     }
     .divisor{
         width: 60rem;
