@@ -866,6 +866,7 @@ button:hover {
 
 .contenedor-item-burguer {
   display: flex;
+  z-index: 1;
   width: 322px;
   padding: 12px 20px 12px 24px;
   align-items: center;
@@ -1159,10 +1160,27 @@ button:hover {
   color: #000;
 }
 
+@media (max-width: 650px) {
+  .contenedor-prestaciones-noMobile {
+    display: none;
+  }
+}
+
+.contenedor-prestaciones-Mobile {
+  position: relative;
+  height: 172px;
+  display: none;
+}
+@media (max-width: 650px) {
+  .contenedor-prestaciones-Mobile {
+    display: block;
+  }
+}
+
 .container-prestaciones {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 3%;
   margin: 7.5rem auto 0 auto;
 }
 
@@ -1180,8 +1198,24 @@ button:hover {
   justify-content: center;
   font-size: 2.4rem;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+}
+@media (max-width: 920px) {
+  .prestaciones-box {
+    width: 18.78rem;
+    height: 17.18rem;
+    font-size: 1.61rem;
+    line-height: 2.28rem;
+  }
+}
+@media (max-width: 650px) {
+  .prestaciones-box {
+    width: 18.5rem;
+    height: 17rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 .prestaciones-box.prestacionesUno, .prestaciones-box.prestacionesDos, .prestaciones-box.prestacionesTres, .prestaciones-box.prestacionesCuatro {
   position: relative;
@@ -1197,7 +1231,25 @@ button:hover {
 }
 .prestaciones-box p {
   z-index: 1;
-  padding-bottom: 2.4rem;
+  padding-bottom: 1.4rem;
+  margin: 0;
+}
+@media (max-width: 920px) {
+  .prestaciones-box p {
+    padding-bottom: 0.9rem;
+  }
+}
+@media (max-width: 650px) {
+  .prestaciones-box p {
+    padding-bottom: 0.8rem;
+  }
+}
+
+.mySwiper {
+  position: absolute;
+  z-index: 0;
+  width: 90%;
+  margin-top: 25px;
 }
 
 .imagen-fondo-prestaciones {
@@ -1206,18 +1258,51 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 920px) {
+  .imagen-fondo-prestaciones {
+    z-index: -2;
+  }
+}
+@media (max-width: 650px) {
+  .imagen-fondo-prestaciones {
+    width: 185px;
+    height: 170px;
+  }
+}
 
 .container-experiencias {
   margin: 7.5rem auto;
 }
+@media (max-width: 920px) {
+  .container-experiencias {
+    margin: 5rem auto;
+  }
+}
+@media (max-width: 650px) {
+  .container-experiencias {
+    margin: 2.4rem auto;
+  }
+}
 .container-experiencias h2 {
   color: #0b2933;
   font-family: "Barlow", sans-serif;
-  font-size: 3.6rem;
+  font-size: 5.6rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 4.6rem;
+  line-height: 6.6rem;
   margin: 0 auto;
+}
+@media (max-width: 920px) {
+  .container-experiencias h2 {
+    font-size: 3.75rem;
+    line-height: 4.41rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-experiencias h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
 }
 .container-experiencias .divisor {
   width: 60rem;
