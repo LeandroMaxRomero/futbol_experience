@@ -2425,6 +2425,17 @@ textarea {
   padding: 3rem 5rem;
   gap: 3rem;
 }
+@media (max-width: 920px) {
+  .container-nosotros {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-nosotros {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 .container-nosotros h2 {
   color: #0b2933;
   font-size: 3.6rem;
@@ -2437,23 +2448,63 @@ textarea {
   padding-bottom: 1rem;
   border-bottom: 2px solid #fdb908;
 }
+@media (max-width: 920px) {
+  .container-nosotros h2 {
+    font-size: 24.135px;
+    line-height: 30.84px;
+  }
+}
+@media (max-width: 650px) {
+  .container-nosotros h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 .container-nosotros p {
   color: #0b2933;
-  font-size: 22px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 35px;
   margin-top: 0;
 }
+@media (max-width: 920px) {
+  .container-nosotros p {
+    font-size: 14.749px;
+    line-height: 23.465px;
+  }
+}
+@media (max-width: 650px) {
+  .container-nosotros p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
 .container-nosotros .seccion-detras {
   width: 70%;
 }
-.container-nosotros .img-detrasDeNosotros {
-  width: 15rem;
-  max-width: 10%;
-  height: 28rem;
+@media (max-width: 650px) {
+  .container-nosotros .seccion-detras {
+    width: 100%;
+  }
 }
-.container-nosotros .img-detrasDeNosotros img {
+.container-nosotros .detrasDeNosotros-img {
+  width: 15rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .container-nosotros .detrasDeNosotros-img {
+    order: -1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40rem;
+  }
+}
+.container-nosotros .detrasDeNosotros-img img {
   height: 100%;
 }
 
@@ -2462,13 +2513,30 @@ textarea {
   margin: 0 7.5rem 10rem;
   gap: 4rem;
 } */
-.img-acercaDeNosotros {
+.img_acercaDeNosotros {
   width: 50%;
+  height: 986px;
 }
-.img-acercaDeNosotros img {
+@media (max-width: 920px) {
+  .img_acercaDeNosotros {
+    width: 40%;
+    height: 66rem;
+  }
+}
+@media (max-width: 650px) {
+  .img_acercaDeNosotros {
+    margin-top: 1rem;
+    width: 100%;
+    height: 45rem;
+  }
+  .img_acercaDeNosotros img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.img_acercaDeNosotros img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .container-reservaNosotros {
@@ -2481,6 +2549,16 @@ textarea {
   align-items: center;
   margin: 0 auto;
 }
+@media (max-width: 920px) {
+  .container-reservaNosotros {
+    height: 158.973px;
+  }
+}
+@media (max-width: 650px) {
+  .container-reservaNosotros {
+    padding-bottom: 1rem;
+  }
+}
 .container-reservaNosotros h2 {
   color: #0b2933;
   text-align: center;
@@ -2489,11 +2567,92 @@ textarea {
   line-height: 5rem;
   margin: 5rem auto 2.4rem;
 }
+@media (max-width: 920px) {
+  .container-reservaNosotros h2 {
+    font-size: 28.092px;
+    line-height: 31.922px;
+    margin: 2rem auto;
+  }
+}
+@media (max-width: 650px) {
+  .container-reservaNosotros h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 2rem auto 1.5rem;
+  }
+}
 
 .seccion-acerca {
   width: 50%;
+  max-height: 982px;
+}
+@media (min-width: 920px) {
+  .seccion-acerca {
+    overflow-y: scroll;
+  }
+}
+@media (min-width: 1068px) {
+  .seccion-acerca {
+    overflow-y: auto;
+  }
+}
+@media (max-width: 920px) {
+  .seccion-acerca {
+    width: 60%;
+    max-height: 66rem;
+  }
+}
+@media (max-width: 650px) {
+  .seccion-acerca {
+    overflow-y: visible;
+    width: 100%;
+  }
 }
 
+/* estilos al scroll */
+.seccion-acerca::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.seccion-acerca::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.seccion-acerca::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.seccion-acerca::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.seccion-acerca::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.seccion-acerca::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* @media screen and (min-width: 920px) {
+  .seccion-acerca {
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 1068px) {
+  .seccion-acerca {
+    overflow-y: auto;
+  }
+} */
+@media screen and (max-width: 920px) {
+  /*  .seccion-acerca {
+    max-height: 66rem;
+    overflow-y: scroll;
+  } */
+}
 .img-mobile {
   display: none;
 }

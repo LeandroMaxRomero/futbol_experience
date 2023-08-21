@@ -1,16 +1,27 @@
-
 @mixin mobile {
-    @media (max-width: 650px) {
-        @content;
-    }
+  @media (max-width: 650px) {
+    @content;
+  }
 }
 @mixin tablet {
-    @media (max-width: 920px) {
-        @content;
-    }
+  @media (max-width: 920px) {
+    @content;
+  }
 }
 @mixin desktop {
-    @media (max-width: 1300px) {
-        @content;
-    }
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin scroll-show {
+  @media (min-width: 920px) {
+    @content;
+  }
+}
+
+@mixin scroll-hidden {
+  @media (min-width: 1068px) {
+    @content;
+  }
 }
