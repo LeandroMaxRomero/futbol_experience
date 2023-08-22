@@ -9,6 +9,8 @@ import { Entradas } from './Entradas';
 import { FAQs } from './FAQs';
 import { Reserva } from './Reserva';
 import PrestacionesSlides from './PrestacionesSlides';
+import { ReviewsTablet } from './ReviewsTablet';
+import { ReviewsMobile } from './ReviewsMobile';
 
 // import { useEffect } from "react";
 // import { useGeolocated } from "react-geolocated";
@@ -61,19 +63,36 @@ export const HomePage = () => {
   //   }
   // }, [coords]);
 
+  
+
   return (
     <div className='container-home'>
 
+{/*//* Header */}
       <Header />
-      
+
+{/*//* Prestaciones */}
       <Prestaciones />
       <PrestacionesSlides />
 
+{/*//* Experiencias */}
       <Experiencias />
-      <Reviews />
+
+{/*//*  Reviews */}
+      <Reviews/>
+      <ReviewsTablet />
+      <ReviewsMobile />
+
+{/*//* Atributos */}
       <Atributos />
+
+{/*//* Entradas */}
       <Entradas />
+
+{/*//* FAQs */}
       <FAQs />
+
+      
       <Reserva/>
     </div>
   );

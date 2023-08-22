@@ -22,8 +22,8 @@ export const Experiencias = () => {
                     <img src="img/Home-Exp-RivBoc.png" alt="Experiencia Boca Juniors River Plate" className="imagen-fondo-experienciaHome"/>
                     <div className="exp-boca-river">
                         <h3>Experiencia Boca - River</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
-                        <Link to="experiencia-boca-river"><button>Ver Más</button></Link>
+                        <p>En esta experiencia podrás adentrarte en la historia de los dos clubes más grandes de Argentina: Boca y River...</p>
+                        <Link to="experiencia-boca-river"><button><p>Ver Más</p></button></Link>
                     </div>
                 </div>
 
@@ -34,8 +34,8 @@ export const Experiencias = () => {
                 <img src="img/Home-Exp-Marado.png" alt="Experiencia Maradona" className="imagen-fondo-experienciaHome"/>
                 <div className="exp-maradona">
                     <h3>Experiencia Maradona</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
-                    <Link to="experiencia-maradona"><button>Ver Más</button></Link>
+                    <p>En esta experiencia, podrás conocer la intimidad de D10S o como le decían sus amigos, <i>Pelusa</i>. Muchos... </p>
+                    <Link to="experiencia-maradona"><button><p>Ver Más</p></button></Link>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@ export const Experiencias = () => {
                     <img src="img/Home-Exp-RivBoc.png" alt="Experiencia Boca Juniors River Plate" className="imagen-fondo-experienciaHome"/>
                     <div className="exp-boca-river">
                         <h3>Boca - River Experience</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
+                        <p>In this experience you will be able to delve into the history of the two biggest clubs in Argentina: Boca and River...</p>
                         <Link to="experiencia-boca-river"><button>More..</button></Link>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ export const Experiencias = () => {
                 <img src="img/Home-Exp-Marado.png" alt="Experiencia Maradona" className="imagen-fondo-experienciaHome"/>
                 <div className="exp-maradona">
                     <h3>Maradona Experience</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam tellus, maximus vitae massa et...</p>
+                    <p>In this experience you will be able to know the intimacy of D10S or as his friends called him, <i>Pelusa</i>. Many...</p>
                     <Link to="experiencia-maradona"><button>More...</button></Link>
                 </div>
             </div>

@@ -196,8 +196,8 @@
     line-height: 3.5rem;
     @include m.tablet {
       display: flex;
-      width: 179px;
-      height: 41px;
+      width: 17.9rem;
+      height: 4.1rem;
       padding: 20px 40px 20px 35px;
       justify-content: center;
       margin-top: 13rem;
@@ -299,9 +299,12 @@
   }
   @include m.tablet {
     backdrop-filter: blur(2px);
+    padding: 3.4rem 4.4rem 0 4.4rem;
+    max-height: 9rem;
   }
   @include m.mobile {
-    padding: 1.8rem 1.7rem 1.8rem 1.2rem;
+    padding: 1.8rem 1.2rem 0 1.2rem;
+    max-height: 7rem;
   }
 }
 .logo_marca{
@@ -415,7 +418,7 @@
 .contenedor-item-burguer{
   display: flex;
   z-index: 1;
-  width: 322px;
+  width: 32.2rem;
   padding: 12px 20px 12px 24px;
   align-items: center;
   gap: 12px;

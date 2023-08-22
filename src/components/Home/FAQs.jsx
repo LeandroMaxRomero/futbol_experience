@@ -24,6 +24,22 @@ export const FAQs = () => {
       conte4:"Todos nuestros guías hablan fluidamente en español como en inglés.",
       conte5: "Recomendamos asistir a las experiencias lo más livianos y cómodos posibles. Traiga consigo su documento personal y la confirmación de la reserva de la experiencia.",
       conte6:"Sí, se puede reservar una experiencia grupal y exclusiva. Aceptamos grupos de hasta 15 personas. Consultanos a nuestro whatsapp por esa posibilidad."
+    },
+    {
+      titulo1:"How can I book an experience?",
+      titulo2:"Where can I pay for the experience I chose?",
+      titulo3: "How much time do I need to go through each experience?",
+      titulo4: "What languages do the guides speak?",
+      titulo5: "What should I consider? Do I have to bring any documentation?",
+      titulo6: "Can you make a group and exclusive reservation? How many people can join each tour?"
+    },
+    {
+      conte1:"When you choose the experience you want to book, our website will refer you to the WhatsApp of our customer service team. They will indicate the available dates of each experience with the pertinent details.",
+      conte2: "Once you have chosen your experience, our website will refer you to the WhatsApp of our customer service team. They will send you the payment link so that you can pay and reserve the day of your experience. The same happens for the case of the matches you wish to attend.",
+      conte3: "In the case of the Boca and River experience, the experience lasts about 6 hours. Diego Maradona's experience will last about 4 hours. Finally, if you choose a match, it will last 2 hours plus transfer time",
+      conte4:"All our guides speak Spanish and English fluently.",
+      conte5: "We recommend attending the experiences in the lightest and most comfortable way possible. Take your personal document and confirmation of the experience reservation with you.",
+      conte6: "Yes, you can book an exclusive group experience. We accept groups of up to 15 people. Ask us on our WhatsApp for that possibility."
     }
   ]
   return (
@@ -33,7 +49,6 @@ export const FAQs = () => {
         lang==='castellano'
         ?
         <>
-          <div className="divisor"></div>
           <Acordeon tittle={texto[0].titulo1} contenido={texto[1].conte1} active={active} setActive={setActive} />
           <Acordeon tittle={texto[0].titulo2} contenido={texto[1].conte2} active={active} setActive={setActive} />
           <Acordeon tittle={texto[0].titulo3} contenido={texto[1].conte3} active={active} setActive={setActive} />
@@ -43,12 +58,12 @@ export const FAQs = () => {
         </>
         :
         <>
-          <Acordeon tittle={texto[0].titulo1} contenido={texto[1].conte1} active={active} setActive={setActive} />
-          <Acordeon tittle={texto[0].titulo2} contenido={texto[1].conte2} active={active} setActive={setActive} />
-          <Acordeon tittle={texto[0].titulo3} contenido={texto[1].conte3} active={active} setActive={setActive} />
-          <Acordeon tittle={texto[0].titulo4} contenido={texto[1].conte4} active={active} setActive={setActive} />
-          <Acordeon tittle={texto[0].titulo5} contenido={texto[1].conte5} active={active} setActive={setActive} />
-          <Acordeon tittle={texto[0].titulo6} contenido={texto[1].conte6} active={active} setActive={setActive} />
+          <Acordeon tittle={texto[2].titulo1} contenido={texto[3].conte1} active={active} setActive={setActive} />
+          <Acordeon tittle={texto[2].titulo2} contenido={texto[3].conte2} active={active} setActive={setActive} />
+          <Acordeon tittle={texto[2].titulo3} contenido={texto[3].conte3} active={active} setActive={setActive} />
+          <Acordeon tittle={texto[2].titulo4} contenido={texto[3].conte4} active={active} setActive={setActive} />
+          <Acordeon tittle={texto[2].titulo5} contenido={texto[3].conte5} active={active} setActive={setActive} />
+          <Acordeon tittle={texto[2].titulo6} contenido={texto[3].conte6} active={active} setActive={setActive} />
         </>
       }
     </div>

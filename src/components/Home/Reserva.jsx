@@ -13,13 +13,13 @@ export const Reserva = () => {
         lang==='castellano'
         ?
         <div className="container-reserva">
-            <h3>Reserva ahora para conocer el futbol argentino de local</h3>
-              <Button buttonStyle={"btn-contacto"}>Contacto</Button>
+            <h3>Reservá con nosotros y viví el fútbol como un argentino</h3>
+              <Button buttonStyle={"btn-contacto"}>Contactanos</Button>
         </div>
         :
         <div className="container-reserva">
             <h3>Book now to get to know Argentine soccer at home</h3>
-          <Button buttonStyle={"btn-contacto"}>Contact</Button>
+          <Button buttonStyle={"btn-contacto"}>Contact us</Button>
         </div>
     }
     </>

@@ -19,7 +19,7 @@ export const Acordeon = ({tittle, contenido, active, setActive}) => {
                     </svg>
                     }
                 </span>
-                <p onClick={() => setActive(tittle)}>{tittle}</p>
+                <h3 onClick={() => setActive(tittle)}>{tittle}</h3>
             </div>
         </div>
             
@@ -29,7 +29,6 @@ export const Acordeon = ({tittle, contenido, active, setActive}) => {
             </div>
         </div>
 
-        <div className="divisor"></div>
     </div>
   )
 }
@@ -40,3 +39,4 @@ Acordeon.propTypes = {
   active: PropTypes.string.isRequired,
   setActive: PropTypes.func.isRequired,
 };
+
