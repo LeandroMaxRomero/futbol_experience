@@ -50,44 +50,47 @@ export const AcercaDe = () => {
           </div>
         </div>
       ) : (
-        <div className="container-nosotros">
-          <div className="img_acercaDeNosotros">
-            <img
-              src="img/fermin-rodriguez-penelas-8cByMvS025k-unsplash 1.png"
-              alt="Niño en hombros con playera de Messi"
-            />
-          </div>
+        <>
+          <div className="container-acerca">
+            <div className="acerca-title">
+              <h2>About Fútbol Experience</h2>
+            </div>
+            <div className="img_acercaDeNosotros">
+              <img
+                src="img/fermin-rodriguez-penelas-8cByMvS025k-unsplash 1.png"
+                alt="Niño en hombros con playera de Messi"
+              />
+            </div>
 
-          <div className="seccion-acerca">
-            <h2>About Fútbol Experience</h2>
-
-            <p>
-              `I was born in Argentina, land of Diego and Lionel.` Fútbol
-              Experience is a personalized tour designed for tourists that
-              integrates much more than an Argentine soccer experience. The ball
-              is the first toy, the first language. We learn to kick and then to
-              speak. It is culture, it is passion, it is stories.
-            </p>
-            <p>
-              Through Fútbol Experience, you will have the opportunity to
-              discover emblematic points of our country that every soccer fan
-              should know. From the life of figures like Diego Armando Maradona
-              to visiting the museums and stadiums of the most renowned clubs,
-              such as those of Boca and River. Added to this, ask us for tickets
-              for the matches where we will accompany you to discover the
-              madness of the Argentine fan.
-            </p>
-            <p>
-              And as if that were not enough, you will be part of a complete
-              experience that includes learning the songs that were a trend in
-              the World Cup won by the Argentine team, videos and exclusive
-              material, interactive activities and gifts at the end of your
-              tour. All this accompanied by a bilingual soccer fanatic guide,
-              which also includes transportation and food. Choose your
-              experience and we will make sure it is unforgettable.
-            </p>
+            <div className="seccion-acerca">
+              <p>
+                `I was born in Argentina, land of Diego and Lionel.` Fútbol
+                Experience is a personalized tour designed for tourists that
+                integrates much more than an Argentine soccer experience. The
+                ball is the first toy, the first language. We learn to kick and
+                then to speak. It is culture, it is passion, it is stories.
+              </p>
+              <p>
+                Through Fútbol Experience, you will have the opportunity to
+                discover emblematic points of our country that every soccer fan
+                should know. From the life of figures like Diego Armando
+                Maradona to visiting the museums and stadiums of the most
+                renowned clubs, such as those of Boca and River. Added to this,
+                ask us for tickets for the matches where we will accompany you
+                to discover the madness of the Argentine fan.
+              </p>
+              <p>
+                And as if that were not enough, you will be part of a complete
+                experience that includes learning the songs that were a trend in
+                the World Cup won by the Argentine team, videos and exclusive
+                material, interactive activities and gifts at the end of your
+                tour. All this accompanied by a bilingual soccer fanatic guide,
+                which also includes transportation and food. Choose your
+                experience and we will make sure it is unforgettable.
+              </p>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );

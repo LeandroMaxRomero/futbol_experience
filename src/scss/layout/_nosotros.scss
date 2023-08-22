@@ -1,120 +1,7 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
 
-.nosotros {
-  display: flex;
-  flex-direction: column;
-}
-.container-nosotros {
-  display: flex;
-  padding: 3rem 5rem;
-  gap: 3rem;
-
-  @include m.tablet {
-    padding: 2rem 2rem;
-  }
-
-  @include m.mobile {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  h2 {
-    color: v.$azul;
-    font-size: 3.6rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 4.6rem;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    width: 100%;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid v.$amarillo;
-
-    @include m.tablet {
-      font-size: 24.135px;
-      line-height: 30.84px;
-    }
-    @include m.mobile {
-      font-size: 20px;
-      line-height: 28px;
-    }
-  }
-  p {
-    color: v.$azul;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 35px;
-    margin-top: 0;
-    @include m.tablet {
-      font-size: 14.749px;
-      line-height: 23.465px;
-    }
-
-    @include m.mobile {
-      font-size: 12px;
-      line-height: 20px;
-    }
-  }
-
-  .seccion-detras {
-    width: 70%;
-    @include m.tablet {
-    }
-
-    @include m.mobile {
-      width: 100%;
-    }
-  }
-
-  .detrasDeNosotros-img {
-    width: 15rem;
-    width: 30%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include m.mobile {
-      order: -1;
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 40rem;
-    }
-    img {
-      height: 100%;
-    }
-  }
-}
-
-.img_acercaDeNosotros {
-  width: 50%;
-  height: 986px;
-
-  @include m.tablet {
-    width: 40%;
-    height: 66rem;
-  }
-  @include m.mobile {
-    margin-top: 1rem;
-    width: 100%;
-
-    height: 45rem;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
+/* Bloque reserva */
 .container-reservaNosotros {
   background-color: v.$grisSuave;
   width: 100%;
@@ -124,6 +11,7 @@
   justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
+  padding: 1rem;
 
   @include m.tablet {
     height: 158.973px;
@@ -154,9 +42,88 @@
     }
   }
 }
+
+/* Bloque Acerca de */
+.container-acerca {
+  width: 100%;
+  height: 982px;
+  padding: 3rem 5rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5% 95%;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+
+  @include m.tablet {
+    height: 658px;
+    padding: 2rem 2rem;
+  }
+
+  @include m.mobile {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.img_acercaDeNosotros {
+  grid-column: 1;
+  grid-row: 1/3;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include m.mobile {
+    grid-column: 1;
+    grid-row: 2;
+    height: 45rem;
+  }
+}
+
+.acerca-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  @include m.mobile {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  h2 {
+    color: v.$azul;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.6rem;
+    margin-top: 0;
+
+    width: 100%;
+
+    border-bottom: 2px solid v.$amarillo;
+
+    @include m.tablet {
+      font-size: 24.135px;
+      line-height: 30.84px;
+    }
+    @include m.mobile {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
 .seccion-acerca {
-  width: 50%;
-  max-height: 982px;
+  grid-column: 2;
+  width: 100%;
+  @include m.mobile {
+    grid-column: 1;
+    grid-row: 3;
+    padding-top: 1rem;
+  }
 
   @include m.scroll-show {
     overflow-y: scroll;
@@ -165,14 +132,32 @@
     overflow-y: auto;
   }
 
-  @include m.tablet {
-    width: 60%;
-    max-height: 66rem;
+  @include m.scroll-tablet {
+    overflow-y: hidden;
   }
 
-  @include m.mobile {
-    overflow-y: visible;
+  @include m.scroll-hidden-tablet {
+    overflow-y: scroll;
+  }
+
+  p {
     width: 100%;
+    color: v.$azul;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: 0.2rem;
+
+    @include m.tablet {
+      font-size: 14.749px;
+      line-height: 23.465px;
+    }
+
+    @include m.mobile {
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -204,20 +189,111 @@
   border-radius: 10px;
 }
 
-/* @media screen and (min-width: 920px) {
-  .seccion-acerca {
-    overflow-y: scroll;
+/* Bloque Detras de */
+.container-nosotros {
+  display: block;
+  width: 100%;
+  padding: 3rem 5rem;
+  /*   height: 40rem; */
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 100%;
+  column-gap: 1rem;
+  margin-bottom: 3rem;
+
+  @include m.tablet {
+    margin-bottom: 0;
+  }
+
+  @include m.mobile {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 2rem;
+    /* padding-top: 0;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 45% 20%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 30%; */
   }
 }
-@media screen and (min-width: 1068px) {
-  .seccion-acerca {
-    overflow-y: auto;
+.detras-title {
+  grid-row: 1;
+  grid-column: 1;
+  @include m.mobile {
+    /*  margin-bottom: -4rem; */
+    order: 0;
   }
-} */
+  h2 {
+    color: v.$azul;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.6rem;
+    margin-top: 0;
 
-@media screen and (max-width: 920px) {
-  /*  .seccion-acerca {
-    max-height: 66rem;
-    overflow-y: scroll;
-  } */
+    width: 100%;
+
+    border-bottom: 2px solid v.$amarillo;
+
+    @include m.tablet {
+      font-size: 24.135px;
+      line-height: 30.84px;
+    }
+    @include m.mobile {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+.seccion-detras {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  margin-top: 2rem;
+  @include m.mobile {
+    /*  grid-row: 3; */
+    order: 2;
+  }
+
+  p {
+    width: 100%;
+    color: v.$azul;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: 0.2rem;
+
+    @include m.tablet {
+      font-size: 14.749px;
+      line-height: 23.465px;
+    }
+
+    @include m.mobile {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+.detrasDeNosotros-img {
+  grid-column: 2;
+  grid-row: 1/3;
+  width: 100%;
+  height: 85%;
+
+  @include m.mobile {
+    /*  grid-column: 1;
+    grid-row: 2;*/
+    height: 40rem;
+    order: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
