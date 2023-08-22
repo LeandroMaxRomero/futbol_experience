@@ -31,8 +31,11 @@ export const DetrasDe = () => {
         </div>
       ) : (
         <div className="container-nosotros">
-          <div className="seccion-detras">
+          <div className="detras-title">
             <h2>Behind Fútbol Experience</h2>
+          </div>
+
+          <div className="seccion-detras">
             <p>
               I`m Dan Soccer marks the thermometer of my life. I`ve been on the
               court for as long as I can remember. With my dad we shared many
@@ -48,9 +51,9 @@ export const DetrasDe = () => {
               together.
             </p>
           </div>
-          {/*  <div className="detrasDeNosotros-img">
+          <div className="detrasDeNosotros-img">
             <img src="img/nosotros-dan.png" alt="Dan en la tribuna" />
-          </div> */}
+          </div>
         </div>
       )}
     </>

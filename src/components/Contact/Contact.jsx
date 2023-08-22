@@ -1,11 +1,19 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import Form from "../Form/Form";
 import { HeaderContact } from "./HeaderContact";
+import * as Scroll from "react-scroll";
 
 export const Contact = () => {
   const { lang } = useContext(LenguaContext);
+
+  let scroll = Scroll.animateScroll;
+
+  useEffect(() => {
+    scroll.scrollToTop();
+  });
+
   const number = "+524613904575",
     message = "hola, necesito información sobre las experiencias...";
   return (

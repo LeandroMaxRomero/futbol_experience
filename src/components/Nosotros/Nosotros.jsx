@@ -3,8 +3,16 @@ import { AcercaDe } from "./AcercaDe";
 import { DetrasDe } from "./DetrasDe";
 import "../../scss/layout/_nosotros.scss";
 import { ReservaNosotros } from "./ReservaNosotros";
+import * as Scroll from "react-scroll";
+import { useEffect } from "react";
 
 export const Nosotros = () => {
+  let scroll = Scroll.animateScroll;
+
+  useEffect(() => {
+    scroll.scrollToTop();
+  });
+
   return (
     <div className="nosotros">
       <HeaderContact

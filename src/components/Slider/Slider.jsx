@@ -42,6 +42,7 @@ export const Slider = ({ data }) => {
             images={images}
             hasMediaButton={false}
             hasIndexBoard={false}
+            hasSizeButton={false}
           />
         </div>
         {data.map((item) => {

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import InfoExperience from "../InfoExperience/InfoExperience";
@@ -10,10 +10,17 @@ import ReserveExperience from "../ReserveExperience/ReserveExperience";
 import CuriosityExperience from "../CuriosityExpererience/CuriosityExperience";
 import { CommonHeader } from "../CommonHeader/CommonHeader";
 import { Slider } from "../Slider/Slider";
+import * as Scroll from "react-scroll";
 
 export const RiverExperience = () => {
   const useLengua = () => useContext(LenguaContext);
   const { lang } = useLengua();
+
+  let scroll = Scroll.animateScroll;
+
+  useEffect(() => {
+    scroll.scrollToTop();
+  });
 
   const content = {
     spanish: {

@@ -1,16 +1,29 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { Link, Element } from "react-scroll";
+import { LenguaContext } from "../../context/LenguaProvider";
 
 const TextGralExprience = ({ content }) => {
   const [showContent, setShowContent] = useState(false);
+  const useLengua = () => useContext(LenguaContext);
+  const { lang } = useLengua();
+
+  const seeMore = () => {
+    setShowContent(true);
+  };
+
+  const seeLess = () => {
+    setShowContent(false);
+  };
 
   return (
-    <div className="text-container">
+    <Element name="top" className="text-container">
       <h2>{content[0]}</h2>
       <p>{content[1]}</p>
       {!showContent && (
-        <button onClick={() => setShowContent(true)}>
-          Ver más <i className="material-icons">arrow_drop_down</i>
+        <button onClick={() => seeMore(true)}>
+          {lang === "castellano" ? "Ver más" : "See more"}{" "}
+          <i className="material-icons">arrow_drop_down</i>
         </button>
       )}
       {showContent && (
@@ -21,11 +34,14 @@ const TextGralExprience = ({ content }) => {
         </>
       )}
       {showContent && (
-        <button onClick={() => setShowContent(false)}>
-          Ver menos <i className="material-icons">arrow_drop_up</i>
+        <button>
+          <Link to="top" onClick={() => seeLess(false)}>
+            {lang === "castellano" ? "Ver menos" : "See less"}
+            <i className="material-icons">arrow_drop_up</i>
+          </Link>
         </button>
       )}
-    </div>
+    </Element>
   );
 };
 TextGralExprience.propTypes = {
