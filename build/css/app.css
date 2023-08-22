@@ -1955,6 +1955,11 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+.text-container button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .block-description {
   display: flex;
