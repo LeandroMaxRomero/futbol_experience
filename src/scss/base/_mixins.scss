@@ -25,3 +25,15 @@
     @content;
   }
 }
+
+@mixin scroll-tablet {
+  @media (min-width: 823px) {
+    @content;
+  }
+}
+
+@mixin scroll-hidden-tablet {
+  @media (min-width: 650px) {
+    @content;
+  }
+}
