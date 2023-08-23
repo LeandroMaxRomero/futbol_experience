@@ -14,7 +14,7 @@ export const Contact = () => {
     scroll.scrollToTop();
   });
 
-  const number = "+524613904575",
+  const number = "+5491168196200",
     message = "hola, necesito información sobre las experiencias...";
   return (
     <>
@@ -40,7 +40,7 @@ export const Contact = () => {
                   contact@futbolexperience.com.ar
                 </a>
               </li>
-              <li>Tel: +54 123 456 789</li>
+              <li>Tel: +54 9 11 6819-6200</li>
             </div>
             <div className="contact-info__svg">
               <div className="logo-container">

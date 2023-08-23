@@ -9,26 +9,24 @@ import { Nosotros } from "./components/Nosotros/Nosotros";
 import { Footer } from "./components/Footer/Footer";
 import { RiverExperience } from "./components/RIverExperience/RiverExperience";
 
-// import { ToastContainer } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
-        {/* <ToastContainer
+        <ToastContainer
           position="top-right"
           autoClose={3000}
-          hideProgressBar={false}
+          hideProgressBar={"true"}
           newestOnTop={false}
           closeOnClick
           rtl={false}
-          pauseOnFocusLoss
-          draggable
           pauseOnHover
           theme="light"
           style={{ fontSize: "1.5rem" }}
-        /> */}
+        />
 
         <LenguaProvider>
           <Routes>

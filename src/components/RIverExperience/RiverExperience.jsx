@@ -134,6 +134,10 @@ export const RiverExperience = () => {
           name: "la casa de dios",
         },
       ],
+      contact: {
+        number: "+5491168196200",
+        message: "hola, estoy interesado en reservar la experiencia Boca-River",
+      },
     },
     english: {
       infoExperience: [
@@ -193,6 +197,10 @@ export const RiverExperience = () => {
          and rivalries, such as the mythical Superclásico with Boca, transcending beyond the pitch. with achievements
           local and international, River Plate embodies excellence and passion in soccer.`,
       ],
+      contact: {
+        number: "+5491168196200",
+        message: "hi, I am interested in reserve the Boca-River experience",
+      },
     },
   };
 

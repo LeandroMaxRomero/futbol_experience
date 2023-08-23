@@ -142,6 +142,10 @@ export const ExperienciaMaradona = () => {
           name: "la casa de dios",
         },
       ],
+      contact: {
+        number: "+5491168196200",
+        message: "hola, estoy interesado en reservar la experiencia Maradona",
+      },
     },
     english: {
       infoExperience: [
@@ -214,6 +218,11 @@ export const ExperienciaMaradona = () => {
        highlights his genius. Maradona transcends football, being
        remembered for his talent and human complexity.`,
       ],
+
+      contact: {
+        number: "+5491168196200",
+        message: "hi, I am interested in reserve the Maradona experience",
+      },
     },
   };
 
@@ -261,6 +270,11 @@ export const ExperienciaMaradona = () => {
             lang === "castellano"
               ? content.spanish.reserveExperience
               : content.english.reserveExperience
+          }
+          reserve={
+            lang === "castellano"
+              ? content.spanish.contact
+              : content.english.contact
           }
         />
         <CuriosityExperience

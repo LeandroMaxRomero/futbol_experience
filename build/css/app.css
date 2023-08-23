@@ -3217,6 +3217,7 @@ textarea {
   grid-column: 1;
   grid-row: 1/3;
   width: 100%;
+  object-fit: cover;
 }
 .img_acercaDeNosotros img {
   width: 100%;
@@ -3450,6 +3451,7 @@ textarea {
   grid-row: 1/3;
   width: 100%;
   height: 85%;
+  object-fit: cover;
 }
 @media (max-width: 650px) {
   .detrasDeNosotros-img {
