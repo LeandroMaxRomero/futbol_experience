@@ -148,9 +148,10 @@ export const RiverExperience = () => {
       ],
       textExperience: [
         "About Experience",
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi    Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, nonsuscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus   ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.
-      Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In
-      iaculis arcu eros, eget tempus orci facilisis id.`,
+        `In this experience, you will be able to delve into the history of the two biggest clubs in Argentina: Boca and River, rivals of a lifetime. If you want to know more about those who make up the most passionate classic in the world, this experience is for you.`,
+        `The first stop is the Museo de la pasión Boquense, where you will have access to watch short films about the history of the club, you will meet the main figures and you will see the shirts it had over time, trophies and priceless objects that tell stories. In addition to this, we will give you time so that you can see the official club store.`,
+        `After that, we will continue in the picturesque neighborhood of La Boca to have lunch at "Lo de Diego", a theme bar that speaks for itself. Soccer-themed with a synthetic grass floor, seats with field seats and endless images and replicas, this place represents one of the greatest idols of our Argentine soccer, Diego Armando Maradona. Once lunch is over, we will take some time to visit "Caminito", a museum street and a traditional passage of great cultural and tourist value in our country, a place where soccer, art and tango are mixed.`,
+        ` After there, we will go to the Nuñez area to enter the River Museum. Through a tunnel of time, we will learn about the club's more than 100 years of history, the main players and legends that represented the institution, its trophy case and shirts over time. In addition, we will see two shorts that reflect the greatness of River. And one of the pearls to culminate, the "Most Monumental Stadium". You will have the opportunity to visit the stands, the dressing room and the playing field of the largest stadium in the country, the one that receives more than 80,000 fans every Sunday. Finally, we will give you some time so that you can see the official club store. `,
       ],
 
       descriptionExperience: [

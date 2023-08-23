@@ -8,7 +8,10 @@ export const AcercaDe = () => {
   return (
     <>
       {lang === "castellano" ? (
-        <div className="container-nosotros ">
+        <div className="container-acerca ">
+          <div className="acerca-title">
+            <h2>Acerca de Fútbol Experience</h2>
+          </div>
           <div className="img_acercaDeNosotros">
             <img
               src="img/fermin-rodriguez-penelas-8cByMvS025k-unsplash 1.png"
@@ -16,8 +19,6 @@ export const AcercaDe = () => {
             />
           </div>
           <div className="seccion-acerca">
-            <h2>Acerca de Fútbol Experience</h2>
-
             <p>
               “En Argentina nací, tierra de Diego y Lionel”. Fútbol Experience
               es un tour personalizado diseñado para turistas que integra mucho

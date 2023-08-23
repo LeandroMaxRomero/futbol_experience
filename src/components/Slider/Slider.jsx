@@ -3,7 +3,7 @@ import { useModal } from "../hook/useModal";
 import Modal from "../Modal/Modal";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
-import PropTypes  from "prop-types";
+import PropTypes from "prop-types";
 
 export const Slider = ({ data }) => {
   // const [slide, setSlide] = useState(0);
@@ -53,6 +53,7 @@ export const Slider = ({ data }) => {
               key={item.id}
               className="img-mobile"
               onClick={() => showModal(item)}
+              style={{ cursor: "pointer" }}
             />
           );
         })}
@@ -67,6 +68,5 @@ Slider.propTypes = {
       url: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
     })
-  )
-}
-
+  ),
+};
