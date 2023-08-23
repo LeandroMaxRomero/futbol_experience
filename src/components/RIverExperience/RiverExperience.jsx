@@ -196,33 +196,6 @@ export const RiverExperience = () => {
     },
   };
 
-  /* para cambiar de slider a imageExperience */
-
-  /* const [mobile, setMobile] = useState(false);
-
-  let breakPoint = window.matchMedia("(min-width:920px)");
-
-  const responsive = (e) => {
-    if (e.matches) {
-      setMobile(false);
-      return false;
-    }
-    setMobile(true);
-  };
-
-  breakPoint.addEventListener("change", responsive);
-
-  console.log(window.innerWidth);
-  useEffect(() => {
-    if (window.innerWidth >= 920) {
-      setMobile(true);
-    }
-    if (window.innerWidth < 920) {
-      setMobile(false);
-    }
-  }, []); */
-  ///////////////////////////////////////////////////
-
   return (
     <>
       <CommonHeader
@@ -260,11 +233,6 @@ export const RiverExperience = () => {
               : content.english.activitiesExperience
           }
         />
-        {/*  {!mobile ? (
-          <ImagesExperience imgs={content.spanish.imgs} />
-        ) : (
-          <Slider data={content.spanish.imgs} />
-        )} */}
 
         <Slider data={content.spanish.imgs} />
         <ReserveExperience
