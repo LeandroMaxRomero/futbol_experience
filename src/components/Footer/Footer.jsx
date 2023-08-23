@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-import { Logo } from "./Logo";
 import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
+
 export const Footer = () => {
   const useLengua = () => useContext(LenguaContext);
   const { lang } = useLengua();
 
   const number = "+524613904575",
     message = "hola, necesito información sobre las experiencias...";
+
   return (
     <>
       {lang === "castellano" ? (
@@ -19,12 +20,19 @@ export const Footer = () => {
           />
 
           <div className="footer-textos">
+
             <div className="footer-container">
+
               <div className="footer-logo">
-                <Logo />
+
+                <img src="img/LogoFooter.svg" alt="Logo de Futbol Experience" className="img-logo-footer"/>
+                <img src="img/LogoFooterTablet.svg" alt="Logo de Futbol Experience" className="img-logo-footerTablet"/>
+                <img src="img/LogoFooterMobile.svg" alt="Logo de Futbol Experience" className="img-logo-footerMobile"/>
+                
               </div>
 
               <div className="footer-columns">
+                
                 <div className="footer-navigation">
                   <strong>Navegación</strong>
                   <li>
@@ -190,7 +198,11 @@ export const Footer = () => {
           <div className="footer-textos">
             <div className="footer-container">
               <div className="footer-logo">
-                <Logo />
+
+                <img src="img/LogoFooter.svg" alt="Logo de Futbol Experience" className="img-logo-footer"/>
+                <img src="img/LogoFooterTablet.svg" alt="Logo de Futbol Experience" className="img-logo-footerTablet"/>
+                <img src="img/LogoFooterMobile.svg" alt="Logo de Futbol Experience" className="img-logo-footerMobile"/>
+
               </div>
 
               <div className="footer-columns">

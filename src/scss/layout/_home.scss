@@ -140,6 +140,7 @@
     }
     .experiencias{
         display: flex;
+        justify-content: center;
         gap: 4rem;
         position: relative;
         @include m.mobile {
@@ -366,7 +367,7 @@
                             "foto foto"
                             "texto texto"
                             "iconouno iconodos";
-        margin: 3.2rem 1.2rem 4rem;
+        margin: 3.2rem 1.2rem 0;
 
     }
     h2{
@@ -428,6 +429,7 @@
             font-size: 1.4rem;
             line-height: 2.6rem;
             margin-top: 2.4rem;
+            margin-bottom: 0;
         }
     }
 }
@@ -540,6 +542,7 @@
     @include m.mobile {
         min-height: 33.6rem;
         height: fit-content;
+        margin-top: 4rem;
     }
     .entradas{
         display: flex;

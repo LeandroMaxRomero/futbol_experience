@@ -1006,6 +1006,12 @@ button:hover {
   position: relative;
   min-height: 34.3rem;
   height: 100%;
+  font-family: "Barlow", sans-serif;
+}
+@media (max-width: 920px) {
+  .container-footer {
+    min-height: 23.7rem;
+  }
 }
 
 .container-footer:after {
@@ -1040,6 +1046,8 @@ button:hover {
   z-index: 1;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 0 10rem;
   align-items: center;
   justify-content: center;
 }
@@ -1047,6 +1055,7 @@ button:hover {
   .footer-textos {
     position: absolute;
     z-index: -1;
+    padding: 0 4rem;
   }
 }
 
@@ -1054,16 +1063,57 @@ button:hover {
   width: 100%;
   min-height: 26.25rem;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 7rem;
+}
+
+.footer-logo {
+  padding-right: 10%;
+}
+.footer-logo .img-logo-footer {
+  max-width: 41.135rem;
+  height: 7.83rem;
+}
+@media (max-width: 920px) {
+  .footer-logo .img-logo-footer {
+    display: none;
+  }
+}
+.footer-logo .img-logo-footerTablet {
+  display: none;
+}
+@media (max-width: 920px) {
+  .footer-logo .img-logo-footerTablet {
+    display: block;
+    width: 26.28rem;
+    height: 5.0025rem;
+  }
+}
+
+.footer-columns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-navigation {
+  padding-right: 5%;
 }
 
 .footer-navigation strong,
 .footer-rigth strong {
   color: #fdb908;
-  font-weight: 550;
-  line-height: 2.2rem;
   font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+@media (max-width: 920px) {
+  .footer-navigation strong,
+  .footer-rigth strong {
+    font-size: 1.47rem;
+    line-height: 2.34rem;
+  }
 }
 .footer-navigation li a,
 .footer-navigation li,
@@ -1072,9 +1122,18 @@ button:hover {
   font-size: 1.8rem;
   color: #ffffff;
   font-weight: 400;
-  line-height: 1.8rem;
-  margin-bottom: 0.8rem;
-  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0;
+  line-height: 2.4rem;
+}
+@media (max-width: 920px) {
+  .footer-navigation li a,
+  .footer-navigation li,
+  .footer-rigth li a,
+  .footer-rigth li {
+    font-size: 1.2rem;
+    line-height: 1.61re;
+  }
 }
 
 .footer-network {
@@ -1082,9 +1141,6 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-}
-.footer-network strong {
-  margin-bottom: 1rem;
 }
 
 .footer-network__svg {
@@ -1111,6 +1167,7 @@ button:hover {
   font-weight: 400;
   margin: 0;
   line-height: 1.8rem;
+  letter-spacing: 0.5px;
 }
 
 .svg {
@@ -1123,40 +1180,6 @@ button:hover {
   background-color: #447980;
 }
 
-.footer-columns {
-  width: 90%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.logo-size {
-  width: 10rem;
-}
-
-@media screen and (max-width: 920px) {
-  .footer-logo {
-    width: 30%;
-    align-self: flex-start;
-    margin-left: 26.5rem;
-  }
-  .footer-container {
-    flex-direction: column;
-    height: 473px;
-  }
-  .imagen-fondo-footer {
-    height: 555px;
-  }
-  .container-footer:after {
-    content: "";
-    height: 555px;
-  }
-  .footer-columns {
-    flex-direction: column;
-  }
-  .footer-network__svg {
-    width: 15%;
-  }
-}
 .container-home {
   display: flex;
   flex-direction: column;

@@ -17,7 +17,7 @@ export const Nosotros = () => {
     <div className="nosotros">
       <HeaderContact
         imagen={"img/header-nosotros.png"}
-        tittleES="Nosotros"
+        tittleES="Sobre Nosotros"
         tittleEN="About Us"
       />
       <AcercaDe />
