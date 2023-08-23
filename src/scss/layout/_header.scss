@@ -221,7 +221,7 @@
     height: 36.8rem;
   }
   h2 {
-    font-family: "Barlow SemiBold";
+    font-family: v.$fuentePrincipal; /* "Barlow SemiBold"; */
     color: v.$blanco;
     text-align: center;
     font-size: 9rem;
@@ -276,17 +276,13 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-<<<<<<< HEAD
   @include m.tablet {
     height: 44.1rem;
   }
   @include m.mobile {
     height: 368px;
   }
-  &:after{
-=======
   &:after {
->>>>>>> maradona
     content: "";
     width: 100%;
     height: 100%;
@@ -301,7 +297,7 @@
     );
   }
   h2 {
-    font-family: "Barlow SemiBold";
+    font-family: v.$fuentePrincipal; /* "Barlow SemiBold"; */
     color: v.$blanco;
     font-size: 7.2rem;
     font-style: normal;
