@@ -248,7 +248,7 @@ export const ExperienciaMaradona = () => {
         ownStyle={"header-maradona"}
         experienceTittleES={"Experiencia Maradona"}
         experienceTittleEN={"Maradona Experience"}
-        image={"img/banner-maradona-header.png"}
+        image={"img/Home-Exp-Marado.png"}
       />
       <div className="maradona-container">
         <InfoExperience
