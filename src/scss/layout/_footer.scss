@@ -148,6 +148,9 @@
     margin-bottom: 0.4rem;
     margin-top: 0;
     line-height: 2.4rem;
+    &:hover{
+      font-weight: 600;
+    }
     @include m.tablet {
       font-size: 1.2rem;
       line-height: 1.61rem;
