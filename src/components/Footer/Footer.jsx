@@ -20,19 +20,26 @@ export const Footer = () => {
           />
 
           <div className="footer-textos">
-
             <div className="footer-container">
-
               <div className="footer-logo">
-
-                <img src="img/LogoFooter.svg" alt="Logo de Futbol Experience" className="img-logo-footer"/>
-                <img src="img/LogoFooterTablet.svg" alt="Logo de Futbol Experience" className="img-logo-footerTablet"/>
-                <img src="img/LogoFooterMobile.svg" alt="Logo de Futbol Experience" className="img-logo-footerMobile"/>
-                
+                <img
+                  src="img/LogoFooter.svg"
+                  alt="Logo de Futbol Experience"
+                  className="img-logo-footer"
+                />
+                <img
+                  src="img/LogoFooterTablet.svg"
+                  alt="Logo de Futbol Experience"
+                  className="img-logo-footerTablet"
+                />
+                <img
+                  src="img/LogoFooterMobile.svg"
+                  alt="Logo de Futbol Experience"
+                  className="img-logo-footerMobile"
+                />
               </div>
 
               <div className="footer-columns">
-                
                 <div className="footer-navigation">
                   <strong>Navegación</strong>
                   <li>
@@ -75,7 +82,7 @@ export const Footer = () => {
                     <strong>Redes</strong>
                     <div className="footer-network__svg">
                       <a
-                        href={`https://web.whatsapp.com/send?phone=${number}&text=${message}&app_absent=0`}
+                        href={` https://wa.me/${number}?text=${message}`}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -103,7 +110,7 @@ export const Footer = () => {
                         </svg>
                       </a>
                       <a
-                        href="http://https://www.instagram.com/futbolexperienceba"
+                        href="https://www.instagram.com/futbolexperienceba"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -198,11 +205,21 @@ export const Footer = () => {
           <div className="footer-textos">
             <div className="footer-container">
               <div className="footer-logo">
-
-                <img src="img/LogoFooter.svg" alt="Logo de Futbol Experience" className="img-logo-footer"/>
-                <img src="img/LogoFooterTablet.svg" alt="Logo de Futbol Experience" className="img-logo-footerTablet"/>
-                <img src="img/LogoFooterMobile.svg" alt="Logo de Futbol Experience" className="img-logo-footerMobile"/>
-
+                <img
+                  src="img/LogoFooter.svg"
+                  alt="Logo de Futbol Experience"
+                  className="img-logo-footer"
+                />
+                <img
+                  src="img/LogoFooterTablet.svg"
+                  alt="Logo de Futbol Experience"
+                  className="img-logo-footerTablet"
+                />
+                <img
+                  src="img/LogoFooterMobile.svg"
+                  alt="Logo de Futbol Experience"
+                  className="img-logo-footerMobile"
+                />
               </div>
 
               <div className="footer-columns">

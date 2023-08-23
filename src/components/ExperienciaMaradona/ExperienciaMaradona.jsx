@@ -193,7 +193,7 @@ export const ExperienciaMaradona = () => {
       ],
       reserveExperience: [
         "I want to live the Maradona Experience!",
-        "Reserve yoyr next experience",
+        "Reserve your next experience",
       ],
       curiosityExperience: [
         "Did you know ...",

@@ -174,7 +174,7 @@ export const RiverExperience = () => {
       ],
       reserveExperience: [
         "I want to live the Boca-River Experience!",
-        "Reserve yoyr next experience",
+        "Reserve your next experience",
       ],
       curiosityExperience: [
         "Did you know ...",

@@ -45,7 +45,7 @@ export const Contact = () => {
             <div className="contact-info__svg">
               <div className="logo-container">
                 <a
-                  href={`https://web.whatsapp.com/send?phone=${number}&text=${message}&app_absent=0`}
+                  href={` https://wa.me/${number}?text=${message}`}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -74,7 +74,7 @@ export const Contact = () => {
                 </a>
               </div>
               <div className="logo-container">
-                <a href="http://">
+                <a href="https://www.instagram.com/futbolexperienceba">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
