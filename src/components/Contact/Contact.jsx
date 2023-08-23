@@ -13,9 +13,15 @@ export const Contact = () => {
   useEffect(() => {
     scroll.scrollToTop();
   });
-
-  const number = "+5491168196200",
-    message = "hola, necesito información sobre las experiencias...";
+  const contact = {
+    number: "+5491168196200",
+    spanish: {
+      message: "Hola, necesito información sobre las experiencias...",
+    },
+    english: {
+      message: "Hi, I need information about experiences",
+    },
+  };
   return (
     <>
       <HeaderContact
@@ -45,7 +51,11 @@ export const Contact = () => {
             <div className="contact-info__svg">
               <div className="logo-container">
                 <a
-                  href={` https://wa.me/${number}?text=${message}`}
+                  href={` https://wa.me/${contact.number}?text=${
+                    lang === "castellano"
+                      ? contact.spanish.message
+                      : contact.english.message
+                  }`}
                   target="_blank"
                   rel="noreferrer"
                 >

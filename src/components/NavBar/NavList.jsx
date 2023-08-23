@@ -4,43 +4,65 @@ import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
 import { Dropdown } from "react-bootstrap";
 
-
 export const NavList = () => {
   const useLengua = () => useContext(LenguaContext);
   const { lang, changeLang } = useLengua();
 
+  const contact = {
+    number: "+5491168196200",
+    spanish: {
+      message: "Hola, necesito información sobre las experiencias...",
+    },
+    english: {
+      message: "Hi, I need information about experiences",
+    },
+  };
+
   return (
     <div className="navlist">
-      {lang === "castellano" ? 
-      (
+      {lang === "castellano" ? (
         <div className="header-navbar">
-
           <Link className="navbar-link" to="/">
             <h3>Home</h3>
           </Link>
 
           <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic" className="dropdown">
+            <Dropdown.Toggle
+              variant="success"
+              id="dropdown-basic"
+              className="dropdown"
+            >
               Experiencias
-              <svg className="flechitapabajo" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1.08337L6.83333 6.91671L12.6667 1.08337" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg
+                className="flechitapabajo"
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.08337L6.83333 6.91671L12.6667 1.08337"
+                  stroke="white"
+                  strokeWidth="1.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="dropdown-menu">
+              <Dropdown.Item>
+                <Link to="/experiencia-maradona" className="dropdown-item">
+                  Experiencia Maradona
+                </Link>
+              </Dropdown.Item>
 
-                <Dropdown.Item>
-                  <Link to="/experiencia-maradona" className="dropdown-item">
-                    Experiencia Maradona
-                  </Link>
-                </Dropdown.Item>
-      
-                <Dropdown.Item>
-                  <Link to="/experiencia-boca-river" className="dropdown-item">
-                    Experiencia Boca - River
-                  </Link>
-                </Dropdown.Item>
-
+              <Dropdown.Item>
+                <Link to="/experiencia-boca-river" className="dropdown-item">
+                  Experiencia Boca - River
+                </Link>
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
@@ -50,37 +72,60 @@ export const NavList = () => {
           <Link className="navbar-link" to="/nosotros">
             <h3>Nosotros</h3>
           </Link>
-          <Button buttonStyle={"btn-navbar"}>Reservá</Button>
+          <Button buttonStyle={"btn-navbar"}>
+            {" "}
+            <a
+              href={` https://wa.me/${contact.number}?text=${contact.spanish.message}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Reservá
+            </a>
+          </Button>
         </div>
       ) : (
         <div className="header-navbar">
-
           <Link className="navbar-link" to="/">
             <h3>Home</h3>
           </Link>
 
           <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic" className="dropdown">
+            <Dropdown.Toggle
+              variant="success"
+              id="dropdown-basic"
+              className="dropdown"
+            >
               Experiences
-              <svg className="flechitapabajo" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1.08337L6.83333 6.91671L12.6667 1.08337" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+              <svg
+                className="flechitapabajo"
+                width="14"
+                height="8"
+                viewBox="0 0 14 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.08337L6.83333 6.91671L12.6667 1.08337"
+                  stroke="white"
+                  strokeWidth="1.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="dropdown-menu">
+              <Dropdown.Item>
+                <Link to="/experiencia-maradona" className="dropdown-item">
+                  Maradona Experience
+                </Link>
+              </Dropdown.Item>
 
               <Dropdown.Item>
-                  <Link to="/experiencia-maradona" className="dropdown-item">
-                    Maradona Experience
-                  </Link>
-                </Dropdown.Item>
-              
-                <Dropdown.Item>
-                  <Link to="/experiencia-boca-river" className="dropdown-item"> 
-                    Boca - River Experience
-                  </Link>
-                </Dropdown.Item>
-
+                <Link to="/experiencia-boca-river" className="dropdown-item">
+                  Boca - River Experience
+                </Link>
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
@@ -90,7 +135,15 @@ export const NavList = () => {
           <Link className="navbar-link" to="/nosotros">
             <h3>About Us</h3>
           </Link>
-          <Button buttonStyle={"btn-navbar"}>Reserve</Button>
+          <Button buttonStyle={"btn-navbar"}>
+            <a
+              href={` https://wa.me/${contact.number}?text=${contact.english.message}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Reserve
+            </a>
+          </Button>
         </div>
       )}
 
@@ -116,7 +169,6 @@ export const NavList = () => {
             <img src="img/spain.png" />
           </button>
         )} */}
-
     </div>
   );
 };

@@ -1,11 +1,21 @@
 import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 import { Button } from "../Button/Button";
-import { Link } from "react-router-dom";
 
 export const Entradas = () => {
   const useLengua = () => useContext(LenguaContext);
   const { lang } = useLengua();
+
+  const contact = {
+    number: "+5491168196200",
+    spanish: {
+      message: "Hola, necesito información sobre las experiencias...",
+    },
+    english: {
+      message: "Hi, I need information about experiences",
+    },
+  };
+
   return (
     <>
       <section className="container-entradas">
@@ -19,7 +29,13 @@ export const Entradas = () => {
               (ida-vuelta) junto a un snack en las inmediaciones del estadio.
             </h3>
             <Button buttonStyle={"btn-contacto"}>
-              <Link to={"/contact"}>Contactanos</Link>
+              <a
+                href={` https://wa.me/${contact.number}?text=${contact.spanish.message}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contactanos
+              </a>
             </Button>
           </div>
         ) : (
@@ -32,7 +48,13 @@ export const Entradas = () => {
               along with snacks in the vicinity of the stadium.
             </h3>
             <Button buttonStyle={"btn-contacto"}>
-              <Link to={"/contact"}>Contact Us</Link>
+              <a
+                href={` https://wa.me/${contact.number}?text=${contact.english.message}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contact Us
+              </a>
             </Button>
           </div>
         )}
