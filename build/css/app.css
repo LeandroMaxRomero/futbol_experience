@@ -3003,6 +3003,7 @@ textarea {
     display: flex;
     flex-direction: column;
     height: auto;
+    padding-bottom: 0;
   }
 }
 
@@ -3017,8 +3018,8 @@ textarea {
 }
 @media (max-width: 650px) {
   .img_acercaDeNosotros {
-    grid-column: 1;
-    grid-row: 2;
+    /*    grid-column: 1;
+    grid-row: 2; */
     height: 45rem;
   }
 }
@@ -3030,8 +3031,8 @@ textarea {
 }
 @media (max-width: 650px) {
   .acerca-title {
-    grid-column: 1;
-    grid-row: 1;
+    /* grid-column: 1;
+    grid-row: 1; */
   }
 }
 .acerca-title h2 {
