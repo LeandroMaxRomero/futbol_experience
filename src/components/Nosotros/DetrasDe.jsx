@@ -7,10 +7,11 @@ export const DetrasDe = () => {
   return (
     <>
       {lang === "castellano" ? (
-        <div className="container-nosotros detrasDe">
-          <div className="seccion-detras">
+        <div className="container-nosotros">
+          <div className="detras-title">
             <h2>Detrás de Fútbol Experience</h2>
-
+          </div>
+          <div className="seccion-detras">
             <p>
               Soy Dan. El fútbol marca el termómetro de mi vida. Voy a la cancha
               desde que tengo uso de razón. Con mi papá, compartimos muchos
