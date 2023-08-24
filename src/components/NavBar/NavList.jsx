@@ -9,12 +9,12 @@ export const NavList = () => {
   const { lang, changeLang } = useLengua();
 
   const contact = {
-    number: "+5491168196200",
+    number: "+5491126597630",
     spanish: {
-      message: "Hola, necesito información sobre las experiencias...",
+      message: "Hola, estoy interesado en reservar las experiencias...",
     },
     english: {
-      message: "Hi, I need information about experiences",
+      message: "Hi,I am interested in reserve the experiences",
     },
   };
 

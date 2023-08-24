@@ -135,7 +135,7 @@ export const RiverExperience = () => {
         },
       ],
       contact: {
-        number: "+5491168196200",
+        number: "+5491126597630",
         message: "hola, estoy interesado en reservar la experiencia Boca-River",
       },
     },
@@ -198,7 +198,7 @@ export const RiverExperience = () => {
           local and international, River Plate embodies excellence and passion in soccer.`,
       ],
       contact: {
-        number: "+5491168196200",
+        number: "+5491126597630",
         message: "hi, I am interested in reserve the Boca-River experience",
       },
     },
@@ -248,6 +248,11 @@ export const RiverExperience = () => {
             lang === "castellano"
               ? content.spanish.reserveExperience
               : content.english.reserveExperience
+          }
+          reserve={
+            lang === "castellano"
+              ? content.spanish.contact
+              : content.english.contact
           }
         />
         <CuriosityExperience

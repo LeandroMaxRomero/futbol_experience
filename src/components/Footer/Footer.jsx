@@ -7,7 +7,7 @@ export const Footer = () => {
   const { lang } = useLengua();
 
   const contact = {
-    number: "+5491168196200",
+    number: "+5491126597630",
     spanish: {
       message: "Hola, necesito información sobre las experiencias...",
     },
@@ -82,7 +82,7 @@ export const Footer = () => {
                         contact@futbolexperience.com.ar
                       </a>
                     </li>
-                    <li>Tel: +54 9 11 6819-6200</li>
+                    <li>Tel: +54 9 11 2659-7630</li>
                   </div>
                   <br></br>
                   <div className="footer-network">
@@ -263,7 +263,7 @@ export const Footer = () => {
                         contact@futbolexperience.com.ar
                       </a>
                     </li>
-                    <li>Mobile phone: +54 9 11 6819-6200</li>
+                    <li>Mobile phone: +54 9 11 2659-7630</li>
                   </div>
                   <br></br>
                   <div className="footer-network">

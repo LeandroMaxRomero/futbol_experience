@@ -143,7 +143,7 @@ export const ExperienciaMaradona = () => {
         },
       ],
       contact: {
-        number: "+5491168196200",
+        number: "+5491126597630",
         message: "hola, estoy interesado en reservar la experiencia Maradona",
       },
     },
@@ -220,7 +220,7 @@ export const ExperienciaMaradona = () => {
       ],
 
       contact: {
-        number: "+5491168196200",
+        number: "+5491126597630",
         message: "hi, I am interested in reserve the Maradona experience",
       },
     },

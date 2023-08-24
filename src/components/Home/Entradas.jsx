@@ -7,7 +7,7 @@ export const Entradas = () => {
   const { lang } = useLengua();
 
   const contact = {
-    number: "+5491168196200",
+    number: "+5491126597630",
     spanish: {
       message: "Hola, necesito información sobre las experiencias...",
     },
