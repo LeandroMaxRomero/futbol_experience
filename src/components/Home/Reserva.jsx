@@ -22,7 +22,6 @@ export const Reserva = () => {
         <div className="container-reserva">
           <h3>Reservá con nosotros y viví el fútbol como un argentino</h3>
           <Button buttonStyle={"btn-contacto"}>
-            {" "}
             <a
               href={` https://wa.me/${contact.number}?text=${contact.spanish.message}`}
               target="_blank"
