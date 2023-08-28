@@ -12,6 +12,14 @@
   align-items: center;
   margin: 0 auto;
   padding: 1rem;
+  button {
+    margin-top: 0;
+  }
+  button {
+    @include m.tablet {
+      margin-top: -1rem;
+    }
+  }
 
   @include m.tablet {
     height: 158.973px;
@@ -81,7 +89,7 @@
   @include m.mobile {
     /*    grid-column: 1;
     grid-row: 2; */
-    height: 45rem;
+    height: 50rem;
   }
 }
 
@@ -111,6 +119,7 @@
     @include m.mobile {
       font-size: 20px;
       line-height: 28px;
+      margin-bottom: 0.5rem;
     }
   }
 }
@@ -202,6 +211,7 @@
 
   @include m.tablet {
     margin-bottom: 0;
+    grid-template-columns: 60% 40%;
   }
 
   @include m.mobile {
@@ -244,6 +254,7 @@
     @include m.mobile {
       font-size: 20px;
       line-height: 28px;
+      margin-bottom: 0.8rem;
     }
   }
 }
@@ -288,7 +299,7 @@
   @include m.mobile {
     /*  grid-column: 1;
     grid-row: 2;*/
-    height: 40rem;
+    height: 50rem;
     order: 1;
   }
 

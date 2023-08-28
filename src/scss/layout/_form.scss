@@ -77,31 +77,25 @@ textarea {
   align-items: center;
   justify-content: center;
   column-gap: 2rem;
+  margin-bottom: 1.5rem;
 
   .form-name,
   .form-lastName {
     width: 100%;
-    margin-bottom: -1.2rem;
   }
 }
 
-.form-group__error {
+/* .form-group__error {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 
-  .form-name,
-  .form-lastName {
-    width: 100%;
-    height: 5.6rem;
-  }
-  .error {
+/*  .error {
     margin-top: 3rem;
     margin-bottom: -1rem;
-  }
-}
+  } */
 
 .error {
   font-size: 1rem;
@@ -123,6 +117,11 @@ textarea {
     width: 100%;
     text-align: center;
   }
+}
+
+.contact-error {
+  color: red;
+  border: 3px solid red;
 }
 
 /* @media screen and (max-width: 920px) {
