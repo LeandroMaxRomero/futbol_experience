@@ -142,6 +142,10 @@ export const ExperienciaMaradona = () => {
           name: "la casa de dios",
         },
       ],
+      contact: {
+        number: "+5491126597630",
+        message: "hola, estoy interesado en reservar la experiencia Maradona",
+      },
     },
     english: {
       infoExperience: [
@@ -193,7 +197,7 @@ export const ExperienciaMaradona = () => {
       ],
       reserveExperience: [
         "I want to live the Maradona Experience!",
-        "Reserve yoyr next experience",
+        "Reserve your next experience",
       ],
       curiosityExperience: [
         "Did you know ...",
@@ -214,41 +218,21 @@ export const ExperienciaMaradona = () => {
        highlights his genius. Maradona transcends football, being
        remembered for his talent and human complexity.`,
       ],
+
+      contact: {
+        number: "+5491126597630",
+        message: "hi, I am interested in reserve the Maradona experience",
+      },
     },
   };
 
-  /* para cambiar de slider a imageExperience */
-
-  /*  const [mobile, setMobile] = useState(false);
-
-  let breakPoint = window.matchMedia("(min-width:920px)");
-
-  const responsive = (e) => {
-    if (e.matches) {
-      setMobile(false);
-      return false;
-    }
-    setMobile(true);
-  };
-
-  breakPoint.addEventListener("change", responsive); */
-  ////////////////// */ /////////////////////////////////
-  /*  console.log(window.innerWidth);
-  useEffect(() => {
-    if (window.innerWidth >= 920) {
-      setMobile(true);
-    }
-    if (window.innerWidth < 920) {
-      setMobile(false);
-    }
-  }, []); */
   return (
     <>
       <CommonHeader
         ownStyle={"header-maradona"}
         experienceTittleES={"Experiencia Maradona"}
         experienceTittleEN={"Maradona Experience"}
-        image={"img/banner-maradona-header.png"}
+        image={"img/Home-Exp-Marado.png"}
       />
       <div className="maradona-container">
         <InfoExperience
@@ -279,11 +263,6 @@ export const ExperienciaMaradona = () => {
               : content.english.activitiesExperience
           }
         />
-        {/*  {mobile ? (
-          <ImagesExperience imgs={content.spanish.imgs} />
-        ) : (
-          <Slider data={content.spanish.imgs} />
-        )} */}
 
         <Slider data={content.spanish.imgs} />
         <ReserveExperience
@@ -291,6 +270,11 @@ export const ExperienciaMaradona = () => {
             lang === "castellano"
               ? content.spanish.reserveExperience
               : content.english.reserveExperience
+          }
+          reserve={
+            lang === "castellano"
+              ? content.spanish.contact
+              : content.english.contact
           }
         />
         <CuriosityExperience

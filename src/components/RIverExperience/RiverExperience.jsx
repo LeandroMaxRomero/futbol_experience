@@ -134,6 +134,10 @@ export const RiverExperience = () => {
           name: "la casa de dios",
         },
       ],
+      contact: {
+        number: "+5491126597630",
+        message: "hola, estoy interesado en reservar la experiencia Boca-River",
+      },
     },
     english: {
       infoExperience: [
@@ -174,7 +178,7 @@ export const RiverExperience = () => {
       ],
       reserveExperience: [
         "I want to live the Boca-River Experience!",
-        "Reserve yoyr next experience",
+        "Reserve your next experience",
       ],
       curiosityExperience: [
         "Did you know ...",
@@ -193,35 +197,12 @@ export const RiverExperience = () => {
          and rivalries, such as the mythical Superclásico with Boca, transcending beyond the pitch. with achievements
           local and international, River Plate embodies excellence and passion in soccer.`,
       ],
+      contact: {
+        number: "+5491126597630",
+        message: "hi, I am interested in reserve the Boca-River experience",
+      },
     },
   };
-
-  /* para cambiar de slider a imageExperience */
-
-  /* const [mobile, setMobile] = useState(false);
-
-  let breakPoint = window.matchMedia("(min-width:920px)");
-
-  const responsive = (e) => {
-    if (e.matches) {
-      setMobile(false);
-      return false;
-    }
-    setMobile(true);
-  };
-
-  breakPoint.addEventListener("change", responsive);
-
-  console.log(window.innerWidth);
-  useEffect(() => {
-    if (window.innerWidth >= 920) {
-      setMobile(true);
-    }
-    if (window.innerWidth < 920) {
-      setMobile(false);
-    }
-  }, []); */
-  ///////////////////////////////////////////////////
 
   return (
     <>
@@ -260,11 +241,6 @@ export const RiverExperience = () => {
               : content.english.activitiesExperience
           }
         />
-        {/*  {!mobile ? (
-          <ImagesExperience imgs={content.spanish.imgs} />
-        ) : (
-          <Slider data={content.spanish.imgs} />
-        )} */}
 
         <Slider data={content.spanish.imgs} />
         <ReserveExperience
@@ -272,6 +248,11 @@ export const RiverExperience = () => {
             lang === "castellano"
               ? content.spanish.reserveExperience
               : content.english.reserveExperience
+          }
+          reserve={
+            lang === "castellano"
+              ? content.spanish.contact
+              : content.english.contact
           }
         />
         <CuriosityExperience

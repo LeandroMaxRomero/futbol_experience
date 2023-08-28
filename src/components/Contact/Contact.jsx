@@ -13,9 +13,15 @@ export const Contact = () => {
   useEffect(() => {
     scroll.scrollToTop();
   });
-
-  const number = "+524613904575",
-    message = "hola, necesito información sobre las experiencias...";
+  const contact = {
+    number: "+5491126597630",
+    spanish: {
+      message: "Hola, necesito información sobre las experiencias...",
+    },
+    english: {
+      message: "Hi, I need information about experiences",
+    },
+  };
   return (
     <>
       <HeaderContact
@@ -40,12 +46,16 @@ export const Contact = () => {
                   contact@futbolexperience.com.ar
                 </a>
               </li>
-              <li>Tel: +54 123 456 789</li>
+              <li>Tel: +54 9 11 2659-7630</li>
             </div>
             <div className="contact-info__svg">
               <div className="logo-container">
                 <a
-                  href={`https://web.whatsapp.com/send?phone=${number}&text=${message}&app_absent=0`}
+                  href={` https://wa.me/${contact.number}?text=${
+                    lang === "castellano"
+                      ? contact.spanish.message
+                      : contact.english.message
+                  }`}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -74,7 +84,7 @@ export const Contact = () => {
                 </a>
               </div>
               <div className="logo-container">
-                <a href="http://">
+                <a href="https://www.instagram.com/futbolexperienceba">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
