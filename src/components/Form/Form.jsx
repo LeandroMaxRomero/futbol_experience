@@ -46,7 +46,14 @@ const Form = () => {
     email: Yup.string()
       .email(lang === "castellano" ? "Email incorrecto" : "Wrong email")
       .required(lang === "castellano" ? "Campo requerido" : "Required field"),
-    comments: Yup.string().max(250, "Debe tener menos de 250 caracteres"),
+    comments: Yup.string()
+      .max(
+        250,
+        lang === "castellano"
+          ? "Debe tener menos de 250 caracteres"
+          : "Must be less than 250 characters"
+      )
+      .required(lang === "castellano" ? "Campo requerido" : "Required field"),
   });
 
   const formik = useFormik({
@@ -79,35 +86,31 @@ const Form = () => {
   return (
     <form ref={form} onSubmit={formik.handleSubmit}>
       <div className="form-group">
-        <div className="form-group__error">
-          <input
-            className="form-name"
-            type="text"
-            name="name"
-            placeholder={lang === "castellano" ? "Nombre" : "Name"}
-            value={formik.values.name}
-            onChange={formik.handleChange}
-          />
+        <input
+          className={
+            formik.errors.name && formik.touched.name
+              ? "form-name contact-error"
+              : "form-name"
+          }
+          type="text"
+          name="name"
+          placeholder={lang === "castellano" ? "Nombre" : "Name"}
+          value={formik.values.name}
+          onChange={formik.handleChange}
+        />
 
-          <span className="error">
-            {formik.errors.name && formik.touched.name && formik.errors.name}
-          </span>
-        </div>
-        <div className="form-group__error">
-          <input
-            className="form-lastName"
-            type="text"
-            name="lastName"
-            placeholder={lang === "castellano" ? "Apellido" : "Last Name"}
-            value={formik.values.lastName}
-            onChange={formik.handleChange}
-          />
-          <span className="error">
-            {formik.errors.lastName &&
-              formik.touched.lastName &&
-              formik.errors.lastName}
-          </span>
-        </div>
+        <input
+          className={
+            formik.errors.lastName && formik.touched.lastName
+              ? "form-lastName contact-error"
+              : " form-lastName"
+          }
+          type="text"
+          name="lastName"
+          placeholder={lang === "castellano" ? "Apellido" : "Last Name"}
+          value={formik.values.lastName}
+          onChange={formik.handleChange}
+        />
       </div>
 
       <input
@@ -116,20 +119,22 @@ const Form = () => {
         placeholder={lang === "castellano" ? "Teléfono" : "Phone Number"}
         value={formik.values.phone}
         onChange={formik.handleChange}
+        className={
+          formik.errors.phone && formik.touched.phone && "contact-error"
+        }
       />
-      <span className="error">
-        {formik.errors.phone && formik.touched.phone && formik.errors.phone}
-      </span>
+
       <input
         type="email"
         name="email"
         placeholder={lang === "castellano" ? "Correo electrónico" : "Email"}
         value={formik.values.email}
         onChange={formik.handleChange}
+        className={
+          formik.errors.email && formik.touched.email && "contact-error"
+        }
       />
-      <span className="error">
-        {formik.errors.email && formik.touched.email && formik.errors.email}
-      </span>
+
       <textarea
         name="comments"
         cols="30"
@@ -137,12 +142,11 @@ const Form = () => {
         placeholder={lang === "castellano" ? "Comentario" : "Comment"}
         value={formik.values.comments}
         onChange={formik.handleChange}
+        className={
+          formik.errors.comments && formik.touched.comments && "contact-error"
+        }
       />
-      <span className="error">
-        {formik.errors.comments &&
-          formik.touched.comments &&
-          formik.errors.comments}
-      </span>
+
       {lang === "castellano" ? (
         <Button type="submit" buttonStyle="btn-contacto">
           Enviar Formulario
@@ -152,11 +156,6 @@ const Form = () => {
           Send Form
         </Button>
       )}
-
-      {/* <input className="btn-contact"
-        type="submit"
-        value={lang === "castellano" ? "Enviar Formulario" : "Send Form"}
-      /> */}
     </form>
   );
 };
