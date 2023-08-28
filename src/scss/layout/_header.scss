@@ -496,17 +496,14 @@
 .navbar-link {
   text-decoration: none;
   text-align: center;
-  color: v.$blanco;
-  text-shadow: black 0.1em 0.1em 0.2em;
   h3 {
+    color: v.$blanco;
+    text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
     margin: 0;
     line-height: 1.8rem;
-    // @include m.desktop {
-    //   font-size: 1.6rem;
-    // }
   }
 }
 
@@ -521,12 +518,9 @@
   border: none;
   color: v.$blanco;
   text-shadow: black 0.1em 0.1em 0.2em;
-  // @include m.desktop {
-  //   font-size: 1.6rem !important;
-  // }
+  
   .flechitapabajo {
     margin-left: 0.6rem;
-    // filter:drop-shadow(1rem 1rem 2rem black );
   }
   &:focus {
     border: none;

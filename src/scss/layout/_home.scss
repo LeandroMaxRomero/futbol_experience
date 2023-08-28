@@ -162,6 +162,13 @@
     height: 55rem;
     border-radius: 1rem;
     z-index: 0;
+    &:hover{
+      .exp-boca-river, .exp-maradona{
+        .btn-vermas{
+          display: block;
+        }
+      }
+    }
     &:after {
       content: "";
       width: 100%;
@@ -188,19 +195,16 @@
       width: 33.6rem;
       height: 30.8rem;
     }
-    .exp-boca-river {
+    .exp-boca-river, .exp-maradona {
       position: absolute;
       z-index: 1;
       margin: 0 4rem 0 4rem;
-      @include m.tablet {
-        position: absolute;
-        z-index: -1;
+      .btn-vermas{
+        display: none;
+        @include m.tablet {
+          display: block;
+        }
       }
-    }
-    .exp-maradona {
-      position: absolute;
-      z-index: 1;
-      margin: 0 4rem 0 4rem;
       @include m.tablet {
         position: absolute;
         z-index: -1;
@@ -230,6 +234,7 @@
       font-weight: 400;
       line-height: 3.5rem;
       margin: 0;
+      margin-bottom: 3.8rem;
       @include m.tablet {
         font-size: 1.48rem;
         line-height: 2.35rem;
@@ -250,31 +255,23 @@
       border-radius: 1rem;
       border: 0.1rem solid v.$blanco;
       background-color: transparent;
-      margin: 5rem 0 6rem;
+      margin: 1.2rem 0 6rem;
+
+      font-family: v.$fuentePrincipal;
+      color: v.$blanco;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: normal;
+      
       @include m.tablet {
         width: 10.864rem;
         height: 3.36rem;
         padding: 2rem 1.5rem;
         margin: 1.621rem 0 3.27rem;
-      }
-      p {
-        font-family: v.$fuentePrincipal;
-        color: v.$blanco;
-        font-size: 2.5rem;
-        font-weight: 600;
-        line-height: normal;
-        @include m.tablet {
-          font-size: 1.6rem;
-          line-height: 1.8rem;
-          font-weight: 700;
-        }
-      }
-      @include m.tablet {
-        width: 10.864rem;
-        height: 3.36rem;
-
-        font-weight: 700;
+        
+        font-size: 1.6rem;
         line-height: 1.8rem;
+        font-weight: 700;
       }
     }
   }
@@ -662,6 +659,9 @@
   padding: 0;
   color: v.$azul;
   border-top: 2px solid v.$amarillo;
+  &:last-of-type{
+    border-bottom: 2px solid v.$amarillo;
+  }
 }
 .accordionHeading {
   padding: 0;

@@ -376,6 +376,10 @@ button:hover {
   text-align: center;
   align-self: center;
   width: fit-content;
+  transition: all 0.5s ease;
+}
+.btn-contacto:hover {
+  background-color: #FECE52;
 }
 @media (max-width: 920px) {
   .btn-contacto {
@@ -409,6 +413,11 @@ button:hover {
   line-height: 1.8rem;
   margin: 0;
 }
+.btn-contacto p a {
+  width: 100%;
+  height: 100%;
+  color: #0b2933 !important;
+}
 @media (max-width: 920px) {
   .btn-contacto p {
     font-size: 18px;
@@ -426,15 +435,21 @@ button:hover {
   padding: 1.8rem 2.4rem;
   width: 10.6rem;
   height: 5.4rem;
+  transition: all 0.5s ease;
 }
 .btn-navbar p {
-  color: #0b2933;
   text-align: center;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 1.8rem;
   margin: 0 auto;
+}
+.btn-navbar p a {
+  color: #0b2933 !important;
+}
+.btn-navbar:hover {
+  background-color: #FECE52;
 }
 
 .container-header {
@@ -968,10 +983,10 @@ button:hover {
 .navbar-link {
   text-decoration: none;
   text-align: center;
-  color: #ffffff;
-  text-shadow: black 0.1em 0.1em 0.2em;
 }
 .navbar-link h3 {
+  color: #ffffff;
+  text-shadow: black 0.1em 0.1em 0.2em;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -1242,6 +1257,12 @@ button:hover {
   margin-bottom: 0.4rem;
   margin-top: 0;
   line-height: 2.4rem;
+}
+.footer-navigation li a:hover,
+.footer-navigation li:hover,
+.footer-rigth li a:hover,
+.footer-rigth li:hover {
+  font-weight: 600;
 }
 @media (max-width: 920px) {
   .footer-navigation li a,
@@ -1538,6 +1559,9 @@ button:hover {
   border-radius: 1rem;
   z-index: 0;
 }
+.container-experiencias .experiencia:hover .exp-boca-river .btn-vermas, .container-experiencias .experiencia:hover .exp-maradona .btn-vermas {
+  display: block;
+}
 .container-experiencias .experiencia:after {
   content: "";
   width: 100%;
@@ -1565,24 +1589,21 @@ button:hover {
     height: 30.8rem;
   }
 }
-.container-experiencias .experiencia .exp-boca-river {
+.container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
   position: absolute;
   z-index: 1;
   margin: 0 4rem 0 4rem;
 }
+.container-experiencias .experiencia .exp-boca-river .btn-vermas, .container-experiencias .experiencia .exp-maradona .btn-vermas {
+  display: none;
+}
 @media (max-width: 920px) {
-  .container-experiencias .experiencia .exp-boca-river {
-    position: absolute;
-    z-index: -1;
+  .container-experiencias .experiencia .exp-boca-river .btn-vermas, .container-experiencias .experiencia .exp-maradona .btn-vermas {
+    display: block;
   }
 }
-.container-experiencias .experiencia .exp-maradona {
-  position: absolute;
-  z-index: 1;
-  margin: 0 4rem 0 4rem;
-}
 @media (max-width: 920px) {
-  .container-experiencias .experiencia .exp-maradona {
+  .container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
     position: absolute;
     z-index: -1;
   }
@@ -1615,6 +1636,7 @@ button:hover {
   font-weight: 400;
   line-height: 3.5rem;
   margin: 0;
+  margin-bottom: 3.8rem;
 }
 @media (max-width: 920px) {
   .container-experiencias .experiencia p {
@@ -1639,17 +1661,7 @@ button:hover {
   border-radius: 1rem;
   border: 0.1rem solid #ffffff;
   background-color: transparent;
-  margin: 5rem 0 6rem;
-}
-@media (max-width: 920px) {
-  .container-experiencias .experiencia button {
-    width: 10.864rem;
-    height: 3.36rem;
-    padding: 2rem 1.5rem;
-    margin: 1.621rem 0 3.27rem;
-  }
-}
-.container-experiencias .experiencia button p {
+  margin: 1.2rem 0 6rem;
   font-family: "Barlow", sans-serif;
   color: #ffffff;
   font-size: 2.5rem;
@@ -1657,18 +1669,14 @@ button:hover {
   line-height: normal;
 }
 @media (max-width: 920px) {
-  .container-experiencias .experiencia button p {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    font-weight: 700;
-  }
-}
-@media (max-width: 920px) {
   .container-experiencias .experiencia button {
     width: 10.864rem;
     height: 3.36rem;
-    font-weight: 700;
+    padding: 2rem 1.5rem;
+    margin: 1.621rem 0 3.27rem;
+    font-size: 1.6rem;
     line-height: 1.8rem;
+    font-weight: 700;
   }
 }
 
@@ -1687,7 +1695,7 @@ button:hover {
 .container-reviews {
   width: 100%;
   height: 14.9rem;
-  background: var(--primary-color-1, #0B2933);
+  background: var(--primary-color-1, #0b2933);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1824,23 +1832,27 @@ button:hover {
   margin-top: 2.6rem;
   margin-bottom: 1em;
 }
-.container-atributos p p, .container-atributos p br {
+.container-atributos p p,
+.container-atributos p br {
   display: block;
   content: " ";
   margin-top: 3.5rem;
 }
 @media (max-width: 1300px) {
-  .container-atributos p p, .container-atributos p br {
+  .container-atributos p p,
+  .container-atributos p br {
     margin-top: 2.87rem;
   }
 }
 @media (max-width: 920px) {
-  .container-atributos p p, .container-atributos p br {
+  .container-atributos p p,
+  .container-atributos p br {
     margin-top: 2.23rem;
   }
 }
 @media (max-width: 650px) {
-  .container-atributos p p, .container-atributos p br {
+  .container-atributos p p,
+  .container-atributos p br {
     margin-top: 2.6rem;
   }
 }
@@ -1890,7 +1902,8 @@ button:hover {
   border-radius: 1rem;
 }
 
-.iconsUno, .IconsDos {
+.iconsUno,
+.IconsDos {
   display: flex;
   gap: 20%;
   text-align: center;
@@ -1898,7 +1911,8 @@ button:hover {
   align-items: end;
 }
 @media (max-width: 650px) {
-  .iconsUno, .IconsDos {
+  .iconsUno,
+  .IconsDos {
     gap: 10%;
     align-items: center;
   }
@@ -2142,6 +2156,9 @@ button:hover {
   color: #0b2933;
   border-top: 2px solid #fdb908;
 }
+.accordion:last-of-type {
+  border-bottom: 2px solid #fdb908;
+}
 
 .accordionHeading {
   padding: 0;
@@ -2223,6 +2240,29 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* .btn-contacto{
+        display: inline-flex;
+        padding: 15px 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        width: 20.5rem;
+        height: 6.5rem;
+        background-color: v.$amarillo;
+        @include m.tablet {
+            width: 15.9rem;
+            height: 5.05rem;
+            padding: 1.16rem 3.11rem;
+            gap: 7.761px;
+        }
+        @include m.mobile {
+            width: 95%;
+            height: 4.8rem;
+            padding: 1.2rem 1rem;
+            gap: 10px;
+        } 
+    }*/
 }
 .container-reserva h3 {
   color: #0b2933;
@@ -2243,32 +2283,6 @@ button:hover {
   .container-reserva h3 {
     font-size: 2.6rem;
     line-height: 3.8rem;
-  }
-}
-.container-reserva .btn-contacto {
-  display: inline-flex;
-  padding: 15px 40px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 20.5rem;
-  height: 6.5rem;
-  background-color: #fdb908;
-}
-@media (max-width: 920px) {
-  .container-reserva .btn-contacto {
-    width: 15.9rem;
-    height: 5.05rem;
-    padding: 1.16rem 3.11rem;
-    gap: 7.761px;
-  }
-}
-@media (max-width: 650px) {
-  .container-reserva .btn-contacto {
-    width: 95%;
-    height: 4.8rem;
-    padding: 1.2rem 1rem;
-    gap: 10px;
   }
 }
 
@@ -3222,6 +3236,7 @@ textarea {
 .img_acercaDeNosotros img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 @media (max-width: 650px) {
   .img_acercaDeNosotros {
@@ -3464,6 +3479,7 @@ textarea {
 .detrasDeNosotros-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .img-mobile {

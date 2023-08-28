@@ -39,4 +39,3 @@ Acordeon.propTypes = {
   active: PropTypes.string.isRequired,
   setActive: PropTypes.func.isRequired,
 };
-
