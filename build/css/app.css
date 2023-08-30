@@ -327,6 +327,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  max-width: 100%;
 }
 
 body {
@@ -870,7 +871,7 @@ button:hover {
 @media (max-width: 920px) {
   .container-navDesplegable {
     display: block;
-    height: 118px;
+    height: 11.8rem;
   }
 }
 
@@ -906,36 +907,29 @@ button:hover {
 .menu-desplegable.dropdown-menu.show {
   background-color: #ffffff !important;
   backdrop-filter: blur(3.5px);
-  width: 100%;
-  height: 800px;
+  width: 95%;
+  height: 65rem;
   display: flex;
   flex-direction: column;
   position: relative;
   margin-top: 10rem;
+  margin-left: 2.5%;
   align-items: flex-start;
   z-index: 0;
   gap: 8px;
+  border: 2px solid #F1F8FA;
+  box-shadow: 4px -4px 2px #0b2933;
 }
 @media (max-width: 650px) {
   .menu-desplegable.dropdown-menu.show {
     margin-top: 3rem;
   }
 }
-.menu-desplegable.dropdown-menu.show:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  background-color: rgba(52, 52, 52, 0.3);
-}
 
 .dropdown-header {
   display: flex;
   width: 100%;
-  padding: 24px 24px 28px 24px;
+  padding: 24px 24px 36px 24px;
   flex-direction: column;
   align-items: center;
   gap: 10px;
@@ -944,17 +938,17 @@ button:hover {
 .contenedor-item-burguer {
   display: flex;
   z-index: 1;
-  width: 32.2rem;
+  width: 100%;
   padding: 12px 20px 12px 24px;
   align-items: center;
   gap: 12px;
 }
 
 .dropdown-item-burguer {
-  color: #0b2933 !important;
+  color: #446168 !important;
   text-shadow: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 100%;
   margin: 0 !important;
 }
@@ -983,6 +977,7 @@ button:hover {
 .navbar-link {
   text-decoration: none;
   text-align: center;
+  position: relative;
 }
 .navbar-link h3 {
   color: #ffffff;
@@ -992,6 +987,20 @@ button:hover {
   font-weight: 600;
   margin: 0;
   line-height: 1.8rem;
+}
+.navbar-link:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 4px;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.25s linear, background-color 0.25s linear;
+}
+.navbar-link:hover:after {
+  width: 100%;
+  background-color: white;
 }
 
 .dropdown {
@@ -1005,6 +1014,23 @@ button:hover {
   border: none;
   color: #ffffff;
   text-shadow: black 0.1em 0.1em 0.2em;
+}
+.dropdown #dropdown-basic {
+  position: relative;
+}
+.dropdown #dropdown-basic:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 4px;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s linear, background-color 0.5s linear;
+}
+.dropdown #dropdown-basic:hover:after {
+  width: 100%;
+  background-color: white;
 }
 .dropdown .flechitapabajo {
   margin-left: 0.6rem;
@@ -1023,6 +1049,8 @@ button:hover {
   top: 2rem;
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .dropdown-item {
@@ -1032,13 +1060,28 @@ button:hover {
   font-family: "Barlow", sans-serif !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  margin: 1rem 0;
+  margin: 0;
   line-height: 1.8rem !important;
 }
-.dropdown-item:hover, .dropdown-item:active {
+.dropdown-item:hover {
   background-color: transparent !important;
   text-decoration: none !important;
   font-weight: 600 !important;
+}
+.dropdown-item:active {
+  background-color: #F1F8FA !important;
+}
+.dropdown-item#reserva {
+  background-color: #FEEAB5;
+}
+.dropdown-item#reserva a {
+  color: #0b2933 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 100% !important;
+}
+.dropdown-item#reserva:hover {
+  background-color: #FEEAB5 !important;
 }
 
 .btn-idioma {
@@ -1059,6 +1102,13 @@ button:hover {
   font-weight: 400;
   line-height: 100%;
 }
+.btn-idioma.langSelected {
+  font-weight: 700;
+}
+
+.idiomas-despl {
+  margin-top: 6rem;
+}
 
 .divisor {
   width: 0.2rem;
@@ -1077,18 +1127,18 @@ button:hover {
   display: flex;
   justify-content: center;
   position: relative;
-  min-height: 34.3rem;
+  min-height: 35.8rem;
   height: 100%;
   font-family: "Barlow", sans-serif;
 }
 @media (max-width: 920px) {
   .container-footer {
-    min-height: 28rem;
+    min-height: 24.5rem;
   }
 }
 @media (max-width: 720px) {
   .container-footer {
-    min-height: 32rem;
+    min-height: 30rem;
   }
 }
 @media (max-width: 650px) {
@@ -1153,7 +1203,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top: 6.5rem;
+  padding-top: 7.5rem;
 }
 @media (max-width: 985px) {
   .footer-container {
@@ -1162,7 +1212,7 @@ button:hover {
 }
 @media (max-width: 920px) {
   .footer-container {
-    padding-top: 4.4rem;
+    padding-top: 4rem;
     min-height: 13rem;
   }
 }
@@ -1206,7 +1256,7 @@ button:hover {
 @media (max-width: 720px) {
   .footer-logo .img-logo-footerMobile {
     display: block;
-    padding-bottom: 2.38rem;
+    padding-bottom: 2.4rem;
   }
 }
 
@@ -1231,12 +1281,13 @@ button:hover {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 3.5rem;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 920px) {
   .footer-navigation strong,
   .footer-rigth strong {
-    font-size: 1.47rem;
-    line-height: 2.34rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
   }
 }
 @media (max-width: 650px) {
@@ -1254,7 +1305,7 @@ button:hover {
   font-size: 1.8rem;
   color: #ffffff;
   font-weight: 400;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   margin-top: 0;
   line-height: 2.4rem;
 }
@@ -1270,7 +1321,7 @@ button:hover {
   .footer-rigth li a,
   .footer-rigth li {
     font-size: 1.2rem;
-    line-height: 1.61rem;
+    line-height: 1.8rem;
   }
 }
 @media (max-width: 650px) {
@@ -1295,10 +1346,11 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 @media (max-width: 920px) {
   .footer-network {
-    padding-bottom: 2.4rem;
+    padding-bottom: 1.5rem;
   }
 }
 @media (max-width: 650px) {
@@ -1319,6 +1371,11 @@ button:hover {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 920px) {
+  .footer-network__svg {
+    width: 65%;
+  }
+}
 @media (max-width: 650px) {
   .footer-network__svg {
     justify-content: space-between;
@@ -1332,8 +1389,16 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.4rem;
-  margin-bottom: 0.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+@media (max-width: 920px) {
+  .footer-terms {
+    width: 246px;
+    height: 23px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .footer-terms p {
   color: #abbec3;
@@ -1347,8 +1412,6 @@ button:hover {
 }
 @media (max-width: 920px) {
   .footer-terms p {
-    padding-top: 1.2rem;
-    padding-bottom: 1.4rem;
     font-size: 1.022rem;
     line-height: 1.15rem;
     letter-spacing: 0.319px;
@@ -1359,12 +1422,6 @@ button:hover {
     font-size: 1.4rem;
     line-height: 1.6rem;
     letter-spacing: 0.5px;
-  }
-}
-@media (max-width: 920px) {
-  .footer-terms {
-    width: 214.22px;
-    height: 62px;
   }
 }
 
@@ -1394,7 +1451,8 @@ button:hover {
 
 .contenedor-prestaciones-Mobile {
   position: relative;
-  height: 172px;
+  height: 19.5rem;
+  width: 100%;
   display: none;
 }
 @media (max-width: 650px) {
@@ -1408,6 +1466,11 @@ button:hover {
   justify-content: center;
   gap: 3%;
   margin: 7.5rem auto 0 auto;
+}
+@media (max-width: 920px) {
+  .container-prestaciones {
+    margin: 5rem auto 0;
+  }
 }
 
 .prestaciones-box {
@@ -1462,7 +1525,7 @@ button:hover {
 }
 @media (max-width: 920px) {
   .prestaciones-box p {
-    padding-bottom: 0.9rem;
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 650px) {
@@ -1474,8 +1537,8 @@ button:hover {
 .mySwiper {
   position: absolute;
   z-index: 0;
-  width: 90%;
-  margin-top: 25px;
+  width: 100%;
+  margin-top: 2.4rem;
 }
 
 .imagen-fondo-prestaciones {
@@ -1534,7 +1597,17 @@ button:hover {
   width: 100%;
   height: 0.25rem;
   background-color: #fdb908;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 920px) {
+  .container-experiencias .divisor {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-experiencias .divisor {
+    margin-bottom: 1.6rem;
+  }
 }
 .container-experiencias .experiencias {
   display: flex;
@@ -1542,10 +1615,16 @@ button:hover {
   gap: 4rem;
   position: relative;
 }
+@media (max-width: 920px) {
+  .container-experiencias .experiencias {
+    gap: 2.4rem;
+  }
+}
 @media (max-width: 650px) {
   .container-experiencias .experiencias {
     flex-direction: column;
     align-items: center;
+    gap: 1.6rem;
   }
 }
 .container-experiencias .experiencia {
@@ -1570,6 +1649,7 @@ button:hover {
   top: 0;
   right: 0;
   z-index: 0;
+  border-radius: 1rem;
   background: linear-gradient(180deg, rgba(0, 42, 52, 0.1) 0%, rgba(0, 42, 52, 0.4) 41.67%, rgba(0, 42, 52, 0.85) 100%);
 }
 @media (max-width: 920px) {
@@ -1592,7 +1672,19 @@ button:hover {
 .container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
   position: absolute;
   z-index: 1;
-  margin: 0 4rem 0 4rem;
+  margin: 0 4rem 0;
+}
+@media (max-width: 920px) {
+  .container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
+    position: absolute;
+    z-index: -1;
+    margin: 0 2.5rem 0;
+  }
+}
+@media (max-width: 650px) {
+  .container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
+    margin: 0 3.38rem 0 1.1rem;
+  }
 }
 .container-experiencias .experiencia .exp-boca-river .btn-vermas, .container-experiencias .experiencia .exp-maradona .btn-vermas {
   display: none;
@@ -1600,12 +1692,6 @@ button:hover {
 @media (max-width: 920px) {
   .container-experiencias .experiencia .exp-boca-river .btn-vermas, .container-experiencias .experiencia .exp-maradona .btn-vermas {
     display: block;
-  }
-}
-@media (max-width: 920px) {
-  .container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
-    position: absolute;
-    z-index: -1;
   }
 }
 .container-experiencias .experiencia h3 {
@@ -1616,17 +1702,20 @@ button:hover {
   font-weight: 700;
   line-height: 3.8rem;
   margin: 0;
+  margin-bottom: 0.8rem;
 }
 @media (max-width: 920px) {
   .container-experiencias .experiencia h3 {
     font-size: 1.88rem;
     line-height: 2.55rem;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 650px) {
   .container-experiencias .experiencia h3 {
     font-size: 2rem;
     line-height: 3rem;
+    margin-bottom: 0.7rem;
   }
 }
 .container-experiencias .experiencia p {
@@ -1636,18 +1725,20 @@ button:hover {
   font-weight: 400;
   line-height: 3.5rem;
   margin: 0;
-  margin-bottom: 3.8rem;
+  margin-bottom: 5rem;
 }
 @media (max-width: 920px) {
   .container-experiencias .experiencia p {
     font-size: 1.48rem;
     line-height: 2.35rem;
+    margin-bottom: 1.5rem;
   }
 }
 @media (max-width: 650px) {
   .container-experiencias .experiencia p {
     font-size: 1.2rem;
     line-height: 2rem;
+    margin-bottom: 1.6rem;
   }
 }
 .container-experiencias .experiencia button {
@@ -1661,7 +1752,7 @@ button:hover {
   border-radius: 1rem;
   border: 0.1rem solid #ffffff;
   background-color: transparent;
-  margin: 1.2rem 0 6rem;
+  margin-bottom: 6rem;
   font-family: "Barlow", sans-serif;
   color: #ffffff;
   font-size: 2.5rem;
@@ -1673,10 +1764,17 @@ button:hover {
     width: 10.864rem;
     height: 3.36rem;
     padding: 2rem 1.5rem;
-    margin: 1.621rem 0 3.27rem;
+    margin-bottom: 2.5rem;
     font-size: 1.6rem;
     line-height: 1.8rem;
     font-weight: 700;
+  }
+}
+@media (max-width: 650px) {
+  .container-experiencias .experiencia button {
+    width: 10.864rem;
+    height: 3.36rem;
+    margin-bottom: 3.3rem;
   }
 }
 
@@ -1685,6 +1783,7 @@ button:hover {
   position: absolute;
   height: 100%;
   object-fit: cover;
+  border-radius: 1rem;
 }
 @media (max-width: 920px) {
   .imagen-fondo-experienciaHome {
@@ -1706,12 +1805,14 @@ button:hover {
   .container-reviews {
     height: 9.52rem;
     padding: 0 3.5%;
+    margin-bottom: 5rem;
   }
 }
 @media (max-width: 650px) {
   .container-reviews {
     height: 17rem;
     flex-direction: column;
+    margin-bottom: 2.4rem;
   }
 }
 .container-reviews h2 {
@@ -1734,6 +1835,7 @@ button:hover {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2rem;
+    text-align: start;
   }
 }
 
@@ -1764,34 +1866,47 @@ button:hover {
   .reviews-mobile {
     display: flex;
     align-items: baseline;
-    padding-top: 2.7rem;
-    padding-right: auto;
+    padding-top: 6.3rem;
+    padding-right: 0;
     padding-bottom: 3.6rem;
-    padding-left: 1.67%;
+    padding-left: 1.5rem;
     justify-content: space-between;
   }
+}
+
+.reviews_svg {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .container-atributos {
   max-width: 100%;
   display: grid;
-  gap: 0;
+  column-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 66px 315px 206px 206px;
+  grid-template-rows: 73px 341px 191.52px 221.47px;
   grid-template-areas: "foto titulo" "foto texto" "foto iconouno" "foto iconodos";
-  margin: 7.5rem 7% 15.5rem;
+  margin: 0 10rem 10rem;
 }
 @media (max-width: 920px) {
   .container-atributos {
-    grid-template-rows: 43px 179px 142.5px 142.5px;
+    grid-template-rows: 46px 256px 92.78px 162.21px;
     margin: 0 4.8%;
+    column-gap: 2.5rem;
+  }
+}
+@media (max-width: 725px) {
+  .container-atributos {
+    grid-template-rows: 90px 280px 92.78px 91px;
   }
 }
 @media (max-width: 650px) {
   .container-atributos {
-    grid-template-rows: 48px 353px 258px 145px;
+    grid-template-rows: 48px 353px 290px 73px;
     grid-template-areas: "titulo titulo" "foto foto" "texto texto" "iconouno iconodos";
-    margin: 3.2rem 1.2rem 0;
+    margin: 0 1.2rem 0;
+    column-gap: 0;
   }
 }
 .container-atributos h2 {
@@ -1801,7 +1916,7 @@ button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 6.6rem;
-  margin: 0 auto 0 0;
+  margin: 0.7rem auto 0 0;
 }
 @media (max-width: 1300px) {
   .container-atributos h2 {
@@ -1811,8 +1926,10 @@ button:hover {
 }
 @media (max-width: 920px) {
   .container-atributos h2 {
-    font-size: 3.57rem;
-    line-height: 4.21rem;
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    height: 4.6rem;
+    margin-top: 0;
   }
 }
 @media (max-width: 650px) {
@@ -1821,8 +1938,9 @@ button:hover {
     line-height: 3.2rem;
   }
 }
-.container-atributos p {
+.container-atributos .texto-atributos {
   grid-area: texto;
+  height: 315px;
   color: #0b2933;
   font-size: 2.2rem;
   font-style: normal;
@@ -1830,68 +1948,67 @@ button:hover {
   line-height: 3.5rem;
   margin: 0;
   margin-top: 2.6rem;
-  margin-bottom: 1em;
-}
-.container-atributos p p,
-.container-atributos p br {
-  display: block;
-  content: " ";
-  margin-top: 3.5rem;
 }
 @media (max-width: 1300px) {
-  .container-atributos p p,
-  .container-atributos p br {
-    margin-top: 2.87rem;
-  }
-}
-@media (max-width: 920px) {
-  .container-atributos p p,
-  .container-atributos p br {
-    margin-top: 2.23rem;
-  }
-}
-@media (max-width: 650px) {
-  .container-atributos p p,
-  .container-atributos p br {
-    margin-top: 2.6rem;
-  }
-}
-@media (max-width: 1300px) {
-  .container-atributos p {
+  .container-atributos .texto-atributos {
     font-size: 1.8rem;
     line-height: 2.87rem;
   }
 }
 @media (max-width: 920px) {
-  .container-atributos p {
+  .container-atributos .texto-atributos {
     font-size: 1.4rem;
-    line-height: 2.23rem;
-    margin-top: 0;
+    line-height: 2.4rem;
+    height: 19.1rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 725px) {
+  .container-atributos .texto-atributos {
+    margin: 0;
   }
 }
 @media (max-width: 650px) {
-  .container-atributos p {
+  .container-atributos .texto-atributos {
     font-size: 1.4rem;
     line-height: 2.6rem;
     margin-top: 2.4rem;
-    margin-bottom: 0;
+    margin-bottom: 3.2rem;
+  }
+}
+.container-atributos .texto-atributos br {
+  display: block;
+  content: " ";
+  margin-top: 3.5rem;
+}
+@media (max-width: 1300px) {
+  .container-atributos .texto-atributos br {
+    margin-top: 2.87rem;
+  }
+}
+@media (max-width: 920px) {
+  .container-atributos .texto-atributos br {
+    margin-top: 2.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-atributos .texto-atributos br {
+    margin-top: 0;
   }
 }
 
 .img-atributos-home {
   grid-area: foto;
-  padding-right: 4rem;
+  min-height: 827px;
 }
 @media (max-width: 920px) {
   .img-atributos-home {
-    padding-right: 2.5rem;
-    min-height: 556px;
+    min-height: 557px;
   }
 }
 @media (max-width: 650px) {
   .img-atributos-home {
-    padding-right: 0;
-    min-height: 353px;
+    min-height: 336px;
   }
 }
 .img-atributos-home img {
@@ -1915,6 +2032,7 @@ button:hover {
   .IconsDos {
     gap: 10%;
     align-items: center;
+    justify-content: space-around;
   }
 }
 
@@ -1928,7 +2046,6 @@ button:hover {
 
 .icon-item {
   width: 13.1rem;
-  height: 13.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1946,7 +2063,7 @@ button:hover {
     height: 7.3rem;
   }
 }
-.icon-item p {
+.icon-item .frase-icono {
   color: #0b2933;
   font-size: 2.2rem;
   font-style: normal;
@@ -1956,25 +2073,28 @@ button:hover {
   margin: 0;
 }
 @media (max-width: 1300px) {
-  .icon-item p {
+  .icon-item .frase-icono {
     font-size: 1.8rem;
     line-height: 2.87rem;
   }
 }
 @media (max-width: 920px) {
-  .icon-item p {
+  .icon-item .frase-icono {
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 2.23rem;
   }
 }
 @media (max-width: 650px) {
-  .icon-item p {
+  .icon-item .frase-icono {
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
 }
 
+.iconoDesktop {
+  display: block;
+}
 @media (max-width: 920px) {
   .iconoDesktop {
     display: none;
@@ -2010,16 +2130,22 @@ button:hover {
   background: #0b2933;
   margin-bottom: 7.5rem;
 }
+@media (max-width: 1300px) {
+  .container-entradas {
+    height: 33.44rem;
+    margin-bottom: 6.3rem;
+  }
+}
 @media (max-width: 920px) {
   .container-entradas {
     min-height: 26.07rem;
     height: fit-content;
-    margin-top: 10rem;
+    margin: 5rem 0;
   }
 }
 @media (max-width: 650px) {
   .container-entradas {
-    min-height: 33.6rem;
+    max-height: 33.6rem;
     height: fit-content;
     margin-top: 4rem;
   }
@@ -2030,9 +2156,14 @@ button:hover {
   align-items: center;
   padding: 5rem 10rem;
 }
-@media (max-width: 920px) {
+@media (max-width: 1300px) {
   .container-entradas .entradas {
     padding: 3.2rem 6.3rem;
+  }
+}
+@media (max-width: 920px) {
+  .container-entradas .entradas {
+    padding: 3.5rem 8.5rem;
   }
 }
 @media (max-width: 650px) {
@@ -2048,12 +2179,13 @@ button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 6.6rem;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 2.5rem;
 }
 @media (max-width: 1300px) {
   .container-entradas h2 {
     font-size: 4.6rem;
     line-height: 5.41rem;
+    margin: 0 auto 2rem;
   }
 }
 @media (max-width: 920px) {
@@ -2066,6 +2198,7 @@ button:hover {
   .container-entradas h2 {
     font-size: 2.4rem;
     line-height: 3.2rem;
+    margin-bottom: 1.6rem;
   }
 }
 .container-entradas h3 {
@@ -2076,7 +2209,7 @@ button:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 3.8rem;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2.5rem;
 }
 @media (max-width: 1300px) {
   .container-entradas h3 {
@@ -2088,6 +2221,7 @@ button:hover {
   .container-entradas h3 {
     font-size: 1.53rem;
     line-height: 2.43rem;
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 650px) {
@@ -2095,6 +2229,7 @@ button:hover {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2.4rem;
+    margin-bottom: 2.4rem;
   }
 }
 @media (max-width: 920px) {
@@ -2122,28 +2257,43 @@ button:hover {
 .container-faqs {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
   align-items: center;
+  padding: 0 10rem;
   margin-bottom: 7.5rem;
   color: #0b2933;
   font-style: normal;
+}
+@media (max-width: 920px) {
+  .container-faqs {
+    padding: 0 4.4rem;
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-faqs {
+    padding: 0 1.2rem;
+    margin-bottom: 4rem;
+  }
 }
 .container-faqs h2 {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 6.6rem;
-  margin-bottom: 5rem;
+  margin: 0 auto 5rem;
 }
 @media (max-width: 920px) {
   .container-faqs h2 {
-    font-size: 3.76rem;
-    line-height: 4.43rem;
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    margin: 0 auto 3rem;
   }
 }
 @media (max-width: 650px) {
   .container-faqs h2 {
     font-size: 2.4rem;
     line-height: 3.2rem;
+    margin: 0 auto 3.2rem;
   }
 }
 
@@ -2151,7 +2301,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 115rem;
   padding: 0;
   color: #0b2933;
   border-top: 2px solid #fdb908;
@@ -2169,21 +2318,24 @@ button:hover {
   font-weight: 700;
   line-height: 3.8rem;
   letter-spacing: 0.12rem;
-}
-.accordionHeading h3:hover {
-  cursor: pointer;
+  margin: 1.6rem auto 1.6rem 0;
 }
 @media (max-width: 920px) {
   .accordionHeading h3 {
-    font-size: 1.88rem;
-    line-height: 2.55rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin: 1.5rem auto 1.5rem 0;
   }
 }
 @media (max-width: 650px) {
   .accordionHeading h3 {
     font-size: 1.6rem;
     line-height: 2.4rem;
+    margin: 1.6rem auto 1.6rem 0;
   }
+}
+.accordionHeading h3:hover {
+  cursor: pointer;
 }
 .accordionHeading span {
   cursor: pointer;
@@ -2201,21 +2353,24 @@ button:hover {
   overflow: hidden;
   transition: all 600ms ease-in-out;
 }
-.accordionContent p {
+.accordionContent .cont-despl {
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 3.5rem;
+  margin: 0 auto 1.6rem 8rem;
 }
 @media (max-width: 920px) {
-  .accordionContent p {
+  .accordionContent .cont-despl {
     font-size: 1.8rem;
-    line-height: 2.2rem;
+    line-height: 2.6rem;
+    margin: 0 auto 1.6rem 6rem;
   }
 }
 @media (max-width: 650px) {
-  .accordionContent p {
+  .accordionContent .cont-despl {
     font-size: 1.4rem;
-    line-height: 2.6rem;
+    line-height: 2.4rem;
+    margin: 0 auto 1.6rem 5rem;
   }
 }
 
@@ -2226,8 +2381,15 @@ button:hover {
   align-items: center;
   gap: 3.5rem;
 }
-.containerTitle .cont-despl {
-  padding: auto 8rem auto;
+@media (max-width: 920px) {
+  .containerTitle {
+    gap: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .containerTitle {
+    gap: 1rem;
+  }
 }
 
 .show {
@@ -2271,7 +2433,7 @@ button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 5rem;
-  margin-bottom: 3.6rem;
+  margin: 0 auto 5rem;
 }
 @media (max-width: 920px) {
   .container-reserva h3 {
@@ -2481,30 +2643,23 @@ textarea {
   align-items: center;
   justify-content: center;
   column-gap: 2rem;
+  margin-bottom: 1.5rem;
 }
 .form-group .form-name,
 .form-group .form-lastName {
   width: 100%;
-  margin-bottom: -1.2rem;
 }
 
-.form-group__error {
+/* .form-group__error {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-}
-.form-group__error .form-name,
-.form-group__error .form-lastName {
-  width: 100%;
-  height: 5.6rem;
-}
-.form-group__error .error {
-  margin-top: 3rem;
-  margin-bottom: -1rem;
-}
-
+  align-items: center; */
+/*  .error {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+  } */
 .error {
   font-size: 1rem;
   color: red;
@@ -2524,6 +2679,11 @@ textarea {
 .top-error span {
   width: 100%;
   text-align: center;
+}
+
+.contact-error {
+  color: red;
+  border: 3px solid red;
 }
 
 /* @media screen and (max-width: 920px) {
@@ -3168,6 +3328,14 @@ textarea {
   margin: 0 auto;
   padding: 1rem;
 }
+.container-reservaNosotros button {
+  margin-top: 0;
+}
+@media (max-width: 920px) {
+  .container-reservaNosotros button {
+    margin-top: -1rem;
+  }
+}
 @media (max-width: 920px) {
   .container-reservaNosotros {
     height: 158.973px;
@@ -3242,7 +3410,7 @@ textarea {
   .img_acercaDeNosotros {
     /*    grid-column: 1;
     grid-row: 2; */
-    height: 45rem;
+    height: 50rem;
   }
 }
 
@@ -3277,6 +3445,7 @@ textarea {
   .acerca-title h2 {
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -3376,6 +3545,7 @@ textarea {
 @media (max-width: 920px) {
   .container-nosotros {
     margin-bottom: 0;
+    grid-template-columns: 60% 40%;
   }
 }
 @media (max-width: 650px) {
@@ -3424,6 +3594,7 @@ textarea {
   .detras-title h2 {
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -3472,7 +3643,7 @@ textarea {
   .detrasDeNosotros-img {
     /*  grid-column: 1;
     grid-row: 2;*/
-    height: 40rem;
+    height: 50rem;
     order: 1;
   }
 }

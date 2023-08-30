@@ -14,7 +14,7 @@ function NavDesplegable() {
       ?
       <Dropdown className='container-navDesplegable'>
 
-        <Dropdown.Toggle variant="success" id="dropdown-basic" className='navDesplegable-tablet'>
+        <Dropdown.Toggle variant="success" id="dropdown-basic-despl" className='navDesplegable-tablet'>
           <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.58398 5.95239H29.2269V8.69049H4.58398V5.95239ZM4.58398 15.5357H29.2269V18.2738H4.58398V15.5357ZM4.58398 25.1191H29.2269V27.8572H4.58398V25.1191Z" fill="#0B2933"/>
           </svg>
@@ -98,7 +98,7 @@ function NavDesplegable() {
                     </Link>
           </Dropdown.Item>
 
-          <Dropdown.Item className='contenedor-item-burguer'>
+          <Dropdown.Item className='contenedor-item-burguer' id='reserva'>
                     <Link to="/" className="dropdown-item-burguer">
                       Reserva tu experiencia
                     </Link>
@@ -116,21 +116,19 @@ function NavDesplegable() {
                     </Link>
           </Dropdown.Item>
 
+          <div className="idiomas-despl">
           <DropdownItem className='contenedor-item-burguer'>
-          <div className="idiomas">
-          <button className="btn-idioma burguer" onClick={() => changeLang("castellano")}>
+          <button className={lang==='castellano'?"btn-idioma burguer langSelected":"btn-idioma burguer"} onClick={() => changeLang("castellano")}>
             ESPAÑOL
           </button>
-        </div>
           </DropdownItem>
 
           <DropdownItem className='contenedor-item-burguer'>
-          <div className="idiomas">
-          <button className="btn-idioma burguer" onClick={() => changeLang("english")}>
+          <button className={lang==='castellano'?"btn-idioma burguer":"btn-idioma burguer langSelected"} onClick={() => changeLang("english")}>
             ENGLISH
           </button>
-        </div>
           </DropdownItem>
+          </div>
 
         </Dropdown.Menu>
       </Dropdown>
@@ -221,7 +219,7 @@ function NavDesplegable() {
                     </Link>
           </Dropdown.Item>
       
-          <Dropdown.Item className='contenedor-item-burguer'>
+          <Dropdown.Item className='contenedor-item-burguer' id='reserva'>
                     <Link to="/" className="dropdown-item-burguer">
                       Reserve your experience
                     </Link>
@@ -239,21 +237,19 @@ function NavDesplegable() {
                     </Link>
           </Dropdown.Item>
       
-          <DropdownItem className='contenedor-item-burguer'>
-          <div className="idiomas">
-          <button className="btn-idioma burguer" onClick={() => changeLang("castellano")}>
-            ESPAÑOL
-          </button>
-        </div>
-          </DropdownItem>
-      
-          <DropdownItem className='contenedor-item-burguer'>
-          <div className="idiomas">
-          <button className="btn-idioma burguer" onClick={() => changeLang("english")}>
-            ENGLISH
-          </button>
-        </div>
-          </DropdownItem>
+          <div className="idiomas-despl">
+            <DropdownItem className='contenedor-item-burguer'>
+            <button className={lang==='castellano'?"btn-idioma burguer langSelected":"btn-idioma burguer"} onClick={() => changeLang("castellano")}>
+              ESPAÑOL
+            </button>
+            </DropdownItem>
+        
+            <DropdownItem className='contenedor-item-burguer'>
+            <button className={lang==='castellano'?"btn-idioma burguer":"btn-idioma burguer langSelected"} onClick={() => changeLang("english")}>
+              ENGLISH
+            </button>
+            </DropdownItem>
+          </div>
       
         </Dropdown.Menu>
       </Dropdown>

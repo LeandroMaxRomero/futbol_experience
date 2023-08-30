@@ -5,14 +5,14 @@
   display: flex;
   justify-content: center;
   position: relative;
-  min-height: 34.3rem;
+  min-height: 35.8rem;
   height: 100%;
   font-family: v.$fuentePrincipal;
   @include m.tablet {
-    min-height: 28rem;
+    min-height: 24.5rem;
   }
   @media (max-width: 720px){
-    min-height: 32rem;
+    min-height: 30rem;
   }
   @include m.mobile {
     min-height: 57rem;
@@ -64,12 +64,12 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top: 6.5rem;
+  padding-top: 7.5rem;
   @media (max-width: 985px) {
     padding-top: 5rem;
   }
   @include m.tablet {
-    padding-top: 4.4rem;
+    padding-top: 4rem;
     min-height: 13rem;
   }
   @media (max-width: 720px){
@@ -108,7 +108,7 @@
     display: none;
     @media (max-width: 720px) {
       display: block;
-      padding-bottom: 2.38rem;
+      padding-bottom: 2.4rem;
     }
   }
 }
@@ -130,9 +130,10 @@
     font-size: 2.2rem;
     font-weight: 500;
     line-height: 3.5rem;
+    margin-bottom: 0.5rem;
     @include m.tablet {
-      font-size: 1.47rem;
-      line-height: 2.34rem;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
     }
     @include m.mobile {
       font-size: 1.6rem;
@@ -145,7 +146,7 @@
     font-size: 1.8rem;
     color: v.$blanco;
     font-weight: 400;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
     margin-top: 0;
     line-height: 2.4rem;
     &:hover{
@@ -153,7 +154,7 @@
     }
     @include m.tablet {
       font-size: 1.2rem;
-      line-height: 1.61rem;
+      line-height: 1.8rem;
     }
     @include m.mobile {
       font-size: 1.4rem;
@@ -172,8 +173,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  padding-bottom: 2rem;
   @include m.tablet {
-    padding-bottom: 2.4rem;
+    padding-bottom: 1.5rem;
   }
   @include m.mobile {
     padding-top: 1.25rem;
@@ -190,6 +192,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include m.tablet {
+    width: 65%;
+  }
   @include m.mobile {
     justify-content: space-between;
     width: 30%;
@@ -201,8 +206,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.4rem;
-  margin-bottom: 0.4rem;  
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  @include m.tablet {
+    width: 246px;
+    height: 23px;
+    margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  }  
   p {
     color: v.$azulClaroSec;
     text-align: center;
@@ -213,8 +224,6 @@
     line-height: 1.8rem;
     letter-spacing: 0.5px;
     @include m.tablet {
-      padding-top: 1.2rem;
-      padding-bottom: 1.4rem;
       font-size: 1.022rem;
       line-height: 1.15rem;
       letter-spacing: 0.319px;
@@ -225,10 +234,6 @@
       letter-spacing: 0.5px;
     }
 
-  }
-  @include m.tablet {
-    width: 214.22px;
-    height: 62px; 
   }
 }
 
