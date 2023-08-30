@@ -327,6 +327,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  max-width: 100%;
 }
 
 body {
@@ -907,7 +908,7 @@ button:hover {
   background-color: #ffffff !important;
   backdrop-filter: blur(3.5px);
   width: 95%;
-  height: 80rem;
+  height: 65rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -916,6 +917,8 @@ button:hover {
   align-items: flex-start;
   z-index: 0;
   gap: 8px;
+  border: 2px solid #F1F8FA;
+  box-shadow: 4px -4px 2px #0b2933;
 }
 @media (max-width: 650px) {
   .menu-desplegable.dropdown-menu.show {
@@ -926,7 +929,7 @@ button:hover {
 .dropdown-header {
   display: flex;
   width: 100%;
-  padding: 24px 24px 28px 24px;
+  padding: 24px 24px 36px 24px;
   flex-direction: column;
   align-items: center;
   gap: 10px;
@@ -942,10 +945,10 @@ button:hover {
 }
 
 .dropdown-item-burguer {
-  color: #0b2933 !important;
+  color: #446168 !important;
   text-shadow: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 100%;
   margin: 0 !important;
 }
@@ -974,6 +977,7 @@ button:hover {
 .navbar-link {
   text-decoration: none;
   text-align: center;
+  position: relative;
 }
 .navbar-link h3 {
   color: #ffffff;
@@ -983,6 +987,20 @@ button:hover {
   font-weight: 600;
   margin: 0;
   line-height: 1.8rem;
+}
+.navbar-link:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 4px;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.25s linear, background-color 0.25s linear;
+}
+.navbar-link:hover:after {
+  width: 100%;
+  background-color: white;
 }
 
 .dropdown {
@@ -996,6 +1014,23 @@ button:hover {
   border: none;
   color: #ffffff;
   text-shadow: black 0.1em 0.1em 0.2em;
+}
+.dropdown #dropdown-basic {
+  position: relative;
+}
+.dropdown #dropdown-basic:after {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 4px;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s linear, background-color 0.5s linear;
+}
+.dropdown #dropdown-basic:hover:after {
+  width: 100%;
+  background-color: white;
 }
 .dropdown .flechitapabajo {
   margin-left: 0.6rem;
@@ -1014,6 +1049,8 @@ button:hover {
   top: 2rem;
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .dropdown-item {
@@ -1023,7 +1060,7 @@ button:hover {
   font-family: "Barlow", sans-serif !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  margin: 1rem 0;
+  margin: 0;
   line-height: 1.8rem !important;
 }
 .dropdown-item:hover {
@@ -1064,6 +1101,13 @@ button:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
+}
+.btn-idioma.langSelected {
+  font-weight: 700;
+}
+
+.idiomas-despl {
+  margin-top: 6rem;
 }
 
 .divisor {
