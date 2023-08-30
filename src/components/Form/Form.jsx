@@ -5,6 +5,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 import { Button } from "../Button/Button";
+import Swal from "sweetalert2";
+import "sweetalert2/src/sweetalert2.scss";
 
 const Form = () => {
   const form = useRef();
@@ -75,7 +77,19 @@ const Form = () => {
             "OPrAo-TUzCdQEaWPc"
           )
           .then(
-            console.log("Enviado Correctamente. Gracias por tus comentarios")
+            lang === "castellano"
+              ? Swal.fire({
+                  title: "Enviado correctamente",
+                  /* text:  */
+                  icon: "success",
+                  confirmButtonText: "Continuar",
+                })
+              : Swal.fire({
+                  title: "Send succesfully",
+                  /* text:  */
+                  icon: "success",
+                  confirmButtonText: "Continue",
+                })
           );
       } catch (error) {
         console.log(error);
