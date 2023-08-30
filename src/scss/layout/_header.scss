@@ -178,6 +178,7 @@
 .header-boca-river {
   position: relative;
   height: 66.7rem;
+  max-width: 100%;
   @include m.tablet {
     height: 44.1rem;
   }
@@ -355,7 +356,6 @@
   }
 }
 
-
 //* Nav Desplegable
 .container-navDesplegable {
   display: none;
@@ -403,7 +403,7 @@
     z-index: 0;
     gap: 8px;
     border: 2px solid v.$grisSuave;
-    box-shadow:  4px -4px 2px v.$azul;
+    box-shadow: 4px -4px 2px v.$azul;
 
     @include m.mobile {
       margin-top: 3rem;
@@ -477,7 +477,7 @@
     line-height: 1.8rem;
   }
   &:after {
-    content: '';
+    content: "";
     display: block;
     margin: auto;
     margin-top: 4px;
@@ -503,23 +503,7 @@
   border: none;
   color: v.$blanco;
   text-shadow: black 0.1em 0.1em 0.2em;
-  #dropdown-basic{
-    position: relative;
-    &:after {
-      content: '';
-      display: block;
-      margin: auto;
-      margin-top: 4px;
-      height: 1px;
-      width: 0px;
-      background: transparent;
-      transition: width .5s linear, background-color .5s linear;
-    }
-    &:hover:after {
-      width: 100%;
-      background-color: white;
-    }
-  }
+
   .flechitapabajo {
     margin-left: 0.6rem;
   }
@@ -549,12 +533,12 @@
   font-weight: 400 !important;
   margin: 0;
   line-height: 1.8rem !important;
-  &:hover{
+  &:hover {
     background-color: transparent !important;
     text-decoration: none !important;
     font-weight: 600 !important;
   }
-  &:active{
+  &:active {
     background-color: v.$grisSuave !important;
   }
 }
@@ -588,14 +572,13 @@ a{
     font-weight: 400;
     line-height: 100%;
   }
-  &.langSelected{
+  &.langSelected {
     font-weight: 700;
   }
 }
-.idiomas-despl{
+.idiomas-despl {
   margin-top: 6rem;
 }
-
 
 .divisor {
   width: 0.2rem;
