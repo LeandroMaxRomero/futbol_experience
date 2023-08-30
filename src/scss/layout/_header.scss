@@ -214,6 +214,7 @@
 .header-boca-river {
   position: relative;
   height: 66.7rem;
+  max-width: 100%;
   @include m.tablet {
     height: 44.1rem;
   }
@@ -518,7 +519,7 @@
   border: none;
   color: v.$blanco;
   text-shadow: black 0.1em 0.1em 0.2em;
-  
+
   .flechitapabajo {
     margin-left: 0.6rem;
   }
