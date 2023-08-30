@@ -1071,16 +1071,15 @@ button:hover {
 .dropdown-item:active {
   background-color: #F1F8FA !important;
 }
-.dropdown-item#reserva {
+
+a#reserva {
   background-color: #FEEAB5;
-}
-.dropdown-item#reserva a {
   color: #0b2933 !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   line-height: 100% !important;
 }
-.dropdown-item#reserva:hover {
+a#reserva:hover {
   background-color: #FEEAB5 !important;
 }
 

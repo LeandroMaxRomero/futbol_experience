@@ -92,7 +92,7 @@ export const Atributos = () => {
                 :
                 <>
                     <h2>Why do it with us?</h2>
-                    <p>“En Argentina nací, tierra de Diego y Lionel”. Fútbol Experience is a personalized tour designed for tourists that integrates much more than an experience about Argentine soccer. The ball is the first toy, the first language. We learn to kick and then to speak. It is culture, it is passion, it is stories. Choose your experience and we make sure it is unforgettable.<br></br>
+                    <p className="texto-atributos">“En Argentina nací, tierra de Diego y Lionel”. Fútbol Experience is a personalized tour designed for tourists that integrates much more than an experience about Argentine soccer. The ball is the first toy, the first language. We learn to kick and then to speak. It is culture, it is passion, it is stories. Choose your experience and we make sure it is unforgettable.<br></br>
                     <b>We share the values of the sport we love.</b></p>
 
                     <div className="iconsUno">
