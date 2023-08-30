@@ -17,7 +17,7 @@ export const CommonHeader = ({
       <img src={image} alt="Experiencias" className="imagen-fondo-header" />
 
       <div className="text-header">
-        <NavBar style={{ width: "100%" }} />
+        <NavBar />
         {lang === "castellano" ? (
           <h2>{experienceTittleES}</h2>
         ) : (

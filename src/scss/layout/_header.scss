@@ -541,20 +541,20 @@
   &:active {
     background-color: v.$grisSuave !important;
   }
-  &#reserva {
-    background-color: v.$amarilloMenu;
-    a {
-      color: v.$azul !important;
-      font-size: 16px !important;
-      font-weight: 700 !important;
-      line-height: 100% !important;
-    }
-    &:hover {
-      background-color: v.$amarilloMenu !important;
-    }
-  }
 }
 
+#reserva {
+  background-color: v.$amarilloMenu;
+  a {
+    color: v.$azul !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 100% !important;
+  }
+  &:hover {
+    background-color: v.$amarilloMenu !important;
+  }
+}
 .btn-idioma {
   background-color: transparent;
   color: v.$blanco;
