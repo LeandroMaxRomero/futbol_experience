@@ -17,11 +17,11 @@ export default function PrestacionesSlides() {
   return (
     <div className='contenedor-prestaciones-Mobile'>
         {
-            lang ==='catellano'
+            lang ==='castellano'
             ?
             <Swiper
               slidesPerView={2}
-              spaceBetween={30}
+              spaceBetween={100}
               centeredSlides={true}
               slidesPerGroupSkip={2}
               grabCursor={true}
@@ -34,8 +34,8 @@ export default function PrestacionesSlides() {
                   slidesPerGroup: 2,
                 },
               }}
-              scrollbar={true}
-              navigation={true}
+              scrollbar={false}
+              navigation={false}
               pagination={{
                 clickable: true,
               }}

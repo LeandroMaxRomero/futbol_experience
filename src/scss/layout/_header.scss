@@ -394,7 +394,7 @@
   display: none;
   @include m.tablet {
     display: block;
-    height: 118px;
+    height: 11.8rem;
   }
 }
 .dropdown-toggle {
@@ -424,13 +424,14 @@
   &.dropdown-menu.show {
     background-color: v.$blanco !important;
     backdrop-filter: blur(3.5px);
-    width: 100%;
-    height: 800px;
+    width: 95%;
+    height: 80rem;
 
     display: flex;
     flex-direction: column;
     position: relative;
     margin-top: 10rem;
+    margin-left: 2.5%;
     align-items: flex-start;
     z-index: 0;
     gap: 8px;
@@ -438,16 +439,16 @@
     @include m.mobile {
       margin-top: 3rem;
     }
-    &:after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 0;
-      top: 0;
-      right: 0;
-      background-color: rgba(52, 52, 52, 0.3);
-    }
+    // &:after {
+    //   content: "";
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   z-index: 0;
+    //   top: 0;
+    //   left: 0;
+    //   background-color: rgba(52, 52, 52, 0.3);
+    // }
   }
 }
 .dropdown-header {
@@ -461,7 +462,7 @@
 .contenedor-item-burguer {
   display: flex;
   z-index: 1;
-  width: 32.2rem;
+  width: 100%;
   padding: 12px 20px 12px 24px;
   align-items: center;
   gap: 12px;
@@ -546,13 +547,28 @@
   font-weight: 400 !important;
   margin: 1rem 0;
   line-height: 1.8rem !important;
-  &:hover,
-  &:active {
+  &:hover{
     background-color: transparent !important;
     text-decoration: none !important;
     font-weight: 600 !important;
   }
+  &:active{
+    background-color: v.$grisSuave !important;
+  }
+  &#reserva{
+    background-color: v.$amarilloMenu;
+    a{
+      color: v.$azul !important;
+      font-size: 16px !important;
+      font-weight: 700 !important;
+      line-height: 100% !important;
+    }
+    &:hover{
+      background-color: v.$amarilloMenu !important;
+    }
+  }
 }
+
 
 .btn-idioma {
   background-color: transparent;

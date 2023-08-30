@@ -98,7 +98,7 @@ function NavDesplegable() {
                     </Link>
           </Dropdown.Item>
 
-          <Dropdown.Item className='contenedor-item-burguer'>
+          <Dropdown.Item className='contenedor-item-burguer' id='reserva'>
                     <Link to="/" className="dropdown-item-burguer">
                       Reserva tu experiencia
                     </Link>

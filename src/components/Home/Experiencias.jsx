@@ -56,7 +56,7 @@ export const Experiencias = () => {
                     <div className="exp-boca-river">
                         <h3>Boca - River Experience</h3>
                         <p>In this experience you will be able to delve into the history of the two biggest clubs in Argentina: Boca and River...</p>
-                        <Link to="experiencia-boca-river" className="btn-vermas"><button><p>More...</p></button></Link>
+                        <Link to="experiencia-boca-river" className="btn-vermas"><button>More...</button></Link>
                     </div>
                 </div>
 
@@ -68,7 +68,7 @@ export const Experiencias = () => {
                 <div className="exp-maradona">
                     <h3>Maradona Experience</h3>
                     <p>In this experience you will be able to know the intimacy of D10S or as his friends called him, <i>Pelusa</i>. Many...</p>
-                    <Link to="experiencia-maradona" className="btn-vermas"><button><p>More...</p></button></Link>
+                    <Link to="experiencia-maradona" className="btn-vermas"><button>More...</button></Link>
                 </div>
             </div>
 
