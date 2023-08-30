@@ -1,20 +1,10 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
-
+import { generalContact } from "../../data/data";
 export const Footer = () => {
   const useLengua = () => useContext(LenguaContext);
   const { lang } = useLengua();
-
-  const contact = {
-    number: "+5491126597630",
-    spanish: {
-      message: "Hola, necesito información sobre las experiencias...",
-    },
-    english: {
-      message: "Hi, I need information about experiences",
-    },
-  };
 
   return (
     <>
@@ -89,7 +79,7 @@ export const Footer = () => {
                     <strong>Redes</strong>
                     <div className="footer-network__svg">
                       <a
-                        href={` https://wa.me/${contact.number}?text=${contact.spanish.message}`}
+                        href={` https://wa.me/${generalContact.number}?text=${generalContact.spanish.message}`}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -270,7 +260,7 @@ export const Footer = () => {
                     <strong>Social Networks</strong>
                     <div className="footer-network__svg">
                       <a
-                        href={`https://web.whatsapp.com/send?phone=${contact.number}&text=${contact.english.message}&app_absent=0`}
+                        href={`https://web.whatsapp.com/send?phone=${generalContact.number}&text=${generalContact.english.message}&app_absent=0`}
                         target="_blank"
                         rel="noreferrer"
                       >

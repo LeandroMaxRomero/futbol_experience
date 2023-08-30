@@ -4,6 +4,7 @@ import { LenguaContext } from "../../context/LenguaProvider";
 import Form from "../Form/Form";
 import { HeaderContact } from "./HeaderContact";
 import * as Scroll from "react-scroll";
+import { generalContact } from "../../data/data";
 
 export const Contact = () => {
   const { lang } = useContext(LenguaContext);
@@ -51,10 +52,10 @@ export const Contact = () => {
             <div className="contact-info__svg">
               <div className="logo-container">
                 <a
-                  href={` https://wa.me/${contact.number}?text=${
+                  href={` https://wa.me/${generalContact.number}?text=${
                     lang === "castellano"
-                      ? contact.spanish.message
-                      : contact.english.message
+                      ? generalContact.spanish.message
+                      : generalContact.english.message
                   }`}
                   target="_blank"
                   rel="noreferrer"
