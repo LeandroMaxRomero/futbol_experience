@@ -658,6 +658,7 @@ button:hover {
 .header-boca-river {
   position: relative;
   height: 66.7rem;
+  max-width: 100%;
 }
 @media (max-width: 920px) {
   .header-maradona,
@@ -1014,23 +1015,6 @@ button:hover {
   border: none;
   color: #ffffff;
   text-shadow: black 0.1em 0.1em 0.2em;
-}
-.dropdown #dropdown-basic {
-  position: relative;
-}
-.dropdown #dropdown-basic:after {
-  content: "";
-  display: block;
-  margin: auto;
-  margin-top: 4px;
-  height: 1px;
-  width: 0px;
-  background: transparent;
-  transition: width 0.5s linear, background-color 0.5s linear;
-}
-.dropdown #dropdown-basic:hover:after {
-  width: 100%;
-  background-color: white;
 }
 .dropdown .flechitapabajo {
   margin-left: 0.6rem;
