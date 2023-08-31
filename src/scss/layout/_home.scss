@@ -850,6 +850,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include m.tablet {
+    max-width: 832px;
+  }
+  @include m.mobile {
+    max-width: 336px;
+  }
   h3 {
     color: v.$azul;
     text-align: center;
