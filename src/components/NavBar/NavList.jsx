@@ -3,20 +3,11 @@ import { LenguaContext } from "../../context/LenguaProvider";
 import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
 import { Dropdown } from "react-bootstrap";
+import { generalContact } from "../../data/data";
 
 export const NavList = () => {
   const useLengua = () => useContext(LenguaContext);
   const { lang, changeLang } = useLengua();
-
-  const contact = {
-    number: "+5491126597630",
-    spanish: {
-      message: "Hola, estoy interesado en reservar las experiencias...",
-    },
-    english: {
-      message: "Hi,I am interested in reserve the experiences",
-    },
-  };
 
   return (
     <div className="navlist">
@@ -75,7 +66,7 @@ export const NavList = () => {
           <Button buttonStyle={"btn-navbar"}>
             {" "}
             <a
-              href={` https://wa.me/${contact.number}?text=${contact.spanish.message}`}
+              href={` https://wa.me/${generalContact.number}?text=${generalContact.spanish.message}`}
               target="_blank"
               rel="noreferrer"
             >
@@ -137,7 +128,7 @@ export const NavList = () => {
           </Link>
           <Button buttonStyle={"btn-navbar"}>
             <a
-              href={` https://wa.me/${contact.number}?text=${contact.english.message}`}
+              href={` https://wa.me/${generalContact.number}?text=${generalContact.english.message}`}
               target="_blank"
               rel="noreferrer"
             >
