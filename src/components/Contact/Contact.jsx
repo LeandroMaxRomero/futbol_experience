@@ -14,15 +14,7 @@ export const Contact = () => {
   useEffect(() => {
     scroll.scrollToTop();
   });
-  const contact = {
-    number: "+5491126597630",
-    spanish: {
-      message: "Hola, necesito información sobre las experiencias...",
-    },
-    english: {
-      message: "Hi, I need information about experiences",
-    },
-  };
+
   return (
     <>
       <HeaderContact

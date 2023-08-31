@@ -404,7 +404,9 @@
     gap: 8px;
     border: 2px solid v.$grisSuave;
     box-shadow: 4px -4px 2px v.$azul;
-
+    ::-webkit-scrollbar {
+      display: none;
+    }
     @include m.mobile {
       margin-top: 3rem;
     }
@@ -542,17 +544,17 @@
     background-color: v.$grisSuave !important;
   }
 }
-a{
-  &#reserva{
+a {
+  &#reserva {
     background-color: v.$amarilloMenu;
-      color: v.$azul !important;
-      font-size: 16px !important;
-      font-weight: 700 !important;
-      line-height: 100% !important;
-    &:hover{
+    color: v.$azul !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 100% !important;
+    &:hover {
       background-color: v.$amarilloMenu !important;
     }
-}
+  }
 }
 
 .btn-idioma {

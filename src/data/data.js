@@ -49,20 +49,17 @@ export const maradonaContent = {
       "Sabías que ...",
       "img/image 13.png",
       "Argentinos Juniors",
-      `Fundado en 1904 en Buenos Aires, ha sido un semillero de talento.
-      Diego Maradona comenzó su carrera profesional acá, dejando una
-      huella perdurable. A lo largo de los años, el club ha contribuido al
-      fútbol argentino y ha formado jugadores destacados. El estadio Diego
-      Armando Maradona, con su nombre, refleja la pasión de los
-      aficionados. Argentinos Juniors es un símbolo del fútbol argentino.`,
+      `Fundado en 1904, Argentinos Juniors es reconocido mundialmente por la cantidad y calidad de jugadores salidos de sus divisiones inferiores. Con 5 títulos en su haber, incluyendo copas locales como la Copa Libertadores, el club atraviesa un gran presente futbolístico. Su estadio lleva el nombre de “Diego Armando Maradona” y en ese mismo campo de juego, debutó Lionel Messi y convirtió su primer gol con la camiseta de la Selección Argentina.`,
       "img/diego_armando_maradona.png",
       "Diego Armando Maradona",
-      `Nacido en 1960, es una leyenda del fútbol. Destacó en el Mundial de
-      1986 con la "Mano de Dios" y el "Gol del Siglo". Jugó en Boca
-      Juniors, FC Barcelona, entre otros, dejando una marca duradera. Su
-      apogeo en el Napoli, donde logró títulos y se convirtió en ícono,
-      resalta su genialidad. Maradona trasciende el fútbol, siendo
-      recordado por su talento y complejidad humana.`,
+      `Nació en 1960 y algunos dicen que vivirá por el fin de los tiempos.
+       Fue el quinto de sus ocho hermanos y se crió en un barrio humilde como Villa Fiorito,
+      donde practicaba sus gambetas en los potreros. Argentinos Juniors puso los ojos en él y
+      le brindó su primera oportunidad en el fútbol argentino. Posteriormente, se destacaría 
+       en Boca Juniors, FC Barcelona pero en Napoli se sintió como en su segunda casa, logrando títulos
+      y el amor de una ciudad entera. Inolvidable su participación estelar en el Mundial de 1986, logrando
+        el campeonato mundial con goles memorables como “La Mano de D10S”. Después se convertiría en técnico
+        del seleccionado argentino. Diego Armando Maradona trasciende el fútbol, siendo un ídolo popular amado.`,
     ],
     imgs: [
       {
@@ -179,20 +176,10 @@ export const maradonaContent = {
       "Did you know ...",
       "img/image 13.png",
       "Argentino Juniors",
-      `Founded in 1904 in Buenos Aires, it has been a hotbed of talent.
-       Diego Maradona began his professional career here, leaving a
-       lasting imprint Over the years, the club has contributed to the
-       Argentine soccer and has trained outstanding players. diego stadium
-       Armando Maradona, with his name, reflects the passion of the
-       fans. Argentinos Juniors is a symbol of Argentine soccer.`,
+      `Founded in 1904, Argentinos Juniors is recognized worldwide for the quantity and quality of players from its lower divisions. With 5 titles to its credit, including local cups such as the Copa Libertadores, the club is going through a great football present. His stadium bears the name of "Diego Armando Maradona" and on that same playing field, Lionel Messi made his debut and scored his first goal with the Argentine National Team shirt.`,
       "img/diego_armando_maradona.png",
       "Diego Armando Maradona",
-      `Born in 1960, he is a football legend. He excelled at the World Cup
-       1986 with the "Hand of God" and the "Goal of the Century". He played in Boca
-       Juniors, FC Barcelona, among others, leaving a lasting mark. His
-       heyday at Napoli, where he won titles and became an icon,
-       highlights his genius. Maradona transcends football, being
-       remembered for his talent and human complexity.`,
+      `He was born in 1960 and some say he will live to the end of time. He was the fifth of his eight siblings and grew up in a humble neighborhood like Villa Fiorito, where he practiced his dribbling in the pastures. Argentinos Juniors set their sights on him and gave him his first opportunity in Argentine soccer. Later, he would stand out in Boca Juniors, FC Barcelona, but in Napoli he felt like his second home, winning titles and the love of an entire city. Unforgettable his stellar participation in the 1986 World Cup, achieving the world championship with memorable goals such as “La Mano de D10S”. Later he would become a coach of the Argentine national team. Diego Armando Maradona transcends soccer, being a beloved popular idol.`,
     ],
 
     contact: {
@@ -247,18 +234,10 @@ export const riverContent = {
       "Sabías que ...",
       "img/boca-juniors-1712628_1920 1.png",
       "Boca Juniors",
-      `Fundado en 1905 en Buenos Aires, el tres veces campeón del mundo, Boca Juniors, 
-        es un icónico club de fútbol. Con una historia rica, ha sido cuna de talento y pasión. La Bombonera, 
-        resuena con la devoción de los fanáticos. Figuras legendarias como Maradona dejaron una huella , simbolizando 
-        su grandeza. Además, la presencia de Riquelme, con su magia en la cancha, agrega a la mística del club. Boca Juniors 
-        es un emblema de triunfo y rivalidad. Su legado inspira a fans de todo el mundo.`,
+      ` Fundado en 1905 en el barrio de La Boca, el tres veces campeón del mundo y seis veces campeón de América, es un club de fútbol reconocido a nivel mundial. Con una historia que enaltece su grandeza, Boca Juniors ha sido cuna de talento de jugadores que resuenan hasta el día de hoy como el caso de Diego Armando Maradona o Juan Roman Riquelme, actual vicepresidente de la institución. Sin embargo, lo que destaca a este club, es la pasión de sus hinchas. El dicho popular dice que su estadio, La Bombonera, no late sino que tiembla.`,
       "img/IMG_4789 1.png",
       "River Plate",
-      `Fundado en 1901 en Buenos Aires, cuatro veces campeon de América, “El millonario”, 
-        destaca como otro de los grandes clubes. Gallardo, con su influencia como entrenador, ha dejado
-         una huella imborrable en River, personificando su grandeza. Sumado a esto, su travesía está llena de éxitos 
-         y rivalidades, como el mítico Superclásico con Boca, trascendiendo más allá del terreno de juego. Con logros
-          locales e internacionales, River Plate encarna la excelencia y pasión en el fútbol.`,
+      `Fundado en 1901 en Buenos Aires en el mismo barrio que su rival histórico, tuvo que mudarse al barrio de Nuñez. Dos veces campeón del mundo y  cuatro veces campeón de América, “El Millonario” se destaca por un gran presente en los torneos locales e internacionales. Marcelo Gallardo ha llevado al equipo a su mejor nivel, ganando una final memorable frente a Boca en el año 2019 en Madrid. Su identidad está en la clase de jugadores y en el buen fútbol, marcado por un presente institucional inmejorable. Su estadio, el “Más Monumental", es distinguido por su modernidad, comodidad y el de mayor capacidad (85.000 hinchas) en todo el país.`,
     ],
     imgs: [
       {
@@ -364,18 +343,10 @@ export const riverContent = {
       "Did you know ...",
       "img/boca-juniors-1712628_1920 1.png",
       "Boca Juniors",
-      `Founded in 1905 in Buenos Aires, the three-time world champion, Boca Juniors,
-        is an iconic football club. With a rich history, it has been the cradle of talent and passion. The Bombonera,
-        resonates with the devotion of the fans. Legendary figures like Maradona left their mark, symbolizing
-        his greatness. In addition, the presence of Riquelme, with his magic on the field, adds to the mystique of the club. Boca Juniors
-        it is an emblem of triumph and rivalry. His legacy inspires fans around the world.`,
+      `Founded in 1905 in the La Boca neighborhood, the three-time world champion and six-time American champion, is a world-renowned soccer club. With a history that exalts its greatness, Boca Juniors has been the cradle of talented players who resonate to this day, such as Diego Armando Maradona or Juan Roman Riquelme, current vice president of the institution. However, what makes this club stand out is the passion of its fans. The popular saying goes that its stadium, La Bombonera, does not beat but trembles.`,
       "img/IMG_4789 1.png",
       "River Plate",
-      `Founded in 1901 in Buenos Aires, four times champion of America, "El millonario",
-        It stands out as another of the great clubs. Gallardo, with his influence as a coach, has left
-         an indelible mark on River, personifying his greatness. Added to this, his journey is full of successes
-         and rivalries, such as the mythical Superclásico with Boca, transcending beyond the pitch. with achievements
-          local and international, River Plate embodies excellence and passion in soccer.`,
+      `Founded in 1901 in Buenos Aires in the same neighborhood as its historic rival, it had to move to the Nuñez neighborhood. Two times world champion and four times champion of America, "El Millonario" stands out for a great presence in local and international tournaments. Marcelo Gallardo has led the team to its best level, winning a memorable final against Boca in 2019 in Madrid. His identity is in the class of players and in good football, marked by an unbeatable institutional present. Its stadium, the "Más Monumental", is distinguished by its modernity, comfort and the one with the largest capacity (85,000 fans) in the entire country.`,
     ],
     contact: {
       number: "+5491126597630",
