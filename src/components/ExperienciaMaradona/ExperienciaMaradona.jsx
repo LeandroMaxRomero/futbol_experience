@@ -23,6 +23,12 @@ export const ExperienciaMaradona = () => {
     scroll.scrollToTop();
   });
 
+  const nuevo = maradonaContent.spanish.textExperience[1].replace(
+    "podrás",
+    `<strong>podras</strong>`
+  );
+  console.log(maradonaContent.spanish.textExperience[1]);
+
   return (
     <>
       <CommonHeader
@@ -46,6 +52,7 @@ export const ExperienciaMaradona = () => {
               : maradonaContent.english.textExperience
           }
         />
+        <p>{nuevo}</p>
         <DescriptionExperience
           content={
             lang === "castellano"

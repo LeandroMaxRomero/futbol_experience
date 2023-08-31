@@ -12,6 +12,14 @@ const Form = () => {
   const form = useRef();
   const { lang } = useContext(LenguaContext);
 
+  const SERVICE_ID = "service_gx8k6dn";
+  const TEMPLATE_ID = "template_6huw7jd";
+  const PUBLIC_KEY = "s7HZBf9HzTnCs8rEW";
+
+  /*  const SERVICE_ID = "service_5um3sgw";
+  const TEMPLATE_ID = "template_kbof8zm";
+  const PUBLIC_KEY = "OPrAo-TUzCdQEaWPc"; */
+
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .min(
@@ -70,12 +78,7 @@ const Form = () => {
     onSubmit: () => {
       try {
         emailjs
-          .sendForm(
-            "service_5um3sgw",
-            "template_kbof8zm",
-            form.current,
-            "OPrAo-TUzCdQEaWPc"
-          )
+          .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
           .then(
             lang === "castellano"
               ? Swal.fire({
@@ -89,7 +92,9 @@ const Form = () => {
                   /* text:  */
                   icon: "success",
                   confirmButtonText: "Continue",
-                })
+                }),
+
+            formik.handleReset()
           );
       } catch (error) {
         console.log(error);
