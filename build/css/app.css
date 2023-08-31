@@ -1050,9 +1050,6 @@ button:hover {
   text-decoration: none !important;
   font-weight: 600 !important;
 }
-.dropdown-item:active {
-  background-color: #F1F8FA !important;
-}
 
 a#reserva {
   background-color: #FEEAB5;
@@ -1124,7 +1121,12 @@ a#reserva:hover {
 }
 @media (max-width: 650px) {
   .container-footer {
-    min-height: 57rem;
+    min-height: 37rem;
+  }
+}
+@media (max-width: 520px) {
+  .container-footer {
+    min-height: 60rem;
   }
 }
 
@@ -1161,15 +1163,16 @@ a#reserva:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 10rem;
+  max-width: 1240px;
+  margin: auto;
   align-items: center;
   justify-content: center;
 }
 @media (max-width: 920px) {
   .footer-textos {
+    max-width: 832px;
     position: absolute;
     z-index: 0;
-    padding: 0 4rem;
   }
 }
 @media (max-width: 650px) {
@@ -1184,7 +1187,7 @@ a#reserva:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top: 7.5rem;
+  padding: 7.5rem 2% 0;
 }
 @media (max-width: 985px) {
   .footer-container {
@@ -1201,11 +1204,28 @@ a#reserva:hover {
   .footer-container {
     padding-top: 2.4rem;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
   }
 }
-.footer-logo {
-  padding-right: 10%;
+@media (max-width: 720px) {
+  .footer-logo {
+    padding: 0 0 0 18%;
+  }
+}
+@media (max-width: 650px) {
+  .footer-logo {
+    padding-left: 15%;
+  }
+}
+@media (max-width: 565px) {
+  .footer-logo {
+    padding-left: 13.5%;
+  }
+}
+@media (max-width: 520px) {
+  .footer-logo {
+    padding: 0;
+  }
 }
 .footer-logo .img-logo-footer {
   max-width: 41.135rem;
@@ -1242,18 +1262,29 @@ a#reserva:hover {
 }
 
 .footer-columns {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  justify-content: space-between;
 }
-@media (max-width: 650px) {
+@media (max-width: 720px) {
+  .footer-columns {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 520px) {
   .footer-columns {
     flex-direction: column;
   }
 }
 
 .footer-navigation {
-  padding-right: 5%;
+  padding-left: 20%;
+}
+@media (max-width: 720px) {
+  .footer-navigation {
+    padding-left: 0;
+    width: 122.6px;
+  }
 }
 
 .footer-navigation strong,
@@ -1316,7 +1347,15 @@ a#reserva:hover {
   }
 }
 
-@media (max-width: 650px) {
+.footer-contact {
+  width: 274px;
+}
+@media (max-width: 920px) {
+  .footer-contact {
+    width: 183.5px;
+  }
+}
+@media (max-width: 520px) {
   .footer-contact {
     padding-top: 2.4rem;
   }
@@ -1357,7 +1396,7 @@ a#reserva:hover {
     width: 65%;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 520px) {
   .footer-network__svg {
     justify-content: space-between;
     width: 30%;
@@ -1424,6 +1463,18 @@ a#reserva:hover {
   color: #000;
 }
 
+.contenedor-prestaciones-noMobile {
+  max-width: 1244px;
+  width: 100%;
+  margin: auto;
+  margin-top: 7.5rem;
+}
+@media (max-width: 920px) {
+  .contenedor-prestaciones-noMobile {
+    margin-top: 5rem;
+    max-width: 832px;
+  }
+}
 @media (max-width: 650px) {
   .contenedor-prestaciones-noMobile {
     display: none;
@@ -1446,12 +1497,7 @@ a#reserva:hover {
   display: flex;
   justify-content: center;
   gap: 3%;
-  margin: 7.5rem auto 0 auto;
-}
-@media (max-width: 920px) {
-  .container-prestaciones {
-    margin: 5rem auto 0;
-  }
+  margin: 0 auto;
 }
 
 .prestaciones-box {
@@ -1542,16 +1588,22 @@ a#reserva:hover {
 }
 
 .container-experiencias {
-  margin: 7.5rem 10rem;
+  max-width: 1244px;
+  width: 100%;
+  margin: auto;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 @media (max-width: 920px) {
   .container-experiencias {
-    margin: 5rem 4.5rem;
+    max-width: 832px;
+    margin: 5rem auto;
   }
 }
 @media (max-width: 650px) {
   .container-experiencias {
-    margin: 2.4rem 1.3rem;
+    margin: 2.4rem auto;
+    padding: 0 1.2rem;
   }
 }
 .container-experiencias h2 {
@@ -1593,14 +1645,9 @@ a#reserva:hover {
 }
 .container-experiencias .experiencias {
   display: flex;
-  justify-content: center;
-  gap: 4rem;
+  justify-content: space-between;
+  gap: 3%;
   position: relative;
-}
-@media (max-width: 920px) {
-  .container-experiencias .experiencias {
-    gap: 2.4rem;
-  }
 }
 @media (max-width: 650px) {
   .container-experiencias .experiencias {
@@ -1863,13 +1910,14 @@ a#reserva:hover {
 }
 
 .container-atributos {
-  max-width: 100%;
+  max-width: 1244px;
+  margin: auto;
+  margin-bottom: 10rem;
   display: grid;
   column-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 73px 341px 191.52px 221.47px;
   grid-template-areas: "foto titulo" "foto texto" "foto iconouno" "foto iconodos";
-  margin: 0 10rem 10rem;
 }
 @media (max-width: 920px) {
   .container-atributos {
@@ -1885,10 +1933,30 @@ a#reserva:hover {
 }
 @media (max-width: 650px) {
   .container-atributos {
-    grid-template-rows: 48px 353px 290px 73px;
+    grid-template-rows: 48px 353px 180px 73px;
     grid-template-areas: "titulo titulo" "foto foto" "texto texto" "iconouno iconodos";
     margin: 0 1.2rem 0;
     column-gap: 0;
+  }
+}
+@media (max-width: 550px) {
+  .container-atributos {
+    grid-template-rows: 48px 353px 220px 73px;
+  }
+}
+@media (max-width: 420px) {
+  .container-atributos {
+    grid-template-rows: 48px 353px 260px 73px;
+  }
+}
+@media (max-width: 376px) {
+  .container-atributos {
+    grid-template-rows: 48px 353px 280px 73px;
+  }
+}
+@media (max-width: 335px) {
+  .container-atributos {
+    grid-template-rows: 48px 353px 320px 73px;
   }
 }
 .container-atributos h2 {
@@ -2239,10 +2307,11 @@ a#reserva:hover {
 .container-faqs {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding: 0 10rem;
+  max-width: 1244px;
+  margin: auto;
   margin-bottom: 7.5rem;
+  align-items: center;
+  padding: 0;
   color: #0b2933;
   font-style: normal;
 }
@@ -2396,6 +2465,8 @@ a#reserva:hover {
 }
 
 .container-reserva {
+  max-width: 1244px;
+  margin: auto;
   margin-bottom: 7.5rem;
   display: flex;
   flex-direction: column;
@@ -2728,7 +2799,7 @@ textarea {
   }
 }
 .text-container {
-  width: 80%;
+  max-width: 1240px;
   margin: 0 auto;
   /* min-height: 26.9rem; */
   flex-shrink: 0;
@@ -2768,10 +2839,10 @@ textarea {
 
 .block-description {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   column-gap: 1rem;
-  width: 80%;
+  max-width: 1240px;
   margin: 4rem auto;
   flex-shrink: 0;
 }
@@ -3167,8 +3238,8 @@ textarea {
   }
 }
 .experience-container {
-  width: 90%;
-  margin: 4rem auto;
+  max-width: 1308px;
+  margin: 7.5rem auto;
   height: 18rem;
   flex-shrink: 0;
   border-radius: 0.5rem;
