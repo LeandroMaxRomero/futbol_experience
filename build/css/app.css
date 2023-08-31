@@ -921,6 +921,9 @@ button:hover {
   border: 2px solid #F1F8FA;
   box-shadow: 4px -4px 2px #0b2933;
 }
+.menu-desplegable.dropdown-menu.show ::-webkit-scrollbar {
+  display: none;
+}
 @media (max-width: 650px) {
   .menu-desplegable.dropdown-menu.show {
     margin-top: 3rem;

@@ -3,37 +3,53 @@ import DropdownItem from "react-bootstrap/esm/DropdownItem";
 import { Link } from "react-router-dom";
 import { LenguaContext } from "../../context/LenguaProvider";
 import { useContext } from "react";
+import { generalContact } from "../../data/data";
 
 function NavDesplegable() {
   const useLengua = () => useContext(LenguaContext);
   const { changeLang, lang } = useLengua();
 
-  const contact = {
-    number: "+5491126597630",
-    spanish: {
-      message: "Hola, estoy interesado en reservar las experiencias...",
-    },
-    english: {
-      message: "Hi,I am interested in reserve the experiences",
-    },
-  };
-
   return (
     <>
       {lang === "castellano" ? (
         <Dropdown className="container-navDesplegable">
+          <Dropdown.Toggle
+            variant="success"
+            id="dropdown-basic"
+            className="navDesplegable-tablet"
+          >
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.58398 5.95239H29.2269V8.69049H4.58398V5.95239ZM4.58398 15.5357H29.2269V18.2738H4.58398V15.5357ZM4.58398 25.1191H29.2269V27.8572H4.58398V25.1191Z"
+                fill="#0B2933"
+              />
+            </svg>
+          </Dropdown.Toggle>
 
-          <Dropdown.Toggle variant="success" id="dropdown-basic" className='navDesplegable-tablet'>
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.58398 5.95239H29.2269V8.69049H4.58398V5.95239ZM4.58398 15.5357H29.2269V18.2738H4.58398V15.5357ZM4.58398 25.1191H29.2269V27.8572H4.58398V25.1191Z" fill="#0B2933"/>
-          </svg>
-        </Dropdown.Toggle>
-      
-        <Dropdown.Toggle variant="success" id="dropdown-basic" className='navDesplegable-mobile'>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#0B2933"/>
-        </svg>
-        </Dropdown.Toggle>
+          <Dropdown.Toggle
+            variant="success"
+            id="dropdown-basic"
+            className="navDesplegable-mobile"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                fill="#0B2933"
+              />
+            </svg>
+          </Dropdown.Toggle>
 
           <Dropdown.Menu className="menu-desplegable">
             <Dropdown.Header>
@@ -187,84 +203,161 @@ function NavDesplegable() {
               </svg>
             </Dropdown.Header>
 
-            <Link to="/" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  Home
-                </div>
+            <Link to="/" className="contenedor-item-burguer">
+              <div className="dropdown-item-burguer">Home</div>
             </Link>
 
-            <Link to="/experiencia-maradona" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  Experiencia Maradona
-                </div>
+            <Link
+              to="/experiencia-maradona"
+              className="contenedor-item-burguer"
+            >
+              <div className="dropdown-item-burguer">Experiencia Maradona</div>
             </Link>
 
-            <Link to="/experiencia-boca-river" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  Experiencia River - Boca
-                </div>
+            <Link
+              to="/experiencia-boca-river"
+              className="contenedor-item-burguer"
+            >
+              <div className="dropdown-item-burguer">
+                Experiencia River - Boca
+              </div>
             </Link>
 
-            <Link to="/contact" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  Contacto
-                </div>
+            <Link to="/contact" className="contenedor-item-burguer">
+              <div className="dropdown-item-burguer">Contacto</div>
             </Link>
 
-            <Link to="/nosotros" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  Nosotros
-                </div>
+            <Link to="/nosotros" className="contenedor-item-burguer">
+              <div className="dropdown-item-burguer">Nosotros</div>
             </Link>
 
-            <Link to="/" className='contenedor-item-burguer' id='reserva'>
-                <div className="dropdown-item-burguer">
-                  Reserva tu experiencia
-                </div>
-            </Link>
+            <a
+              href={` https://wa.me/${generalContact.number}?text=${generalContact.spanish.message}`}
+              target="_blank"
+              rel="noreferrer"
+              className="contenedor-item-burguer"
+              id="reserva"
+            >
+              <div className="dropdown-item-burguer">
+                Reserva tu experiencia
+              </div>
+            </a>
 
-            <Link to="/" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer redes">
-                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.714 6.25117C17.6003 6.25117 17.4912 6.20599 17.4108 6.12556C17.3303 6.04513 17.2852 5.93604 17.2852 5.8223C17.2852 5.70856 17.3303 5.59947 17.4108 5.51905C17.4912 5.43862 17.6003 5.39343 17.714 5.39343" stroke="#446168" strokeWidth="2.08478" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M17.7148 6.25117C17.8286 6.25117 17.9377 6.20599 18.0181 6.12556C18.0985 6.04513 18.1437 5.93604 18.1437 5.8223C18.1437 5.70856 18.0985 5.59947 18.0181 5.51905C17.9377 5.43862 17.8286 5.39343 17.7148 5.39343" stroke="#446168" strokeWidth="2.08478" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M1.47046 5.88584C1.47046 4.7152 1.93518 3.5925 2.76237 2.76473C3.58957 1.93696 4.71149 1.47192 5.88132 1.47192H17.6448C18.224 1.47192 18.7976 1.58609 19.3327 1.80791C19.8679 2.02973 20.3541 2.35486 20.7637 2.76473C21.1733 3.1746 21.4982 3.66119 21.7199 4.19671C21.9415 4.73223 22.0556 5.3062 22.0556 5.88584V17.6574C22.0556 18.8281 21.5909 19.9508 20.7637 20.7786C19.9365 21.6063 18.8146 22.0714 17.6448 22.0714H5.87961C4.70978 22.0714 3.58786 21.6063 2.76066 20.7786C1.93346 19.9508 1.46875 18.8281 1.46875 17.6574V5.88413L1.47046 5.88584Z" stroke="#446168" strokeWidth="2.08478" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M7.39258 11.7717C7.39258 12.3461 7.50565 12.915 7.72533 13.4457C7.94502 13.9765 8.26702 14.4587 8.67294 14.8649C9.07886 15.2711 9.56077 15.5933 10.0911 15.8132C10.6215 16.033 11.1899 16.1461 11.764 16.1461C12.3381 16.1461 12.9065 16.033 13.4369 15.8132C13.9672 15.5933 14.4491 15.2711 14.8551 14.8649C15.261 14.4587 15.583 13.9765 15.8027 13.4457C16.0224 12.915 16.1354 12.3461 16.1354 11.7717C16.1354 10.6115 15.6749 9.49884 14.8551 8.67847C14.0353 7.8581 12.9234 7.39722 11.764 7.39722C10.6046 7.39722 9.49274 7.8581 8.67294 8.67847C7.85314 9.49884 7.39258 10.6115 7.39258 11.7717Z" stroke="#446168" strokeWidth="2.08478" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                        <p>Conocenos</p>
-                </div>
-            </Link>
+            <a
+              href="https://www.instagram.com/futbolexperienceba"
+              target="_blank"
+              rel="noreferrer"
+              className="contenedor-item-burguer"
+            >
+              <div className="dropdown-item-burguer redes">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.714 6.25117C17.6003 6.25117 17.4912 6.20599 17.4108 6.12556C17.3303 6.04513 17.2852 5.93604 17.2852 5.8223C17.2852 5.70856 17.3303 5.59947 17.4108 5.51905C17.4912 5.43862 17.6003 5.39343 17.714 5.39343"
+                    stroke="#446168"
+                    strokeWidth="2.08478"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M17.7148 6.25117C17.8286 6.25117 17.9377 6.20599 18.0181 6.12556C18.0985 6.04513 18.1437 5.93604 18.1437 5.8223C18.1437 5.70856 18.0985 5.59947 18.0181 5.51905C17.9377 5.43862 17.8286 5.39343 17.7148 5.39343"
+                    stroke="#446168"
+                    strokeWidth="2.08478"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M1.47046 5.88584C1.47046 4.7152 1.93518 3.5925 2.76237 2.76473C3.58957 1.93696 4.71149 1.47192 5.88132 1.47192H17.6448C18.224 1.47192 18.7976 1.58609 19.3327 1.80791C19.8679 2.02973 20.3541 2.35486 20.7637 2.76473C21.1733 3.1746 21.4982 3.66119 21.7199 4.19671C21.9415 4.73223 22.0556 5.3062 22.0556 5.88584V17.6574C22.0556 18.8281 21.5909 19.9508 20.7637 20.7786C19.9365 21.6063 18.8146 22.0714 17.6448 22.0714H5.87961C4.70978 22.0714 3.58786 21.6063 2.76066 20.7786C1.93346 19.9508 1.46875 18.8281 1.46875 17.6574V5.88413L1.47046 5.88584Z"
+                    stroke="#446168"
+                    strokeWidth="2.08478"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M7.39258 11.7717C7.39258 12.3461 7.50565 12.915 7.72533 13.4457C7.94502 13.9765 8.26702 14.4587 8.67294 14.8649C9.07886 15.2711 9.56077 15.5933 10.0911 15.8132C10.6215 16.033 11.1899 16.1461 11.764 16.1461C12.3381 16.1461 12.9065 16.033 13.4369 15.8132C13.9672 15.5933 14.4491 15.2711 14.8551 14.8649C15.261 14.4587 15.583 13.9765 15.8027 13.4457C16.0224 12.915 16.1354 12.3461 16.1354 11.7717C16.1354 10.6115 15.6749 9.49884 14.8551 8.67847C14.0353 7.8581 12.9234 7.39722 11.764 7.39722C10.6046 7.39722 9.49274 7.8581 8.67294 8.67847C7.85314 9.49884 7.39258 10.6115 7.39258 11.7717Z"
+                    stroke="#446168"
+                    strokeWidth="2.08478"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p>Conocenos</p>
+              </div>
+            </a>
 
-          <div className="idiomas-despl">
-          <DropdownItem className='contenedor-item-burguer'>
-          <button className={lang==='castellano'?"btn-idioma burguer langSelected":"btn-idioma burguer"} onClick={() => changeLang("castellano")}>
-            ESPAÑOL
-          </button>
-          </DropdownItem>
+            <div className="idiomas-despl">
+              <DropdownItem className="contenedor-item-burguer">
+                <button
+                  className={
+                    lang === "castellano"
+                      ? "btn-idioma burguer langSelected"
+                      : "btn-idioma burguer"
+                  }
+                  onClick={() => changeLang("castellano")}
+                >
+                  ESPAÑOL
+                </button>
+              </DropdownItem>
 
-          <DropdownItem className='contenedor-item-burguer'>
-          <button className={lang==='castellano'?"btn-idioma burguer":"btn-idioma burguer langSelected"} onClick={() => changeLang("english")}>
-            ENGLISH
-          </button>
-          </DropdownItem>
-          </div>
-
-        </Dropdown.Menu>
-      </Dropdown>
-      ):(
+              <DropdownItem className="contenedor-item-burguer">
+                <button
+                  className={
+                    lang === "castellano"
+                      ? "btn-idioma burguer"
+                      : "btn-idioma burguer langSelected"
+                  }
+                  onClick={() => changeLang("english")}
+                >
+                  ENGLISH
+                </button>
+              </DropdownItem>
+            </div>
+          </Dropdown.Menu>
+        </Dropdown>
+      ) : (
         <Dropdown className="container-navDesplegable">
+          <Dropdown.Toggle
+            variant="success"
+            id="dropdown-basic"
+            className="navDesplegable-tablet"
+          >
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.58398 5.95239H29.2269V8.69049H4.58398V5.95239ZM4.58398 15.5357H29.2269V18.2738H4.58398V15.5357ZM4.58398 25.1191H29.2269V27.8572H4.58398V25.1191Z"
+                fill="#0B2933"
+              />
+            </svg>
+          </Dropdown.Toggle>
 
-          <Dropdown.Toggle variant="success" id="dropdown-basic" className='navDesplegable-tablet'>
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.58398 5.95239H29.2269V8.69049H4.58398V5.95239ZM4.58398 15.5357H29.2269V18.2738H4.58398V15.5357ZM4.58398 25.1191H29.2269V27.8572H4.58398V25.1191Z" fill="#0B2933"/>
-          </svg>
-        </Dropdown.Toggle>
-      
-        <Dropdown.Toggle variant="success" id="dropdown-basic" className='navDesplegable-mobile'>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#0B2933"/>
-        </svg>
-        </Dropdown.Toggle>
+          <Dropdown.Toggle
+            variant="success"
+            id="dropdown-basic"
+            className="navDesplegable-mobile"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                fill="#0B2933"
+              />
+            </svg>
+          </Dropdown.Toggle>
 
           <Dropdown.Menu className="menu-desplegable">
             <Dropdown.Header>
@@ -418,70 +511,123 @@ function NavDesplegable() {
               </svg>
             </Dropdown.Header>
 
-            <Link to="/" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  Home
-                </div>
+            <Link to="/" className="contenedor-item-burguer">
+              <div className="dropdown-item-burguer">Home</div>
             </Link>
 
-            <Link to="/experiencia-maradona" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  Maradona Experience
-                </div>
+            <Link
+              to="/experiencia-maradona"
+              className="contenedor-item-burguer"
+            >
+              <div className="dropdown-item-burguer">Maradona Experience</div>
             </Link>
 
-            <Link to="/experiencia-boca-river" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  River - Boca Experience
-                </div>
+            <Link
+              to="/experiencia-boca-river"
+              className="contenedor-item-burguer"
+            >
+              <div className="dropdown-item-burguer">
+                River - Boca Experience
+              </div>
             </Link>
 
-            <Link to="/contact" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  Contact
-                </div>
+            <Link to="/contact" className="contenedor-item-burguer">
+              <div className="dropdown-item-burguer">Contact</div>
             </Link>
 
-            <Link to="/nosotros" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer">
-                  About Us
-                </div>
+            <Link to="/nosotros" className="contenedor-item-burguer">
+              <div className="dropdown-item-burguer">About Us</div>
             </Link>
 
-            <Link to="/" className='contenedor-item-burguer' id='reserva'>
-                <div className="dropdown-item-burguer">
-                  Reserve your experience
-                </div>
-            </Link>
+            <a
+              href={` https://wa.me/${generalContact.number}?text=${generalContact.english.message}`}
+              target="_blank"
+              rel="noreferrer"
+              className="contenedor-item-burguer"
+              id="reserva"
+            >
+              <div className="dropdown-item-burguer">
+                Reserve your experience
+              </div>
+            </a>
 
-            <Link to="/" className='contenedor-item-burguer'>
-                <div className="dropdown-item-burguer redes">
-                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.714 6.25117C17.6003 6.25117 17.4912 6.20599 17.4108 6.12556C17.3303 6.04513 17.2852 5.93604 17.2852 5.8223C17.2852 5.70856 17.3303 5.59947 17.4108 5.51905C17.4912 5.43862 17.6003 5.39343 17.714 5.39343" stroke="#446168" strokeWidth="2.08478" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M17.7148 6.25117C17.8286 6.25117 17.9377 6.20599 18.0181 6.12556C18.0985 6.04513 18.1437 5.93604 18.1437 5.8223C18.1437 5.70856 18.0985 5.59947 18.0181 5.51905C17.9377 5.43862 17.8286 5.39343 17.7148 5.39343" stroke="#446168" strokeWidth="2.08478" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M1.47046 5.88584C1.47046 4.7152 1.93518 3.5925 2.76237 2.76473C3.58957 1.93696 4.71149 1.47192 5.88132 1.47192H17.6448C18.224 1.47192 18.7976 1.58609 19.3327 1.80791C19.8679 2.02973 20.3541 2.35486 20.7637 2.76473C21.1733 3.1746 21.4982 3.66119 21.7199 4.19671C21.9415 4.73223 22.0556 5.3062 22.0556 5.88584V17.6574C22.0556 18.8281 21.5909 19.9508 20.7637 20.7786C19.9365 21.6063 18.8146 22.0714 17.6448 22.0714H5.87961C4.70978 22.0714 3.58786 21.6063 2.76066 20.7786C1.93346 19.9508 1.46875 18.8281 1.46875 17.6574V5.88413L1.47046 5.88584Z" stroke="#446168" strokeWidth="2.08478" strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d="M7.39258 11.7717C7.39258 12.3461 7.50565 12.915 7.72533 13.4457C7.94502 13.9765 8.26702 14.4587 8.67294 14.8649C9.07886 15.2711 9.56077 15.5933 10.0911 15.8132C10.6215 16.033 11.1899 16.1461 11.764 16.1461C12.3381 16.1461 12.9065 16.033 13.4369 15.8132C13.9672 15.5933 14.4491 15.2711 14.8551 14.8649C15.261 14.4587 15.583 13.9765 15.8027 13.4457C16.0224 12.915 16.1354 12.3461 16.1354 11.7717C16.1354 10.6115 15.6749 9.49884 14.8551 8.67847C14.0353 7.8581 12.9234 7.39722 11.764 7.39722C10.6046 7.39722 9.49274 7.8581 8.67294 8.67847C7.85314 9.49884 7.39258 10.6115 7.39258 11.7717Z" stroke="#446168" strokeWidth="2.08478" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                        <p>Follow Us</p>
-                </div>
-            </Link>
+            <a
+              href="https://www.instagram.com/futbolexperienceba"
+              target="_blank"
+              rel="noreferrer"
+              className="contenedor-item-burguer"
+            >
+              <div className="dropdown-item-burguer redes">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.714 6.25117C17.6003 6.25117 17.4912 6.20599 17.4108 6.12556C17.3303 6.04513 17.2852 5.93604 17.2852 5.8223C17.2852 5.70856 17.3303 5.59947 17.4108 5.51905C17.4912 5.43862 17.6003 5.39343 17.714 5.39343"
+                    stroke="#446168"
+                    strokeWidth="2.08478"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M17.7148 6.25117C17.8286 6.25117 17.9377 6.20599 18.0181 6.12556C18.0985 6.04513 18.1437 5.93604 18.1437 5.8223C18.1437 5.70856 18.0985 5.59947 18.0181 5.51905C17.9377 5.43862 17.8286 5.39343 17.7148 5.39343"
+                    stroke="#446168"
+                    strokeWidth="2.08478"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M1.47046 5.88584C1.47046 4.7152 1.93518 3.5925 2.76237 2.76473C3.58957 1.93696 4.71149 1.47192 5.88132 1.47192H17.6448C18.224 1.47192 18.7976 1.58609 19.3327 1.80791C19.8679 2.02973 20.3541 2.35486 20.7637 2.76473C21.1733 3.1746 21.4982 3.66119 21.7199 4.19671C21.9415 4.73223 22.0556 5.3062 22.0556 5.88584V17.6574C22.0556 18.8281 21.5909 19.9508 20.7637 20.7786C19.9365 21.6063 18.8146 22.0714 17.6448 22.0714H5.87961C4.70978 22.0714 3.58786 21.6063 2.76066 20.7786C1.93346 19.9508 1.46875 18.8281 1.46875 17.6574V5.88413L1.47046 5.88584Z"
+                    stroke="#446168"
+                    strokeWidth="2.08478"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M7.39258 11.7717C7.39258 12.3461 7.50565 12.915 7.72533 13.4457C7.94502 13.9765 8.26702 14.4587 8.67294 14.8649C9.07886 15.2711 9.56077 15.5933 10.0911 15.8132C10.6215 16.033 11.1899 16.1461 11.764 16.1461C12.3381 16.1461 12.9065 16.033 13.4369 15.8132C13.9672 15.5933 14.4491 15.2711 14.8551 14.8649C15.261 14.4587 15.583 13.9765 15.8027 13.4457C16.0224 12.915 16.1354 12.3461 16.1354 11.7717C16.1354 10.6115 15.6749 9.49884 14.8551 8.67847C14.0353 7.8581 12.9234 7.39722 11.764 7.39722C10.6046 7.39722 9.49274 7.8581 8.67294 8.67847C7.85314 9.49884 7.39258 10.6115 7.39258 11.7717Z"
+                    stroke="#446168"
+                    strokeWidth="2.08478"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <p>Follow Us</p>
+              </div>
+            </a>
 
-          <div className="idiomas-despl">
-          <DropdownItem className='contenedor-item-burguer'>
-          <button className={lang==='castellano'?"btn-idioma burguer langSelected":"btn-idioma burguer"} onClick={() => changeLang("castellano")}>
-            ESPAÑOL
-          </button>
-          </DropdownItem>
+            <div className="idiomas-despl">
+              <DropdownItem className="contenedor-item-burguer">
+                <button
+                  className={
+                    lang === "castellano"
+                      ? "btn-idioma burguer langSelected"
+                      : "btn-idioma burguer"
+                  }
+                  onClick={() => changeLang("castellano")}
+                >
+                  ESPAÑOL
+                </button>
+              </DropdownItem>
 
-          <DropdownItem className='contenedor-item-burguer'>
-          <button className={lang==='castellano'?"btn-idioma burguer":"btn-idioma burguer langSelected"} onClick={() => changeLang("english")}>
-            ENGLISH
-          </button>
-          </DropdownItem>
-          </div>
-
-        </Dropdown.Menu>
-      </Dropdown>)}
+              <DropdownItem className="contenedor-item-burguer">
+                <button
+                  className={
+                    lang === "castellano"
+                      ? "btn-idioma burguer"
+                      : "btn-idioma burguer langSelected"
+                  }
+                  onClick={() => changeLang("english")}
+                >
+                  ENGLISH
+                </button>
+              </DropdownItem>
+            </div>
+          </Dropdown.Menu>
+        </Dropdown>
+      )}
     </>
   );
 }
