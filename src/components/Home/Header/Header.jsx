@@ -20,8 +20,6 @@ export const Header = () => {
         <ImageSlider slides={slides} />
     
         <img src="img/hero1.png" alt="Hinchada Boca Juniors" className="imagen-header-estatica"/>
-        
-        {/* <Carrusel/> */}
     
         <div className="header">
           <NavBar />

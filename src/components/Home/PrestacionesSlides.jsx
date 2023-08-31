@@ -21,8 +21,8 @@ export default function PrestacionesSlides() {
             ?
             <Swiper
               slidesPerView={2}
-              spaceBetween={100}
-              centeredSlides={true}
+              spaceBetween={24}
+              centeredSlides={false}
               slidesPerGroupSkip={2}
               grabCursor={true}
               keyboard={{
@@ -39,7 +39,7 @@ export default function PrestacionesSlides() {
               pagination={{
                 clickable: true,
               }}
-              modules={[Keyboard, Scrollbar, Navigation, Pagination]}
+              modules={[Keyboard, Scrollbar, Navigation]}
               className="mySwiper"
             >
               <SwiperSlide>

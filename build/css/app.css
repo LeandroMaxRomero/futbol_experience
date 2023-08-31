@@ -504,8 +504,6 @@ button:hover {
   right: 0;
   height: 100%;
   object-fit: cover;
-  animation: fadeIn;
-  animation-duration: 4s;
 }
 
 .header {
@@ -674,7 +672,7 @@ button:hover {
 }
 .header-maradona h2,
 .header-boca-river h2 {
-  font-family: "Barlow", sans-serif; /* "Barlow SemiBold"; */
+  font-family: "Barlow", sans-serif;
   color: #ffffff;
   text-align: center;
   font-size: 9rem;
@@ -779,7 +777,7 @@ button:hover {
 }
 
 .container-navbar {
-  padding: 3.8rem 4.4rem 3.8rem 8vw;
+  padding: 3.8rem 4.4rem 4.5rem 8vw;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -787,6 +785,7 @@ button:hover {
   top: 0;
   right: 0;
   background: linear-gradient(180deg, #0b2933 0%, rgba(11, 41, 51, 0.25) 80.32%, rgba(11, 41, 51, 0) 100%);
+  backdrop-filter: blur(5px);
 }
 @media (max-width: 1300px) {
   .container-navbar {
@@ -889,6 +888,7 @@ button:hover {
 @media (max-width: 920px) {
   .dropdown-toggle.navDesplegable-tablet {
     display: block;
+    transform: translate(44px, -34px) !important;
   }
 }
 @media (max-width: 650px) {
@@ -902,18 +902,18 @@ button:hover {
 @media (max-width: 650px) {
   .dropdown-toggle.navDesplegable-mobile {
     display: block;
+    transform: translate(12px, -18px) !important;
   }
 }
 
 .menu-desplegable.dropdown-menu.show {
+  transform: translate(-48px, -10px) !important;
+  inset: 0px 0px auto auto !important;
   background-color: #ffffff !important;
-  backdrop-filter: blur(3.5px);
-  width: 95%;
+  width: 32.2rem;
   height: 65rem;
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin-top: 10rem;
   margin-left: 2.5%;
   align-items: flex-start;
   z-index: 0;
@@ -923,7 +923,7 @@ button:hover {
 }
 @media (max-width: 650px) {
   .menu-desplegable.dropdown-menu.show {
-    margin-top: 3rem;
+    transform: translate(-34px, -30px) !important;
   }
 }
 
@@ -982,7 +982,6 @@ button:hover {
 }
 .navbar-link h3 {
   color: #ffffff;
-  text-shadow: black 0.1em 0.1em 0.2em;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -1014,7 +1013,6 @@ button:hover {
   line-height: 1.8rem !important;
   border: none;
   color: #ffffff;
-  text-shadow: black 0.1em 0.1em 0.2em;
 }
 .dropdown .flechitapabajo {
   margin-left: 0.6rem;
@@ -1460,7 +1458,6 @@ a#reserva:hover {
   width: 28rem;
   height: 25.6rem;
   border-radius: 0.5rem;
-  border-radius: 0.5rem;
   filter: drop-shadow(0rem 0rem 0.4rem rgba(0, 0, 0, 0.25));
   color: #ffffff;
   text-align: center;
@@ -1522,6 +1519,7 @@ a#reserva:hover {
   z-index: 0;
   width: 100%;
   margin-top: 2.4rem;
+  padding-left: 1.2rem;
 }
 
 .imagen-fondo-prestaciones {
@@ -1529,6 +1527,7 @@ a#reserva:hover {
   position: absolute;
   height: 100%;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 @media (max-width: 920px) {
   .imagen-fondo-prestaciones {
@@ -1712,8 +1711,8 @@ a#reserva:hover {
 }
 @media (max-width: 920px) {
   .container-experiencias .experiencia p {
-    font-size: 1.48rem;
-    line-height: 2.35rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -2314,7 +2313,7 @@ a#reserva:hover {
   .accordionHeading h3 {
     font-size: 1.6rem;
     line-height: 2.4rem;
-    margin: 1.6rem auto 1.6rem 0;
+    margin: 1.6rem 0 1.6rem 0;
   }
 }
 .accordionHeading h3:hover {
@@ -2372,6 +2371,22 @@ a#reserva:hover {
 @media (max-width: 650px) {
   .containerTitle {
     gap: 1rem;
+  }
+}
+.containerTitle svg {
+  min-width: 24px;
+  max-width: 24.1px;
+}
+@media (max-width: 920px) {
+  .containerTitle svg {
+    min-width: 16px;
+    max-width: 16.1px;
+  }
+}
+@media (max-width: 650px) {
+  .containerTitle svg {
+    min-width: 12.667px;
+    max-width: 12.67px;
   }
 }
 

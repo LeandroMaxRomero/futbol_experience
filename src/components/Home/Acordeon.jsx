@@ -1,14 +1,17 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 
-export const Acordeon = ({tittle, contenido, active, setActive}) => {
+export const Acordeon = ({tittle, contenido}) => {
 
+  const [active, setActive] = useState(false)
   return (
     <div className="accordion">
 
         <div className="accordionHeading">
             <div className="containerTitle">
-                <span onClick={() => setActive(tittle)}>
-                    {active === tittle
+
+                <span onClick={() => setActive(!active)}>
+                    {active === true
                     ?
                     <svg width="25" height="62" viewBox="0 0 25 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" clipRule="evenodd" d="M17.7559 36L11.7559 30L5.75586 36L3.75586 34L11.7559 26L19.7559 34L17.7559 36Z" fill="#0B2933" stroke="#0B2933" strokeWidth="2"/>
@@ -19,11 +22,11 @@ export const Acordeon = ({tittle, contenido, active, setActive}) => {
                     </svg>
                     }
                 </span>
-                <h3 onClick={() => setActive(tittle)}>{tittle}</h3>
+
+                <h3 onClick={() => setActive(!active)}>{tittle}</h3>
             </div>
-        </div>
-            
-        <div className={(active === tittle ? "show" : "") + " accordionContent"}>
+        </div>  
+        <div className={(active === true ? "show" : "") + " accordionContent"}>
             <div className="containerTitle">
                 <p className="cont-despl">{contenido}</p>
             </div>

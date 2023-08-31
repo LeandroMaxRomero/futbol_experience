@@ -36,7 +36,6 @@
   width: 28rem;
   height: 25.6rem;
   border-radius: 0.5rem;
-  border-radius: 0.5rem;
   filter: drop-shadow(0rem 0rem 0.4rem rgba(0, 0, 0, 0.25));
   color: v.$blanco;
   text-align: center;
@@ -100,12 +99,14 @@
   z-index: 0;
   width: 100%;
   margin-top: 2.4rem;
+  padding-left: 1.2rem;
 }
 .imagen-fondo-prestaciones {
   display: block;
   position: absolute;
   height: 100%;
   object-fit: cover;
+  border-radius: 0.5rem;
   @include m.tablet {
     z-index: -2;
   }
@@ -258,8 +259,8 @@
       margin: 0;
       margin-bottom: 5rem;
       @include m.tablet {
-        font-size: 1.48rem;
-        line-height: 2.35rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
         margin-bottom: 1.5rem;
       }
       @include m.mobile {
@@ -750,7 +751,7 @@
     @include m.mobile {
       font-size: 1.6rem;
       line-height: 2.4rem;
-      margin: 1.6rem auto 1.6rem 0;
+      margin: 1.6rem 0 1.6rem 0;
     }
     &:hover {
       cursor: pointer;
@@ -799,6 +800,18 @@
   }
   @include m.mobile {
     gap: 1rem;
+  }
+  svg{
+    min-width: 24px;
+    max-width: 24.1px;
+    @include m.tablet {
+      min-width: 16px;
+    max-width: 16.1px;
+    }
+    @include m.mobile {
+      min-width: 12.667px;
+      max-width: 12.67px;
+    }
   }
 }
 

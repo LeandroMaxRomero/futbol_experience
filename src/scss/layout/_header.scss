@@ -51,8 +51,8 @@
   right: 0;
   height: 100%;
   object-fit: cover;
-  animation: fadeIn;
-  animation-duration: 4s;
+  // animation: fadeIn;
+  // animation-duration: 4s;
 }
 
 .header {
@@ -186,7 +186,7 @@
     height: 36.8rem;
   }
   h2 {
-    font-family: v.$fuentePrincipal; /* "Barlow SemiBold"; */
+    font-family: v.$fuentePrincipal;
     color: v.$blanco;
     text-align: center;
     font-size: 9rem;
@@ -288,7 +288,7 @@
 
 //* NavBar
 .container-navbar {
-  padding: 3.8rem 4.4rem 3.8rem 8vw;
+  padding: 3.8rem 4.4rem 4.5rem 8vw;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -299,8 +299,9 @@
     180deg,
     #0b2933 0%,
     rgba(11, 41, 51, 0.25) 80.32%,
-    rgba(11, 41, 51, 0) 100%
-  );
+    rgba(11, 41, 51, 0) 100%);
+    backdrop-filter: blur(5px);
+
   @include m.desktop {
     padding: 3.8rem 4rem 3.8rem 4.8vw;
   }
@@ -374,6 +375,7 @@
     text-align: center;
     @include m.tablet {
       display: block;
+      transform: translate(44px, -34px) !important;
     }
     @include m.mobile {
       display: none;
@@ -383,31 +385,32 @@
     display: none;
     @include m.mobile {
       display: block;
+      transform: translate(12px, -18px) !important; 
     }
   }
 }
 
 .menu-desplegable {
   &.dropdown-menu.show {
+    transform: translate(-48px, -10px) !important;
+    inset: 0px 0px auto auto !important;
     background-color: v.$blanco !important;
-    backdrop-filter: blur(3.5px);
-    width: 95%;
+    width: 32.2rem;
     height: 65rem;
 
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin-top: 10rem;
+    // margin-top: 5rem;
     margin-left: 2.5%;
     align-items: flex-start;
     z-index: 0;
     gap: 8px;
     border: 2px solid v.$grisSuave;
     box-shadow: 4px -4px 2px v.$azul;
-
     @include m.mobile {
-      margin-top: 3rem;
+      transform: translate(-34px, -30px) !important;
     }
+
     // &:after {
     //   content: "";
     //   width: 100%;
@@ -469,7 +472,6 @@
   position: relative;
   h3 {
     color: v.$blanco;
-    text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
@@ -502,7 +504,6 @@
   line-height: 1.8rem !important;
   border: none;
   color: v.$blanco;
-  text-shadow: black 0.1em 0.1em 0.2em;
 
   .flechitapabajo {
     margin-left: 0.6rem;
