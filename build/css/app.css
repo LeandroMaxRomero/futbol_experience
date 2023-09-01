@@ -3474,7 +3474,7 @@ textarea {
 }
 @media (max-width: 920px) {
   .container-acerca {
-    height: 658px;
+    /*  height: 658px; */
     padding: 2rem 2rem;
   }
 }
@@ -3504,7 +3504,8 @@ textarea {
 }
 @media (max-width: 920px) {
   .img_acercaDeNosotros {
-    height: 100%;
+    height: auto;
+    /*  height: 100%; */
   }
 }
 @media (max-width: 650px) {
