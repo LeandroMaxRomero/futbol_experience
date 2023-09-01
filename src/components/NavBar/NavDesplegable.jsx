@@ -1,6 +1,6 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownItem from "react-bootstrap/esm/DropdownItem";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { LenguaContext } from "../../context/LenguaProvider";
 import { useContext } from "react";
 import { generalContact } from "../../data/data";
@@ -203,33 +203,33 @@ function NavDesplegable() {
               </svg>
             </Dropdown.Header>
 
-            <Link to="/" className="contenedor-item-burguer">
+            <NavLink to="/" className="contenedor-item-burguer">
               <div className="dropdown-item-burguer">Home</div>
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/experiencia-maradona"
               className="contenedor-item-burguer"
             >
               <div className="dropdown-item-burguer">Experiencia Maradona</div>
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/experiencia-boca-river"
               className="contenedor-item-burguer"
             >
               <div className="dropdown-item-burguer">
                 Experiencia River - Boca
               </div>
-            </Link>
+            </NavLink>
 
-            <Link to="/contact" className="contenedor-item-burguer">
+            <NavLink to="/contact" className="contenedor-item-burguer">
               <div className="dropdown-item-burguer">Contacto</div>
-            </Link>
+            </NavLink>
 
-            <Link to="/nosotros" className="contenedor-item-burguer">
+            <NavLink to="/nosotros" className="contenedor-item-burguer">
               <div className="dropdown-item-burguer">Nosotros</div>
-            </Link>
+            </NavLink>
 
             <a
               href={` https://wa.me/${generalContact.number}?text=${generalContact.spanish.message}`}
