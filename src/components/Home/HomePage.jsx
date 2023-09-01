@@ -10,8 +10,15 @@ import { Reserva } from "./Reserva";
 import PrestacionesSlides from "./PrestacionesSlides";
 import { ReviewsTablet } from "./ReviewsTablet";
 import { ReviewsMobile } from "./ReviewsMobile";
-
+import { useEffect } from "react";
+import * as Scroll from "react-scroll";
 export const HomePage = () => {
+  let scroll = Scroll.animateScroll;
+
+  useEffect(() => {
+    scroll.scrollToTop();
+  });
+
   return (
     <div className="container-home">
       {/*//* Header */}
