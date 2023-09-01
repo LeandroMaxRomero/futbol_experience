@@ -10,6 +10,14 @@
 }
 //*Prestaciones
 .contenedor-prestaciones-noMobile {
+  max-width: 1244px;
+  width: 100%;
+  margin: auto;
+  margin-top: 7.5rem;
+  @include m.tablet {
+    margin-top: 5rem;
+    max-width: 832px;
+  }
   @include m.mobile {
     display: none;
   }
@@ -27,10 +35,7 @@
   display: flex;
   justify-content: center;
   gap: 3%;
-  margin: 7.5rem auto 0 auto;
-  @include m.tablet {
-    margin: 5rem auto 0;
-  }
+  margin: 0 auto;
 }
 .prestaciones-box {
   width: 28rem;
@@ -117,12 +122,18 @@
 }
 //*Experiencias
 .container-experiencias {
-  margin: 7.5rem 10rem;
+  max-width: 1244px;
+  width: 100%;
+  margin: auto;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
   @include m.tablet {
-    margin: 5rem 4.5rem;
+    max-width: 832px;
+    margin: 5rem auto;
   }
   @include m.mobile {
-    margin: 2.4rem 1.3rem;
+    margin: 2.4rem auto;
+    padding: 0 1.2rem;
   }
   h2 {
     color: v.$azul;
@@ -155,12 +166,9 @@
   }
   .experiencias {
     display: flex;
-    justify-content: center;
-    gap: 4rem;
+    justify-content: space-between;
+    gap: 3%;
     position: relative;
-    @include m.tablet {
-      gap: 2.4rem;
-    }
     @include m.mobile {
       flex-direction: column;
       align-items: center;
@@ -390,7 +398,9 @@
 }
 //*Atributos
 .container-atributos {
-  max-width: 100%;
+  max-width: 1244px;
+  margin: auto;
+  margin-bottom: 10rem;
   display: grid;
   column-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
@@ -400,7 +410,6 @@
     "foto texto"
     "foto iconouno"
     "foto iconodos";
-  margin: 0 10rem 10rem;
   @include m.tablet {
     grid-template-rows: 46px 256px 92.78px 162.21px;
     margin: 0 4.8%;
@@ -410,7 +419,7 @@
     grid-template-rows: 90px 280px 92.78px 91px;
   }
   @include m.mobile {
-    grid-template-rows: 48px 353px 290px 73px;
+    grid-template-rows: 48px 353px 180px 73px;
     grid-template-areas:
       "titulo titulo"
       "foto foto"
@@ -418,6 +427,18 @@
       "iconouno iconodos";
     margin: 0 1.2rem 0;
     column-gap: 0;
+  }
+  @media (max-width: 550px) {
+    grid-template-rows: 48px 353px 220px 73px;
+  }
+  @media (max-width: 420px) {
+    grid-template-rows: 48px 353px 260px 73px;
+  }
+  @media (max-width: 376px) {
+    grid-template-rows: 48px 353px 280px 73px;
+  }
+  @media (max-width: 335px) {
+    grid-template-rows: 48px 353px 320px 73px;
   }
   h2 {
     grid-area: titulo;
@@ -691,10 +712,11 @@
 .container-faqs {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding: 0 10rem;
+  max-width: 1244px;
+  margin: auto;
   margin-bottom: 7.5rem;
+  align-items: center;
+  padding: 0;
   color: v.$azul;
   font-style: normal;
   @include m.tablet {
@@ -822,10 +844,18 @@
 
 //*Reserva
 .container-reserva {
+  max-width: 1244px;
+  margin: auto;
   margin-bottom: 7.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include m.tablet {
+    max-width: 832px;
+  }
+  @include m.mobile {
+    max-width: 336px;
+  }
   h3 {
     color: v.$azul;
     text-align: center;

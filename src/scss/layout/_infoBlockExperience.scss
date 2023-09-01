@@ -2,8 +2,8 @@
 @use "../base/mixins" as m;
 
 .experience-container {
-  width: 90%;
-  margin: 4rem auto;
+  max-width: 1308px;
+  margin: 7.5rem auto;
 
   height: 18rem;
   flex-shrink: 0;

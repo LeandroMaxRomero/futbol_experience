@@ -15,7 +15,10 @@
     min-height: 30rem;
   }
   @include m.mobile {
-    min-height: 57rem;
+    min-height: 37rem;
+  }
+  @media (max-width: 520px){
+    min-height: 60rem;
   }
 }
 .container-footer:after {
@@ -46,13 +49,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 10rem;
+  max-width: 1240px;
+  margin: auto;
   align-items: center;
   justify-content: center;
   @include m.tablet {
+    max-width: 832px;
     position: absolute;
     z-index: 0;
-    padding: 0 4rem;
   }
   @include m.mobile {
     padding: 0 1.2rem;
@@ -64,7 +68,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-top: 7.5rem;
+  padding: 7.5rem 2% 0;
   @media (max-width: 985px) {
     padding-top: 5rem;
   }
@@ -75,14 +79,26 @@
   @media (max-width: 720px){
     padding-top: 2.4rem;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
   }
   @include m.mobile {
     
   }
 }
 .footer-logo{
-  padding-right: 10%;
+  // padding-right: 10%;
+  @media (max-width: 720px) {
+    padding: 0 0 0 18%;
+  }
+  @include m.mobile {
+    padding-left: 15%;
+  }
+  @media (max-width: 565px) {
+    padding-left: 13.5%;
+  }
+  @media (max-width: 520px) {
+    padding: 0;
+  }
 
   .img-logo-footer{
     max-width: 41.135rem;
@@ -113,15 +129,24 @@
   }
 }
 .footer-columns {
-  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  @include m.mobile {
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: 720px) {
+    justify-content: space-evenly;
+  }
+  @media (max-width: 520px) {
     flex-direction: column;
   }
 }
 .footer-navigation{
-  padding-right: 5%;
+  padding-left: 20%;
+  @media (max-width: 720px) {
+    padding-left: 0;
+    width: 122.6px;
+  }
+  
 }
 .footer-navigation,
 .footer-rigth {
@@ -164,7 +189,11 @@
   }
 }
 .footer-contact{
-  @include m.mobile {
+  width: 274px;
+  @include m.tablet {
+    width: 183.5px;
+  }
+  @media (max-width: 520px) {
     padding-top: 2.4rem;
   }
 }
@@ -195,7 +224,7 @@
   @include m.tablet {
     width: 65%;
   }
-  @include m.mobile {
+  @media (max-width: 520px) {
     justify-content: space-between;
     width: 30%;
   }
