@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { LenguaContext } from "../../context/LenguaProvider";
 
 import InfoExperience from "../InfoExperience/InfoExperience";
-import TextGralExprience from "../TextGralExperience/TextGralExprience";
+import TextGralExperienceRiver from "../TextGralExperience/TextGralExperienceRiver";
 import DescriptionExperience from "../DescriptionExperience/DescriptionExperience";
 import ActivitiesExperience from "../ActivitiesExperience/ActivitiesExperience";
 /* import ImagesExperience from "../ImagesExperience/ImagesExperience"; */
@@ -39,7 +39,7 @@ export const RiverExperience = () => {
               : riverContent.english.infoExperience
           }
         />
-        <TextGralExprience
+        <TextGralExperienceRiver
           content={
             lang === "castellano"
               ? riverContent.spanish.textExperience
