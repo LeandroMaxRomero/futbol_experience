@@ -2529,6 +2529,9 @@ a#reserva:hover {
 
 .contact-container {
   padding: 3rem;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-title {
@@ -3395,6 +3398,15 @@ textarea {
   display: flex;
 }
 
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  height: auto;
+}
+
 /* Bloque reserva */
 .container-reservaNosotros {
   background-color: #F1F8FA;
@@ -3423,6 +3435,7 @@ textarea {
 @media (max-width: 650px) {
   .container-reservaNosotros {
     padding-bottom: 1rem;
+    height: auto;
   }
 }
 .container-reservaNosotros h2 {
@@ -3451,7 +3464,7 @@ textarea {
 /* Bloque Acerca de */
 .container-acerca {
   width: 100%;
-  height: 982px;
+  /*  height: 982px; */
   padding: 3rem 5rem;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -3479,11 +3492,20 @@ textarea {
   grid-row: 1/3;
   width: 100%;
   object-fit: cover;
+  height: 100%;
+  /*   @include m.scroll-show {
+    height: 120%;
+  } */
 }
 .img_acercaDeNosotros img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 920px) {
+  .img_acercaDeNosotros {
+    height: 100%;
+  }
 }
 @media (max-width: 650px) {
   .img_acercaDeNosotros {
@@ -3531,32 +3553,26 @@ textarea {
 .seccion-acerca {
   grid-column: 2;
   width: 100%;
+  /*  @include m.scroll-show {
+    overflow-y: scroll;
+  }
+  @include m.scroll-hidden {
+    overflow-y: auto;
+  }
+
+  @include m.scroll-tablet {
+    overflow-y: hidden;
+  }
+
+  @include m.scroll-hidden-tablet {
+    overflow-y: scroll;
+  } */
 }
 @media (max-width: 650px) {
   .seccion-acerca {
     grid-column: 1;
     grid-row: 3;
     padding-top: 1rem;
-  }
-}
-@media (min-width: 920px) {
-  .seccion-acerca {
-    overflow-y: scroll;
-  }
-}
-@media (min-width: 1068px) {
-  .seccion-acerca {
-    overflow-y: auto;
-  }
-}
-@media (min-width: 823px) {
-  .seccion-acerca {
-    overflow-y: hidden;
-  }
-}
-@media (min-width: 650px) {
-  .seccion-acerca {
-    overflow-y: scroll;
   }
 }
 .seccion-acerca p {
@@ -3567,11 +3583,13 @@ textarea {
   font-weight: 400;
   line-height: 35px;
   margin-top: 0.2rem;
+  margin-bottom: 0px;
 }
 @media (max-width: 920px) {
   .seccion-acerca p {
     font-size: 14.749px;
     line-height: 23.465px;
+    margin-bottom: 1px;
   }
 }
 @media (max-width: 650px) {
@@ -3582,7 +3600,7 @@ textarea {
 }
 
 /* estilos al scroll */
-.seccion-acerca::-webkit-scrollbar {
+/* .seccion-acerca::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
@@ -3607,8 +3625,7 @@ textarea {
 
 .seccion-acerca::-webkit-scrollbar-track {
   border-radius: 10px;
-}
-
+} */
 /* Bloque Detras de */
 .container-nosotros {
   display: block;

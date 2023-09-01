@@ -19,21 +19,25 @@ export const Footer = () => {
           <div className="footer-textos">
             <div className="footer-container">
               <div className="footer-logo">
-                <img
-                  src="img/LogoFooter.svg"
-                  alt="Logo de Futbol Experience"
-                  className="img-logo-footer"
-                />
-                <img
-                  src="img/LogoFooterTablet.svg"
-                  alt="Logo de Futbol Experience"
-                  className="img-logo-footerTablet"
-                />
-                <img
-                  src="img/LogoFooterMobile.svg"
-                  alt="Logo de Futbol Experience"
-                  className="img-logo-footerMobile"
-                />
+                <Link to="/">
+                  <img
+                    src="img/LogoFooter.svg"
+                    alt="Logo de Futbol Experience"
+                    className="img-logo-footer"
+                  />
+
+                  <img
+                    src="img/LogoFooterTablet.svg"
+                    alt="Logo de Futbol Experience"
+                    className="img-logo-footerTablet"
+                  />
+
+                  <img
+                    src="img/LogoFooterMobile.svg"
+                    alt="Logo de Futbol Experience"
+                    className="img-logo-footerMobile"
+                  />
+                </Link>
               </div>
 
               <div className="footer-columns">

@@ -14,15 +14,17 @@ export const Nosotros = () => {
   });
 
   return (
-    <div className="nosotros">
+    <>
       <HeaderContact
         imagen={"img/header-nosotros.png"}
         tittleES="Sobre Nosotros"
         tittleEN="About Us"
       />
-      <AcercaDe />
-      <DetrasDe />
-      <ReservaNosotros />
-    </div>
+      <div className="nosotros">
+        <AcercaDe />
+        <DetrasDe />
+        <ReservaNosotros />
+      </div>
+    </>
   );
 };
