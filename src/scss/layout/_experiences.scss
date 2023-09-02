@@ -1,13 +1,12 @@
 @use "../base/variables" as v;
+@use '../base/mixins' as m;
 
 .text-container {
   max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
-
-  /* min-height: 26.9rem; */
-  flex-shrink: 0;
+  padding: 0 1rem;
   color: v.$azul;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: v.$fuentePrincipal;
   font-style: normal;
   h2 {
@@ -15,8 +14,9 @@
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 4.6rem;
+    margin: 0;
 
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.6rem;
     border-bottom: 0.2rem solid v.$amarillo;
   }
   p {
@@ -24,9 +24,13 @@
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 3.5rem;
+    margin: 0;
+    padding-top: 3.2rem;
   }
   button {
     border: 0;
+    background-color: transparent;
+    color: v.$azul;
     font-size: 22px;
     font-weight: 500;
     line-height: 35px;
@@ -41,104 +45,102 @@
     }
   }
 }
-
 .block-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 1rem;
   max-width: 1240px;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 4rem auto 0px;
 
-  margin: 4rem auto;
-  flex-shrink: 0;
   .block-description__routes {
-    width: 40%;
-
+    display: flex;
+    width: 100%;
     img {
       width: 100%;
     }
   }
 
   .block-description__imgs {
-    width: 40%;
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     row-gap: 1.8rem;
+    img{
+      border-radius: 5px;
+    }
   }
 }
-
 .block-activities {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 1240px;
+  margin: 7.5rem auto;
+  padding: 0 1rem;
   h3 {
     color: v.$azul;
-    font-feature-settings: "clig" off, "liga" off;
     font-family: v.$fuentePrincipal;
     font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: 3.8rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    padding-bottom: 3.2rem;
   }
 }
-
 .block-activities__blocks {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2.8rem;
   p {
     color: v.$azul;
-    font-feature-settings: "clig" off, "liga" off;
-    width: 50%;
+    width: 100%;
     font-family: v.$fuentePrincipal;
-    font-size: 1.5rem;
-    font-style: normal;
+    font-size: 2.2rem;
     font-weight: 500;
-    line-height: 2.2rem;
+    line-height: 3.5rem;
+    margin: 0;
+    padding: 1rem;
+    @include m.desktop {
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
   }
 
   article {
-    width: 50%;
+    width: 100%;
     height: 11.8rem;
     border-radius: 0.5rem;
     border: 0.2rem solid v.$azulClaro;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 1rem;
     gap: 1rem;
-    padding: 1rem;
   }
 }
-
 .block-up,
 .block-down {
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 4rem;
 }
-
 .block-left,
 .block-right {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: 4rem;
 }
-/* .color-blue {
-  background: v.$celeste;
-} */
-
 .image-container {
   width: 100%;
   margin-left: auto;
@@ -147,61 +149,62 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-
 .reserve-experience {
   width: 100%;
   height: 29.8rem;
-  flex-shrink: 0;
   background: v.$azul;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 7.5rem;
+  padding: 0 1rem;
 
-  h1 {
-    width: 80%;
-
+  h2 {
+    width: 100%;
+    max-width: 1240px;
     color: v.$blanco;
     text-align: center;
-    font-feature-settings: "clig" off, "liga" off;
-
     font-family: v.$fuentePrincipal;
     font-size: 5.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: 6.6rem;
+    margin: 0;
+    padding-bottom: 5rem;
   }
   Button {
     background-color: v.$amarillo;
+    display: flex;
+    padding: 17.5px 40px;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
   }
 }
-
 .curiosity-container {
-  width: 80%;
-  margin: 3rem auto 6rem auto;
-  /*  height: 83.8rem; */
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto 8.5rem;
   color: v.$azul;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: v.$fuentePrincipal;
-  font-style: normal;
+  padding: 0 1rem;
   h2 {
     font-size: 3.6rem;
-
     font-weight: 700;
     line-height: 4.6rem;
+    margin: 0;
+    padding-bottom: 3.2rem;
   }
 }
-
 .curiosity-container__info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  column-gap: 4rem;
+  width: 100%;
 }
 .curiosity-container-text {
   width: 100%;
-  max-height: 36.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,171 +212,165 @@
   align-self: flex-start;
   h3 {
     font-size: 2.8rem;
-
     font-weight: 700;
     line-height: 3.8rem;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   p {
-    font-size: 14.744px;
+    font-size: 2.2rem;
     font-weight: 400;
-    line-height: 23.456px;
-    margin-top: 0;
+    line-height: 3.5rem;
+    margin: 0;
   }
 }
 .curiosity-container__img {
   width: 100%;
-  /*  max-width: 60rem;
-  max-height: 36.4rem; */
-  flex-shrink: 0;
+
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }
-
 .img2 {
   grid-column: 2;
 }
 .text2 {
   grid-row: 2;
+  h3{
+    margin-top: 3.3rem;
+  }
 }
 
-@media screen and (max-width: 920px) {
+@include m.tablet {
   .text-container {
-    width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    h2 {
-      width: 100%;
-      font-size: 2.4rem;
+    max-width: 832px;
+    h2{
+      font-size: 2.8rem;
       font-weight: 700;
-      line-height: 3rem;
-      padding-bottom: 0.5rem;
+      line-height: 3.8rem;
+      padding-bottom: 1rem;
     }
-    p {
-      font-size: 14px;
-      line-height: 23px;
+    p{
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding-top: 2.5rem;
     }
-
     button {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
+      font-weight: 500;
     }
   }
-  .block-description {
-    width: 100%;
-    column-gap: 2rem;
-    margin-top: 1.5rem;
 
-    .block-description__routes {
-      width: 50%;
-    }
+  .block-description {
+    max-width: 832px;
+    column-gap: 2rem;
+    margin-top: 3rem;
   }
 
   .block-description__imgs {
-    width: 50%;
     align-self: flex-start;
   }
-
+  .block-activities{
+    max-width: 832px;
+    margin: 5rem auto;
+    h3 {
+      font-size: 2.8rem;
+      text-align: start;
+      line-height: 3.8rem;
+      padding-bottom: 2rem;
+    }
+  }
   .block-activities__blocks {
+    gap: 1.8rem;
     article {
+      height: 7.91rem;
       svg {
         width: 4rem;
         height: 4rem;
       }
     }
     p {
-      font-size: 1.2rem;
-
-      line-height: 1.4rem;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
     }
   }
-
-  .block-activities {
-    width: 90%;
-    h3 {
-      width: 48rem;
-      font-size: 1.8rem;
-      text-align: start;
-
-      line-height: 2.5rem;
-      margin-bottom: 1rem;
-    }
+  .block-up,
+  .block-down {
+    gap: 2.6rem;
+  }
+  .block-left,
+  .block-right {
+    column-gap: 2.6rem;
   }
 
   .reserve-experience {
-    height: 19rem;
-    h1 {
-      font-size: 35.778px;
-
-      line-height: 42.167px;
-
-      width: 100%;
-      margin-bottom: 2rem;
+    height: 18.8rem;
+    margin-bottom: 5rem;
+    h2{
+      max-width: 832px;
+      font-size: 3.6rem;
+      line-height: 4.6rem;
+      padding-bottom: 2rem;
     }
     Button {
-      display: flex;
-      width: 194.222px;
-      height: 41.528px;
-      padding: 9.583px 25.556px;
+      width: 223px;
+      height: 44px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding: 1rem;
       justify-content: center;
-      align-items: center;
-      gap: 6.389px;
-      font-size: 14.056px;
-      line-height: 22.361px;
     }
   }
 
   .curiosity-container {
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
+    max-width: 832px;
+    margin-bottom: 5rem;
     h2 {
       font-size: 24px;
-
       font-weight: 700;
       line-height: 34px;
       padding-bottom: 2rem;
     }
   }
   .curiosity-container__info {
-    width: 100%;
+    column-gap: 2rem;
   }
   .curiosity-container-text {
-    width: 100%;
-    align-items: center;
-
     h3 {
-      align-self: flex-start;
-      width: 100%;
-      text-align: left;
-      font-size: 18.765px;
-      line-height: 25.466px;
+      font-size: 2rem;
+      line-height: 2.8rem;
+      margin-bottom: 1rem;
     }
     p {
-      font-size: 14.744px;
-
-      line-height: 23.456px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
     }
-  }
-
-  .curiosity-container__img {
-    width: 100%;
   }
 }
 
-@media screen and (max-width: 650px) {
+.block-activities__blocks {
+  article {
+    @media screen and (max-width: 783px){
+      height: 9rem;
+    }
+    @media screen and (max-width: 728px){
+      height: 12rem;
+    }
+  }
+}
+
+
+@include m.mobile {
   .text-container {
     width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    margin-bottom: 2.4rem;
     h2 {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       font-weight: 700;
-      line-height: 2.4rem;
-      padding-bottom: 0.5rem;
+      line-height: 3.2rem;
+      padding-bottom: 0.8rem;
     }
     p {
       font-size: 14px;
@@ -381,101 +378,90 @@
     }
 
     button {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      font-weight: 700;
+      margin: 0 auto;
     }
   }
-
   .block-description {
-    margin-top: 1.5rem;
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 3rem;
-    .block-description__routes {
-      width: 100%;
-      max-width: 40rem;
-    }
-
+    justify-content: center;
+    max-width: 340px;
     .block-description__imgs {
       display: none;
     }
   }
-
-  .block-activities__blocks {
-    article {
-      max-width: 23rem;
-    }
-    p {
-      font-size: 1.3rem;
-
-      line-height: 1.6rem;
-    }
-  }
-
   .block-activities {
-    width: 90%;
+    margin: 3.2rem auto 4rem;
     h3 {
       margin: 0 auto;
-      width: 48rem;
-      font-size: 1.8rem;
-
-      line-height: 2.4rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      line-height: 2.8rem;
+      margin-bottom: 1.6rem;
+      max-width: 40rem;
     }
   }
-
+  .block-activities__blocks {
+    gap: 0.8rem;
+    article {
+      max-width: 16.2rem;
+      height: 7rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+  }
   .block-up,
   .block-down {
     flex-direction: column;
+    gap: 0.8rem;
   }
-
+  .block-left,
+  .block-right {
+    column-gap: 1.2rem;
+  }
   .reserve-experience {
-    height: 13.9rem;
-    h1 {
+    height: 14rem;
+    margin-bottom: 3.2rem;
+    h2{
       font-size: 1.8rem;
-      line-height: 23.787px;
-      width: 100%;
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
-      line-height: 23.787px;
+      line-height: 2.8rem;
+      padding-bottom: 1.6rem;
     }
     Button {
-      font-size: 12px;
-
-      line-height: 18px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      width: 340px;
     }
   }
 
   .curiosity-container {
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
+    max-width: 340px;
+    margin-bottom: 4rem;
     h2 {
-      font-size: 24px;
-
+      font-size: 2.4rem;
       font-weight: 700;
-      line-height: 34px;
-      padding-bottom: 2rem;
+      line-height: 3.4rem;
+      padding-bottom: 2.4rem;
     }
   }
   .curiosity-container__info {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     grid-template-columns: 1fr;
-    row-gap: 1rem;
+    row-gap: 1.6rem;
   }
   .curiosity-container-text {
-    width: 100%;
     align-items: center;
     h3 {
-      width: 100%;
-      text-align: left;
+      line-height: 3rem;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      font-size: 1.4rem;
     }
   }
 
   .curiosity-container__img {
-    width: 100%;
     align-items: center;
   }
 

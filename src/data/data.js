@@ -24,7 +24,7 @@ export const maradonaContent = {
     ],
 
     descriptionExperience: [
-      "img/Group 39849.png",
+      "img/Group 39849.svg",
       "img/IMG_4716.png",
       "img/IMG_4727.png",
       "img/IMG_4731.png",
@@ -47,7 +47,7 @@ export const maradonaContent = {
     ],
     curiosityExperience: [
       "Sabías que ...",
-      "img/image 13.png",
+      "img/MuseoArg.png",
       "Argentinos Juniors",
       `Fundado en 1904, Argentinos Juniors es reconocido mundialmente por la cantidad y calidad de jugadores salidos de sus divisiones inferiores. Con 5 títulos en su haber, incluyendo copas locales como la Copa Libertadores, el club atraviesa un gran presente futbolístico. Su estadio lleva el nombre de “Diego Armando Maradona” y en ese mismo campo de juego, debutó Lionel Messi y convirtió su primer gol con la camiseta de la Selección Argentina.`,
       "img/diego_armando_maradona.png",
@@ -209,7 +209,7 @@ export const riverContent = {
       ` Después de allí, nos dirigiremos a la zona de Nuñez para ingresar al Museo de River. A través de un túnel del tiempo, conoceremos los más de 100 años de historia del club, los principales jugadores y leyendas que representaron la institución, su vitrina de trofeos y camisetas a lo largo del tiempo. Además, veremos dos cortos que reflejan la grandeza de River. Y una de las perlitas para culminar, el “Estadio Más Monumental”. Vas a tener la oportunidad de conocer las tribunas, el vestuario y el campo de juego del estadio más grande del país, aquel que recibe a más de 80.000 hinchas todos los domingos. Para finalizar, te brindaremos un tiempo para que puedas ver la tienda oficial del club. `,
     ],
     descriptionExperience: [
-      "img/Group 39814.png",
+      "img/Group 39814.svg",
       "img/ggg.png",
       "img/IMG_4594 1.png",
       "img/IMG_4983 1.png",

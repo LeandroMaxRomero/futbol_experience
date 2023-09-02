@@ -7,7 +7,7 @@ const ReserveExperience = ({ content, reserve }) => {
   const { number, message } = reserve;
   return (
     <div className="reserve-experience">
-      <h1>{content[0]}</h1>
+      <h2>{content[0]}</h2>
       <Button buttonStyle={"btn-contacto"}>
         <a
           href={` https://wa.me/${number}?text=${message}`}
