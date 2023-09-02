@@ -363,7 +363,12 @@
   display: none;
   @include m.tablet {
     display: block;
-    height: 11.8rem;
+    width: 43.8px;
+    height: 43.8px;
+  }
+  @include m.mobile {
+    width: 32px;
+    height: 32px;
   }
 }
 .dropdown-toggle {
@@ -371,22 +376,59 @@
   border-style: none !important;
   border-radius: 7.352px;
   &.navDesplegable-tablet {
+    width: 43.8px;
+    height: 43.8px;
+    .iconoMenuOculto{
+      display: block;
+    }
+    .iconoMenuAbierto{
+      display: none;
+    }
+    &.show{
     width: 4.381rem;
     height: 4.381rem;
     text-align: center;
-    @include m.tablet {
-      display: block;
-      transform: translate(44px, -34px) !important;
+    .iconoMenuOculto{
+      display: none;
     }
+    .iconoMenuAbierto{
+      display: block;
+    }
+    @include m.tablet {
+        display: block;
+        transform: translate(44px, -34px) !important;
+      }
     @include m.mobile {
       display: none;
+      }
     }
   }
   &.navDesplegable-mobile {
     display: none;
     @include m.mobile {
-      display: block;
-      transform: translate(12px, -18px) !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      .iconoMenuOculto{
+        display: block;
+      }
+      .iconoMenuAbierto{
+        display: none;
+      }
+      &.show{
+        width: 3.2rem;
+        height: 3.2rem;
+        text-align: center;
+        .iconoMenuOculto{
+          display: none;
+        }
+        .iconoMenuAbierto{
+          display: block;
+        }
+        transform: translate(12px, -18px) !important;
+      }
     }
   }
 }
@@ -399,7 +441,6 @@
     // width: 95%;
     width: 32.2rem;
     height: 70rem;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -471,6 +512,33 @@
   @include m.desktop {
     gap: 5vw;
   }
+  .dropdown {
+    background-color: transparent !important;
+    font-size: 1.8rem !important;
+    font-family: v.$fuentePrincipal !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+    line-height: 1.8rem !important;
+    border: none;
+    color: v.$blanco;
+    #dropdown-basic{
+      &:after {
+        content: "";
+        display: block;
+        margin: auto;
+        margin-top: 4px;
+        height: 1px;
+        width: 0px;
+        background: transparent;
+        transition: width 0.25s linear, background-color 0.25s linear;
+      }
+      &:hover:after {
+        width: 100%;
+        background-color: white;
+      }
+    }
+  }
 }
 .navbar-link {
   text-decoration: none;
@@ -528,6 +596,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    padding-left: 0.4rem;
     gap: 1rem;
   }
 }

@@ -221,6 +221,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  a:hover{
+    transform: scale(1.25);
+  }
   @include m.tablet {
     width: 65%;
   }

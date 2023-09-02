@@ -42,18 +42,14 @@ export const NavList = () => {
               </svg>
             </Dropdown.Toggle>
 
-            <Dropdown.Menu className="dropdown-menu">
-              <Dropdown.Item>
+            <Dropdown.Menu className="dropdown-menu">             
                 <Link to="/experiencia-maradona" className="dropdown-item">
                   Experiencia Maradona
                 </Link>
-              </Dropdown.Item>
-
-              <Dropdown.Item>
+            
                 <Link to="/experiencia-boca-river" className="dropdown-item">
                   Experiencia Boca - River
-                </Link>
-              </Dropdown.Item>
+                </Link>             
             </Dropdown.Menu>
           </Dropdown>
 
