@@ -11,7 +11,9 @@ export const NavList = () => {
 
   return (
     <div className="navlist">
-      {lang === "castellano" ? (
+      {lang === "castellano" 
+      ? 
+      (
         <div className="header-navbar">
           <Link className="navbar-link" to="/">
             <h3>Home</h3>
@@ -70,7 +72,9 @@ export const NavList = () => {
             </a>
           </Button>
         </div>
-      ) : (
+      ) 
+      : 
+      (
         <div className="header-navbar">
           <Link className="navbar-link" to="/">
             <h3>Home</h3>
@@ -101,18 +105,14 @@ export const NavList = () => {
               </svg>
             </Dropdown.Toggle>
 
-            <Dropdown.Menu className="dropdown-menu">
-              <Dropdown.Item>
+            <Dropdown.Menu className="dropdown-menu" id="experieciasDesplegable">             
                 <Link to="/experiencia-maradona" className="dropdown-item">
                   Maradona Experience
                 </Link>
-              </Dropdown.Item>
-
-              <Dropdown.Item>
+            
                 <Link to="/experiencia-boca-river" className="dropdown-item">
                   Boca - River Experience
-                </Link>
-              </Dropdown.Item>
+                </Link>             
             </Dropdown.Menu>
           </Dropdown>
 
@@ -123,8 +123,9 @@ export const NavList = () => {
             <h3>About Us</h3>
           </Link>
           <Button buttonStyle={"btn-navbar"}>
+            {" "}
             <a
-              href={` https://wa.me/${generalContact.number}?text=${generalContact.english.message}`}
+              href={` https://wa.me/${generalContact.number}?text=${generalContact.spanish.message}`}
               target="_blank"
               rel="noreferrer"
             >
@@ -132,7 +133,8 @@ export const NavList = () => {
             </a>
           </Button>
         </div>
-      )}
+      )
+      }
 
       <div className="idiomas">
         <button className="btn-idioma" onClick={() => changeLang("castellano")}>
@@ -144,18 +146,6 @@ export const NavList = () => {
         </button>
       </div>
 
-      {/* {lang === "castellano" ? (
-          <button className="btn-bandera" onClick={() => changeLang("ingles")}>
-            <img src="img/united-kingdom.png" />
-          </button>
-        ) : (
-          <button
-            className="btn-bandera"
-            onClick={() => changeLang("castellano")}
-          >
-            <img src="img/spain.png" />
-          </button>
-        )} */}
     </div>
   );
 };

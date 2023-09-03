@@ -62,7 +62,19 @@
       width: 100%;
     }
   }
-
+  .contenedor-description__imgs{
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: linear-gradient(180deg, rgba(0, 42, 52, 0.00) 0%, rgba(0, 42, 52, 0.85) 100%);
+      border-radius: 5px;
+    }
+  }
   .block-description__imgs {
     width: 100%;
     display: flex;

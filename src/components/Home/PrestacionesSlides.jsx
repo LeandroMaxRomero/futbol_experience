@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-import { Keyboard, Scrollbar, Navigation, Pagination } from 'swiper/modules';
+import { Keyboard, Scrollbar, Navigation } from 'swiper/modules';
 import { LenguaContext } from '../../context/LenguaProvider';
 import { useContext } from 'react';
 
@@ -69,27 +69,27 @@ export default function PrestacionesSlides() {
             </Swiper>
             :
             <Swiper
-              slidesPerView={2}
-              spaceBetween={30}
-              centeredSlides={true}
-              slidesPerGroupSkip={2}
-              grabCursor={true}
-              keyboard={{
-                enabled: true,
-              }}
-              breakpoints={{
-                650: {
-                  slidesPerView: 2,
-                  slidesPerGroup: 2,
-                },
-              }}
-              scrollbar={true}
-              navigation={true}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Keyboard, Scrollbar, Navigation, Pagination]}
-              className="mySwiper"
+            slidesPerView={2}
+            spaceBetween={24}
+            centeredSlides={false}
+            slidesPerGroupSkip={2}
+            grabCursor={true}
+            keyboard={{
+              enabled: true,
+            }}
+            breakpoints={{
+              650: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+              },
+            }}
+            scrollbar={false}
+            navigation={false}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Keyboard, Scrollbar, Navigation]}
+            className="mySwiper"
             >
               <SwiperSlide>
               <div className="prestaciones-box prestacionesUno">

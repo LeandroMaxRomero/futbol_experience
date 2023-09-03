@@ -150,7 +150,7 @@ export const maradonaContent = {
       `Finally, we will tour the Museum of Argentine Juniors "El Templo del Fútbol", where Diego made his soccer debut at the age of 15. As fate would have it, many years later, he will play for the first time with the jersey of the Argentina team and scored his first goal, another of our greatest idols such as Lionel Messi.This museum was made by fans and members of the institution in its entirety.There you will find photos, trophies, shirts and valuables for the history of the You will visit the stands, the changing rooms, the press room and the playing field of the Argentinos Juniors stadium that bears the name "Diego Armando Maradona"`,
     ],
     descriptionExperience: [
-      "img/Group 39849.png",
+      "img/Group 39849.svg",
       "img/IMG_4716.png",
       "img/IMG_4727.png",
       "img/IMG_4731.png",
@@ -174,7 +174,7 @@ export const maradonaContent = {
     ],
     curiosityExperience: [
       "Did you know ...",
-      "img/image 13.png",
+      "img/MuseoArg.png",
       "Argentino Juniors",
       `Founded in 1904, Argentinos Juniors is recognized worldwide for the quantity and quality of players from its lower divisions. With 5 titles to its credit, including local cups such as the Copa Libertadores, the club is going through a great football present. His stadium bears the name of "Diego Armando Maradona" and on that same playing field, Lionel Messi made his debut and scored his first goal with the Argentine National Team shirt.`,
       "img/diego_armando_maradona.png",
