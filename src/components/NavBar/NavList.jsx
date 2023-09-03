@@ -42,7 +42,7 @@ export const NavList = () => {
               </svg>
             </Dropdown.Toggle>
 
-            <Dropdown.Menu className="dropdown-menu">             
+            <Dropdown.Menu className="dropdown-menu" id="experieciasDesplegable">             
                 <Link to="/experiencia-maradona" className="dropdown-item">
                   Experiencia Maradona
                 </Link>
