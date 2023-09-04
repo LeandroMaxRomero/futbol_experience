@@ -2832,6 +2832,9 @@ textarea {
   line-height: 2.4rem;
   letter-spacing: 0.05rem;
 }
+textarea:focus {
+  outline: none;
+}
 
 .form-group {
   width: 100%;
