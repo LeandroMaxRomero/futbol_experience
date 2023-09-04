@@ -8,6 +8,7 @@ import { Contact } from "./components/Contact/Contact";
 import { Nosotros } from "./components/Nosotros/Nosotros";
 import { Footer } from "./components/Footer/Footer";
 import { RiverExperience } from "./components/RIverExperience/RiverExperience";
+import { TermsAndCond } from "./components/TermsAndCond/TermsAndCond";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               element={<RiverExperience />}
             />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/terms-conditions" element={<TermsAndCond />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="*" element={<h1>404 NOT FOUND</h1>} />
           </Routes>

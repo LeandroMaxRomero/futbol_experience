@@ -256,6 +256,12 @@
     margin: 0;
     line-height: 1.8rem;
     letter-spacing: 0.5px;
+    a{
+      color: v.$azulClaroSec;
+      &:hover{
+        font-weight: 600;
+      }
+    }
     @include m.tablet {
       font-size: 1.022rem;
       line-height: 1.15rem;
@@ -269,7 +275,6 @@
 
   }
 }
-
 .svg {
   width: 80%;
 }

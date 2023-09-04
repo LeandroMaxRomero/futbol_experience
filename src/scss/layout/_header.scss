@@ -471,6 +471,7 @@ a {
     .iconoMenuAbierto {
       display: none;
     }
+<<<<<<< HEAD
     &.show {
       width: 4.381rem;
       height: 4.381rem;
@@ -482,6 +483,19 @@ a {
       .iconoMenuAbierto {
         display: block;
       }
+=======
+    &.show{
+    width: 4.381rem;
+    height: 4.381rem;
+    text-align: center;
+    transform: translate(-556px, -33px) !important;
+    .iconoMenuOculto{
+      display: none;
+    }
+    .iconoMenuAbierto{
+      display: block;
+    }
+>>>>>>> 9c39f15138621bb7d6ea89fc85286cbeb9ca7576
     }
   }
   &.navDesplegable-mobile {
@@ -538,10 +552,34 @@ a {
       width: 32.2rem;
       height: 70rem;
       display: flex;
+<<<<<<< HEAD
       flex-direction: column;
       align-items: flex-start;
       gap: 8px;
       border: 2px solid v.$grisSuave;
+=======
+      justify-content: end;
+      z-index: 0;
+      transform: translate(0px, 0px) !important;
+      .contenido-menuDesplegable{
+        @include m.tablet {
+          position: absolute;
+          z-index: 1;
+          background-color: v.$blanco !important;
+          width: 60rem;
+          height: 70rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+          border: 2px solid v.$grisSuave;  
+        }
+        @include m.mobile {
+          width: 32.2rem;
+
+        }
+        }
+>>>>>>> 9c39f15138621bb7d6ea89fc85286cbeb9ca7576
     }
   }
 }
@@ -584,10 +622,13 @@ a {
 .dropdown-item-burguer {
   color: v.$headingBlack !important;
   text-shadow: none;
-  font-size: 1.6rem;
+  font-size: 1.85rem;
   font-weight: 400;
   line-height: 100%;
   margin: 0 !important;
+  @include m.mobile {
+    font-size: 1.6rem;
+  }
   :hover {
     cursor: pointer;
   }

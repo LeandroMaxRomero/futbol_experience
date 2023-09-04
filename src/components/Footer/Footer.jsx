@@ -189,8 +189,9 @@ export const Footer = () => {
 
             <div className="footer-terms">
               <p>
-                TERMS & CONDITIONS | PRIVACY | LEGAL NOTICE.<br></br>
-                all rights reserved © 2023
+                <Link to={"/terms-conditions"}>TERMS & CONDITIONS | PRIVACY | LEGAL NOTICE.</Link>
+              <br></br>
+              all rights reserved © 2023
               </p>
             </div>
           </div>
@@ -369,10 +370,11 @@ export const Footer = () => {
             <div className="divisor-footer"></div>
 
             <div className="footer-terms">
-              <p>
-                TERMS & CONDITIONS | PRIVACY | LEGAL NOTICE.<br></br>
-                all rights reserved © 2023
-              </p>
+            <p>
+              <Link to={"/terms-conditions"}>TERMS & CONDITIONS | PRIVACY | LEGAL NOTICE.</Link>
+            <br></br>
+            all rights reserved © 2023
+            </p>
             </div>
           </div>
         </footer>

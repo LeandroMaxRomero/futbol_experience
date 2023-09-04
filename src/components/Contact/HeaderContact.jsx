@@ -4,7 +4,7 @@ import { NavBar } from "../NavBar/NavBar";
 import PropTypes from "prop-types";
 
 export const HeaderContact = ({ tittleES, tittleEN, imagen }) => {
-const useLengua = () => useContext(LenguaContext);
+  const useLengua = () => useContext(LenguaContext);
   const { lang } = useLengua();
   return (
     <div className="header-contact">
