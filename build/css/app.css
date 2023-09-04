@@ -491,13 +491,24 @@ button:hover {
   }
 }
 
+@keyframes translate {
+  from {
+    right: -100%;
+    top: 0;
+  }
+  to {
+    top: 0;
+    right: 0;
+  }
+}
 .imagen-fondo-header {
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  /* top: 0;
+  right: 0; */
   height: 100%;
   object-fit: cover;
+  transition: all 0.5s ease;
 }
 
 .header {
@@ -1749,7 +1760,8 @@ a#reserva:hover {
   border-radius: 1rem;
   z-index: 0;
 }
-.container-experiencias .experiencia:hover .exp-boca-river .btn-vermas, .container-experiencias .experiencia:hover .exp-maradona .btn-vermas {
+.container-experiencias .experiencia:hover .exp-boca-river .btn-vermas,
+.container-experiencias .experiencia:hover .exp-maradona .btn-vermas {
   display: block;
 }
 .container-experiencias .experiencia:after {
@@ -1780,28 +1792,33 @@ a#reserva:hover {
     height: 30.8rem;
   }
 }
-.container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
+.container-experiencias .experiencia .exp-boca-river,
+.container-experiencias .experiencia .exp-maradona {
   position: absolute;
   z-index: 1;
   margin: 0 4rem 0;
 }
 @media (max-width: 920px) {
-  .container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
+  .container-experiencias .experiencia .exp-boca-river,
+  .container-experiencias .experiencia .exp-maradona {
     position: absolute;
     z-index: -1;
     margin: 0 2.5rem 0;
   }
 }
 @media (max-width: 650px) {
-  .container-experiencias .experiencia .exp-boca-river, .container-experiencias .experiencia .exp-maradona {
+  .container-experiencias .experiencia .exp-boca-river,
+  .container-experiencias .experiencia .exp-maradona {
     margin: 0 3.38rem 0 1.1rem;
   }
 }
-.container-experiencias .experiencia .exp-boca-river .btn-vermas, .container-experiencias .experiencia .exp-maradona .btn-vermas {
+.container-experiencias .experiencia .exp-boca-river .btn-vermas,
+.container-experiencias .experiencia .exp-maradona .btn-vermas {
   display: none;
 }
 @media (max-width: 920px) {
-  .container-experiencias .experiencia .exp-boca-river .btn-vermas, .container-experiencias .experiencia .exp-maradona .btn-vermas {
+  .container-experiencias .experiencia .exp-boca-river .btn-vermas,
+  .container-experiencias .experiencia .exp-maradona .btn-vermas {
     display: block;
   }
 }
@@ -1911,6 +1928,7 @@ a#reserva:hover {
   justify-content: space-between;
   padding: 0 7%;
   margin-bottom: 7.5rem;
+  cursor: pointer;
 }
 @media (max-width: 920px) {
   .container-reviews {
