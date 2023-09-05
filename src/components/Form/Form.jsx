@@ -12,13 +12,11 @@ const Form = () => {
   const form = useRef();
   const { lang } = useContext(LenguaContext);
 
-  /*   const SERVICE_ID = "service_gx8k6dn";
-  const TEMPLATE_ID = "template_6huw7jd";
-  const PUBLIC_KEY = "s7HZBf9HzTnCs8rEW"; */
+  console.log(import.meta.env.VITE_SERVICE_ID);
 
-  const SERVICE_ID = "service_5um3sgw";
-  const TEMPLATE_ID = "template_kbof8zm";
-  const PUBLIC_KEY = "OPrAo-TUzCdQEaWPc";
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
   const validationSchema = Yup.object().shape({
     name: Yup.string()
