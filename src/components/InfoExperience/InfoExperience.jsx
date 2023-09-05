@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 const InfoExperience = ({ content }) => {
   return (
     <div className="experience-container">
+      <div className="contenedor-info-groups">
       <section className="info-group">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -147,6 +148,7 @@ const InfoExperience = ({ content }) => {
           <strong>{content[7]}</strong>
         </div>
       </section>
+      </div>
     </div>
   );
 };

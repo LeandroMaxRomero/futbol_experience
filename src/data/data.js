@@ -150,7 +150,7 @@ export const maradonaContent = {
       `Finally, we will tour the Museum of Argentine Juniors "El Templo del Fútbol", where Diego made his soccer debut at the age of 15. As fate would have it, many years later, he will play for the first time with the jersey of the Argentina team and scored his first goal, another of our greatest idols such as Lionel Messi.This museum was made by fans and members of the institution in its entirety.There you will find photos, trophies, shirts and valuables for the history of the You will visit the stands, the changing rooms, the press room and the playing field of the Argentinos Juniors stadium that bears the name "Diego Armando Maradona"`,
     ],
     descriptionExperience: [
-      "img/Group 39849.svg",
+      "img/Group 39849Eng.svg",
       "img/IMG_4716.png",
       "img/IMG_4727.png",
       "img/IMG_4731.png",
@@ -209,7 +209,7 @@ export const riverContent = {
       ` Después de allí, nos dirigiremos a la zona de Nuñez para ingresar al Museo de River. A través de un túnel del tiempo, conoceremos los más de 100 años de historia del club, los principales jugadores y leyendas que representaron la institución, su vitrina de trofeos y camisetas a lo largo del tiempo. Además, veremos dos cortos que reflejan la grandeza de River. Y una de las perlitas para culminar, el “Estadio Más Monumental”. Vas a tener la oportunidad de conocer las tribunas, el vestuario y el campo de juego del estadio más grande del país, aquel que recibe a más de 80.000 hinchas todos los domingos. Para finalizar, te brindaremos un tiempo para que puedas ver la tienda oficial del club. `,
     ],
     descriptionExperience: [
-      "img/Group 39814.svg",
+      "img/Group 39814Eng.svg",
       "img/ggg.png",
       "img/IMG_4594 1.png",
       "img/IMG_4983 1.png",
