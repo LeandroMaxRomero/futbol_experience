@@ -187,9 +187,10 @@
     height: 55rem;
     border-radius: 1rem;
     z-index: 0;
-    &:hover{
-      .exp-boca-river, .exp-maradona{
-        .btn-vermas{
+    &:hover {
+      .exp-boca-river,
+      .exp-maradona {
+        .btn-vermas {
           display: block;
         }
       }
@@ -221,7 +222,8 @@
       width: 33.6rem;
       height: 30.8rem;
     }
-    .exp-boca-river, .exp-maradona {
+    .exp-boca-river,
+    .exp-maradona {
       position: absolute;
       z-index: 1;
       margin: 0 4rem 0;
@@ -233,7 +235,7 @@
       @include m.mobile {
         margin: 0 3.38rem 0 1.1rem;
       }
-      .btn-vermas{
+      .btn-vermas {
         display: none;
         @include m.tablet {
           display: block;
@@ -298,13 +300,13 @@
       font-size: 2.5rem;
       font-weight: 600;
       line-height: normal;
-      
+
       @include m.tablet {
         width: 10.864rem;
         height: 3.36rem;
         padding: 2rem 1.5rem;
         margin-bottom: 2.5rem;
-        
+
         font-size: 1.6rem;
         line-height: 1.8rem;
         font-weight: 700;
@@ -338,6 +340,7 @@
   justify-content: space-between;
   padding: 0 7%;
   margin-bottom: 7.5rem;
+  cursor: pointer;
   @include m.tablet {
     height: 9.52rem;
     padding: 0 3.5%;
@@ -394,7 +397,7 @@
     justify-content: space-between;
   }
 }
-.reviews_svg{
+.reviews_svg {
   display: flex;
   align-items: center;
   gap: 1.6rem;
@@ -548,7 +551,6 @@
 }
 .IconsDos {
   grid-area: iconodos;
-  
 }
 .icon-item {
   width: 13.1rem;
@@ -587,7 +589,7 @@
     }
   }
 }
-.iconoDesktop{
+.iconoDesktop {
   display: block;
   @include m.tablet {
     display: none;
@@ -715,7 +717,7 @@
     @include m.mobile {
       min-width: 316px;
       width: 90%;
-      p{  
+      p {
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
@@ -768,7 +770,7 @@
   padding: 0;
   color: v.$azul;
   border-top: 2px solid v.$amarillo;
-  &:last-of-type{
+  &:last-of-type {
     border-bottom: 2px solid v.$amarillo;
   }
 }
@@ -810,7 +812,7 @@
   display: flex;
   overflow: hidden;
   transition: all 600ms ease-in-out;
-  .cont-despl{
+  .cont-despl {
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 3.5rem;
@@ -839,12 +841,12 @@
   @include m.mobile {
     gap: 1rem;
   }
-  svg{
+  svg {
     min-width: 24px;
     max-width: 24.1px;
     @include m.tablet {
       min-width: 16px;
-    max-width: 16.1px;
+      max-width: 16.1px;
     }
     @include m.mobile {
       min-width: 12.667px;

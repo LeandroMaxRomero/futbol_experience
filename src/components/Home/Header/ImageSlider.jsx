@@ -3,20 +3,19 @@ import { useEffect, useState } from "react";
 // import "animate.css";
 
 export const ImageSlider = ({ slides }) => {
-  const [currentIndex, setCurretIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurretIndex(newIndex);
+    setCurrentIndex(newIndex);
   };
-  
 
-    useEffect(() => {
-        setInterval(() => {
-            goToNext();
-          },4000);
-    },);
+  useEffect(() => {
+    setInterval(() => {
+      goToNext();
+    }, 4000);
+  });
 
   return (
     <>
@@ -31,8 +30,8 @@ export const ImageSlider = ({ slides }) => {
 };
 ImageSlider.propTypes = {
   slides: PropTypes.arrayOf(
-      PropTypes.shape({
-        url: PropTypes.string.isRequired,
-      })
-    ).isRequired,
-  };
+    PropTypes.shape({
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
