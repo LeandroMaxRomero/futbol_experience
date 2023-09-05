@@ -460,7 +460,7 @@ a {
       width: 4.381rem;
       height: 4.381rem;
       text-align: center;
-      transform: translate(-278px, -32px) !important;
+      transform: translate(-556px, -33px) !important;
       .iconoMenuOculto {
         display: none;
       }
@@ -517,34 +517,25 @@ a {
     z-index: 0;
     transform: translate(0px, 0px) !important;
     .contenido-menuDesplegable {
-      position: absolute;
-      z-index: 1;
-      background-color: v.$blanco !important;
-      width: 32.2rem;
-      height: 70rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 8px;
-      border: 2px solid v.$grisSuave;
+      @include m.tablet {
+        position: absolute;
+        z-index: 1;
+        background-color: v.$blanco !important;
+        width: 60rem;
+        height: 70rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        border: 2px solid v.$grisSuave;
+      }
+      @include m.mobile {
+        width: 32.2rem;
+      }
     }
   }
 }
 
-@include m.mobile {
-  // transform: translate(-34px, -30px) !important;
-}
-// position: relative;
-// &:after {
-//   content: "";
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   z-index: 0;
-//   top: 0;
-//   left: 0;
-//   background-color: rgba(52, 52, 52, 0.3);
-// }
 
 .dropdown-header {
   display: flex;
@@ -569,10 +560,13 @@ a {
 .dropdown-item-burguer {
   color: v.$headingBlack !important;
   text-shadow: none;
-  font-size: 1.6rem;
+  font-size: 1.85rem;
   font-weight: 400;
   line-height: 100%;
   margin: 0 !important;
+  @include m.mobile {
+    font-size: 1.6rem;
+  }
   :hover {
     cursor: pointer;
   }

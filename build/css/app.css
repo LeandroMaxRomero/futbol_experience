@@ -965,7 +965,7 @@ a#reserva:hover {
   width: 4.381rem;
   height: 4.381rem;
   text-align: center;
-  transform: translate(-278px, -32px) !important;
+  transform: translate(-556px, -33px) !important;
 }
 .dropdown-toggle.navDesplegable-tablet.show .iconoMenuOculto {
   display: none;
@@ -1021,17 +1021,24 @@ a#reserva:hover {
   z-index: 0;
   transform: translate(0px, 0px) !important;
 }
-#fondoOpaco.show .contenido-menuDesplegable {
-  position: absolute;
-  z-index: 1;
-  background-color: #ffffff !important;
-  width: 32.2rem;
-  height: 70rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  border: 2px solid #F1F8FA;
+@media (max-width: 920px) {
+  #fondoOpaco.show .contenido-menuDesplegable {
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff !important;
+    width: 60rem;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border: 2px solid #F1F8FA;
+  }
+}
+@media (max-width: 650px) {
+  #fondoOpaco.show .contenido-menuDesplegable {
+    width: 32.2rem;
+  }
 }
 
 .dropdown-header {
@@ -1059,10 +1066,15 @@ a#reserva:hover {
 .dropdown-item-burguer {
   color: #446168 !important;
   text-shadow: none;
-  font-size: 1.6rem;
+  font-size: 1.85rem;
   font-weight: 400;
   line-height: 100%;
   margin: 0 !important;
+}
+@media (max-width: 650px) {
+  .dropdown-item-burguer {
+    font-size: 1.6rem;
+  }
 }
 .dropdown-item-burguer :hover {
   cursor: pointer;
@@ -2828,9 +2840,6 @@ textarea {
   line-height: 2.4rem;
   letter-spacing: 0.05rem;
 }
-textarea:focus {
-  outline: none;
-}
 
 .form-group {
   width: 100%;
@@ -3300,6 +3309,7 @@ textarea:focus {
 @media (max-width: 650px) {
   .text-container {
     width: 100%;
+    max-width: 340px;
     margin-bottom: 2.4rem;
   }
   .text-container h2 {
@@ -3326,6 +3336,8 @@ textarea:focus {
     display: none;
   }
   .block-activities {
+    width: 100%;
+    max-width: 340px;
     margin: 3.2rem auto 4rem;
   }
   .block-activities h3 {
