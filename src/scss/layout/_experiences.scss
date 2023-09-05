@@ -213,6 +213,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4rem;
+  row-gap: 4rem;
   width: 100%;
 }
 .curiosity-container-text {
@@ -251,9 +252,6 @@
 }
 .text2 {
   grid-row: 2;
-  h3{
-    margin-top: 3.3rem;
-  }
 }
 
 @include m.tablet {
@@ -378,6 +376,7 @@
 @include m.mobile {
   .text-container {
     width: 100%;
+    max-width: 340px;
     margin-bottom: 2.4rem;
     h2 {
       font-size: 2.4rem;
@@ -405,6 +404,8 @@
     }
   }
   .block-activities {
+    width: 100%;
+    max-width: 340px;
     margin: 3.2rem auto 4rem;
     h3 {
       margin: 0 auto;
@@ -451,7 +452,7 @@
 
   .curiosity-container {
     max-width: 340px;
-    margin-bottom: 4rem;
+    margin-bottom: 2.4rem;
     h2 {
       font-size: 2.4rem;
       font-weight: 700;
@@ -464,13 +465,14 @@
     row-gap: 1.6rem;
   }
   .curiosity-container-text {
-    align-items: center;
+    align-items: flex-start;
     h3 {
       line-height: 3rem;
       margin-bottom: 0.8rem;
     }
     p {
       font-size: 1.4rem;
+      padding-bottom: 1.6rem;
     }
   }
 
