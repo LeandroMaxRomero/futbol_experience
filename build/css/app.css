@@ -4001,8 +4001,19 @@ textarea {
 .container-terminos {
   max-width: 1244px;
   margin: 7.5rem auto;
+  padding: 0 1rem;
   color: #0b2933;
   font-family: "Barlow", sans-serif;
+}
+@media (max-width: 920px) {
+  .container-terminos {
+    max-width: 832px;
+  }
+}
+@media (max-width: 650px) {
+  .container-terminos {
+    max-width: 340px;
+  }
 }
 .container-terminos h2 {
   font-size: 3.6rem;
@@ -4011,15 +4022,49 @@ textarea {
   border-bottom: solid 2px #fdb908;
   width: 75%;
 }
-.container-terminos h3 {
+@media (max-width: 1300px) {
+  .container-terminos h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 920px) {
+  .container-terminos h2 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-terminos h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+.container-terminos h3, .container-terminos p, .container-terminos li {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 3.5rem;
 }
+@media (max-width: 1300px) {
+  .container-terminos h3, .container-terminos p, .container-terminos li {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+}
+@media (max-width: 920px) {
+  .container-terminos h3, .container-terminos p, .container-terminos li {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-terminos h3, .container-terminos p, .container-terminos li {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
 .container-terminos p, .container-terminos li {
-  font-size: 2.2rem;
   font-weight: 400;
-  line-height: 3.5rem;
 }
 .container-terminos ul li {
   list-style: disc;
