@@ -27,7 +27,8 @@
   }
   button {
     @include m.tablet {
-      margin-top: -1rem;
+      display: flex;
+      align-items: center;
     }
   }
 

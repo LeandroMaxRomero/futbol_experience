@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import { Button } from "../Button/Button";
-Link;
 import PropTypes from "prop-types";
 
 const ReserveExperience = ({ content, reserve }) => {

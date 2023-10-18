@@ -11,6 +11,7 @@ export const Footer = () => {
       {lang === "castellano" ? (
         <footer className="container-footer">
           <img
+          loading="lazy"
             src="img/banner-footer.png"
             alt="banner footer"
             className="imagen-fondo-footer"
@@ -226,7 +227,7 @@ export const Footer = () => {
 
               <div className="footer-columns">
                 <div className="footer-navigation">
-                  <strong>Browser</strong>
+                  <strong>Menu</strong>
                   <li>
                     <Link to={"/"}>Home</Link>
                   </li>
@@ -258,11 +259,11 @@ export const Footer = () => {
                         contact@futbolexperience.com.ar
                       </a>
                     </li>
-                    <li>Mobile phone: +54 9 11 2659-7630</li>
+                    <li>Phone: +54 9 11 2659-7630</li>
                   </div>
                   <br></br>
                   <div className="footer-network">
-                    <strong>Social Networks</strong>
+                    <strong>Social Media</strong>
                     <div className="footer-network__svg">
                       <a
                         href={`https://web.whatsapp.com/send?phone=${generalContact.number}&text=${generalContact.english.message}&app_absent=0`}

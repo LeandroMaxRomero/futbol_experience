@@ -156,7 +156,7 @@ const Form = () => {
         name="comments"
         cols="30"
         rows="10"
-        placeholder={lang === "castellano" ? "Comentario" : "Comment"}
+        placeholder={lang === "castellano" ? "Comentarios" : "Comments"}
         value={formik.values.comments}
         onChange={formik.handleChange}
         className={

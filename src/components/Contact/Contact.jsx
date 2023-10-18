@@ -24,7 +24,7 @@ export const Contact = () => {
       />
       <div className="contact-container">
         <h2 className="contact-title">
-          {lang === "castellano" ? "Información de Contacto" : "Contact Info"}
+          {lang === "castellano" ? "Información de Contacto" : "Contact Information"}
         </h2>
         <div className="contact-content">
           <div className="contact-info">
@@ -39,7 +39,10 @@ export const Contact = () => {
                   contact@futbolexperience.com.ar
                 </a>
               </li>
-              <li>Tel: +54 9 11 2659-7630</li>
+              <li>
+                {lang === "castellano" ? "Tel: ": "Phone: " }
+                +54 9 11 2659-7630
+                </li>
             </div>
             <div className="contact-info__svg">
               <div className="logo-container">

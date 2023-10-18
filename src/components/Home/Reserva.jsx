@@ -24,7 +24,7 @@ export const Reserva = () => {
         </div>
       ) : (
         <div className="container-reserva">
-          <h3>Book now to get to know Argentine soccer at home</h3>
+          <h3>Book with us and experience football as an Argentinian</h3>
           <Button buttonStyle={"btn-contacto"}>
             <a
               href={` https://wa.me/${generalContact.number}?text=${generalContact.english.message}`}

@@ -33,23 +33,12 @@ export const DetrasDe = () => {
       ) : (
         <div className="container-nosotros">
           <div className="detras-title">
-            <h2>Behind Fútbol Experience</h2>
+            <h2>Behind the scenes of Futbol Experience</h2>
           </div>
 
           <div className="seccion-detras">
             <p>
-              I`m Dan Soccer marks the thermometer of my life. I`ve been on the
-              court for as long as I can remember. With my dad we shared many
-              motorcycle trips going to see different fields. And there was
-              something that always caught my attention: how 11 people who kick
-              a ball mobilize so many people, to travel thousands of kilometers
-              for their team, to gather an entire family on the sofa to watch a
-              game, to deify figures like Messi or Maradona, being the happiest
-              human being for a victory and the most anguished for a defeat. I
-              still haven`t been able to answer that question. What is it that
-              generates so much madness, so much emotion and so much fanaticism?
-              In this soccer experience, I invite you to find the answer
-              together.
+            My name is Dan. Football is my life. I´ve been going to the stadium ever since I can remember. My dad and I have shared countless motorcycle rides to all the different stadiums. And there was something that always caught my attention: how 11 people kicking a ball can move so many people to travel thousands of kilometers for their team, to gather a whole family on the couch to watch a game, to deify figures like Messi or Maradona, to be the happiest person with a victory and the most tormented with a defeat. I haven’t been able to find an answer yet for what it is that creates so much madness, so much emotion, so much fanaticism? In this football experience, I invite you to find the answer together.
             </p>
           </div>
           <div className="detrasDeNosotros-img">

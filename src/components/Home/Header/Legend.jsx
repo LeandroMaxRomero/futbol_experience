@@ -26,8 +26,8 @@ export const Legend = () => {
         </div>
       ) : (
         <div className="container-legend">
-          <h2>Live football like an Argentine</h2>
-          <h3>Know the experiences we have for you</h3>
+          <h2>Experience football as an Argentinian</h2>
+          <h3>Explore all the experiences we have for you</h3>
           <Button buttonStyle={"btn-contacto"}>
             {" "}
             <a
@@ -35,7 +35,7 @@ export const Legend = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Reserve
+              Book your experience
             </a>
           </Button>
         </div>

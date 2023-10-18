@@ -382,20 +382,8 @@ button:hover {
     width: 90%;
     width: 17.9rem;
     height: 4.4rem;
-    /*     padding: 20px 40px 20px 35px; */
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 35px;
-  }
-}
-@media (max-width: 920px) and (max-width: 650px) {
-  .btn-contacto {
-    font-size: 16px;
-    line-height: 24px;
-    width: 100%;
   }
 }
 .btn-contacto p {
@@ -416,7 +404,7 @@ button:hover {
 @media (max-width: 920px) {
   .btn-contacto p {
     font-size: 18px;
-    line-height: 2.4rem;
+    line-height: 2rem;
   }
 }
 
@@ -2078,6 +2066,28 @@ a#reserva:hover {
   line-height: 6.6rem;
   margin: 0.7rem auto 0 0;
 }
+.container-atributos h2.atributos__title--eng {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+@media (max-width: 1300px) {
+  .container-atributos h2.atributos__title--eng {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+  }
+}
+@media (max-width: 920px) {
+  .container-atributos h2.atributos__title--eng {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-atributos h2.atributos__title--eng {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
 @media (max-width: 1300px) {
   .container-atributos h2 {
     font-size: 4.58rem;
@@ -2210,6 +2220,7 @@ a#reserva:hover {
   flex-direction: column;
   align-items: center;
   justify-content: end;
+  width: fit-content;
 }
 @media (max-width: 920px) {
   .icon-item {
@@ -3597,7 +3608,8 @@ textarea {
 }
 @media (max-width: 920px) {
   .container-reservaNosotros button {
-    margin-top: -1rem;
+    display: flex;
+    align-items: center;
   }
 }
 @media (max-width: 920px) {

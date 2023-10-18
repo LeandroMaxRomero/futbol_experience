@@ -65,29 +65,16 @@ export const AcercaDe = () => {
 
             <div className="seccion-acerca">
               <p>
-                `I was born in Argentina, land of Diego and Lionel.` Fútbol
-                Experience is a personalized tour designed for tourists that
-                integrates much more than an Argentine soccer experience. The
-                ball is the first toy, the first language. We learn to kick and
-                then to speak. It is culture, it is passion, it is stories.
+              “En Argentina nací, tierra de Diego y Lionel”. Futbol Experience is a personalized tour designed for tourists that is much more than a simple experience about argentinian football. The ball is our first toy, our first language. We learn how to kick, before we learn how to talk. It’s about culture, it’s about passion, it’s about stories.
               </p>
               <p>
-                Through Fútbol Experience, you will have the opportunity to
-                discover emblematic points of our country that every soccer fan
-                should know. From the life of figures like Diego Armando
-                Maradona to visiting the museums and stadiums of the most
-                renowned clubs, such as those of Boca and River. Added to this,
-                ask us for tickets for the matches where we will accompany you
-                to discover the madness of the Argentine fan.
+              With Fútbol Experience, you will have the opportunity to get to know the emblematic points of our country that every football fan should know. From the life of figures such as Diego Armando Maradona, to visiting the museums and stadiums of the most prestigious clubs, such as Boca and River. In addition, you can ask us about tickets to matches where we will take you to experience the Argentinian fans’ madness.
               </p>
               <p>
-                And as if that were not enough, you will be part of a complete
-                experience that includes learning the songs that were a trend in
-                the World Cup won by the Argentine team, videos and exclusive
-                material, interactive activities and gifts at the end of your
-                tour. All this accompanied by a bilingual soccer fanatic guide,
-                which also includes transportation and food. Choose your
-                experience and we will make sure it is unforgettable.
+              As if this were not enough, you will be part of a complete experience that includes learning the most popular songs of the World Cup that Argentina won, videos and exclusive material, interactive activities and gifts at the end of your tour. All of this led by a bilingual guide who is a football fan and including transportation and meals.
+              </p>
+              <p>
+              Choose your experience and we will make sure it is unforgettable.
               </p>
             </div>
           </div>

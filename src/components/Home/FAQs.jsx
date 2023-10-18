@@ -26,20 +26,20 @@ export const FAQs = () => {
       conte6:"Sí, se puede reservar una experiencia grupal y exclusiva. Aceptamos grupos de hasta 15 personas. Consultanos a nuestro whatsapp por esa posibilidad."
     },
     {
-      titulo1:"How can I book an experience?",
-      titulo2:"Where can I pay for the experience I chose?",
-      titulo3: "How much time do I need to go through each experience?",
+      titulo1:"How can I book my experience?",
+      titulo2:"How will I pay for the experience?",
+      titulo3: "How long is each experience?",
       titulo4: "What languages do the guides speak?",
-      titulo5: "What should I consider? Do I have to bring any documentation?",
-      titulo6: "Can you make a group and exclusive reservation? How many people can join each tour?"
+      titulo5: "What should I take into account? Should I bring any documentation?",
+      titulo6: "Is it possible to make an exclusive group reservation? How many people can go on each tour?"
     },
     {
-      conte1:"When you choose the experience you want to book, our website will refer you to the WhatsApp of our customer service team. They will indicate the available dates of each experience with the pertinent details.",
-      conte2: "Once you have chosen your experience, our website will refer you to the WhatsApp of our customer service team. They will send you the payment link so that you can pay and reserve the day of your experience. The same happens for the case of the matches you wish to attend.",
-      conte3: "In the case of the Boca and River experience, the experience lasts about 6 hours. Diego Maradona's experience will last about 4 hours. Finally, if you choose a match, it will last 2 hours plus transfer time",
-      conte4:"All our guides speak Spanish and English fluently.",
-      conte5: "We recommend attending the experiences in the lightest and most comfortable way possible. Take your personal document and confirmation of the experience reservation with you.",
-      conte6: "Yes, you can book an exclusive group experience. We accept groups of up to 15 people. Ask us on our WhatsApp for that possibility."
+      conte1:"When selecting the experience you wish to book, our website will redirect you to our Customer Success team’s Whatsapp. They will let you know the available dates for each experience and they’ll share all the relevant details. ",
+      conte2: "Once you have selected your experience, our website will redirect you to our Customer Success team’s Whatsapp. They will send you a secure payment link to complete your payment and book your experience. The same goes for any football games you wish to attend.",
+      conte3: "The Boca - River Experience lasts approximately 6 hours. The Diego Maradona Experience lasts approximately 4 hours. Finally, if you choose a game, it will take 2 hours plus the transportation time.",
+      conte4:"All our guides are fluent in Spanish and English.",
+      conte5: "We recommend attending the experiences as light and comfortable as possible. Bring your personal documents and your experience reservation confirmation.",
+      conte6: "Yes, you can book an exclusive group experience. We accept group reservations up to 15 people. Please contact us via Whatsapp for this option."
     }
   ]
   return (

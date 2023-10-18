@@ -39,17 +39,17 @@ export const Prestaciones = () => {
 
           <div className="prestaciones-box prestacionesUno">
           <img src="img/experiencia1.png" alt="Experiencia inolvidable" className="imagen-fondo-prestaciones"/>
-            <p>Unforgetable<br></br>experience</p>
+            <p>Unforgettable<br></br>experience</p>
           </div>
 
           <div className="prestaciones-box prestacionesDos">
             <img src="img/experiencia2.png" alt="Camiseta de la selección argentina de regalo" className="imagen-fondo-prestaciones"/>
-              <p>Gift<br></br>t-shirt</p>
+              <p>Argentina’s football<br></br>shirt included</p>
           </div>
 
           <div className="prestaciones-box prestacionesTres">
             <img src="img/experiencia3.png" alt="Comida local" className="imagen-fondo-prestaciones"/>
-            <p>Local<br></br>foods</p>
+            <p>Local<br></br>food</p>
           </div>
 
           <div className="prestaciones-box prestacionesCuatro">

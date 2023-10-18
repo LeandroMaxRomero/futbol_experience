@@ -35,7 +35,7 @@ export const ReviewsMobile = () => {
             ?
             <h2>¡Mirá lo que nuestros clientes dicen de nosotros!</h2>
             :
-            <h2>See what our clients say about us!</h2>
+            <h2>Check out what our clients have to say about us!</h2>
             }
             </>
         </section>

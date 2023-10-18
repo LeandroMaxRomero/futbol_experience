@@ -72,38 +72,13 @@ const TextGralExperienceRiver = ({ content }) => {
           ) : (
             <>
               <p>
-                The first stop is the{" "}
-                <strong> Museo de la pasión Boquense</strong>, where you will
-                have access to watch short films about the history of the club,
-                you will meet the main figures and you will see the shirts it
-                had over time, trophies and priceless objects that tell stories.
-                In addition to this, we will give you time so that you can see
-                the official club store.
+                Our first stop is the <strong>Boca Junior Museum</strong>, where you will have access to short films about the club’s history, you’ll get to know its main characters and see the jerseys they wore over the years, trophies they won and priceless objects that tell stories. You will also have the opportunity to visit the club´s official store.
               </p>
               <p>
-                After that, we will continue in the picturesque neighborhood of
-                La Boca to have lunch at <strong>“Lo de Diego”</strong>, a theme
-                bar that speaks for itself. Soccer-themed with a synthetic grass
-                floor, seats with field seats and endless images and replicas,
-                this place represents one of the greatest idols of our Argentine
-                soccer, Diego Armando Maradona. Once lunch is over, we will take
-                some time to visit <strong>“Caminito”</strong>, a museum street
-                and a traditional passage of great cultural and tourist value in
-                our country, a place where soccer, art and tango are mixed.
+                Our next stop is the neighborhood of La Boca for lunch at <strong>“Lo de Diego”</strong>, a themed bar that speaks for itself. With a football atmosphere, artificial turf, seats from the field and countless images and replicas, this place represents one of the greatest idols of our Argentinean football, Diego Armando Maradona. After lunch, we will take some time to visit the <strong>“Caminito”</strong>, a museum street and traditional passage of great cultural value in our country, a place where football, art and tango mix.
               </p>
               <p>
-                After there, we will go to the Nuñez area to enter the{" "}
-                <strong>River Museum</strong>. Through a tunnel of time, we will
-                learn about the club’s more than 100 years of history, the main
-                players and legends that represented the institution, its trophy
-                case and shirts over time. In addition, we will see two shorts
-                that reflect the greatness of River. And one of the pearls to
-                culminate, the <strong>“Most Monumental Stadium”</strong>. You
-                will have the opportunity to visit the stands, the dressing room
-                and the playing field of the largest stadium in the country, the
-                one that receives more than 80,000 fans every Sunday. Finally,
-                we will give you some time so that you can see the official club
-                store.
+                Afterwards, we will go to the Nuñez area to enter the <strong>River Museum</strong>. Through a time tunnel, we will learn about the more than 100 years of history of the club, the main players and legends that have represented the institution, its trophy cabinet and jerseys throughout time. We will also watch two short films that reflect the greatness of River. And one of the highlights, the <strong>“Estadio Más Monumental”</strong>, the monumental stadium. You will have the opportunity to visit the stands, the locker room and the field of the largest stadium in the country, which welcomes more than 80,000 fans every Sunday. Finally, you will have time to visit the official club store.
               </p>
             </>
           )}

@@ -28,7 +28,7 @@ export const RiverExperience = () => {
       <CommonHeader
         ownStyle={"header-boca-river"}
         experienceTittleES={"Experiencia Boca - River"}
-        experienceTittleEN={"Boca - River Experience"}
+        experienceTittleEN={"Boca River Experience"}
         image={"img/Home-Exp-RivBoc.png"}
       />
       <div className="maradona-container">

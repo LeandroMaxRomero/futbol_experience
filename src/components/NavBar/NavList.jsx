@@ -86,7 +86,7 @@ export const NavList = () => {
               id="dropdown-basic"
               className="dropdown"
             >
-              Experiences
+              Our experiences
               <svg
                 className="flechitapabajo"
                 width="14"

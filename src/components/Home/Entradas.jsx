@@ -31,12 +31,9 @@ export const Entradas = () => {
           </div>
         ) : (
           <div className="entradas">
-            <h2>Do you want to get tickets for matches?</h2>
+            <h2>Do you want to get tickets for football matches?</h2>
             <h3>
-              We have tickets for Argentine soccer matches. Write us mentioning
-              which Argentine soccer team you would like to go see and we will
-              accompany you to the game. Includes transportation (round trip)
-              along with snacks in the vicinity of the stadium.
+            We have tickets for Argentina’s football matches. Let us know which football team you’d like to see and we’ll take you to the game. Includes: transportation (round trip) and a snack at the stadium.
             </h3>
             <Button buttonStyle={"btn-contacto"}>
               <a

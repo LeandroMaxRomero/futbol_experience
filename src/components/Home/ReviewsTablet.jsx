@@ -21,7 +21,7 @@ export const ReviewsTablet = () => {
             ?
             <h2>¡Mirá lo que nuestros clientes dicen de nosotros!</h2>
             :
-            <h2>See what our clients say about us!</h2>
+            <h2> Check out what our clients have to say about us!</h2>
             }
             </>
             <svg width="142" height="49" viewBox="0 0 142 49" fill="none" xmlns="http://www.w3.org/2000/svg">

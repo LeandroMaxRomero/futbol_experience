@@ -12,15 +12,7 @@ export const maradonaContent = {
     ],
     textExperience: [
       "Sobre la experiencia",
-      `En esta experiencia, podrás conocer la intimidad de D10S o como le decían sus amigos, “Pelusa”.
-         Muchos lo consideran como el número uno del fútbol mundial y el mayor ídolo entre los argentinos.
-          “El Diego vivió diez vidas en una”. Si querés conocer más acerca de la vida de película de Diego Armando Maradona, 
-          esta experiencia es para vos.`,
-      `La primera parada es la Casa de D10S, la primera casa propia de Diego y su familia en el barrio porteño de La Paternal. Convertida hoy en museo, Diego vivió allí entre 1978 y 1980, ubicada a pocos metros de donde inició su carrera, el club Argentinos Juniors. En ella se conservan los muebles, la decoración y electrodomésticos que te transportarán a aquella época. Además, exhibe todos los regalos que le hicieron en homenaje al Diego (camisetas, fotos, estatuas, entre otros)
-           y cuenta con un museo que contiene todas sus reliquias.`,
-      `Posterior a ello, haremos una parada a pocas cuadras para almorzar en “La Cafetería de D10S”, lugar emblemático del barrio de “La Paternal” que reúne objetos, cuadros, fotos y recuerdos de Diego Armando Maradona. Una vez terminado el almuerzo, caminaremos otras dos cuadras hacia las inmediaciones del Estadio de Argentinos Juniors, lugar de murales de su época como jugador y entrenador en Argentinos Juniors, Napoli, Barcelona, la selección Argentina, entre otros. En el camino, ingresaremos al Santuario de Diego, donde entre cuatro paredes conviven camisetas de todos los colores, pelotas, botines, trofeos, estatuas y banderas que exhiben al Diego como una religión en sí misma. Tiene todo para convertirse en parada obligada de cualquier tour futbolero y no hace falta más que un ratito para disfrutarlo. 
-           Para cualquier maradoniano vale cada segundo.`,
-      `Por último, haremos el recorrido en el Museo de Argentinos Juniors “El Templo del Fútbol", lugar donde Diego hizo su debut futbolístico a los 15 años de edad. El destino quiso que muchos años después, jugará por primera vez con la camiseta de la selección Argentina y convierta su primer gol, otro de nuestros ídolos máximos como lo es Lionel Messi. Este museo fue realizado por hinchas y socios de la institución en su totalidad. Allí encontrarás fotos, trofeos, camisetas y objetos de valor para la historia del club. Se visitará las tribunas, los vestuarios, la sala de prensa y el campo de juego del estadio de Argentinos Juniors que lleva el nombre “Diego Armando Maradona”. `,
+      `En esta experiencia, podrás conocer la intimidad de D10S o como le decían sus amigos, “Pelusa”. Muchos lo consideran como el número uno del fútbol mundial y el mayor ídolo entre los argentinos. “El Diego vivió diez vidas en una”. Si querés conocer más acerca de la vida de película de Diego Armando Maradona, esta experiencia es para vos.`,
     ],
 
     descriptionExperience: [
@@ -122,32 +114,18 @@ export const maradonaContent = {
   },
   english: {
     infoExperience: [
-      "Ubication",
+      "Location",
       "Buenos Aires",
       "Duration",
       "4 hours",
-      "Languages",
+      "Available languages",
       "Spanish and English",
       "Available days",
-      "Tuesday and Thursday",
+      "Tuesdays and Thursdays",
     ],
     textExperience: [
-      "About Experience",
-      `In this experience, you will be able to know the intimacy of D10S or as his friends called him, "Pelusa". Many consider him the number one in world soccer and the greatest idol among Argentines. "Diego lived ten lives in one." If you want to know more about the movie life of Diego Armando Maradona, this experience is for you.`,
-      `The first stop is the Casa de D10S, the first home owned by Diego and his family in the Buenos Aires 
-         neighborhood of La Paternal. Converted today into a museum, Diego lived there between 1978 and 1980, 
-         located a few meters from where he began his career, the Argentinos Juniors club. In it, the furniture,
-          decoration and appliances that will transport you to that time are preserved. 
-         In addition, it exhibits all the gifts that they gave him in homage to Diego (t-shirts, photos,
-           statues, among others) and has a museum that contains all his relics.`,
-      `After that, we will make a stop a few blocks away to have lunch at "La Cafeteria de D10S"
-          an emblematic place in the "La Paternal" neighborhood that gathers objects, paintings, photos and memories of 
-          Diego Armando Maradona. Once lunch is over, we will walk another two blocks to the vicinity of the Argentinos Juniors Stadium,
-           place of murals from his time as a player and coach in Argentinos Juniors, Napoli, Barcelona, the Argentine team, among others.
-            On the way, we will enter the Sanctuary of Diego, where jerseys of all colors, balls, loot, trophies, statues and flags coexist
-             between four walls that exhibit Diego as a religion in itself. It has everything to become an obligatory stop on any soccer
-              tour and it doesn't take more than a little while to enjoy it. For any Maradonian, every second is worth it.`,
-      `Finally, we will tour the Museum of Argentine Juniors "El Templo del Fútbol", where Diego made his soccer debut at the age of 15. As fate would have it, many years later, he will play for the first time with the jersey of the Argentina team and scored his first goal, another of our greatest idols such as Lionel Messi.This museum was made by fans and members of the institution in its entirety.There you will find photos, trophies, shirts and valuables for the history of the You will visit the stands, the changing rooms, the press room and the playing field of the Argentinos Juniors stadium that bears the name "Diego Armando Maradona"`,
+      "About this experience",
+      `In this experience you will get to know the intimacy of D10S, or as his friends called him, "Pelusa". Many consider him the number one football player in the world and the greatest Argentine idol. "Diego lived ten lives in one”. If you want to learn more about the cinematic life of Diego Armando Maradona, this experience is for you.`,
     ],
     descriptionExperience: [
       "img/Group 39849Eng.svg",
@@ -158,33 +136,33 @@ export const maradonaContent = {
     ],
 
     activitiesExperience: [
-      "What does the experience include?",
-      "Transfers",
-      "Foods",
-      "Professional Fan Guide to Argentine Soccer",
-      "T-shirt of the Argentine National Team",
-      "Songbook of the Fans",
-      "Videos of Argentine Soccer",
-      "Interactive Recreational Activities",
+      "What’s included on this experience?",
+      "Transportation (round trip)",
+      "Food",
+      "Argentinian Professional Guide and Futbol Fan",
+      "Argentina’s National Team Shirt",
+      "Fan Songbook",
+      "Argentine Football videos",
+      "Interactive Fun Activities",
       "Souvenir Package",
     ],
     reserveExperience: [
       "I want to live the Maradona Experience!",
-      "Reserve your next experience",
+      "Book your experience",
     ],
     curiosityExperience: [
-      "Did you know ...",
+      "Did you know that...",
       "img/MuseoArg.png",
       "Argentino Juniors",
-      `Founded in 1904, Argentinos Juniors is recognized worldwide for the quantity and quality of players from its lower divisions. With 5 titles to its credit, including local cups such as the Copa Libertadores, the club is going through a great football present. His stadium bears the name of "Diego Armando Maradona" and on that same playing field, Lionel Messi made his debut and scored his first goal with the Argentine National Team shirt.`,
+      `Founded in 1904, Argentinos Juniors is worldwide known for the quantity and quality of players coming out of its lower divisions. With 5 titles, including local cups such as the Copa Libertadores, the club is going through a great present. Its stadium is named "Diego Armando Maradona" and it was on this field that Lionel Messi made his debut and scored his first goal for the Argentine national team.`,
       "img/diego_armando_maradona.png",
       "Diego Armando Maradona",
-      `He was born in 1960 and some say he will live to the end of time. He was the fifth of his eight siblings and grew up in a humble neighborhood like Villa Fiorito, where he practiced his dribbling in the pastures. Argentinos Juniors set their sights on him and gave him his first opportunity in Argentine soccer. Later, he would stand out in Boca Juniors, FC Barcelona, but in Napoli he felt like his second home, winning titles and the love of an entire city. Unforgettable his stellar participation in the 1986 World Cup, achieving the world championship with memorable goals such as “La Mano de D10S”. Later he would become a coach of the Argentine national team. Diego Armando Maradona transcends soccer, being a beloved popular idol.`,
+      `Born in 1960, some say he’ll live until the end of time. He was the fifth of eight children and grew up in a villa (shantytown) called Villa Fiorito, where he practices his gambetas. Argentinos Juniors spotted him and gave him his first opportunity in Argentine football. He would later excel at Boca Juniors and FC Barcelona, but it was Naples that felt like his second home, winning titles and the love of an entire city. His outstanding participation in the 1986 World Cup is unforgettable, winning the world championship with memorable goals such as "La Mano de D10S" (D10S's Hand). He later became the coach of the Argentine national team. Diego Armando Maradona transcends football, and has become a beloved popular idol.`,
     ],
 
     contact: {
       number: "+5491126597630",
-      message: "hi, I am interested in reserve the Maradona experience",
+      message: "Hello, I am interested in reserve the Maradona Experience. ",
     },
   },
 };
@@ -300,21 +278,18 @@ export const riverContent = {
   },
   english: {
     infoExperience: [
-      "Ubication",
+      "Location",
       "Buenos Aires",
       "Duration",
       "6 hours",
-      "Languages",
+      "Available languages",
       "Spanish and English",
       "Available days",
-      "Monday Wednesday and Friday",
+      "Mondays Wednesdays and Fridays",
     ],
     textExperience: [
-      "About Experience",
-      `In this experience, you will be able to delve into the history of the two biggest clubs in Argentina: Boca and River, rivals of a lifetime. If you want to know more about those who make up the most passionate classic in the world, this experience is for you.`,
-      `The first stop is the Museo de la pasión Boquense, where you will have access to watch short films about the history of the club, you will meet the main figures and you will see the shirts it had over time, trophies and priceless objects that tell stories. In addition to this, we will give you time so that you can see the official club store.`,
-      `After that, we will continue in the picturesque neighborhood of La Boca to have lunch at "Lo de Diego", a theme bar that speaks for itself. Soccer-themed with a synthetic grass floor, seats with field seats and endless images and replicas, this place represents one of the greatest idols of our Argentine soccer, Diego Armando Maradona. Once lunch is over, we will take some time to visit "Caminito", a museum street and a traditional passage of great cultural and tourist value in our country, a place where soccer, art and tango are mixed.`,
-      ` After there, we will go to the Nuñez area to enter the River Museum. Through a tunnel of time, we will learn about the club's more than 100 years of history, the main players and legends that represented the institution, its trophy case and shirts over time. In addition, we will see two shorts that reflect the greatness of River. And one of the pearls to culminate, the "Most Monumental Stadium". You will have the opportunity to visit the stands, the dressing room and the playing field of the largest stadium in the country, the one that receives more than 80,000 fans every Sunday. Finally, we will give you some time so that you can see the official club store. `,
+      "About this experience",
+      `In this experience, you will immerse yourself in the history of Argentina's two biggest clubs: Boca and River, lifelong rivals. If you want to learn more about the two teams that make up the most passionate football classic in the world, this experience is for you.`,
     ],
 
     descriptionExperience: [
@@ -325,32 +300,32 @@ export const riverContent = {
       "img/IMG_4983 1.png",
     ],
     activitiesExperience: [
-      "What does the experience include?",
-      "Transfers",
-      "Foods",
-      "Professional Fan Guide to Argentine Soccer",
-      "T-shirt of the Argentine National Team",
-      "Songbook of the Fans",
-      "Videos of Argentine Soccer",
-      "Interactive Recreational Activities",
+      "What’s included on this experience?",
+      "Transportation (round trip)",
+      "Food",
+      "Professional Guide and Futbol Fan",
+      "Argentina’s National Team Shirt",
+      "Fan Songbook",
+      "Argentine Football videos",
+      "Interactive Fun Activities",
       "Souvenir Package",
     ],
     reserveExperience: [
       "I want to live the Boca-River Experience!",
-      "Reserve your next experience",
+      "Book your experience",
     ],
     curiosityExperience: [
-      "Did you know ...",
+      "Did you know that...",
       "img/boca-juniors-1712628_1920 1.png",
       "Boca Juniors",
-      `Founded in 1905 in the La Boca neighborhood, the three-time world champion and six-time American champion, is a world-renowned soccer club. With a history that exalts its greatness, Boca Juniors has been the cradle of talented players who resonate to this day, such as Diego Armando Maradona or Juan Roman Riquelme, current vice president of the institution. However, what makes this club stand out is the passion of its fans. The popular saying goes that its stadium, La Bombonera, does not beat but trembles.`,
+      `Founded in 1905 in the neighborhood of La Boca, the three-time world champion and six-time champion of the Americas is a world-renowned football club. With a history that exalts its greatness, Boca Juniors has been the cradle of talented players that resonate to this day, such as Diego Armando Maradona or Juan Roman Riquelme, the current vice-president of the institution. What makes this club stand out, however, is its fans’ passion. As the saying goes, their stadium, La Bombonera, does not beat, it shakes.`,
       "img/IMG_4789 1.png",
       "River Plate",
-      `Founded in 1901 in Buenos Aires in the same neighborhood as its historic rival, it had to move to the Nuñez neighborhood. Two times world champion and four times champion of America, "El Millonario" stands out for a great presence in local and international tournaments. Marcelo Gallardo has led the team to its best level, winning a memorable final against Boca in 2019 in Madrid. His identity is in the class of players and in good football, marked by an unbeatable institutional present. Its stadium, the "Más Monumental", is distinguished by its modernity, comfort and the one with the largest capacity (85,000 fans) in the entire country.`,
+      `Founded in 1901 in Buenos Aires in the same neighborhood as its historical rival, it had to move to the neighborhood of Nuñez. Twice World Champion and four times Champion of the Americas, "El Millonario", “The Millionaire”, stands out for its great performance in local and international tournaments. Marcelo Gallardo has led the team to its best level, winning a memorable final against Boca in 2019 in Madrid. Its identity is in the class of the players and in great football, also marked by an unbeatable institutional present. Its stadium, the "Más Monumental", “The most monumental”, is characterized by its modernity, comfort and the largest capacity (85,000 fans) in the country.`,
     ],
     contact: {
       number: "+5491126597630",
-      message: "hi, I am interested in reserve the Boca-River experience",
+      message: "Hello, I am interested in reserve the Boca-River experience. ",
     },
   },
 };
@@ -361,6 +336,6 @@ export const generalContact = {
     message: "Hola, estoy interesado en reservar las experiencias...",
   },
   english: {
-    message: "Hi,I am interested in reserve the experiences",
+    message: "Hello, I’m interested in booking an experience with Futbol Experience. ",
   },
 };

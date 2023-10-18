@@ -21,7 +21,7 @@ export const Reviews = () => {
             ?
             <h2>¡Mirá lo que nuestros clientes dicen de nosotros!</h2>
             :
-            <h2>See what our clients say about us!</h2>
+            <h2> Check out what our clients have to say about us!</h2>
             }
             </>
             <svg width="220" height="74" viewBox="0 0 220 74" fill="none" xmlns="http://www.w3.org/2000/svg">

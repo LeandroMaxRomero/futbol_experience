@@ -591,7 +591,7 @@ function NavDesplegable() {
                 className="contenedor-item-burguer"
               >
                 <div className="dropdown-item-burguer">
-                  River - Boca Experience
+                  Boca - River Experience
                 </div>
               </NavLink>
 

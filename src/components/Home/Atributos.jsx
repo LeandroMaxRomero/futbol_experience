@@ -91,8 +91,8 @@ export const Atributos = () => {
                 </>
                 :
                 <>
-                    <h2>Why do it with us?</h2>
-                    <p className="texto-atributos">“En Argentina nací, tierra de Diego y Lionel”. Fútbol Experience is a personalized tour designed for tourists that integrates much more than an experience about Argentine soccer. The ball is the first toy, the first language. We learn to kick and then to speak. It is culture, it is passion, it is stories. Choose your experience and we make sure it is unforgettable.<br></br>
+                    <h2 className="atributos__title--eng">Why book an experience with us?</h2>
+                    <p className="texto-atributos">“En Argentina nací, tierra de Diego y Lionel”. Futbol Experience is a personalized tour designed for tourists that is much more than a simple experience about argentinian football. The ball is our first toy, our first language. We learn how to kick, before we learn how to talk. It’s about culture, it’s about passion, it’s about stories. Choose your experience and we’ll make sure it is unforgettable.<br></br>
                     <b>We share the values of the sport we love.</b></p>
 
                     <div className="iconsUno">
@@ -140,7 +140,7 @@ export const Atributos = () => {
                               <path d="M28.7577 13.3787L31.5631 11.6915L34.3684 13.4009L33.6337 10.2041L36.1051 8.07281L32.8544 7.78421L31.5631 4.76495L30.2717 7.76201L27.0211 8.05061L29.4925 10.2041L28.7577 13.3787ZM26.0637 17.0862L27.5109 10.8479L22.6572 6.65199L29.0694 6.09698L31.5631 0.213867L34.0567 6.09698L40.4689 6.65199L35.6152 10.8479L37.0624 17.0862L31.5631 13.7783L26.0637 17.0862Z" fill="#0B2933"/>
                               <path d="M6.10051 13.3787L8.90586 11.6915L11.7112 13.4009L10.9765 10.2041L13.4478 8.07281L10.1972 7.78421L8.90586 4.76495L7.61451 7.76201L4.36387 8.05061L6.83524 10.2041L6.10051 13.3787ZM3.40649 17.0862L4.85369 10.8479L0 6.65199L6.41222 6.09698L8.90586 0.213867L11.3995 6.09698L17.8117 6.65199L12.958 10.8479L14.4052 17.0862L8.90586 13.7783L3.40649 17.0862Z" fill="#0B2933"/>
                             </svg>
-                            <p className="frase-icono">We deliver to the maximum</p>
+                            <p className="frase-icono">Maximum dedication</p>
                         </div>
 
                         <div className="icon-item">
@@ -162,7 +162,7 @@ export const Atributos = () => {
                               <line x1="15.8145" y1="2.31445" x2="15.8145" y2="23.6107" stroke="#0B2933" strokeWidth="2"/>
                               <line x1="11.6777" y1="4.62964" x2="11.6777" y2="24.9999" stroke="#0B2933" strokeWidth="2"/>
                             </svg>
-                            <p className="frase-icono">we sweat the shirt</p>
+                            <p className="frase-icono">We sweat the shirt</p>
                         </div>
                     </div>
                 </>

@@ -15,8 +15,8 @@ export const ReservaNosotros = () => {
     </div>
     :
     <div className="container-reservaNosotros">
-        <h2>Book with us to discover local Argentine soccer.</h2>
-        <Button buttonStyle={"btn-contacto"}>Contact</Button>
+        <h2>Book with us and experience argentina’s local football</h2>
+        <Button buttonStyle={"btn-contacto"}>Contact Information</Button>
     </div>
     }
     </>
