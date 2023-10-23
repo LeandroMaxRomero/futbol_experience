@@ -32,47 +32,13 @@ const TextGralExprience = ({ content }) => {
           {lang === "castellano" ? (
             <>
               <p>
-                La primera parada es la <strong>Casa de D10S</strong>, la
-                primera casa propia de Diego y su familia en el barrio porteño
-                de La Paternal. Convertida hoy en museo, Diego vivió allí entre
-                1978 y 1980, ubicada a pocos metros de donde inició su carrera,
-                el club Argentinos Juniors. En ella se conservan los muebles, la
-                decoración y electrodomésticos que te transportarán a aquella
-                época. Además, exhibe todos los regalos que le hicieron en
-                homenaje al Diego camisetas, fotos, estatuas, entre otros y
-                cuenta con un museo que contiene todas sus reliquias.
+                La primera parada es la <strong>Casa de D10S</strong>, la primera casa propia de Diego y su familia en el barrio porteño de La Paternal. Convertida hoy en museo, Diego vivió allí entre 1978 y 1980, ubicada a pocos metros de donde inició su carrera, el club Argentinos Juniors. En ella se conservan los muebles, la decoración y que te transportarán a aquella época. Además, exhibe todos los regalos que le hicieron en homenaje al Diego: camisetas, fotos, estatuas, entre otros y cuenta con un museo que contiene todas sus reliquias.
               </p>
               <p>
-                Posterior a ello, haremos una parada a pocas cuadras para
-                almorzar en <strong>“La Cafetería de D10S”</strong>, lugar
-                emblemático del barrio de “La Paternal” que reúne objetos,
-                cuadros, fotos y recuerdos de Diego Armando Maradona. Una vez
-                terminado el almuerzo, caminaremos otras dos cuadras hacia las
-                inmediaciones del
-                <strong>Estadio de Argentinos Juniors</strong>, lugar de murales
-                de su época como jugador y entrenador en Argentinos Juniors,
-                Napoli, Barcelona, la selección Argentina, entre otros. En el
-                camino, ingresaremos al <strong>Santuario de Diego</strong>,
-                donde entre cuatro paredes conviven camisetas de todos los
-                colores, pelotas, botines, trofeos, estatuas y banderas que
-                exhiben al Diego como una religión en sí misma. Tiene todo para
-                convertirse en parada obligada de cualquier tour futbolero y no
-                hace falta más que un ratito para disfrutarlo. Para cualquier
-                maradoniano vale cada segundo.
+                Posterior a ello, haremos una parada a pocas cuadras para almorzar en <strong>“La Cafetería de D10S”</strong>, lugar emblemático del barrio de “La Paternal” que reúne objetos, cuadros, fotos y recuerdos de Diego Armando Maradona. Una vez terminado el almuerzo, caminaremos otras dos cuadras hacia las inmediaciones del <strong>Estadio de Argentinos Juniors</strong>, lugar de murales de su época como jugador y entrenador en Argentinos Juniors, Napoli, Barcelona, la selección Argentina, entre otros. En el camino, ingresaremos al <strong>Santuario de Diego</strong>, donde entre cuatro paredes conviven camisetas de todos los colores, pelotas, botines, trofeos, estatuas y exhiben al Diego como una religión en sí misma. Tiene todo para convertirse en parada obligada de cualquier tour futbolero y no hace falta más que un ratito para disfrutarlo. Para cualquier maradoniano vale cada segundo.
               </p>
               <p>
-                Por último, haremos el recorrido en el
-                <strong> Museo de Argentinos Juniors</strong> “El Templo del
-                Fútbol”, lugar donde Diego hizo su debut futbolístico a los 15
-                años de edad. El destino quiso que muchos años después, jugará
-                por primera vez con la camiseta de la selección Argentina y
-                convierta su primer gol, otro de nuestros ídolos máximos como lo
-                es Lionel Messi. Este museo fue realizado por hinchas y socios
-                de la institución en su totalidad. Allí encontrarás fotos,
-                trofeos, camisetas y objetos de valor para la historia del club.
-                Se visitará las tribunas, los vestuarios, la sala de prensa y el
-                campo de juego del estadio de Argentinos Juniors que lleva el
-                nombre “Diego Armando Maradona”.
+                Por último, haremos el recorrido en el <strong> Museo de Argentinos Juniors</strong> “El Templo del Fútbol”, lugar donde Diego hizo su debut futbolístico a los 15 años de edad. El destino quiso que muchos años después, Lionel Messi, jugara por primera vez con la camiseta de la selección Argentina y convierta su primer gol siendo otro de nuestros ídolos máximos. Este museo fue realizado por hinchas y socios de la institución en su totalidad. Allí encontrarás fotos, trofeos, camisetas y objetos de valor para la historia del club. Se visitará las tribunas, los vestuarios, la sala de prensa y el campo de juego del estadio de Argentinos Juniors que lleva el nombre “Diego Armando Maradona”.
               </p>
             </>
           ) : (

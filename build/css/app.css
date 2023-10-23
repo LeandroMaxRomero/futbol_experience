@@ -508,6 +508,9 @@ button:hover {
   border-radius: 0.4rem;
   background: rgba(255, 255, 255, 0.6);
 }
+.container-social img {
+  width: 4rem;
+}
 @media (max-width: 920px) {
   .container-social {
     display: none;
@@ -533,6 +536,24 @@ button:hover {
   flex-direction: column;
   align-items: center;
   margin: 29.6rem auto 18.2rem;
+}
+.container-legend.engl_version {
+  margin-bottom: 9rem;
+}
+@media (max-width: 1300px) {
+  .container-legend.engl_version {
+    margin-bottom: 16rem;
+  }
+}
+@media (max-width: 920px) {
+  .container-legend.engl_version {
+    margin-top: 35.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .container-legend.engl_version {
+    margin-top: 16.5rem;
+  }
 }
 @media (max-width: 1300px) {
   .container-legend {
@@ -609,7 +630,6 @@ button:hover {
   width: 19.4rem;
   height: 6rem;
   margin-top: 2.5rem;
-  gap: 1rem;
   color: #0b2933;
   font-size: 2.2rem;
   font-style: normal;
@@ -1071,6 +1091,10 @@ a#reserva:hover {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+  height: 100%;
+}
+.dropdown-item-burguer.redes img {
+  width: 3rem;
 }
 
 .header-navbar {
@@ -1150,7 +1174,14 @@ a#reserva:hover {
   line-height: 1.8rem;
   border-color: transparent;
 }
+.btn-idioma img {
+  width: 4.5rem;
+  height: 2.8rem;
+}
 .btn-idioma.burguer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   color: #446168;
   font-size: 1.4rem;
   font-style: normal;
@@ -1484,7 +1515,7 @@ a#reserva:hover {
 }
 
 .footer-terms {
-  width: 33.5rem;
+  width: 38rem;
   height: 5.4rem;
   display: flex;
   justify-content: center;
@@ -2018,7 +2049,7 @@ a#reserva:hover {
 }
 @media (max-width: 920px) {
   .container-atributos {
-    grid-template-rows: 46px 256px 92.78px 162.21px;
+    grid-template-rows: 46px 256px 127.4px 127.5px;
     margin: 0 4.8%;
     column-gap: 2.5rem;
   }
@@ -2191,11 +2222,11 @@ a#reserva:hover {
 
 .iconsUno,
 .IconsDos {
-  display: flex;
-  gap: 20%;
-  text-align: center;
-  justify-content: center;
-  align-items: end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  align-content: center;
+  justify-items: center;
 }
 @media (max-width: 650px) {
   .iconsUno,
@@ -2215,7 +2246,6 @@ a#reserva:hover {
 }
 
 .icon-item {
-  width: 13.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

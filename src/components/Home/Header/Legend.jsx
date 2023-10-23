@@ -25,7 +25,7 @@ export const Legend = () => {
           </Button>
         </div>
       ) : (
-        <div className="container-legend">
+        <div className="container-legend engl_version">
           <h2>Experience football as an Argentinian</h2>
           <h3>Explore all the experiences we have for you</h3>
           <Button buttonStyle={"btn-contacto"}>

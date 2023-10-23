@@ -139,10 +139,12 @@ export const NavList = () => {
       <div className="idiomas">
         <button className="btn-idioma" onClick={() => changeLang("castellano")}>
           ES
+          <img src="img/argentina-flag.png" alt="botón idioma español"></img>
         </button>
         <div className="divisor"></div>
         <button className="btn-idioma" onClick={() => changeLang("english")}>
           EN
+          <img src="img/american-flag.png" alt="English language button"></img>
         </button>
       </div>
 

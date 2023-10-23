@@ -139,7 +139,7 @@ export const maradonaContent = {
       "What’s included on this experience?",
       "Transportation (round trip)",
       "Food",
-      "Argentinian Professional Guide and Futbol Fan",
+      "Professional Guide and Futbol Fan",
       "Argentina’s National Team Shirt",
       "Fan Songbook",
       "Argentine Football videos",

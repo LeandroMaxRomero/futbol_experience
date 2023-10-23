@@ -418,7 +418,7 @@
     "foto iconouno"
     "foto iconodos";
   @include m.tablet {
-    grid-template-rows: 46px 256px 92.78px 162.21px;
+    grid-template-rows: 46px 256px 127.4px 127.5px;
     margin: 0 4.8%;
     column-gap: 2.5rem;
   }
@@ -551,11 +551,11 @@
 }
 .iconsUno,
 .IconsDos {
-  display: flex;
-  gap: 20%;
-  text-align: center;
-  justify-content: center;
-  align-items: end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  align-content: center;
+  justify-items: center;
   @include m.mobile {
     gap: 10%;
     align-items: center;
@@ -569,7 +569,6 @@
   grid-area: iconodos;
 }
 .icon-item {
-  width: 13.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
