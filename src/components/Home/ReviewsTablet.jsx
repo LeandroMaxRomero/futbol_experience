@@ -7,7 +7,12 @@ export const ReviewsTablet = () => {
     const { lang } = useLengua();
   return (
     <>
-        <section className="container-reviews reviews-tablet">
+        <a
+        style={{ cursor: "pointer" }}
+        href="https://g.co/kgs/1UmRp2"
+        target="_blank"
+        rel="noreferrer"
+        className="container-reviews reviews-tablet">
         <svg width="144" height="24" viewBox="0 0 144 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M68.8624 18.4171L72.5804 16.181L76.2984 18.4466L75.3246 14.2097L78.6 11.3852L74.2918 11.0027L72.5804 7.0012L70.869 10.9732L66.5608 11.3557L69.8362 14.2097L68.8624 18.4171ZM65.292 23.3307L67.21 15.063L60.7773 9.50212L69.2755 8.76656L72.5804 0.969589L75.8852 8.76656L84.3834 9.50212L77.9508 15.063L79.8688 23.3307L72.5804 18.9467L65.292 23.3307Z" fill="#FDB908"/>
           <path d="M98.4186 18.4171L102.137 16.181L105.855 18.4466L104.881 14.2097L108.156 11.3852L103.848 11.0027L102.137 7.0012L100.425 10.9732L96.117 11.3557L99.3923 14.2097L98.4186 18.4171ZM94.8482 23.3307L96.7662 15.063L90.3335 9.50212L98.8317 8.76656L102.137 0.969589L105.441 8.76656L113.94 9.50212L107.507 15.063L109.425 23.3307L102.137 18.9467L94.8482 23.3307Z" fill="#FDB908"/>
@@ -39,7 +44,7 @@ export const ReviewsTablet = () => {
                   </clipPath>
                 </defs>
             </svg> 
-        </section>
+        </a>
     </>
   )
 }

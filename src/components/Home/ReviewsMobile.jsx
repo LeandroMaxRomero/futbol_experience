@@ -7,7 +7,12 @@ export const ReviewsMobile = () => {
     const { lang } = useLengua();
   return (
     <>
-        <section className="container-reviews reviews-mobile">
+        <a
+        style={{ cursor: "pointer" }}
+        href="https://g.co/kgs/1UmRp2"
+        target="_blank"
+        rel="noreferrer"
+        className="container-reviews reviews-mobile">
 
           <div className="reviews_svg">
             <svg width="127" height="43" viewBox="0 0 127 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +43,7 @@ export const ReviewsMobile = () => {
             <h2>Check out what our clients have to say about us!</h2>
             }
             </>
-        </section>
+        </a>
     </>
   )
 }
