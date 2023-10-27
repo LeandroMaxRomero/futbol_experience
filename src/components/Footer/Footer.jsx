@@ -294,7 +294,7 @@ export const Footer = () => {
                         </svg>
                       </a>
                       <a
-                        href="http://https://www.instagram.com/"
+                        href="https://www.instagram.com/futbolexperienceba"
                         target="_blank"
                         rel="noreferrer"
                       >

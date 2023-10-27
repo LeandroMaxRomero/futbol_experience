@@ -302,7 +302,7 @@
 
 //* NavBar
 .container-navbar {
-  padding: 3.8rem 4.4rem 4.5rem 8vw;
+  padding: 3.8rem 4.4rem 4.5rem 4.4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -332,7 +332,7 @@
 }
 .logo_marca {
   display: none;
-  @include m.desktop {
+  @media (max-width: 1200px) {
     display: block;
   }
   @include m.tablet {
@@ -341,7 +341,7 @@
 }
 .logo_marcaCompleto {
   display: block;
-  @include m.desktop {
+  @media (max-width: 1200px) {
     display: none;
   }
   @include m.tablet {
@@ -601,8 +601,17 @@ a {
   justify-content: center;
   align-items: center;
   gap: 8rem;
+  @media (max-width: 1350px){
+    gap: 7rem;
+  }
   @include m.desktop {
-    gap: 5vw;
+    gap: 6rem;
+  }
+  @media (max-width: 1250px){
+    gap: 5rem;
+  }
+  @media (max-width: 950px){
+    gap: 4rem;
   }
   .dropdown {
     background-color: transparent !important;
@@ -701,4 +710,10 @@ a {
   display: flex;
   align-items: center;
   padding-left: 5vw;
+  @include m.desktop {
+    padding-left: 4.5vw;
+  }
+  @media (max-width: 1300px){
+    padding-left: 4vw;
+  }
 }
