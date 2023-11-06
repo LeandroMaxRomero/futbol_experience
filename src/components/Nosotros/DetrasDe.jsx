@@ -27,7 +27,7 @@ export const DetrasDe = () => {
             </p>
           </div>
           <div className="detrasDeNosotros-img">
-            <img src="img/nosotros-dan.png" alt="Dan en la tribuna" />
+            <img src="img/nosotros-dan.png" alt="Dan jugando al futbol" />
           </div>
         </div>
       ) : (
@@ -42,7 +42,7 @@ export const DetrasDe = () => {
             </p>
           </div>
           <div className="detrasDeNosotros-img">
-            <img src="img/nosotros-dan2.png" alt="Dan en la tribuna" />
+            <img src="img/nosotros-dan.png" alt="Dan playing soccer" />
           </div>
         </div>
       )}

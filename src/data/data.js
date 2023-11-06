@@ -153,7 +153,7 @@ export const maradonaContent = {
     curiosityExperience: [
       "Did you know that...",
       "img/MuseoArg.png",
-      "Argentino Juniors",
+      "Argentinos Juniors",
       `Founded in 1904, Argentinos Juniors is worldwide known for the quantity and quality of players coming out of its lower divisions. With 5 titles, including local cups such as the Copa Libertadores, the club is going through a great present. Its stadium is named "Diego Armando Maradona" and it was on this field that Lionel Messi made his debut and scored his first goal for the Argentine national team.`,
       "img/diego_armando_maradona.png",
       "Diego Armando Maradona",

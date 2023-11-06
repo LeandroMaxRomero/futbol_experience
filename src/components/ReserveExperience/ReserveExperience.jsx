@@ -6,15 +6,15 @@ const ReserveExperience = ({ content, reserve }) => {
   return (
     <div className="reserve-experience">
       <h2>{content[0]}</h2>
-      <Button buttonStyle={"btn-contacto"}>
-        <a
-          href={` https://wa.me/${number}?text=${message}`}
-          target="_blank"
-          rel="noreferrer"
-        >
+      <a
+        href={` https://wa.me/${number}?text=${message}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Button buttonStyle={"btn-contacto"}>
           {content[1]}
-        </a>
-      </Button>
+        </Button>
+      </a>
     </div>
   );
 };
