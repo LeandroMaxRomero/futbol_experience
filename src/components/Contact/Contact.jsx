@@ -120,7 +120,7 @@ export const Contact = () => {
                 </a>
               </div>
               <div className="logo-container">
-                <a href="http://">
+                <a href="https://www.tiktok.com/@futbolexperienceba">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
