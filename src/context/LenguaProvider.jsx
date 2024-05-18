@@ -10,8 +10,6 @@ const LenguaProvider = ({ children }) => {
     else return "castellano";
   });
 
-  /* echale un ojo pq no se que pueda estar pasando que aun teniendo el estado en false pone el idioma ingles */
-
   useEffect(() => {
     localStorage.setItem("lang", lang);
   }, [lang]);
